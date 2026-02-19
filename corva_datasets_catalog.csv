@@ -1,0 +1,648 @@
+ID,Dataset Name,Friendly Name,Data Type,Plottable,Has Schema,Category,Description
+93,corva#activities,activities,time,No,No,Activities / Operations,Description of rig activity states
+64,corva#activities.summary-1m,activities.summary-1m,time,No,No,Activities / Operations,List of activities that have occurred within the last minute (1 minute)
+63,corva#activities.summary-1w,activities.summary-1w,time,No,No,Activities / Operations,List of activities that have occurred within the last week (1 week)
+62,corva#activities.summary-2tours,activities.summary-2tours,time,No,Yes,Activities / Operations,
+54,corva#activities.summary-3m,activities.summary-3m,time,No,Yes,Activities / Operations,
+61,corva#activities.summary-continuous,activities.summary-continuous,time,No,Yes,Activities / Operations,
+20,corva#activity-groups,activity-groups,time,No,Yes,Activities / Operations,Data from activities collection is aggregated by activity-groups
+472,corva#activity_tracker,activity_tracker,time,No,No,Activities / Operations,
+461,corva#activity_tracker_pad_metadata,activity_tracker_pad_metadata,reference,No,No,Activities / Operations,
+628,corva#adi_mapper,adi_mapper,reference,No,No,Other,This collection is used to configure how the BE Advacned Data Integration (ADI) app runs.
+3299,corva#ainomaly,ainomaly,time,No,No,Other,
+1456,corva#alerts-plus.company-configs,alerts-plus.company-configs,reference,No,No,Alerts,
+1455,corva#alerts-plus.history,alerts-plus.history,reference,No,No,Alerts,
+712,corva#analytics.krevs,analytics.krevs,time,Yes,No,Other,
+1839,corva#anti-collision.alert,anti-collision.alert,time,No,No,Anti-Collision,
+3308,corva#anti-collision.boundary-lines,anti-collision.boundary-lines,time,No,No,Anti-Collision,
+1603,corva#anti-collision.clearance,anti-collision.clearance,time,No,No,Anti-Collision,
+3151,corva#anti-collision.clearance-plan,anti-collision.clearance-plan,time,No,No,Anti-Collision,Anti-collision clearance calculations for the well plan surveys.
+1728,corva#anti-collision.clearance.projection,anti-collision.clearance.projection,time,No,No,Anti-Collision,
+1730,corva#anti-collision.clearance.projection-manual,anti-collision.clearance.projection-manual,time,No,No,Anti-Collision,
+743,corva#anti-collision.clearances,anti-collision.clearances,time,No,No,Anti-Collision,A collection used for storing anti-collision results such as separation factors
+3276,corva#anti-collision.edm-data.metadata-edm,anti-collision.edm-data.metadata-edm,reference,No,No,Anti-Collision,
+3277,corva#anti-collision.edm-data.metadata-well,anti-collision.edm-data.metadata-well,reference,No,No,Anti-Collision,
+1604,corva#anti-collision.error.offset,anti-collision.error.offset,time,No,No,Anti-Collision,
+3167,corva#anti-collision.error.offset-tracked,anti-collision.error.offset-tracked,time,No,No,Anti-Collision,
+1605,corva#anti-collision.error.reference,anti-collision.error.reference,time,No,No,Anti-Collision,
+1729,corva#anti-collision.error.reference.projection,anti-collision.error.reference.projection,time,No,No,Anti-Collision,
+1731,corva#anti-collision.error.reference.projection-manual,anti-collision.error.reference.projection-manual,time,No,No,Anti-Collision,
+744,corva#anti-collision.errors,anti-collision.errors,reference,No,No,Anti-Collision,
+745,corva#anti-collision.errors.offsets,anti-collision.errors.offsets,reference,No,No,Anti-Collision,
+1814,corva#anti-collision.metadata-edm,anti-collision.metadata-edm,reference,No,Yes,Anti-Collision,
+1815,corva#anti-collision.metadata-well,anti-collision.metadata-well,reference,No,Yes,Anti-Collision,
+1755,corva#anti-collision.plot,anti-collision.plot,time,No,No,Anti-Collision,
+1736,corva#anti-collision.plot-3d,anti-collision.plot-3d,time,No,No,Anti-Collision,
+1606,corva#anti-collision.setting,anti-collision.setting,time,No,No,Anti-Collision,
+1894,corva#anti-collision.setting.updated,anti-collision.setting.updated,time,No,No,Anti-Collision,
+746,corva#anti-collision.settings,anti-collision.settings,reference,No,No,Anti-Collision,
+1895,corva#anti-collision.tool-error-model,anti-collision.tool-error-model,reference,No,No,Anti-Collision,
+3343,corva#askcorva.history,askcorva.history,reference,No,No,AskCorva / AI,
+3344,corva#askcorva.prompts,askcorva.prompts,reference,No,No,AskCorva / AI,
+1932,corva#askcorva.settings,askcorva.settings,reference,No,Yes,AskCorva / AI,
+72,corva#asset.status-10m,asset.status-10m,time,No,No,Other,
+3041,corva#asset_archive_manifest,asset_archive_manifest,reference,No,No,Other,
+478,corva#asset_pad_mapping,asset_pad_mapping,reference,No,No,Other,"used as hash for asset -> pad_id, fleet_id, etc."
+147,corva#assets,assets,time,No,Yes,Other,Metadata associated with a well in Corva
+1828,corva#auto-time-log.data,auto-time-log.data,time,Yes,No,Other,A collection for storing asset activity data derived from the WITS collection.
+3125,corva#baker_memory,baker_memory,time,Yes,No,Other,baker_memory
+3207,corva#bha-inventory.company-components,bha-inventory.company-components,reference,No,No,Other,
+1451,corva#bowtie.insights.events,bowtie.insights.events,reference,No,No,Bowtie / Insights,Rig data
+1452,corva#bowtie.insights.files,bowtie.insights.files,reference,No,No,Bowtie / Insights,
+1536,corva#cement.csv-1s,cement.csv-1s,time,Yes,No,Cementing,
+1537,corva#cement.csv-1s.metadata,cement.csv-1s.metadata,time,No,No,Cementing,
+78,corva#checkup,checkup,time,No,No,Other,
+1859,corva#chronos-notifications,chronos-notifications,time,No,No,Other,
+1860,corva#chronos-settings,chronos-settings,time,No,No,Other,
+161,corva#circulation.lag-depth,circulation.lag-depth,time,No,Yes,Circulation,
+32,corva#circulation.lost-circulation,circulation.lost-circulation,time,No,No,Circulation,
+33,corva#circulation.volumetric,circulation.volumetric,time,No,Yes,Circulation,
+3100,corva#completion-teams,completion-teams,reference,No,No,Completions / Frac,
+121,corva#completion.activity.summary-stage,completion.activity.summary-stage,time,No,No,Completions / Frac,Contains a summarized start/end time for all activities on each individual frac stage.
+1863,corva#completion.activity.viewer,completion.activity.viewer,time,No,No,Completions / Frac,
+2969,corva#completion.ccl-annotations,completion.ccl-annotations,time,No,Yes,Completions / Frac,
+3012,corva#completion.ccl-annotations-test,completion.ccl-annotations-test,time,No,No,Completions / Frac,
+2966,corva#completion.ccl-anomalies,completion.ccl-anomalies,reference,No,Yes,Completions / Frac,
+2982,corva#completion.ccl-anomalies-model-runs,completion.ccl-anomalies-model-runs,time,No,No,Completions / Frac,This dataset stores the model runs for detecting casing anomalies from high frequency wireline CCL data.
+3301,corva#completion.ccl-collars,completion.ccl-collars,reference,No,No,Completions / Frac,
+2981,corva#completion.ccl-filtered-summary-runs,completion.ccl-filtered-summary-runs,time,No,No,Completions / Frac,"This dataset stores the wireline state, RIH / POOH, for the real time high frequency data."
+2979,corva#completion.ccl-raw-data,completion.ccl-raw-data,time,No,No,Completions / Frac,"This dataset stores real time, high frequency CCL, Line Tension, Line Speed, measured depth, mean CCL, min CCL, max CCL values."
+2967,corva#completion.ccl-settings,completion.ccl-settings,time,No,Yes,Completions / Frac,
+3011,corva#completion.ccl-settings-test,completion.ccl-settings-test,time,No,No,Completions / Frac,
+2968,corva#completion.ccl-summary,completion.ccl-summary,reference,No,Yes,Completions / Frac,
+3171,corva#completion.custom_metrics,completion.custom_metrics,time,No,Yes,Completions / Frac,completion metrics tailored to client specifications
+120,corva#completion.data.actual-stages,completion.data.actual-stages,time,No,No,Completions / Frac,"Contains post-job report information received from the frac service provider. It contains fluids, chemical, proppant, and other data in some cases."
+1781,corva#completion.data.actual-steps,completion.data.actual-steps,time,No,No,Completions / Frac,
+156,corva#completion.data.afe,completion.data.afe,time,No,No,Completions / Frac,"Summary of days, depth and cost of a well"
+113,corva#completion.data.costs,completion.data.costs,time,No,No,Completions / Frac,Contains daily cost information received in morning reports.
+114,corva#completion.data.crews,completion.data.crews,time,No,No,Completions / Frac,Contains information on which service companies are providing frac/wireline/chemical services.
+436,corva#completion.data.fiber-optic.heatmap,completion.data.fiber-optic.heatmap,time,No,No,Completions / Frac,
+435,corva#completion.data.fiber-optic.table,completion.data.fiber-optic.table,time,No,No,Completions / Frac,
+123,corva#completion.data.files,completion.data.files,time,No,Yes,Completions / Frac,These are file names and unique identifiers that are uploaded to Corva Wellhub.
+118,corva#completion.data.job-settings,completion.data.job-settings,time,No,Yes,Completions / Frac,Prejob settings input into Wellhub Job Settings section.
+3044,corva#completion.data.master-frac,completion.data.master-frac,time,No,No,Completions / Frac,PJR data for master frac
+117,corva#completion.data.npt-events,completion.data.npt-events,time,No,No,Completions / Frac,Contains information surrounding NPT for each individual well received from morning reports.
+119,corva#completion.data.operation-summaries,completion.data.operation-summaries,time,No,No,Completions / Frac,Contains summary information from 24 hour morning reports.
+593,corva#completion.data.plugid,completion.data.plugid,time,No,No,Completions / Frac,Plug identification fields
+122,corva#completion.data.plugs,completion.data.plugs,time,No,No,Completions / Frac,Contains frac plug data for drill-outs and more specific plug information than what is found in completion.data.stages.
+583,corva#completion.data.plugs.actual,completion.data.plugs.actual,time,No,No,Completions / Frac,
+1116,corva#completion.data.proposed-stages,completion.data.proposed-stages,time,No,No,Completions / Frac,
+1115,corva#completion.data.proposed-stages.metadata,completion.data.proposed-stages.metadata,time,No,No,Completions / Frac,
+1011,corva#completion.data.purged_stages,completion.data.purged_stages,reference,No,No,Completions / Frac,Collection for tracking purge frac stages
+124,corva#completion.data.stages,completion.data.stages,time,No,No,Completions / Frac,Contains design information. This is typically uploaded before the job has begun once designs are received.
+137,corva#completion.data.time-log,completion.data.time-log,time,No,Yes,Completions / Frac,"Contains data for time analysis app. Has a near-uninterrupted continuous summary of operations for each well (frac and wireline swaps, frac stages, wireline runs, waiting on offsets), including asset id's for offset wells. This is somewhat time-based as it is updated every 1 minute while a frac or w"
+1231,corva#completion.data.time-log.wv,completion.data.time-log.wv,time,No,No,Completions / Frac,
+154,corva#completion.data.well-goals,completion.data.well-goals,time,No,No,Completions / Frac,
+1040,corva#completion.data_quality.report,completion.data_quality.report,time,No,No,Completions / Frac,
+718,corva#completion.detailed-costs,completion.detailed-costs,time,No,No,Completions / Frac,BE collection for completions cost detailed with line items.
+2990,corva#completion.dynamic-frac-stats,completion.dynamic-frac-stats,time,No,No,Completions / Frac,
+2988,corva#completion.evo_metrics_stages,completion.evo_metrics_stages,time,No,No,Completions / Frac,
+1583,corva#completion.fdi,completion.fdi,time,No,No,Completions / Frac,
+809,corva#completion.fracvision-notifications,completion.fracvision-notifications,time,No,No,Completions / Frac,
+570,corva#completion.fracvision-recommendations,completion.fracvision-recommendations,time,No,No,Completions / Frac,Staging recommendations to display in Frac Vision app
+571,corva#completion.fracvision-settings,completion.fracvision-settings,time,No,No,Completions / Frac,
+1595,corva#completion.insights,completion.insights,time,No,No,Completions / Frac,Completion insights app dataset
+1052,corva#completion.manual.phases,completion.manual.phases,time,No,No,Completions / Frac,
+1051,corva#completion.manual.points,completion.manual.points,time,No,No,Completions / Frac,
+138,corva#completion.metrics,completion.metrics,time,No,No,Completions / Frac,Contains aggregated data used to generate pad metrics app.
+1885,corva#completion.mis.mapping,completion.mis.mapping,reference,No,No,Completions / Frac,Dataset for storing WITSML Schema mappings
+3165,corva#completion.note,completion.note,time,No,No,Completions / Frac,collect user notes for frac operations
+864,corva#completion.offset.abra,completion.offset.abra,time,No,Yes,Completions / Frac,Completion offset COP data from Abra
+910,corva#completion.offset.abra.metadata,completion.offset.abra.metadata,time,No,No,Completions / Frac,metadata for abra offset
+1910,corva#completion.pad_sequence,completion.pad_sequence,reference,No,No,Completions / Frac,
+112,corva#completion.predictions,completion.predictions,time,No,Yes,Completions / Frac,"Breakdown, ISIP pressure predictions by elapsed time (pressure, flow rate, cumulative volumes)"
+1872,corva#completion.pumps,completion.pumps,time,No,No,Completions / Frac,Coldbore pump data
+2980,corva#completion.pumps.pad,completion.pumps.pad,reference,No,No,Completions / Frac,Coldbore pump data collected per pad
+1909,corva#completion.pumps.summary-1m,completion.pumps.summary-1m,time,No,No,Completions / Frac,Coldbore pump metrics 1m summary
+1904,corva#completion.pumps_metrics,completion.pumps_metrics,time,No,No,Completions / Frac,
+1890,corva#completion.pumps_stages,completion.pumps_stages,time,No,No,Completions / Frac,
+3426,corva#completion.redzone-status,completion.redzone-status,time,No,No,Completions / Frac,Status for fleet records to assist with staging and notifications
+3229,corva#completion.schedule-adherence,completion.schedule-adherence,time,No,No,Completions / Frac,metrics for measuring the adherence to the pumping schedule
+3379,corva#completion.stage-running-average-1min,completion.stage-running-average-1min,time,No,No,Completions / Frac,save averages from guided insights
+164,corva#completion.stage-times,completion.stage-times,time,No,Yes,Completions / Frac,Frac stage start and end times and stage duration.
+3296,corva#completion.time_at_rates_metrics,completion.time_at_rates_metrics,time,No,No,Completions / Frac,
+720,corva#completion.tracking,completion.tracking,time,No,No,Completions / Frac,
+756,corva#completion.tracking.events,completion.tracking.events,time,No,No,Completions / Frac,
+1868,corva#completion.trouble-stage,completion.trouble-stage,time,No,No,Completions / Frac,saves detected troubles for stages
+1364,corva#completion.valve,completion.valve,time,No,No,Completions / Frac,
+6,corva#completion.well-track,completion.well-track,time,No,No,Completions / Frac,
+108,corva#completion.wits,completion.wits,time,No,Yes,WITS (Other Phases),Historical and streaming 1 second wits data after passing through data quality checks and true vertical depth functions.
+107,corva#completion.wits.raw,completion.wits.raw,time,No,Yes,WITS (Other Phases),Historical and streaming 1 second wits data before passing through data quality checks and true vertical depth functions.
+146,corva#completion.wits.summary-10s,completion.wits.summary-10s,time,No,Yes,WITS (Other Phases),Historical and streaming 1 second wits data summariezed for every 10 seconds after passing through data quality checks and true vertical depth functions.
+145,corva#completion.wits.summary-1m,completion.wits.summary-1m,time,No,Yes,WITS (Other Phases),Historical and streaming 1 second wits data summariezed for every 1minute after passing through data quality checks and true vertical depth functions.
+111,corva#completion.wits.summary-30m,completion.wits.summary-30m,time,No,No,WITS (Other Phases),
+682,corva#completions-handover-contact-notes,completions-handover-contact-notes,time,No,No,Completions / Frac,Contact details left by the analysts in the mission-control-completions application.
+659,corva#completions-handover-notes,completions-handover-notes,time,No,No,Completions / Frac,Notes and comments left by the analysts in the mission-control-completions application.
+691,corva#completions-handover-review-info,completions-handover-review-info,time,No,No,Completions / Frac,"Collection stores who and when reviewed the fleet, also who marked fleet as important in the mission-control-completions application"
+3428,corva#completions.autostaging-stats,completions.autostaging-stats,reference,No,No,Completions / Frac,
+696,corva#completions.mgb.fuelcell.calc,completions.mgb.fuelcell.calc,time,No,No,Completions / Frac,
+694,corva#completions.mgb.fuelcell.calc.summary,completions.mgb.fuelcell.calc.summary,time,No,No,Completions / Frac,
+695,corva#completions.mgb.fuelcell.enginedata,completions.mgb.fuelcell.enginedata,reference,No,No,Completions / Frac,
+793,corva#completions.mgb.fuelcell.fuel-costs,completions.mgb.fuelcell.fuel-costs,reference,No,No,Completions / Frac,
+692,corva#completions.mgb.fuelcell.raw,completions.mgb.fuelcell.raw,time,No,No,Completions / Frac,
+1672,corva#composite-curves,composite-curves,time,No,No,Other,
+3124,corva#composite-roadmaps,composite-roadmaps,time,No,No,Other,Storing composite roadmaps from Predictive Drilling
+150,corva#config-response,config-response,time,No,Yes,Other,
+44,corva#corva.column-mapper.settings,corva.column-mapper.settings,time,No,No,Other,
+1028,corva#cost_commander_configuration,cost_commander_configuration,time,No,No,Other,place to store config data for cost commander app
+2940,corva#custom_alerts_test_log,custom_alerts_test_log,time,No,No,Alerts,
+3303,corva#darkfibr,darkfibr,reference,No,No,Other,Store for darkfibr data
+3275,corva#dashcheck,dashcheck,reference,No,No,Other,For storing corva dashboard performance
+22,corva#data.actual_survey,data.actual_survey,time,No,Yes,Well Data (data.*),"Survey data: MD, inclination, azimuth, tvd, northing, easting, dls, and vertical section"
+3337,corva#data.actual_survey.edm,data.actual_survey.edm,time,No,No,Well Data (data.*),Actual survey extracted from EDM file(in anti collision app).
+3087,corva#data.actual_survey.email,data.actual_survey.email,time,No,No,Well Data (data.*),
+2972,corva#data.actual_survey.manual,data.actual_survey.manual,time,No,No,Well Data (data.*),
+2971,corva#data.actual_survey.source,data.actual_survey.source,time,No,No,Well Data (data.*),
+3086,corva#data.actual_survey.witsml,data.actual_survey.witsml,time,No,No,Well Data (data.*),
+1610,corva#data.actual_survey_divergence,data.actual_survey_divergence,time,No,No,Well Data (data.*),
+96,corva#data.afe,data.afe,time,No,Yes,Well Data (data.*),
+3155,corva#data.afe.curve,data.afe.curve,time,No,No,Well Data (data.*),
+3357,corva#data.analytics.drillstring,data.analytics.drillstring,time,No,No,Well Data (data.*),
+3208,corva#data.bha.dd_comments,data.bha.dd_comments,time,No,No,Well Data (data.*),
+3209,corva#data.bha.run_summary,data.bha.run_summary,time,No,No,Well Data (data.*),
+88,corva#data.casing,data.casing,time,No,Yes,Well Data (data.*),
+631,corva#data.completion.npt-codes,data.completion.npt-codes,reference,No,No,Well Data (data.*),Collection to store completion NPT code mapping
+14,corva#data.costs,data.costs,time,No,No,Well Data (data.*),
+66,corva#data.crew-shift,data.crew-shift,time,No,No,Well Data (data.*),
+15,corva#data.crews,data.crews,time,No,Yes,Well Data (data.*),
+1328,corva#data.custom_curves,data.custom_curves,time,No,No,Well Data (data.*),
+46,corva#data.cuttings,data.cuttings,time,No,No,Well Data (data.*),
+2984,corva#data.dd-mission-control-well-notes,data.dd-mission-control-well-notes,time,No,No,Well Data (data.*),
+71,corva#data.diaries,data.diaries,time,No,Yes,Well Data (data.*),
+109,corva#data.drilling-window,data.drilling-window,time,No,No,Well Data (data.*),
+3349,corva#data.drilling.sop,data.drilling.sop,reference,No,No,Well Data (data.*),"Drilling analyst uses SOPs to coordinate and escalate confirmed Corva platform outages quickly and consistently. The workflow covers internal notifications, customer impact management, escalation paths, and post-incident obligations."
+18,corva#data.drillstring,data.drillstring,time,No,Yes,Well Data (data.*),"Describes full drillstring (drill pipe/collars, pdm, bits, etc.) and parameters associated with each component"
+1825,corva#data.drillstring.drillpipe_specs,data.drillstring.drillpipe_specs,reference,No,No,Well Data (data.*),Contains data of Ops expectation of the drill pipe on location at the rig. Data is refreshed daily from a spreadsheet Ops maintains.
+1795,corva#data.drillstring.planned,data.drillstring.planned,time,No,No,Well Data (data.*),
+606,corva#data.emission-factor,data.emission-factor,reference,No,No,Well Data (data.*),
+48,corva#data.files,data.files,time,No,Yes,Well Data (data.*),
+3188,corva#data.formation-dips,data.formation-dips,time,No,No,Well Data (data.*),Dataset for storing formation dips
+148,corva#data.formations,data.formations,time,No,Yes,Well Data (data.*),Formation (lithology and name) data by Asset with TVD and MD.
+1630,corva#data.headquarters-well-notes,data.headquarters-well-notes,time,No,No,Well Data (data.*),
+989,corva#data.hole-cleaning,data.hole-cleaning,time,No,No,Well Data (data.*),
+783,corva#data.insights.events,data.insights.events,time,No,No,Well Data (data.*),
+784,corva#data.insights.files,data.insights.files,time,No,No,Well Data (data.*),
+266,corva#data.lessons-learned,data.lessons-learned,time,No,Yes,Well Data (data.*),Collection for lessons learned
+384,corva#data.lessons-learned-codes,data.lessons-learned-codes,reference,No,No,Well Data (data.*),Collection for lessons learned codes
+267,corva#data.lessons-learned.settings,data.lessons-learned.settings,time,No,No,Well Data (data.*),Collection for lessons learned settings
+70,corva#data.map,data.map,time,No,No,Well Data (data.*),
+5,corva#data.mud,data.mud,time,No,Yes,Well Data (data.*),"The data in this dataset represents drilling mud data. This data is represented in the WellHub Fluid Checks page in the Corva UI. When the data is inputted into the text fields of Fluid Checks, it is saved in this dataset."
+97,corva#data.mud.plan,data.mud.plan,time,No,No,Well Data (data.*),
+296,corva#data.npt-codes,data.npt-codes,reference,No,No,Well Data (data.*),Collection to store npt code mapping
+17,corva#data.npt-events,data.npt-events,time,No,Yes,Well Data (data.*),
+251,corva#data.offset-wells.bic,data.offset-wells.bic,time,No,No,Well Data (data.*),Collection for best in class offset wells
+85,corva#data.offset_wells,data.offset_wells,time,No,No,Well Data (data.*),
+21,corva#data.operation-summaries,data.operation-summaries,time,No,Yes,Well Data (data.*),
+13,corva#data.plan_survey,data.plan_survey,time,No,Yes,Well Data (data.*),"Planned survey data: MD, inclination, azimuth, tvd, northing, easting, dls, and vertical section"
+92,corva#data.pressure-gradient,data.pressure-gradient,time,No,No,Well Data (data.*),
+19,corva#data.surface-equipment,data.surface-equipment,time,No,Yes,Well Data (data.*),
+1542,corva#data.survey-projections,data.survey-projections,time,No,No,Well Data (data.*),
+3081,corva#data.survey_management_system.cache,data.survey_management_system.cache,time,No,No,Well Data (data.*),Used as an intermediate cache collection b/w survey management task and stream applications
+568,corva#data.sustainability,data.sustainability,time,No,No,Well Data (data.*),
+16,corva#data.well-sections,data.well-sections,time,No,Yes,Well Data (data.*),
+116,corva#data.well-sections.phases,data.well-sections.phases,time,No,No,Well Data (data.*),
+3210,corva#dc-cp-records,dc-cp-records,time,No,No,Other,Continuous pumping records
+2983,corva#dd-mission-control-notes,dd-mission-control-notes,reference,No,No,Other,
+181,corva#design.data.casing,design.data.casing,time,No,No,Well Design (design.*),
+178,corva#design.data.drillstring,design.data.drillstring,time,No,No,Well Design (design.*),
+179,corva#design.data.mud,design.data.mud,time,No,No,Well Design (design.*),
+184,corva#design.data.operation-inputs,design.data.operation-inputs,time,No,No,Well Design (design.*),
+180,corva#design.data.plan_survey,design.data.plan_survey,time,No,No,Well Design (design.*),
+182,corva#design.torque-and-drag.hookload-trend,design.torque-and-drag.hookload-trend,time,No,No,Well Design (design.*),
+183,corva#design.torque-and-drag.torque-trend,design.torque-and-drag.torque-trend,time,No,No,Well Design (design.*),
+559,corva#diesel.displacement.table.summary,diesel.displacement.table.summary,time,No,No,Other,
+3323,corva#diff_derating,diff_derating,reference,No,No,Other,Diff Derating changes from Predictive Drilling
+3345,corva#diff_derating.settings,diff_derating.settings,reference,No,No,Other,Diff Derating Settings
+367,corva#digital-mud-engineer,digital-mud-engineer,time,No,No,Other,
+34,corva#directional.accuracy,directional.accuracy,time,No,Yes,Directional,
+1611,corva#directional.actual_survey_divergence,directional.actual_survey_divergence,time,No,No,Directional,additional information(divergence values) for data.actual_survey records
+1915,corva#directional.custom_bit_projection,directional.custom_bit_projection,time,No,No,Directional,"Custom bit projections - RSS bit projection, Motor bit projection, etc. Generated in either Auto Projection Scheduler or Survey Projection Calculator"
+2963,corva#directional.custom_bit_projection.logging,directional.custom_bit_projection.logging,reference,No,No,Directional,"optional log/history of custom_bit_projection records, needed for accuracy evaluation, controlled by hidden toggle on FE"
+3088,corva#directional.default_bit_projection,directional.default_bit_projection,time,No,No,Directional,"Default bit projection, based on motor bit projection. Generated mostly in Auto Projection Scheduler and sometimes in Survey Projection Calculator"
+159,corva#directional.enriched-surveys,directional.enriched-surveys,time,No,No,Directional,
+160,corva#directional.guidance,directional.guidance,time,No,No,Directional,
+172,corva#directional.guidance_log,directional.guidance_log,time,No,No,Directional,
+170,corva#directional.guidance_recommendation,directional.guidance_recommendation,time,No,No,Directional,
+173,corva#directional.guidance_settings,directional.guidance_settings,time,No,No,Directional,
+171,corva#directional.guidance_step_history,directional.guidance_step_history,time,No,No,Directional,
+3354,corva#directional.motor_yield.summary-1ft,directional.motor_yield.summary-1ft,depth,No,No,Directional,
+3320,corva#directional.pre-post-slide,directional.pre-post-slide,time,No,No,Directional,pre post slide calculation
+1727,corva#directional.projection,directional.projection,time,No,No,Directional,
+103,corva#directional.projection_to_bit,directional.projection_to_bit,time,No,Yes,Directional,
+4,corva#directional.rotational-tendency,directional.rotational-tendency,time,No,Yes,Directional,"Build and turn rate by depth as measured by MWD tool. If continuous inclination is available from the MWD tool, then data will include continuous build"
+1889,corva#directional.scenario-manual,directional.scenario-manual,time,No,No,Directional,Manual scenarios for directional projections(Survey Projection Calculator app)
+1726,corva#directional.settings,directional.settings,reference,No,No,Directional,
+89,corva#directional.slide-sheet,directional.slide-sheet,time,No,No,Directional,
+35,corva#directional.surveys,directional.surveys,time,No,Yes,Directional,Planned and actual surveys in the same collection
+37,corva#directional.tool-face-orientation,directional.tool-face-orientation,time,No,No,Directional,
+686,corva#directional.tool_face,directional.tool_face,depth,No,No,Directional,
+891,corva#directional.toolface.summary-1ft,directional.toolface.summary-1ft,time,No,No,Directional,This collection is a 1-foot summary of the toolface values (both magnetic and gravity) and the active type while Slide Drilling.
+38,corva#directional.tortuosity,directional.tortuosity,time,No,Yes,Directional,
+36,corva#directional.trend,directional.trend,time,No,Yes,Directional,
+320,corva#directional.wellbore-quality,directional.wellbore-quality,time,No,No,Directional,Stores H&P Wellbore Quality Data
+1348,corva#dls-traces-custom,dls-traces-custom,time,No,No,Other,DLS Traces Calculation
+3358,corva#dmytro_test_dataset,dmytro_test_dataset,time,No,No,Other,
+1236,corva#downhole.sensor.adjustment,downhole.sensor.adjustment,time,No,No,Downhole Sensors,downhole.sensor.adjustment
+1531,corva#downhole.sensor.data,downhole.sensor.data,time,No,No,Downhole Sensors,
+1532,corva#downhole.sensor.data-1m,downhole.sensor.data-1m,time,No,No,Downhole Sensors,
+1533,corva#downhole.sensor.data-30m,downhole.sensor.data-30m,time,No,No,Downhole Sensors,
+1534,corva#downhole.sensor.data-6h,downhole.sensor.data-6h,time,No,No,Downhole Sensors,
+1530,corva#downhole.sensor.data.header,downhole.sensor.data.header,time,No,No,Downhole Sensors,
+244,corva#drill2frac.depth,drill2frac.depth,depth,No,No,Other,drill2frac depth data
+245,corva#drill2frac.meta,drill2frac.meta,time,No,No,Other,drill2frac metadata
+10,corva#drilling-ai,drilling-ai,time,No,No,Drilling,
+79,corva#drilling-dysfunction,drilling-dysfunction,time,No,Yes,Drilling,
+42,corva#drilling-efficiency.mse,drilling-efficiency.mse,time,No,Yes,Drilling,
+40,corva#drilling-efficiency.mse-heatmap,drilling-efficiency.mse-heatmap,time,No,Yes,Drilling,
+74,corva#drilling-efficiency.mse.imports,drilling-efficiency.mse.imports,time,No,No,Drilling,
+41,corva#drilling-efficiency.optimization,drilling-efficiency.optimization,time,No,Yes,Drilling,"Actual drilling parameters (inclination, RPM, ROP, Mud flow, WOB, gamma ray, bit size, state) vs recommended drilling parameters ( Max RPM, Expected ROP, Min/Max WOB, Min RPM). Also includes efficiency score."
+153,corva#drilling-efficiency.predictions,drilling-efficiency.predictions,time,No,Yes,Drilling,
+39,corva#drilling-efficiency.rop-heatmap,drilling-efficiency.rop-heatmap,time,No,Yes,Drilling,
+86,corva#drilling-roadmap,drilling-roadmap,time,No,No,Drilling,"Drilling roadmap which has WOB, Diff pressures, RPM, Torque, MSE. ROP's. Mud densities, Flow In's, and Hazards from optimal offset wells  for that particular well by formation"
+198,corva#drilling-roadmap.hazard,drilling-roadmap.hazard,time,No,No,Drilling,
+1318,corva#drilling-roadmap.hazard.log,drilling-roadmap.hazard.log,time,No,No,Drilling,
+87,corva#drilling-roadmap.scoring,drilling-roadmap.scoring,time,No,No,Drilling,"Actuals values for drillers roadmap WOB, Diff pressures, RPM, Torque, MSE. ROP's. Mud densities, Flow In's, and Hazards  for that particular well by formation"
+754,corva#drilling.24-and-48-hr-footage-drilled,drilling.24-and-48-hr-footage-drilled,time,Yes,No,Drilling,
+423,corva#drilling.aerion.centrifuge.data,drilling.aerion.centrifuge.data,time,No,No,Drilling,
+509,corva#drilling.aerion.mudsensor.data,drilling.aerion.mudsensor.data,time,No,No,Drilling,Aerion Mudsensor data
+814,corva#drilling.bit-pressure.depth.summary,drilling.bit-pressure.depth.summary,time,No,No,Drilling,
+636,corva#drilling.drilling2.summary-1ft,drilling.drilling2.summary-1ft,time,No,No,Drilling,
+652,corva#drilling.ecd,drilling.ecd,time,No,No,Drilling,
+551,corva#drilling.halliburton.cerebro-raw,drilling.halliburton.cerebro-raw,reference,No,No,Drilling,Captures continuous high-resolution bit sensor data
+400,corva#drilling.hookload-plus-weight-on-bit,drilling.hookload-plus-weight-on-bit,time,Yes,No,Drilling,
+902,corva#drilling.mud-ops,drilling.mud-ops,time,No,Yes,Drilling,"This dataset saves drilling ops mud data that includes pit information, inventory information, volumes, material pricing, mud pump data and shaker data."
+598,corva#drilling.mudlog.depth,drilling.mudlog.depth,depth,No,No,Drilling,The mudLog object is used to capture information in a mud log. This includes lithologic information derived from cuttings encountered on a shaker screen at a site. This object is uniquely identified within the context of one wellbore object.
+622,corva#drilling.mudlog.depth.metadata,drilling.mudlog.depth.metadata,depth,No,No,Drilling,Metadata for mudlogs collection
+675,corva#drilling.neptune.backreaming.pipelimit,drilling.neptune.backreaming.pipelimit,reference,No,No,Drilling,
+635,corva#drilling.petro.summary-1ft,drilling.petro.summary-1ft,time,No,No,Drilling,
+874,corva#drilling.petro.summary-1ft.metadata,drilling.petro.summary-1ft.metadata,time,No,No,Drilling,
+1499,corva#drilling.pipetally.upload,drilling.pipetally.upload,reference,No,No,Drilling,
+3290,corva#drilling.timelog-aux.data,drilling.timelog-aux.data,time,No,No,Drilling,
+1232,corva#drilling.timelog.data,drilling.timelog.data,time,No,No,Drilling,
+1712,corva#drilling.topdrive.powercurve,drilling.topdrive.powercurve,reference,No,No,Drilling,
+166,corva#drilling.wits.depth,drilling.wits.depth,depth,No,No,Drilling,
+167,corva#drilling.wits.depth.metadata,drilling.wits.depth.metadata,time,No,No,Drilling,
+1403,corva#drilling.wits.depth.summary-0.5ft,drilling.wits.depth.summary-0.5ft,depth,No,No,Drilling,
+1404,corva#drilling.wits.depth.summary-0.5ft.tvd,drilling.wits.depth.summary-0.5ft.tvd,depth,No,No,Drilling,
+169,corva#drilling.wits.depth.summary-10ft,drilling.wits.depth.summary-10ft,depth,No,No,Drilling,
+680,corva#drilling.wits.depth.summary-10ft.tvd,drilling.wits.depth.summary-10ft.tvd,depth,No,No,Drilling,"Depth summary calculated by TVD value, instead of MD"
+168,corva#drilling.wits.depth.summary-1ft,drilling.wits.depth.summary-1ft,depth,No,No,Drilling,
+681,corva#drilling.wits.depth.summary-1ft.tvd,drilling.wits.depth.summary-1ft.tvd,depth,No,No,Drilling,"Depth summary calculated by TVD value, instead of MD"
+3126,corva#drilling_mechanics_memory,drilling_mechanics_memory,time,Yes,No,Drilling,Drilling Mechanics Memory
+3162,corva#drilling_program_automation,drilling_program_automation,reference,No,No,Drilling,
+23,corva#drillout.activities,drillout.activities,time,No,No,Drillout,
+76,corva#drillout.activities.summary-2tours,drillout.activities.summary-2tours,time,No,No,Drillout,
+81,corva#drillout.activities.summary-continuous,drillout.activities.summary-continuous,time,No,No,Drillout,
+47,corva#drillout.activity-groups,drillout.activity-groups,time,No,No,Drillout,
+134,corva#drillout.circulation.volumetric,drillout.circulation.volumetric,time,No,No,Drillout,
+127,corva#drillout.data.costs,drillout.data.costs,time,No,No,Drillout,
+115,corva#drillout.data.crews,drillout.data.crews,time,No,No,Drillout,
+105,corva#drillout.data.drillstring,drillout.data.drillstring,time,No,Yes,Drillout,
+125,corva#drillout.data.files,drillout.data.files,time,No,No,Drillout,
+106,corva#drillout.data.mud,drillout.data.mud,time,No,Yes,Drillout,
+128,corva#drillout.data.npt-events,drillout.data.npt-events,time,No,No,Drillout,
+126,corva#drillout.data.operation-summaries,drillout.data.operation-summaries,time,No,No,Drillout,
+104,corva#drillout.data.surface-equipment,drillout.data.surface-equipment,time,No,Yes,Drillout,
+135,corva#drillout.hydraulics.pressure-loss,drillout.hydraulics.pressure-loss,time,No,No,Drillout,
+136,corva#drillout.hydraulics.pressure-trend,drillout.hydraulics.pressure-trend,time,No,No,Drillout,
+139,corva#drillout.operations,drillout.operations,time,No,No,Drillout,
+3,corva#drillout.parameter-sheet,drillout.parameter-sheet,time,No,No,Drillout,
+141,corva#drillout.torque-and-drag.axial-load,drillout.torque-and-drag.axial-load,time,No,Yes,Drillout,
+142,corva#drillout.torque-and-drag.hookload-trend,drillout.torque-and-drag.hookload-trend,time,No,Yes,Drillout,
+176,corva#drillout.torque-and-drag.hookload-trend.actual,drillout.torque-and-drag.hookload-trend.actual,time,No,No,Drillout,
+144,corva#drillout.torque-and-drag.stress,drillout.torque-and-drag.stress,time,No,Yes,Drillout,
+143,corva#drillout.torque-and-drag.torque-trend,drillout.torque-and-drag.torque-trend,time,No,Yes,Drillout,
+177,corva#drillout.torque-and-drag.torque-trend.actual,drillout.torque-and-drag.torque-trend.actual,time,No,No,Drillout,
+129,corva#drillout.wits,drillout.wits,time,No,No,WITS (Other Phases),
+1767,corva#drillout.wits.metadata,drillout.wits.metadata,time,No,No,WITS (Other Phases),Drillout wits metadata
+130,corva#drillout.wits.raw,drillout.wits.raw,time,No,No,WITS (Other Phases),
+131,corva#drillout.wits.summary-1m,drillout.wits.summary-1m,time,No,No,WITS (Other Phases),
+1216,corva#drillout.wits.summary-1m.metadata,drillout.wits.summary-1m.metadata,time,No,No,WITS (Other Phases),
+132,corva#drillout.wits.summary-30m,drillout.wits.summary-30m,time,No,No,WITS (Other Phases),
+1218,corva#drillout.wits.summary-30m.metadata,drillout.wits.summary-30m.metadata,time,No,No,WITS (Other Phases),
+133,corva#drillout.wits.summary-6h,drillout.wits.summary-6h,time,No,Yes,WITS (Other Phases),
+1217,corva#drillout.wits.summary-6h.metadata,drillout.wits.summary-6h.metadata,time,No,No,WITS (Other Phases),
+3282,corva#dysfunction.settings,dysfunction.settings,reference,No,No,Other,Dysfunction Detection Setting Overrides
+3273,corva#dysfunctions,dysfunctions,time,No,No,Other,Corva Detected Dysfunctions
+2976,corva#dysfunctions.auto-driller,dysfunctions.auto-driller,time,Yes,No,Other,
+2997,corva#ecm_output,ecm_output,reference,No,No,Other,
+1493,corva#fleet.metrics,fleet.metrics,reference,No,No,Other,
+157,corva#formation-evaluation.data,formation-evaluation.data,time,No,No,Formation Evaluation,
+158,corva#formation-evaluation.metadata,formation-evaluation.metadata,time,No,Yes,Formation Evaluation,
+434,corva#frac.abra.offset-monitoring,frac.abra.offset-monitoring,time,No,No,Frac Third-Party,
+438,corva#frac.nextier.dgb,frac.nextier.dgb,time,No,No,Frac Third-Party,
+505,corva#frac.slb.valvecommander,frac.slb.valvecommander,time,No,No,Frac Third-Party,Stores historical operational data for SLB's Valve Commander app.
+454,corva#frac.tallyrestream.fracstream.data,frac.tallyrestream.fracstream.data,time,No,No,Frac Third-Party,
+633,corva#frac.tallyrestream.fracstream.data.test,frac.tallyrestream.fracstream.data.test,time,No,No,Frac Third-Party,
+456,corva#frac.tallyrestream.fracstream.fields,frac.tallyrestream.fracstream.fields,reference,No,No,Frac Third-Party,
+2989,corva#fracvision-recommendations-test,fracvision-recommendations-test,time,No,No,Frac Third-Party,
+885,corva#fusion-test,fusion-test,time,No,No,Other,
+3037,corva#fv_auto_manual_stages,fv_auto_manual_stages,reference,No,No,Other,
+3163,corva#geo-prog,geo-prog,reference,No,No,Other,
+12,corva#geosteering.data.interpretation,geosteering.data.interpretation,time,No,No,Geosteering,
+421,corva#geosteering.data.interpretation.metadata,geosteering.data.interpretation.metadata,time,No,No,Geosteering,
+3362,corva#geosteering.horizons.data,geosteering.horizons.data,time,No,No,Geosteering,
+3363,corva#geosteering.segments.data,geosteering.segments.data,time,No,No,Geosteering,
+3364,corva#geosteering.segments.metadata,geosteering.segments.metadata,time,No,No,Geosteering,
+3009,corva#geosteering.typewell.data,geosteering.typewell.data,time,No,No,Geosteering,
+3010,corva#geosteering.typewell.metadata,geosteering.typewell.metadata,time,No,No,Geosteering,
+2938,corva#grids.data,grids.data,reference,No,No,Other,
+2939,corva#grids.metadata,grids.metadata,reference,No,No,Other,
+279,corva#handover-asset-metadata,handover-asset-metadata,time,No,No,Handover / Mission Control,"Used to keep track of the assets in and out of the 'cue' created by the handover-automation application. The asset metadata will store team mapping information, what's being watched, etc..."
+280,corva#handover-notes,handover-notes,time,No,No,Handover / Mission Control,"Notes and comments left by the analysts in the handover-automation application. There are four levels of notes, namely company, program, rig, asset."
+281,corva#handover-records,handover-records,time,No,No,Handover / Mission Control,"The main dataset of the handover-automation application. Houses the tabular-level records for each asset (rig) of the table. It's primarily a collection of data from various collections, brought into one single record, enriched by some buisiness logic."
+378,corva#handover-rig-metadata,handover-rig-metadata,reference,No,No,Handover / Mission Control,
+283,corva#handover-snapshot,handover-snapshot,time,No,No,Handover / Mission Control,An hourly store of the state of the handover-automation application. Used for internal analytics and tracking purposes.
+284,corva#handover-teams,handover-teams,reference,No,No,Handover / Mission Control,The team mapping used for operation-based dev center applications.
+464,corva#handover_automation_logs,handover_automation_logs,time,No,No,Handover / Mission Control,Used to store random logging/debugging.
+1322,corva#historical-import-app.metadata,historical-import-app.metadata,time,No,No,Other,
+1323,corva#historical-import.errors,historical-import.errors,time,No,No,Other,
+1637,corva#hlpwob,hlpwob,time,No,No,Other,
+1913,corva#hookload-plus-wob-so,hookload-plus-wob-so,time,No,No,Other,
+56,corva#hydraulics.cuttings-transport,hydraulics.cuttings-transport,time,No,Yes,Hydraulics,
+43,corva#hydraulics.overview,hydraulics.overview,time,No,Yes,Hydraulics,
+80,corva#hydraulics.pressure-loss,hydraulics.pressure-loss,time,No,Yes,Hydraulics,
+57,corva#hydraulics.pressure-trend,hydraulics.pressure-trend,time,No,Yes,Hydraulics,
+94,corva#hydraulics.surge-and-swab,hydraulics.surge-and-swab,time,No,Yes,Hydraulics,
+1738,corva#ids_drillpipes,ids_drillpipes,reference,No,No,Other,
+2973,corva#insights-reports,insights-reports,reference,No,No,Other,
+3302,corva#integrations.ext-int-tracking,integrations.ext-int-tracking,reference,No,No,Other,dataset to track external integration pipeline runs
+3412,corva#intervention.openwells.active-wells,intervention.openwells.active-wells,reference,No,No,Other,
+3089,corva#interventions.activities,interventions.activities,time,No,No,Interventions (Workover),
+3101,corva#interventions.activity-groups,interventions.activity-groups,time,No,No,Interventions (Workover),
+3233,corva#interventions.circulation.volumetric,interventions.circulation.volumetric,time,No,No,Interventions (Workover),
+3234,corva#interventions.data.drillstring,interventions.data.drillstring,time,No,No,Interventions (Workover),
+3235,corva#interventions.data.mud,interventions.data.mud,time,No,No,Interventions (Workover),
+3093,corva#interventions.data.npt-events,interventions.data.npt-events,reference,No,No,Interventions (Workover),
+3221,corva#interventions.data.surface-equipment,interventions.data.surface-equipment,time,No,No,Interventions (Workover),
+3236,corva#interventions.drilling-efficiency.mse,interventions.drilling-efficiency.mse,time,No,No,Interventions (Workover),
+3237,corva#interventions.drilling-efficiency.mse-heatmap,interventions.drilling-efficiency.mse-heatmap,time,No,No,Interventions (Workover),
+3238,corva#interventions.drilling-efficiency.optimization,interventions.drilling-efficiency.optimization,time,No,No,Interventions (Workover),
+3239,corva#interventions.drilling-efficiency.rop-heatmap,interventions.drilling-efficiency.rop-heatmap,time,No,No,Interventions (Workover),
+3240,corva#interventions.hydraulics.cuttings-transport,interventions.hydraulics.cuttings-transport,time,No,No,Interventions (Workover),
+3241,corva#interventions.hydraulics.overview,interventions.hydraulics.overview,time,No,No,Interventions (Workover),
+3242,corva#interventions.hydraulics.pressure-loss,interventions.hydraulics.pressure-loss,time,No,No,Interventions (Workover),
+3243,corva#interventions.hydraulics.pressure-trend,interventions.hydraulics.pressure-trend,time,No,No,Interventions (Workover),
+3244,corva#interventions.hydraulics.surge-and-swab,interventions.hydraulics.surge-and-swab,time,No,No,Interventions (Workover),
+3283,corva#interventions.metrics,interventions.metrics,time,No,No,Interventions (Workover),
+3414,corva#interventions.next-well-info,interventions.next-well-info,reference,No,No,Interventions (Workover),
+3102,corva#interventions.operations,interventions.operations,time,No,No,Interventions (Workover),
+3245,corva#interventions.pdm.operating-condition,interventions.pdm.operating-condition,time,No,No,Interventions (Workover),
+3246,corva#interventions.pdm.overview,interventions.pdm.overview,time,No,No,Interventions (Workover),
+3424,corva#interventions.surface-equipment-templates,interventions.surface-equipment-templates,reference,No,No,Interventions (Workover),
+3090,corva#interventions.timelog-reference.data,interventions.timelog-reference.data,reference,No,No,Interventions (Workover),
+3091,corva#interventions.timelog.data,interventions.timelog.data,reference,No,No,Interventions (Workover),
+3057,corva#interventions.timelog.data.summary,interventions.timelog.data.summary,time,No,No,Interventions (Workover),
+3247,corva#interventions.torque-and-drag.axial-load,interventions.torque-and-drag.axial-load,time,No,No,Interventions (Workover),
+3248,corva#interventions.torque-and-drag.downhole-transfer,interventions.torque-and-drag.downhole-transfer,time,No,No,Interventions (Workover),
+3249,corva#interventions.torque-and-drag.friction-factor,interventions.torque-and-drag.friction-factor,time,No,No,Interventions (Workover),
+3250,corva#interventions.torque-and-drag.hookload-trend,interventions.torque-and-drag.hookload-trend,time,No,No,Interventions (Workover),
+3251,corva#interventions.torque-and-drag.hookload-trend.actual,interventions.torque-and-drag.hookload-trend.actual,time,No,No,Interventions (Workover),
+3252,corva#interventions.torque-and-drag.overview,interventions.torque-and-drag.overview,time,No,No,Interventions (Workover),
+3253,corva#interventions.torque-and-drag.predictions,interventions.torque-and-drag.predictions,time,No,No,Interventions (Workover),
+3254,corva#interventions.torque-and-drag.stress,interventions.torque-and-drag.stress,time,No,No,Interventions (Workover),
+3255,corva#interventions.torque-and-drag.torque,interventions.torque-and-drag.torque,time,No,No,Interventions (Workover),
+3256,corva#interventions.torque-and-drag.torque-trend,interventions.torque-and-drag.torque-trend,time,No,No,Interventions (Workover),
+3257,corva#interventions.torque-and-drag.torque-trend.actual,interventions.torque-and-drag.torque-trend.actual,time,No,No,Interventions (Workover),
+3082,corva#interventions.well-plan.data,interventions.well-plan.data,reference,No,No,Interventions (Workover),
+3083,corva#interventions.well_search_results,interventions.well_search_results,reference,No,No,Interventions (Workover),
+3058,corva#interventions.wits,interventions.wits,time,No,No,WITS (Other Phases),
+3059,corva#interventions.wits.comments,interventions.wits.comments,time,No,No,WITS (Other Phases),
+3060,corva#interventions.wits.metadata,interventions.wits.metadata,time,No,No,WITS (Other Phases),
+3061,corva#interventions.wits.summary-1ft,interventions.wits.summary-1ft,time,No,No,WITS (Other Phases),
+3062,corva#interventions.wits.summary-1ft.metadata,interventions.wits.summary-1ft.metadata,time,No,No,WITS (Other Phases),
+3063,corva#interventions.wits.summary-1m,interventions.wits.summary-1m,time,No,No,WITS (Other Phases),
+3064,corva#interventions.wits.summary-1m.metadata,interventions.wits.summary-1m.metadata,time,No,No,WITS (Other Phases),
+3065,corva#interventions.wits.summary-30m,interventions.wits.summary-30m,time,No,No,WITS (Other Phases),
+3066,corva#interventions.wits.summary-30m.metadata,interventions.wits.summary-30m.metadata,time,No,No,WITS (Other Phases),
+3067,corva#interventions.wits.summary-6h,interventions.wits.summary-6h,time,No,No,WITS (Other Phases),
+3068,corva#interventions.wits.summary-6h.metadata,interventions.wits.summary-6h.metadata,time,No,No,WITS (Other Phases),
+162,corva#kick-detection,kick-detection,time,No,Yes,Other,
+1774,corva#launchpad_asset_depth_traces,launchpad_asset_depth_traces,reference,No,No,Launchpad / Connectivity,
+1928,corva#launchpad_autoconnect_configs,launchpad_autoconnect_configs,reference,No,No,Launchpad / Connectivity,
+1775,corva#launchpad_credentials_health_tracking,launchpad_credentials_health_tracking,reference,No,No,Launchpad / Connectivity,
+1922,corva#launchpad_external_notifications,launchpad_external_notifications,reference,No,No,Launchpad / Connectivity,
+1891,corva#launchpad_notifications,launchpad_notifications,reference,No,No,Launchpad / Connectivity,
+1743,corva#launchpad_tasks,launchpad_tasks,reference,No,No,Launchpad / Connectivity,
+1741,corva#launchpad_witsml_recommendations,launchpad_witsml_recommendations,reference,No,Yes,Launchpad / Connectivity,
+1744,corva#launchpad_witsml_wellbores,launchpad_witsml_wellbores,reference,No,No,Launchpad / Connectivity,
+1810,corva#launchpad_witsml_wellbores_cache,launchpad_witsml_wellbores_cache,reference,No,No,Launchpad / Connectivity,
+151,corva#machine-learning.rop,machine-learning.rop,time,No,Yes,Predictive Drilling / ML,
+1796,corva#mcd.predictive_drilling_check_results,mcd.predictive_drilling_check_results,reference,No,No,Other,
+95,corva#metrics,metrics,time,No,Yes,Metrics / KPIs,
+3268,corva#metrics-improvements,metrics-improvements,reference,No,No,Metrics / KPIs,Records of manual improvements into metrics KPI performance
+3199,corva#metrics-interventions,metrics-interventions,reference,No,No,Metrics / KPIs,Records of manual interventions into metrics KPI performance
+3022,corva#metrics.definitions,metrics.definitions,reference,No,No,Metrics / KPIs,Custom metrics definitions
+1916,corva#metrics.edit,metrics.edit,time,No,No,Metrics / KPIs,
+804,corva#metrics.global,metrics.global,reference,No,No,Metrics / KPIs,
+9,corva#metrics.rop-1d,metrics.rop-1d,time,No,No,Metrics / KPIs,
+8,corva#metrics.rop-1h,metrics.rop-1h,time,No,No,Metrics / KPIs,
+243,corva#mgb-fuel,mgb-fuel,time,No,No,Other,MGB Fuel & Emission Data
+1734,corva#microdls_be,microdls_be,time,No,No,Other,
+1578,corva#milling-console-real-time,milling-console-real-time,time,No,Yes,Other,
+1576,corva#milling-console-sections,milling-console-sections,time,No,No,Other,"Once a casing shoe has been milled out, a retrospective record is created showing an aggregation of the data received within this interval of time"
+1440,corva#ml-data-export-queue,ml-data-export-queue,reference,No,No,Other,
+1812,corva#mock-idas-drm-payload,mock-idas-drm-payload,reference,No,No,Other,Stores mock payload responses from the Exxon API
+1548,corva#motor-yield-comparison,motor-yield-comparison,reference,No,No,Other,
+1,corva#mse.offsets,mse.offsets,time,No,No,Other,
+1545,corva#mud.inventory.codes,mud.inventory.codes,reference,No,No,Other,
+1612,corva#mud.inventory.default_codes,mud.inventory.default_codes,reference,No,No,Other,
+1031,corva#mycelx.realtime,mycelx.realtime,time,No,No,Other,
+2998,corva#nabors_dailyservice_ext,nabors_dailyservice_ext,reference,No,No,Nabors Integration,
+3278,corva#nabors_ei_logs,nabors_ei_logs,reference,No,No,Nabors Integration,
+3259,corva#nabors_nav_active_well_config,nabors_nav_active_well_config,reference,No,No,Nabors Integration,
+3260,corva#nabors_nav_calculation_option,nabors_nav_calculation_option,reference,No,No,Nabors Integration,
+3261,corva#nabors_nav_drilldown_parameter,nabors_nav_drilldown_parameter,time,No,No,Nabors Integration,
+3262,corva#nabors_nav_mo_settings,nabors_nav_mo_settings,reference,No,No,Nabors Integration,
+3376,corva#nabors_nav_target_slide_rop,nabors_nav_target_slide_rop,reference,No,No,Nabors Integration,
+3000,corva#nabors_operation_ext,nabors_operation_ext,reference,No,No,Nabors Integration,
+3001,corva#nabors_report_ext,nabors_report_ext,reference,No,No,Nabors Integration,
+3314,corva#nabors_smartplan_actuals,nabors_smartplan_actuals,time,No,No,Nabors Integration,
+3002,corva#nabors_time_ext,nabors_time_ext,reference,No,No,Nabors Integration,
+3003,corva#nabors_tour_ext,nabors_tour_ext,reference,No,No,Nabors Integration,
+3004,corva#nabors_toursheetdata_ext,nabors_toursheetdata_ext,reference,No,No,Nabors Integration,
+3005,corva#nabors_well_by_id,nabors_well_by_id,reference,No,No,Nabors Integration,
+3006,corva#nabors_work_ext,nabors_work_ext,reference,No,No,Nabors Integration,
+3075,corva#offset-drilling-troubles,offset-drilling-troubles,reference,No,No,Other,
+98,corva#operations,operations,time,No,Yes,Activities / Operations,"Description of rig operations in 20 sec intervals. Data: shift, well section, hole size, operation (tripping out/in, Slip To*, Weight to Weight, etc.)"
+50,corva#operations.summary-1m,operations.summary-1m,time,No,No,Activities / Operations,
+51,corva#operations.summary-1w,operations.summary-1w,time,No,No,Activities / Operations,
+52,corva#operations.summary-2tours,operations.summary-2tours,time,No,No,Activities / Operations,
+49,corva#operations.summary-3m,operations.summary-3m,time,No,No,Activities / Operations,
+53,corva#operations.summary-continuous,operations.summary-continuous,time,No,No,Activities / Operations,
+1411,corva#ops_documents,ops_documents,time,No,No,Other,
+1624,corva#pad.metrics,pad.metrics,reference,No,No,Other,
+460,corva#pad_schedule,pad_schedule,time,No,No,Other,
+1707,corva#pae-custom-traces,pae-custom-traces,time,Yes,No,Other,
+59,corva#pdm.operating-condition,pdm.operating-condition,time,No,Yes,PDM / Motor,
+55,corva#pdm.overview,pdm.overview,time,No,Yes,PDM / Motor,
+58,corva#pdm.stall-detection,pdm.stall-detection,time,No,Yes,PDM / Motor,
+291,corva#peloton-integration,peloton-integration,time,No,No,Other,Used to store the data capture and any relevant application state from the peloton application
+293,corva#peloton-tokens,peloton-tokens,reference,No,No,Other,used to store refresh token for authenticating peloton integration.
+2935,corva#planilla-test-dataset,planilla-test-dataset,time,No,No,Other,
+1797,corva#predictive-alerts.stuck-pipe,predictive-alerts.stuck-pipe,time,Yes,No,Alerts,
+3263,corva#predictive-alerts.stuck-pipe-config,predictive-alerts.stuck-pipe-config,time,No,No,Alerts,
+3317,corva#predictive-alerts.stuck-pipe-groups,predictive-alerts.stuck-pipe-groups,reference,No,No,Alerts,
+2947,corva#predictive-alerts.stuck-pipe-v1,predictive-alerts.stuck-pipe-v1,time,Yes,No,Alerts,Collection for stuck pipe bench model 1
+2948,corva#predictive-alerts.stuck-pipe-v2,predictive-alerts.stuck-pipe-v2,time,Yes,No,Alerts,Collection for stuck pipe bench model 2
+1361,corva#predictive-drilling.aggregation,predictive-drilling.aggregation,time,No,No,Predictive Drilling / ML,
+91,corva#procedural-compliance,procedural-compliance,time,No,Yes,Other,
+1587,corva#procedural-compliance-comstock,procedural-compliance-comstock,time,No,No,Other,
+1246,corva#production.casing,production.casing,reference,No,No,Production (Enverus),Enverus casing data
+1331,corva#production.clusters,production.clusters,reference,No,No,Production (Enverus),Enverus data
+1250,corva#production.completion.headers,production.completion.headers,reference,No,No,Production (Enverus),Enverus Completion Headers Data Objects
+1077,corva#production.cumulative,production.cumulative,reference,No,No,Production (Enverus),Enverus data storage
+1407,corva#production.cumulative.metadata,production.cumulative.metadata,reference,No,No,Production (Enverus),asset_id grouping for production.cumulative
+1332,corva#production.fleet.history,production.fleet.history,reference,No,No,Production (Enverus),Enverus data
+1254,corva#production.formations,production.formations,reference,No,No,Production (Enverus),Enverus Formation Top Data Objects
+1335,corva#production.frac.design,production.frac.design,reference,No,No,Production (Enverus),Enverus data
+1251,corva#production.headers,production.headers,reference,No,No,Production (Enverus),Enverus Producing Entity Header data
+1255,corva#production.injections,production.injections,reference,No,No,Production (Enverus),Enverus details for a Injection Data
+1162,corva#production.monthly,production.monthly,reference,No,No,Production (Enverus),Enverus monthly dataset
+1334,corva#production.oil.analysis,production.oil.analysis,reference,No,No,Production (Enverus),Enverus data
+1281,corva#production.permits,production.permits,reference,No,No,Production (Enverus),Envrus list of Permit Data Objects
+1336,corva#production.revenue,production.revenue,reference,No,No,Production (Enverus),Enverus Data
+1308,corva#production.rig.history,production.rig.history,reference,No,No,Production (Enverus),Enverus list of Rigs through time Objects
+1304,corva#production.shows,production.shows,reference,No,No,Production (Enverus),Enverus list of Show Data Objects
+1307,corva#production.spacing,production.spacing,reference,No,No,Production (Enverus),Enverus list of Full Spacings Data Objects
+1329,corva#production.stages,production.stages,reference,No,No,Production (Enverus),Enverus data
+1716,corva#production.summary,production.summary,time,No,No,Production (Enverus),
+1709,corva#production.summary.welldatabase,production.summary.welldatabase,time,No,No,Production (Enverus),
+1305,corva#production.tubing,production.tubing,reference,No,No,Production (Enverus),Enverus list of Tubing Data Objects
+1280,corva#production.units,production.units,reference,No,No,Production (Enverus),Enverus Landtrac Units data
+1333,corva#production.water.analysis,production.water.analysis,reference,No,No,Production (Enverus),Enverus data
+1306,corva#production.well.header,production.well.header,reference,No,No,Production (Enverus),Enverus list of Well Headers Data Objects
+851,corva#production.wits,production.wits,time,No,Yes,Production (Enverus),Wits data from external APIs
+1284,corva#production.xref,production.xref,reference,No,No,Production (Enverus),Enverus Producing Entity Xref data
+419,corva#pumpdown.activity.summary-stage,pumpdown.activity.summary-stage,time,No,No,Pumpdown,Contains a summarized times for all activities on each individual pumpdown stage.
+1485,corva#pumpdown.predictions,pumpdown.predictions,time,No,No,Pumpdown,
+418,corva#pumpdown.wits,pumpdown.wits,time,Yes,Yes,WITS (Other Phases),Historical and streaming 1 second wits data after passing through data quality checks and true vertical depth functions.
+420,corva#pumpdown.wits.summary-10s,pumpdown.wits.summary-10s,time,Yes,No,WITS (Other Phases),Historical and streaming 1 second wits data summariezed for every 10 seconds after passing through data quality checks and true vertical depth functions.
+1659,corva#pumpdown.wits.summary-1m,pumpdown.wits.summary-1m,time,No,No,WITS (Other Phases),
+1660,corva#pumpdown.wits.summary-30s,pumpdown.wits.summary-30s,time,No,No,WITS (Other Phases),
+1444,corva#python-alerts,python-alerts,reference,No,No,Alerts,
+3054,corva#python-alerts-response,python-alerts-response,time,No,No,Alerts,
+1562,corva#python-alerts-results,python-alerts-results,time,No,No,Alerts,This collection stores the results of python alerts contexts that were triggered
+812,corva#restricted-operations,restricted-operations,time,No,No,Other,Restricted Operations records
+3190,corva#rigcast,rigcast,time,No,No,Other,Dataset for storing real time video streaming
+205,corva#rotary-automation,rotary-automation,time,Yes,No,Predictive Drilling / ML,
+2958,corva#rotary-automation.company-settings,rotary-automation.company-settings,reference,No,No,Predictive Drilling / ML,
+2959,corva#rotary-automation.limits,rotary-automation.limits,time,No,No,Predictive Drilling / ML,
+3179,corva#rotary-automation.limits-changelog,rotary-automation.limits-changelog,time,No,No,Predictive Drilling / ML,Limit changelogs for the Predictive Drilling application
+1320,corva#rotary-automation.settings.log,rotary-automation.settings.log,time,No,No,Predictive Drilling / ML,
+946,corva#rss-analytics.downlinks,rss-analytics.downlinks,time,No,No,Other,Collection to hold downlinks detected when running RSS.
+2985,corva#rss-steer-mode-changes.depth,rss-steer-mode-changes.depth,time,No,No,Other,Stores changes about RSS steer modes
+1527,corva#run_plan_output,run_plan_output,time,No,No,Other,Used as an output store for the Run Plan Generator task app
+589,corva#simops.configurations,simops.configurations,time,No,No,Other,
+3232,corva#smart-analytics,smart-analytics,time,No,No,Other,smart plan analytics
+3018,corva#smart-stage-notifications,smart-stage-notifications,reference,No,No,Other,
+1920,corva#smart-stream-notifications,smart-stream-notifications,time,No,No,Other,"Notifications on channel anomalies, adds, drops, etc...detected via the Smart Stream application."
+204,corva#stand_length,stand_length,time,No,No,Other,
+1241,corva#stream-quality-custom-settings,stream-quality-custom-settings,reference,No,No,Stream Quality,
+1242,corva#stream-quality-defaults,stream-quality-defaults,reference,No,No,Stream Quality,
+1501,corva#stream-quality-delays.time-series,stream-quality-delays.time-series,timeseries,No,No,Stream Quality,Stores delay values for rule 7 of Stream Quality app
+1243,corva#stream-quality-results,stream-quality-results,reference,No,No,Stream Quality,
+1419,corva#stream-quality-scores,stream-quality-scores,time,No,No,Stream Quality,Latest Stream Quality score for the well
+1420,corva#stream-quality-scores-history,stream-quality-scores-history,time,No,No,Stream Quality,Stream Quality score history for the well
+1244,corva#stream-quality-settings-history,stream-quality-settings-history,reference,No,No,Stream Quality,
+518,corva#streambox-fleet-mapping,streambox-fleet-mapping,reference,No,No,Other,Used to store relationships between streambox object and fleet object
+517,corva#streamboxes,streamboxes,reference,No,No,Other,Used to track available streamboxes for the activity tracker application
+3129,corva#survey_manager.settings,survey_manager.settings,time,No,No,Other,Used to store settings and configurations for the survey management system
+719,corva#sustainability.metrics.comparison,sustainability.metrics.comparison,time,No,No,Sustainability / ESG,
+1598,corva#sustainability.metrics.components,sustainability.metrics.components,time,No,No,Sustainability / ESG,
+1597,corva#sustainability.metrics.mapping,sustainability.metrics.mapping,time,No,No,Sustainability / ESG,
+605,corva#sustainability.processed,sustainability.processed,time,No,No,Sustainability / ESG,
+626,corva#sustainability.real-time.data,sustainability.real-time.data,time,No,No,Sustainability / ESG,This dataset includes real-time sustainability data.
+1029,corva#sustainability.water_quality_lab_data,sustainability.water_quality_lab_data,reference,No,No,Sustainability / ESG,
+1035,corva#sustainability.water_quality_real_time_data,sustainability.water_quality_real_time_data,time,No,No,Sustainability / ESG,Real time Data from StreamX app that is pulling data from Azure SQL DB using ODBC connection and whitelisted IP
+1258,corva#sustainability.water_quality_real_time_rates,sustainability.water_quality_real_time_rates,time,No,No,Sustainability / ESG,stores hourly flow rate and chemical dosage kpis calculated from streamx_db.aris
+1090,corva#sustainability.water_quality_real_time_summary_1h,sustainability.water_quality_real_time_summary_1h,time,No,No,Sustainability / ESG,1 hour data aggregations of sustainability.water_quality_real_time_data
+1091,corva#sustainability.water_quality_real_time_summary_24h,sustainability.water_quality_real_time_summary_24h,time,No,No,Sustainability / ESG,24 hour data aggregations of sustainability.water_quality_real_time_data
+25,corva#tasks.survey-minimum-curvature,tasks.survey-minimum-curvature,time,No,No,Other,
+24,corva#tasks.survey-parser,tasks.survey-parser,time,No,No,Other,
+165,corva#temporary-state,temporary-state,time,No,No,Other,
+2950,corva#test.fleet.metrics.temp,test.fleet.metrics.temp,reference,No,No,Other,
+1627,corva#test_dataset,test_dataset,time,No,No,Other,
+3322,corva#testseven,testseven,time,No,No,Other,
+3118,corva#time-cost-variance.log,time-cost-variance.log,time,No,No,Other,
+186,corva#timelog.activity-codes,timelog.activity-codes,time,No,No,Time Log,
+876,corva#timelog.custom.metrics,timelog.custom.metrics,time,No,No,Time Log,
+185,corva#timelog.data,timelog.data,time,No,No,Time Log,
+268,corva#timelog.data.summary,timelog.data.summary,time,No,No,Time Log,Collection to hold the summary of timelog data
+29,corva#torque-and-drag.axial-load,torque-and-drag.axial-load,time,No,Yes,Torque & Drag,
+152,corva#torque-and-drag.downhole-transfer,torque-and-drag.downhole-transfer,time,No,Yes,Torque & Drag,
+31,corva#torque-and-drag.friction-factor,torque-and-drag.friction-factor,time,No,Yes,Torque & Drag,
+65,corva#torque-and-drag.friction-factor-overrides,torque-and-drag.friction-factor-overrides,time,No,No,Torque & Drag,
+30,corva#torque-and-drag.hookload-trend,torque-and-drag.hookload-trend,time,No,Yes,Torque & Drag,
+174,corva#torque-and-drag.hookload-trend.actual,torque-and-drag.hookload-trend.actual,time,No,No,Torque & Drag,
+75,corva#torque-and-drag.hookload-trend.imports,torque-and-drag.hookload-trend.imports,time,No,No,Torque & Drag,
+28,corva#torque-and-drag.overview,torque-and-drag.overview,time,No,Yes,Torque & Drag,
+68,corva#torque-and-drag.predictions,torque-and-drag.predictions,time,No,No,Torque & Drag,
+26,corva#torque-and-drag.stress,torque-and-drag.stress,time,No,Yes,Torque & Drag,
+27,corva#torque-and-drag.torque,torque-and-drag.torque,time,No,Yes,Torque & Drag,
+67,corva#torque-and-drag.torque-trend,torque-and-drag.torque-trend,time,No,Yes,Torque & Drag,
+175,corva#torque-and-drag.torque-trend.actual,torque-and-drag.torque-trend.actual,time,No,No,Torque & Drag,
+907,corva#torque-and-drag.torque-trend.imports,torque-and-drag.torque-trend.imports,time,No,No,Torque & Drag,
+90,corva#traces.offsets,traces.offsets,time,No,Yes,Other,
+100,corva#trend-analysis,trend-analysis,time,No,Yes,Other,
+163,corva#trip-sheet,trip-sheet,time,No,Yes,Other,
+1500,corva#ttdp.configs,ttdp.configs,time,No,No,Other,
+3293,corva#vibration_monitoring,vibration_monitoring,time,No,No,Other,
+750,corva#warning_indicator_settings,warning_indicator_settings,time,No,No,Other,Store app settings
+1625,corva#washout_detection_history,washout_detection_history,time,No,No,Other,
+734,corva#wcu-coord-metadata,wcu-coord-metadata,reference,No,No,Wellness / Check-Up,
+1678,corva#wcu-csv-rerun-updates,wcu-csv-rerun-updates,reference,No,No,Wellness / Check-Up,
+901,corva#wcu-custom-rule-settings,wcu-custom-rule-settings,reference,No,No,Wellness / Check-Up,
+742,corva#wcu-eow-asset-metadata,wcu-eow-asset-metadata,reference,No,No,Wellness / Check-Up,Asset Notes and other metadata for WCU EOW view
+802,corva#wcu-eow-reports,wcu-eow-reports,time,No,No,Wellness / Check-Up,
+738,corva#wcu-manual-alert-metadata,wcu-manual-alert-metadata,reference,No,No,Wellness / Check-Up,Collection holding information create by wellness helper task app. This information is read when wellness scheduled app runs the manual alert rule.
+787,corva#wcu-rule-check-time,wcu-rule-check-time,time,No,No,Wellness / Check-Up,
+1097,corva#wcu-rule-notes,wcu-rule-notes,reference,No,No,Wellness / Check-Up,
+844,corva#wcu_rule_mapping,wcu_rule_mapping,reference,No,No,Wellness / Check-Up,
+1494,corva#wdc.apps.settings,wdc.apps.settings,time,No,No,Other,
+3306,corva#weather.time-series,weather.time-series,timeseries,No,No,Other,Wells weather data
+525,corva#well-design.composite-design.meta,well-design.composite-design.meta,time,No,No,Well Design,Store composite design configuration information per asset
+110,corva#well-design.optimization,well-design.optimization,time,No,No,Well Design,
+269,corva#well-design.optimization.timelog,well-design.optimization.timelog,time,No,No,Well Design,Collection to store the composite and average well phase data
+325,corva#well-design.well-objective,well-design.well-objective,time,No,No,Well Design,Collection to store well objectives (aggregated metrics)
+326,corva#well-design.well-objective.meta,well-design.well-objective.meta,time,No,No,Well Design,Collection to store well objective metadata (info used to generate aggregated metrics)
+1540,corva#well-intervention,well-intervention,time,No,No,Other,
+287,corva#well_cache,well_cache,time,No,Yes,Other,
+368,corva#well_check_up_wireline,well_check_up_wireline,time,No,No,Other,Used to store wireline based data quality alerts from the well checkup application
+369,corva#well_checkup_wireline,well_checkup_wireline,time,No,No,Other,Well Check Up rule alerts for wireline
+422,corva#wellness_alerts,wellness_alerts,time,No,No,Wellness / Check-Up,Dataset for corva wellness application alerts
+676,corva#wellness_checks_results,wellness_checks_results,time,No,No,Wellness / Check-Up,Collection for assisting WCU+ with external lambdas
+522,corva#wellness_rule_settings,wellness_rule_settings,reference,No,No,Wellness / Check-Up,This collection contains the settings for all of the rules associated with WELLness app.
+1297,corva#wellness_rule_settings_history,wellness_rule_settings_history,reference,No,Yes,Wellness / Check-Up,History of changes for wellness_rule_settings records
+473,corva#wellness_scores,wellness_scores,time,No,No,Wellness / Check-Up,Used for scoring metrics of the wellness application
+958,corva#wellness_scores_history,wellness_scores_history,reference,No,No,Wellness / Check-Up,
+455,corva#wellness_tasks,wellness_tasks,time,No,No,Wellness / Check-Up,used with task helper to pass messages to the wellness app.
+83,corva#wireline.activity.summary-stage,wireline.activity.summary-stage,time,No,Yes,Wireline,Contains a summarized times for all activities on each individual wireline stage.
+155,corva#wireline.predictions,wireline.predictions,time,No,No,Wireline,
+102,corva#wireline.stage-times,wireline.stage-times,time,No,Yes,Wireline,Wireline stage start and end times and stage duration
+77,corva#wireline.wits,wireline.wits,time,Yes,Yes,WITS (Other Phases),Historical and streaming 1 second wits data after passing through data quality checks and true vertical depth functions.
+101,corva#wireline.wits.raw,wireline.wits.raw,time,No,No,WITS (Other Phases),
+140,corva#wireline.wits.summary-10s,wireline.wits.summary-10s,time,Yes,Yes,WITS (Other Phases),
+1718,corva#wireline.wits.summary-1m,wireline.wits.summary-1m,time,No,No,WITS (Other Phases),
+1661,corva#wireline.wits.summary-30s,wireline.wits.summary-30s,time,No,No,WITS (Other Phases),
+149,corva#wits,wits,time,No,Yes,WITS / Real-Time Drilling,Historical and streaming wits data after passing through data quality checks and true vertical depth functions
+69,corva#wits.comments,wits.comments,time,No,No,WITS / Real-Time Drilling,
+3294,corva#wits.etl-latency,wits.etl-latency,time,No,No,WITS / Real-Time Drilling,
+1766,corva#wits.metadata,wits.metadata,time,No,No,WITS / Real-Time Drilling,This dataset stores the WITSML channels directly from the WITSML store. This includes the mnemonic that is received from the WITSML store and the mapping name that Corvas stores it as.
+2942,corva#wits.secondary,wits.secondary,time,Yes,No,WITS / Real-Time Drilling,WITS Secondary Channels
+3173,corva#wits.summary-10s,wits.summary-10s,timeseries,No,No,WITS / Real-Time Drilling,
+1819,corva#wits.summary-15ft,wits.summary-15ft,time,No,No,WITS / Real-Time Drilling,"This dataset stores aggregated drilling data at 15-foot depth intervals, derived from the wits.summary-1ft dataset. It consolidates multiple 1-foot depth records by calculating averages and relevant metrics, reducing data granularity while preserving key drilling insights"
+82,corva#wits.summary-1ft,wits.summary-1ft,time,No,Yes,WITS / Real-Time Drilling,1 ft summary of corrected wits data
+875,corva#wits.summary-1ft.metadata,wits.summary-1ft.metadata,time,No,No,WITS / Real-Time Drilling,
+2,corva#wits.summary-1m,wits.summary-1m,time,No,Yes,WITS / Real-Time Drilling,1 minute Summary of corrected wits data (median values)
+1213,corva#wits.summary-1m.metadata,wits.summary-1m.metadata,time,No,No,WITS / Real-Time Drilling,
+60,corva#wits.summary-30m,wits.summary-30m,time,No,Yes,WITS / Real-Time Drilling,30 minute summary of corrected wits data (median values)
+1214,corva#wits.summary-30m.metadata,wits.summary-30m.metadata,time,No,No,WITS / Real-Time Drilling,
+7,corva#wits.summary-30s,wits.summary-30s,time,No,No,WITS / Real-Time Drilling,
+45,corva#wits.summary-6h,wits.summary-6h,time,No,Yes,WITS / Real-Time Drilling,6 hour Summary of corrected wits data (median values)
+1215,corva#wits.summary-6h.metadata,wits.summary-6h.metadata,time,No,No,WITS / Real-Time Drilling,
+1762,corva#witsml-log.metadata,witsml-log.metadata,time,No,No,WITS / Real-Time Drilling,
+1803,corva#witsml_tubular,witsml_tubular,time,No,No,WITS / Real-Time Drilling,
+1259,corva#ypf-alert-history,ypf-alert-history,reference,No,No,Other,
+3120,corva#ypf-pressure-channels-test,ypf-pressure-channels-test,time,No,No,Other,
+3119,corva#ypf_pressure_channels_test,ypf_pressure_channels_test,time,No,No,Other,

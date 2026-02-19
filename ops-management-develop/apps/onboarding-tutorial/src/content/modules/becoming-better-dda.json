@@ -1,0 +1,128 @@
+{
+  "moduleSlug": "becoming-better-dda",
+  "title": "Becoming a Better DDA",
+  "blocks": [
+    {
+      "type": "text",
+      "heading": "Advanced Apps",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "body": "The Metrics app allows users to track and visualize multiple fleetwide drilling KPIs over time from one optimized screen, including foot/day, cost/ft, slips-to-slips, and other metrics. Users can filter by Rig Release Date, Program, Basin, County, Target Formation, Rig, String Design, Conventional or Rotary Steerable Systems, and Directional Company. This app uses large data sets to help customers compare performance between rig contractors in the fleet, compare performance in a particular hole size or well section, and identify performance improvement over time. The app can also be used to easily identify bad data in an asset by identifying outliers in the data set (i.e if On-Bottom ROP shows 1200 ft/hr, but the average or the dataset is 180 ft/hr)."
+    },
+    {
+      "type": "text",
+      "heading": "Metrics App",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "body": "The BHA Optimization app is used to analyze offset wells for best-in-class BHA parameters, visualize parameters with a box and whisker plot, and compare a wide range of BHA key performance indicators. The BHA Optimization app allows users to perform offset analysis of BHAs for a given basin, target formation, hole section, hole size, and inclination range. Users can also filter to BHAs within a given radius of an offset well to analyze the best BHAs within a given region. Once the BHAs of interest have been identified, users can compare parameters that were used for that BHA using the box and whisker plot that shows the distribution of the drilling parameters for that specific BHA."
+    },
+    {
+      "type": "text",
+      "heading": "BHA Optimization App",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "A historical well in Corva is considered to be a well that was not utilizing Corva at the time it was drilled. If a customer wants any given well uploaded into the Corva database, certain well information is required for the asset to be created. Well information includes but is not limited to the following:",
+      "body": "Wellbore Diagram / Drilling Program"
+    },
+    {
+      "type": "text",
+      "heading": "Historical Wells in Corva",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "NOV, Pason, and Canrig are the most common EDR providers that Corva customers use at their rig site. For any given historical well the drilling data will be held in the EDR provider’s database. Once access is granted by the customer, the data can be downloaded from the server in the form of a CSV file.",
+      "body": "After logging into the EDR providers site (Pason is used in this example) navigate to the designated well to be added to the Corva database."
+    },
+    {
+      "type": "text",
+      "heading": "Downloading Historical CSV Data File",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Once found, select the desired well to get to the well page.",
+      "body": "Select the Drilling Rig Data tab on the left menu bar on the page."
+    },
+    {
+      "type": "text",
+      "heading": "Downloading CSV File from Pason",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "To retrieve the CSV file from NOV, log into the NOV Real Time Viewer. Once logged in, click Open in the top right corner, and navigate to the rig and well on the viewer. At the top right of the viewer window click Export.",
+      "body": "This will open the EDR Report window. Select ASCII from the choices shown."
+    },
+    {
+      "type": "text",
+      "heading": "Downloading CSV File from NOV",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "To retrieve the CSV file from NOV, log into RigCloud for the specific customer. Once logged in navigate to the desired well.",
+      "body": "After choosing the well click the menu in the top left of the window, scroll down, and click on Data Export v2. This will bring up the data export window."
+    },
+    {
+      "type": "text",
+      "heading": "Downloading CSV File from Canrig",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "PDS WITSML viewer allows us to view the data stream that Corva Connects to from the EDR providers WITSML store. Before connecting a data stream we should reference the PDS WITSML viewer to confirm the trace labels and units for each trace that will drive the data in Corva.",
+      "body": "First Click the  icon. This will open the PDS WITSML browser."
+    },
+    {
+      "type": "text",
+      "heading": "PDS WITSML Viewer",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Third Party Systems",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Statuspage is the platform that Corva uses to communicate any problems or outages to all of the users accessing the platform. In the event that Corva experiences any service interruption a status page should be created to communicate any service interruption to all Corva users. Banners shall be put up within the 15 mins of confirming an outage.",
+      "body": "To create a Statuspage notification visit the site [https://www.statuspage.io/](https://www.statuspage.io/), log into the account, and click Create Incident on the homepage."
+    },
+    {
+      "type": "text",
+      "heading": "Statuspage",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "[Sendwithus](https://app.sendwithus.com/login) is the platform that Corva uses to deliver scheduled reports to all of our users. When users create a scheduled report from one of their dashboards, an automated email will be sent at the frequency they specify. If a customer ever has any issues with their scheduled report, details can be found under Email Logs.",
+      "body": "On the Email Logs page, the search bar can be used to search for users and view the details of emails sent to them."
+    },
+    {
+      "type": "text",
+      "heading": "Sendwithus",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Google Looker and PowerBI",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "body": "Google Looker and PowerBI are used to track Operations metrics."
+    }
+  ],
+  "sourceSheetId": "1Wz1sn7UqXk-tXsiJqXkgptJsi4GScSBdD_pGpW0gOrI",
+  "sourceTabName": "",
+  "sourceUpdatedAt": "2025-12-24T21:05:40.869Z",
+  "lastGeneratedAt": "2025-12-24T21:05:40.871Z",
+  "versionHash": "73e8008497fc2efa"
+}

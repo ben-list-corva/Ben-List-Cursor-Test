@@ -1,0 +1,16 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  release-please:
+    name: Release Please
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Release
+        uses: corva-ai/gh-actions/common/release-please@develop
+        with:
+          op-service-account-token: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN_RO }}

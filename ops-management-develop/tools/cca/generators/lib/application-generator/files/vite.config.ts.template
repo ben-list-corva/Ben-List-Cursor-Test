@@ -1,0 +1,6 @@
+import { createViteConfig } from '@corva/vite-config';
+
+export default createViteConfig({
+  name: '<%= name %>',
+  pwd: __dirname
+})

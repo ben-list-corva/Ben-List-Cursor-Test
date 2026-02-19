@@ -1,0 +1,21 @@
+.list {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.listItem {
+  color: rgba(255, 255, 255, 0.87);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.listItem::marker {
+  color: #00bcd4;
+}
+
+.listItem strong {
+  color: #e0e0e0;
+  font-weight: 600;
+}

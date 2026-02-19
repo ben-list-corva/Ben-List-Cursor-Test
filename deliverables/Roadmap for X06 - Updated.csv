@@ -1,0 +1,23 @@
+formation_name,source_asset_id,md_start,md_end,formation_md_top,formation_tvd_top,rop_limit_p95_x1p3,diff_press_limit_p95_x1p3,wob_p95_floor,rotary_rpm_median_rounded5
+Midway Shale,South Kardell A 3HB,2851,3497,2571.57,2569,580,1070,39,60
+Arkadelphia,South Kardell A 3HB,3498,3816,3497.91,3493,580,1450,46,50
+Pecan Gap Chalk,South Kardell A 3HB,3817,4086,3816.12,3810,470,1020,46,50
+Base Ozan,South Kardell A 3HB,4087,4539,4086.15,4079,310,810,20,50
+Austin Chalk,South Kardell A 3HB,4540,5028,4539.87,4531,460,1030,45,50
+Fredricksburg Limestone,South Kardell A 3HB,5029,5399,5028.73,5018,390,1320,55,60
+Paluxy,South Kardell A 3HB,5400,5685,5399.1,5387,390,1330,55,60
+Glen Rose,South Kardell A 3HB,5686,6402,5685.49,5673,280,1070,60,60
+Lower Glen Rose,South Kardell A 3HB,6403,7018,6402.5,6390,280,1350,60,50
+Ferry Lake Anhydrite,South Kardell A 3HB,7019,7188,7018.5,7006,250,1300,60,50
+Rodessa,South Kardell A 3HB,7189,7676,7188.5,7176,360,1490,60,50
+Bexar Shale,South Kardell A 3HB,7677,7837,7676.5,7664,430,1580,60,50
+James Lime,South Kardell A 3HB,7838,8071,7837.5,7825,250,1390,65,50
+Pine Island,South Kardell A 3HB,8072,8403,8071.5,8059,350,1480,65,50
+Pettet,South Kardell A 3HB,8404,8955,8403.5,8391,330,1520,65,50
+Upper Hosston,South Kardell A 3HB,8956,9880,8955.5,8943,290,1480,72,30
+Middle Hosston,South Kardell A 3HB,9881,9969,9880.5,9868,80,1410,74,30
+Travis Peak Lower,South Kardell B 4HB,10620,11600,10607.19,10506,110,770,60,35
+Cotton Valley,South Kardell B 4HB,11601,11685,11600.19,11499,100,600,60,30
+Knowles Lime SB1,South Kardell B 4HB,11686,11786,11685.19,11584,110,700,50,30
+Knowles Lime SB2,South Kardell B 4HB,11787,12656,11786.19,11685,140,970,53,35
+Bossier,South Kardell B 4HB,12657,12733,12656.19,12555,140,960,51,35

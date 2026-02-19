@@ -1,0 +1,36 @@
+{
+  "format": 1,
+  "license": {
+    "type": "Proprietary",
+    "url": "https://corva.ai"
+  },
+  "developer": {
+    "name": "Corva",
+    "identifier": "corva",
+    "authors": ["Anthony Suarez"]
+  },
+  "application": {
+    "type": "task",
+    "key": "corva.padcheck",
+    "visibility": "private",
+    "name": "PadCheck",
+    "description": "Validates completions data pipeline connectivity end-to-end",
+    "summary": "Quick pipeline health check for pads",
+    "category": "analytics",
+    "website": "https://corva.ai",
+    "segments": ["completion"]
+  },
+  "settings": {
+    "entrypoint": {
+      "file": "src.lambda_handler",
+      "function": "handler"
+    },
+    "runtime": "python3.11",
+    "timeout": 60,
+    "memory": 256,
+    "environment": {
+      "STREAM_API_TOKEN": "${STREAM_API_TOKEN}"
+    }
+  },
+  "datasets": {}
+}

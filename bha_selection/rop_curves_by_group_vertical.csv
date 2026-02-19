@@ -1,0 +1,745 @@
+equiv_bha_key,num_runs,curve_type,formation_name,formation_segment,formation_bin_key,p10,p50,p90,contributing_runs,confident
+6B-16mm | 7/8-lo,36,rotary,Wilcox,0,Wilcox|0,230.4,340.0,435.0,7,True
+6B-16mm | 7/8-lo,36,rotary,Wilcox,10,Wilcox|10,260.0,330.0,420.0,6,True
+6B-16mm | 7/8-lo,36,rotary,Wilcox,20,Wilcox|20,300.0,380.0,405.0,6,True
+6B-16mm | 7/8-lo,36,rotary,Wilcox,30,Wilcox|30,330.0,380.0,400.0,6,True
+6B-16mm | 7/8-lo,36,rotary,Wilcox,40,Wilcox|40,330.0,380.0,400.0,6,True
+6B-16mm | 7/8-lo,36,rotary,Wilcox,50,Wilcox|50,283.8,380.0,400.0,6,True
+6B-16mm | 7/8-lo,36,rotary,Wilcox,60,Wilcox|60,281.8,355.4,425.0,4,True
+6B-16mm | 7/8-lo,36,rotary,Wilcox,70,Wilcox|70,151.4,355.4,425.0,6,True
+6B-16mm | 7/8-lo,36,rotary,Wilcox,80,Wilcox|80,151.4,380.0,430.0,5,True
+6B-16mm | 7/8-lo,36,rotary,Wilcox,90,Wilcox|90,275.1,380.0,435.0,8,True
+6B-16mm | 7/8-lo,36,rotary,Midway,0,Midway|0,360.0,380.0,435.0,4,True
+6B-16mm | 7/8-lo,36,rotary,Midway,10,Midway|10,360.0,360.0,388.0,4,True
+6B-16mm | 7/8-lo,36,rotary,Midway,20,Midway|20,360.0,360.0,388.0,4,True
+6B-16mm | 7/8-lo,36,rotary,Midway,30,Midway|30,360.0,360.0,360.0,4,True
+6B-16mm | 7/8-lo,36,rotary,Midway,40,Midway|40,360.0,360.0,388.0,4,True
+6B-16mm | 7/8-lo,36,rotary,Midway,50,Midway|50,174.3,360.0,400.0,5,True
+6B-16mm | 7/8-lo,36,rotary,Midway,60,Midway|60,149.3,360.0,400.0,7,True
+6B-16mm | 7/8-lo,36,rotary,Midway,70,Midway|70,149.3,360.0,420.0,7,True
+6B-16mm | 7/8-lo,36,rotary,Midway,80,Midway|80,228.7,327.3,420.0,7,True
+6B-16mm | 7/8-lo,36,rotary,Midway,90,Midway|90,228.7,327.3,400.0,7,True
+6B-16mm | 7/8-lo,36,rotary,Escondido,0,Escondido|0,163.6,327.3,400.0,20,True
+6B-16mm | 7/8-lo,36,rotary,Escondido,10,Escondido|10,163.6,360.0,400.0,21,True
+6B-16mm | 7/8-lo,36,rotary,Escondido,20,Escondido|20,225.0,360.0,450.0,21,True
+6B-16mm | 7/8-lo,36,rotary,Escondido,30,Escondido|30,225.0,360.0,450.0,21,True
+6B-16mm | 7/8-lo,36,rotary,Escondido,40,Escondido|40,207.2,360.0,425.0,21,True
+6B-16mm | 7/8-lo,36,rotary,Escondido,50,Escondido|50,205.9,360.0,425.0,21,True
+6B-16mm | 7/8-lo,36,rotary,Escondido,60,Escondido|60,205.9,360.0,450.0,21,True
+6B-16mm | 7/8-lo,36,rotary,Escondido,70,Escondido|70,233.3,360.0,450.0,21,True
+6B-16mm | 7/8-lo,36,rotary,Escondido,80,Escondido|80,233.3,360.0,450.0,21,True
+6B-16mm | 7/8-lo,36,rotary,Escondido,90,Escondido|90,233.3,360.0,400.0,21,True
+6B-16mm | 7/8-lo,36,rotary,Olmos,0,Olmos|0,215.6,360.0,400.0,1,False
+6B-16mm | 7/8-lo,36,rotary,Olmos,10,Olmos|10,215.6,319.8,377.1,2,False
+6B-16mm | 7/8-lo,36,rotary,Olmos,20,Olmos|20,194.3,285.7,377.1,2,False
+6B-16mm | 7/8-lo,36,rotary,Olmos,30,Olmos|30,194.3,285.7,377.1,2,False
+6B-16mm | 7/8-lo,36,rotary,Olmos,40,Olmos|40,207.0,294.8,379.0,2,False
+6B-16mm | 7/8-lo,36,rotary,Olmos,50,Olmos|50,207.0,294.8,379.0,2,False
+6B-16mm | 7/8-lo,36,rotary,Olmos,60,Olmos|60,159.8,173.0,186.2,2,False
+6B-16mm | 7/8-lo,36,rotary,Olmos,70,Olmos|70,159.8,163.6,182.2,2,False
+6B-16mm | 7/8-lo,36,rotary,Olmos,80,Olmos|80,163.6,163.6,180.0,1,False
+6B-16mm | 7/8-lo,36,rotary,Olmos,90,Olmos|90,163.6,180.0,180.0,1,False
+6B-16mm | 7/8-lo,36,rotary,Hazard,0,Hazard|0,180.0,327.3,400.0,16,True
+6B-16mm | 7/8-lo,36,rotary,Hazard,10,Hazard|10,183.2,327.3,425.0,16,True
+6B-16mm | 7/8-lo,36,rotary,Hazard,20,Hazard|20,187.5,360.0,425.0,16,True
+6B-16mm | 7/8-lo,36,rotary,Hazard,30,Hazard|30,200.0,360.0,425.0,16,True
+6B-16mm | 7/8-lo,36,rotary,Hazard,40,Hazard|40,268.1,360.0,437.5,16,True
+6B-16mm | 7/8-lo,36,rotary,Hazard,50,Hazard|50,268.1,367.5,450.0,16,True
+6B-16mm | 7/8-lo,36,rotary,Hazard,60,Hazard|60,172.4,360.0,450.0,16,True
+6B-16mm | 7/8-lo,36,rotary,Hazard,70,Hazard|70,172.4,360.0,450.0,16,True
+6B-16mm | 7/8-lo,36,rotary,Hazard,80,Hazard|80,210.0,360.0,450.0,16,True
+6B-16mm | 7/8-lo,36,rotary,Hazard,90,Hazard|90,327.3,380.0,450.0,16,True
+6B-16mm | 7/8-lo,36,rotary,San Miguel,0,San Miguel|0,300.0,380.0,450.0,12,True
+6B-16mm | 7/8-lo,36,rotary,San Miguel,10,San Miguel|10,300.0,360.0,450.0,12,True
+6B-16mm | 7/8-lo,36,rotary,San Miguel,20,San Miguel|20,261.4,360.0,422.5,12,True
+6B-16mm | 7/8-lo,36,rotary,San Miguel,30,San Miguel|30,261.4,360.0,422.5,12,True
+6B-16mm | 7/8-lo,36,rotary,San Miguel,40,San Miguel|40,248.7,360.0,445.0,12,True
+6B-16mm | 7/8-lo,36,rotary,San Miguel,50,San Miguel|50,226.5,360.0,445.0,12,True
+6B-16mm | 7/8-lo,36,rotary,San Miguel,60,San Miguel|60,225.0,360.0,400.0,12,True
+6B-16mm | 7/8-lo,36,rotary,San Miguel,70,San Miguel|70,166.2,360.0,400.0,12,True
+6B-16mm | 7/8-lo,36,rotary,San Miguel,80,San Miguel|80,166.2,330.0,372.0,10,True
+6B-16mm | 7/8-lo,36,rotary,San Miguel,90,San Miguel|90,209.1,318.4,362.0,8,True
+6B-16mm | 7/8-lo,36,rotary,Austin Chalk,0,Austin Chalk|0,209.1,318.4,360.0,4,True
+6B-16mm | 7/8-lo,36,rotary,Austin Chalk,10,Austin Chalk|10,187.8,282.9,360.0,4,True
+6B-16mm | 7/8-lo,36,rotary,Austin Chalk,20,Austin Chalk|20,182.8,200.7,243.5,4,True
+6B-16mm | 7/8-lo,36,rotary,Austin Chalk,30,Austin Chalk|30,168.5,184.8,236.8,4,True
+6B-16mm | 7/8-lo,36,rotary,Austin Chalk,40,Austin Chalk|40,168.5,184.8,236.8,4,True
+6B-16mm | 7/8-lo,36,rotary,Austin Chalk,50,Austin Chalk|50,180.0,190.0,237.0,4,True
+6B-16mm | 7/8-lo,36,rotary,Austin Chalk,60,Austin Chalk|60,205.0,225.0,253.8,3,True
+6B-16mm | 7/8-lo,36,rotary,Anacacho,0,Anacacho|0,222.8,400.0,450.0,5,True
+6B-16mm | 7/8-lo,36,rotary,Anacacho,10,Anacacho|10,222.8,450.0,450.0,5,True
+6B-16mm | 7/8-lo,36,rotary,Anacacho,20,Anacacho|20,222.8,450.0,450.0,5,True
+6B-16mm | 7/8-lo,36,rotary,Anacacho,30,Anacacho|30,206.4,450.0,450.0,5,True
+6B-16mm | 7/8-lo,36,rotary,Anacacho,40,Anacacho|40,200.8,425.0,450.0,5,True
+6B-16mm | 7/8-lo,36,rotary,Anacacho,50,Anacacho|50,192.8,400.0,450.0,5,True
+6B-16mm | 7/8-lo,36,rotary,Anacacho,60,Anacacho|60,192.8,425.0,450.0,5,True
+6B-16mm | 7/8-lo,36,rotary,Anacacho,70,Anacacho|70,246.0,425.0,450.0,4,True
+6B-16mm | 7/8-lo,36,rotary,Anacacho,80,Anacacho|80,252.2,425.0,450.0,4,True
+6B-16mm | 7/8-lo,36,rotary,Anacacho,90,Anacacho|90,258.2,400.0,450.0,5,True
+6B-16mm | 7/8-lo,36,rotary,Eagle Ford,0,Eagle Ford|0,305.5,400.0,440.0,3,True
+6B-16mm | 7/8-lo,36,rotary,Eagle Ford,10,Eagle Ford|10,305.5,327.3,385.5,3,True
+6B-16mm | 7/8-lo,36,rotary,Eagle Ford,20,Eagle Ford|20,257.1,257.1,272.9,3,True
+6B-16mm | 7/8-lo,36,rotary,Eagle Ford,30,Eagle Ford|30,231.4,257.1,272.9,3,True
+6B-16mm | 7/8-lo,36,rotary,Eagle Ford,40,Eagle Ford|40,231.4,257.1,291.4,3,True
+6B-16mm | 7/8-lo,36,rotary,Eagle Ford,50,Eagle Ford|50,305.5,327.3,353.5,3,True
+6B-16mm | 7/8-lo,36,rotary,Eagle Ford,90,Eagle Ford|90,305.5,327.3,353.5,1,False
+6B-16mm | 7/8-lo,36,rotary,Buda,0,Buda|0,169.1,184.8,274.8,8,True
+6B-16mm | 7/8-lo,36,rotary,Buda,10,Buda|10,168.2,184.8,256.3,6,True
+6B-16mm | 7/8-lo,36,rotary,Buda,20,Buda|20,167.5,184.8,274.8,6,True
+6B-16mm | 7/8-lo,36,rotary,Buda,30,Buda|30,168.2,202.5,277.5,4,True
+6B-16mm | 7/8-lo,36,rotary,Buda,40,Buda|40,184.3,327.3,353.5,3,True
+6B-16mm | 7/8-lo,36,rotary,Buda,90,Buda|90,200.7,327.3,356.8,12,True
+6B-16mm | 7/8-lo,36,slide,Wilcox,0,Wilcox|0,103.2,124.7,206.6,5,True
+6B-16mm | 7/8-lo,36,slide,Wilcox,10,Wilcox|10,102.5,116.1,224.9,5,True
+6B-16mm | 7/8-lo,36,slide,Wilcox,20,Wilcox|20,110.9,116.1,224.9,5,True
+6B-16mm | 7/8-lo,36,slide,Wilcox,30,Wilcox|30,116.1,116.1,232.2,5,True
+6B-16mm | 7/8-lo,36,slide,Wilcox,40,Wilcox|40,116.1,116.1,360.0,5,True
+6B-16mm | 7/8-lo,36,slide,Wilcox,50,Wilcox|50,80.0,85.8,360.0,5,True
+6B-16mm | 7/8-lo,36,slide,Wilcox,60,Wilcox|60,73.9,78.3,360.0,4,True
+6B-16mm | 7/8-lo,36,slide,Wilcox,70,Wilcox|70,73.9,78.3,321.0,3,True
+6B-16mm | 7/8-lo,36,slide,Wilcox,80,Wilcox|80,65.5,100.0,293.7,3,True
+6B-16mm | 7/8-lo,36,slide,Wilcox,90,Wilcox|90,100.0,115.0,198.9,7,True
+6B-16mm | 7/8-lo,36,slide,Midway,0,Midway|0,190.6,194.8,200.0,2,False
+6B-16mm | 7/8-lo,36,slide,Midway,10,Midway|10,190.6,194.8,198.9,1,False
+6B-16mm | 7/8-lo,36,slide,Midway,20,Midway|20,101.6,129.2,156.7,1,False
+6B-16mm | 7/8-lo,36,slide,Midway,30,Midway|30,101.6,129.2,156.7,2,False
+6B-16mm | 7/8-lo,36,slide,Midway,40,Midway|40,101.6,129.2,159.8,2,False
+6B-16mm | 7/8-lo,36,slide,Midway,50,Midway|50,71.3,153.7,292.2,4,True
+6B-16mm | 7/8-lo,36,slide,Midway,60,Midway|60,71.3,105.9,258.5,6,True
+6B-16mm | 7/8-lo,36,slide,Midway,70,Midway|70,54.5,105.9,292.2,5,True
+6B-16mm | 7/8-lo,36,slide,Midway,80,Midway|80,83.3,105.9,258.5,6,True
+6B-16mm | 7/8-lo,36,slide,Midway,90,Midway|90,74.6,105.9,180.0,2,False
+6B-16mm | 7/8-lo,36,slide,Escondido,0,Escondido|0,74.6,105.9,168.3,13,True
+6B-16mm | 7/8-lo,36,slide,Escondido,10,Escondido|10,64.1,105.9,180.0,15,True
+6B-16mm | 7/8-lo,36,slide,Escondido,20,Escondido|20,64.1,124.1,192.7,17,True
+6B-16mm | 7/8-lo,36,slide,Escondido,30,Escondido|30,64.1,124.1,192.7,16,True
+6B-16mm | 7/8-lo,36,slide,Escondido,40,Escondido|40,60.0,121.4,205.8,15,True
+6B-16mm | 7/8-lo,36,slide,Escondido,50,Escondido|50,60.0,92.3,200.0,16,True
+6B-16mm | 7/8-lo,36,slide,Escondido,60,Escondido|60,55.6,101.5,202.5,14,True
+6B-16mm | 7/8-lo,36,slide,Escondido,70,Escondido|70,58.3,101.5,202.5,16,True
+6B-16mm | 7/8-lo,36,slide,Escondido,80,Escondido|80,58.3,101.5,233.4,16,True
+6B-16mm | 7/8-lo,36,slide,Escondido,90,Escondido|90,62.1,107.5,233.4,19,True
+6B-16mm | 7/8-lo,36,slide,Olmos,0,Olmos|0,82.8,94.7,171.4,1,False
+6B-16mm | 7/8-lo,36,slide,Olmos,10,Olmos|10,110.1,150.3,171.4,1,False
+6B-16mm | 7/8-lo,36,slide,Olmos,20,Olmos|20,110.1,141.2,141.2,2,False
+6B-16mm | 7/8-lo,36,slide,Olmos,30,Olmos|30,110.1,141.2,141.2,1,False
+6B-16mm | 7/8-lo,36,slide,Olmos,40,Olmos|40,85.7,85.7,85.7,1,False
+6B-16mm | 7/8-lo,36,slide,Olmos,50,Olmos|50,85.7,85.7,85.7,2,False
+6B-16mm | 7/8-lo,36,slide,Olmos,60,Olmos|60,65.9,67.3,68.8,1,False
+6B-16mm | 7/8-lo,36,slide,Olmos,70,Olmos|70,48.6,48.6,48.6,1,False
+6B-16mm | 7/8-lo,36,slide,Olmos,80,Olmos|80,46.2,46.2,46.2,1,False
+6B-16mm | 7/8-lo,36,slide,Olmos,90,Olmos|90,46.2,46.2,46.2,1,False
+6B-16mm | 7/8-lo,36,slide,Hazard,0,Hazard|0,68.4,125.4,200.0,11,True
+6B-16mm | 7/8-lo,36,slide,Hazard,10,Hazard|10,68.4,125.4,225.0,6,True
+6B-16mm | 7/8-lo,36,slide,Hazard,20,Hazard|20,68.4,125.4,272.0,11,True
+6B-16mm | 7/8-lo,36,slide,Hazard,30,Hazard|30,76.0,120.0,276.9,9,True
+6B-16mm | 7/8-lo,36,slide,Hazard,40,Hazard|40,79.2,180.0,276.9,6,True
+6B-16mm | 7/8-lo,36,slide,Hazard,50,Hazard|50,76.0,108.8,254.9,5,True
+6B-16mm | 7/8-lo,36,slide,Hazard,60,Hazard|60,42.8,97.3,226.3,5,True
+6B-16mm | 7/8-lo,36,slide,Hazard,70,Hazard|70,42.8,72.2,156.0,5,True
+6B-16mm | 7/8-lo,36,slide,Hazard,80,Hazard|80,29.6,72.2,150.0,6,True
+6B-16mm | 7/8-lo,36,slide,Hazard,90,Hazard|90,46.3,72.2,150.0,7,True
+6B-16mm | 7/8-lo,36,slide,San Miguel,0,San Miguel|0,74.7,133.3,311.4,6,True
+6B-16mm | 7/8-lo,36,slide,San Miguel,10,San Miguel|10,74.7,150.8,312.0,5,True
+6B-16mm | 7/8-lo,36,slide,San Miguel,20,San Miguel|20,51.4,133.3,311.4,9,True
+6B-16mm | 7/8-lo,36,slide,San Miguel,30,San Miguel|30,51.4,105.9,256.0,10,True
+6B-16mm | 7/8-lo,36,slide,San Miguel,40,San Miguel|40,53.0,105.9,256.0,5,True
+6B-16mm | 7/8-lo,36,slide,San Miguel,50,San Miguel|50,53.0,105.9,272.0,6,True
+6B-16mm | 7/8-lo,36,slide,San Miguel,60,San Miguel|60,24.8,70.6,272.0,9,True
+6B-16mm | 7/8-lo,36,slide,San Miguel,70,San Miguel|70,24.8,70.6,254.5,8,True
+6B-16mm | 7/8-lo,36,slide,San Miguel,80,San Miguel|80,41.9,93.5,254.5,4,True
+6B-16mm | 7/8-lo,36,slide,San Miguel,90,San Miguel|90,67.7,145.4,291.8,5,True
+6B-16mm | 7/8-lo,36,slide,Austin Chalk,0,Austin Chalk|0,72.3,93.5,291.8,3,True
+6B-16mm | 7/8-lo,36,slide,Austin Chalk,10,Austin Chalk|10,125.4,254.5,370.9,2,False
+6B-16mm | 7/8-lo,36,slide,Austin Chalk,20,Austin Chalk|20,72.3,76.5,80.8,2,False
+6B-16mm | 7/8-lo,36,slide,Austin Chalk,30,Austin Chalk|30,86.0,211.8,304.2,2,False
+6B-16mm | 7/8-lo,36,slide,Austin Chalk,40,Austin Chalk|40,86.0,211.8,304.2,3,True
+6B-16mm | 7/8-lo,36,slide,Austin Chalk,50,Austin Chalk|50,228.4,228.4,304.2,2,False
+6B-16mm | 7/8-lo,36,slide,Austin Chalk,60,Austin Chalk|60,228.4,228.4,228.4,1,False
+6B-16mm | 7/8-lo,36,slide,Anacacho,0,Anacacho|0,80.1,83.5,86.9,2,False
+6B-16mm | 7/8-lo,36,slide,Anacacho,10,Anacacho|10,54.5,61.0,86.9,2,False
+6B-16mm | 7/8-lo,36,slide,Anacacho,20,Anacacho|20,52.5,52.5,64.8,3,True
+6B-16mm | 7/8-lo,36,slide,Anacacho,30,Anacacho|30,54.5,61.0,143.1,1,False
+6B-16mm | 7/8-lo,36,slide,Anacacho,40,Anacacho|40,56.8,75.3,221.3,2,False
+6B-16mm | 7/8-lo,36,slide,Anacacho,50,Anacacho|50,56.8,75.3,221.3,3,True
+6B-16mm | 7/8-lo,36,slide,Anacacho,70,Anacacho|70,36.0,42.8,49.7,2,False
+6B-16mm | 7/8-lo,36,slide,Anacacho,80,Anacacho|80,36.0,42.8,49.7,2,False
+6B-16mm | 7/8-lo,36,slide,Anacacho,90,Anacacho|90,51.8,98.3,138.5,2,False
+6B-16mm | 7/8-lo,36,slide,Eagle Ford,90,Eagle Ford|90,51.8,98.3,138.5,1,False
+6B-16mm | 7/8-lo,36,slide,Buda,0,Buda|0,138.5,138.5,138.5,3,True
+6B-16mm | 7/8-lo,36,slide,Buda,10,Buda|10,32.7,61.4,126.3,1,False
+6B-16mm | 7/8-lo,36,slide,Buda,20,Buda|20,44.4,114.5,138.1,2,False
+6B-16mm | 7/8-lo,36,slide,Buda,30,Buda|30,44.4,114.5,138.1,3,True
+6B-16mm | 7/8-lo,36,slide,Buda,90,Buda|90,78.0,147.2,248.2,12,True
+6B-13mm | 6/7-mid,4,rotary,San Miguel,70,San Miguel|70,176.8,176.8,176.8,1,False
+6B-13mm | 6/7-mid,4,rotary,San Miguel,80,San Miguel|80,76.6,76.6,76.6,1,False
+6B-13mm | 6/7-mid,4,rotary,San Miguel,90,San Miguel|90,76.6,76.6,76.6,1,False
+6B-13mm | 6/7-mid,4,rotary,Austin Chalk,0,Austin Chalk|0,133.3,133.3,133.3,2,False
+6B-13mm | 6/7-mid,4,rotary,Austin Chalk,10,Austin Chalk|10,138.8,139.8,140.9,1,False
+6B-13mm | 6/7-mid,4,rotary,Austin Chalk,20,Austin Chalk|20,142.8,156.5,156.5,2,False
+6B-13mm | 6/7-mid,4,rotary,Austin Chalk,30,Austin Chalk|30,156.5,156.5,156.5,1,False
+6B-13mm | 6/7-mid,4,rotary,Austin Chalk,40,Austin Chalk|40,156.5,156.5,156.5,1,False
+6B-13mm | 6/7-mid,4,rotary,Austin Chalk,50,Austin Chalk|50,150.0,150.0,154.2,1,False
+6B-13mm | 6/7-mid,4,rotary,Austin Chalk,60,Austin Chalk|60,150.0,150.0,150.0,2,False
+6B-13mm | 6/7-mid,4,rotary,Austin Chalk,70,Austin Chalk|70,150.0,150.0,150.0,2,False
+6B-13mm | 6/7-mid,4,rotary,Austin Chalk,80,Austin Chalk|80,150.0,150.0,150.0,1,False
+6B-13mm | 6/7-mid,4,rotary,Austin Chalk,90,Austin Chalk|90,150.0,150.0,150.0,1,False
+6B-13mm | 6/7-mid,4,rotary,Anacacho,0,Anacacho|0,76.6,76.6,76.6,1,False
+6B-13mm | 6/7-mid,4,rotary,Anacacho,10,Anacacho|10,73.5,75.1,76.6,1,False
+6B-13mm | 6/7-mid,4,rotary,Anacacho,20,Anacacho|20,75.0,75.1,76.6,2,False
+6B-13mm | 6/7-mid,4,rotary,Anacacho,30,Anacacho|30,75.0,75.1,79.7,1,False
+6B-13mm | 6/7-mid,4,rotary,Anacacho,40,Anacacho|40,83.1,115.6,120.0,2,False
+6B-13mm | 6/7-mid,4,rotary,Anacacho,50,Anacacho|50,83.1,115.6,120.0,1,False
+6B-13mm | 6/7-mid,4,rotary,Anacacho,60,Anacacho|60,102.9,102.9,118.1,2,False
+6B-13mm | 6/7-mid,4,rotary,Anacacho,70,Anacacho|70,102.9,102.9,118.1,1,False
+6B-13mm | 6/7-mid,4,rotary,Anacacho,80,Anacacho|80,124.1,124.1,124.1,1,False
+6B-13mm | 6/7-mid,4,rotary,Anacacho,90,Anacacho|90,133.3,133.3,133.3,1,False
+6B-13mm | 6/7-mid,4,rotary,Eagle Ford,0,Eagle Ford|0,243.4,257.1,295.7,2,False
+6B-13mm | 6/7-mid,4,rotary,Eagle Ford,10,Eagle Ford|10,243.4,257.1,295.7,3,True
+6B-13mm | 6/7-mid,4,rotary,Eagle Ford,20,Eagle Ford|20,225.0,225.0,225.0,2,False
+6B-13mm | 6/7-mid,4,rotary,Buda,90,Buda|90,208.3,212.8,217.3,1,False
+6B-13mm | 6/7-mid,4,slide,San Miguel,70,San Miguel|70,64.8,69.3,73.8,2,False
+6B-13mm | 6/7-mid,4,slide,San Miguel,80,San Miguel|80,72.5,77.5,81.4,2,False
+6B-13mm | 6/7-mid,4,slide,San Miguel,90,San Miguel|90,75.1,79.6,82.5,2,False
+6B-13mm | 6/7-mid,4,slide,Austin Chalk,0,Austin Chalk|0,75.1,93.3,107.5,2,False
+6B-13mm | 6/7-mid,4,slide,Austin Chalk,10,Austin Chalk|10,88.4,100.7,111.5,1,False
+6B-13mm | 6/7-mid,4,slide,Austin Chalk,20,Austin Chalk|20,88.4,100.7,107.5,2,False
+6B-13mm | 6/7-mid,4,slide,Austin Chalk,30,Austin Chalk|30,79.7,81.5,83.3,2,False
+6B-13mm | 6/7-mid,4,slide,Austin Chalk,40,Austin Chalk|40,79.7,81.5,83.3,2,False
+6B-13mm | 6/7-mid,4,slide,Austin Chalk,50,Austin Chalk|50,79.7,81.5,104.2,2,False
+6B-13mm | 6/7-mid,4,slide,Austin Chalk,60,Austin Chalk|60,81.8,81.8,104.2,2,False
+6B-13mm | 6/7-mid,4,slide,Austin Chalk,70,Austin Chalk|70,81.8,81.8,93.5,1,False
+6B-13mm | 6/7-mid,4,slide,Austin Chalk,80,Austin Chalk|80,81.8,88.3,93.5,2,False
+6B-13mm | 6/7-mid,4,slide,Austin Chalk,90,Austin Chalk|90,82.8,88.3,93.5,2,False
+6B-13mm | 6/7-mid,4,slide,Anacacho,0,Anacacho|0,78.9,87.0,91.2,2,False
+6B-13mm | 6/7-mid,4,slide,Anacacho,10,Anacacho|10,64.3,64.3,64.3,1,False
+6B-13mm | 6/7-mid,4,slide,Anacacho,20,Anacacho|20,64.3,64.3,64.3,2,False
+6B-13mm | 6/7-mid,4,slide,Anacacho,30,Anacacho|30,61.7,69.2,69.2,1,False
+6B-13mm | 6/7-mid,4,slide,Anacacho,40,Anacacho|40,61.7,69.2,72.4,2,False
+6B-13mm | 6/7-mid,4,slide,Anacacho,50,Anacacho|50,61.7,72.3,83.0,2,False
+6B-13mm | 6/7-mid,4,slide,Anacacho,60,Anacacho|60,88.2,89.0,89.8,2,False
+6B-13mm | 6/7-mid,4,slide,Anacacho,70,Anacacho|70,106.2,107.5,108.8,2,False
+6B-13mm | 6/7-mid,4,slide,Anacacho,80,Anacacho|80,109.1,109.1,109.1,2,False
+6B-13mm | 6/7-mid,4,slide,Anacacho,90,Anacacho|90,109.1,109.1,109.1,1,False
+6B-13mm | 6/7-mid,4,slide,Eagle Ford,0,Eagle Ford|0,80.2,94.5,108.9,2,False
+6B-13mm | 6/7-mid,4,slide,Eagle Ford,10,Eagle Ford|10,51.9,53.7,57.2,3,True
+6B-13mm | 6/7-mid,4,slide,Eagle Ford,20,Eagle Ford|20,22.0,29.6,37.9,2,False
+6B-13mm | 6/7-mid,4,slide,Buda,90,Buda|90,21.7,25.8,29.9,1,False
+6B-13mm | 7/8-lo,13,rotary,Wilcox,0,Wilcox|0,343.4,360.0,404.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Wilcox,10,Wilcox|10,327.3,360.0,385.5,3,True
+6B-13mm | 7/8-lo,13,rotary,Wilcox,20,Wilcox|20,327.3,360.0,385.5,3,True
+6B-13mm | 7/8-lo,13,rotary,Wilcox,30,Wilcox|30,400.0,400.0,400.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Wilcox,40,Wilcox|40,410.0,450.0,450.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Wilcox,50,Wilcox|50,400.0,400.0,400.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Wilcox,60,Wilcox|60,360.0,360.0,432.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Wilcox,70,Wilcox|70,360.0,360.0,432.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Wilcox,80,Wilcox|80,360.0,360.0,432.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Wilcox,90,Wilcox|90,400.0,400.0,440.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Midway,0,Midway|0,400.0,400.0,440.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Midway,10,Midway|10,368.0,450.0,450.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Midway,20,Midway|20,368.0,450.0,450.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Midway,30,Midway|30,351.8,450.0,450.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Midway,40,Midway|40,378.0,450.0,450.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Midway,50,Midway|50,378.0,450.0,450.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Midway,60,Midway|60,378.0,450.0,450.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Midway,70,Midway|70,378.0,450.0,450.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Midway,80,Midway|80,378.0,450.0,450.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Midway,90,Midway|90,234.0,450.0,450.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Escondido,0,Escondido|0,210.9,400.0,400.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Escondido,10,Escondido|10,178.4,327.3,327.3,3,True
+6B-13mm | 7/8-lo,13,rotary,Escondido,20,Escondido|20,178.4,327.3,327.3,3,True
+6B-13mm | 7/8-lo,13,rotary,Escondido,30,Escondido|30,176.6,276.9,276.9,3,True
+6B-13mm | 7/8-lo,13,rotary,Escondido,40,Escondido|40,170.8,300.0,300.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Escondido,50,Escondido|50,170.8,300.0,300.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Escondido,60,Escondido|60,197.2,300.0,300.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Escondido,70,Escondido|70,197.2,327.3,340.3,3,True
+6B-13mm | 7/8-lo,13,rotary,Escondido,80,Escondido|80,168.4,327.3,340.3,3,True
+6B-13mm | 7/8-lo,13,rotary,Escondido,90,Escondido|90,133.3,135.9,135.9,3,True
+6B-13mm | 7/8-lo,13,rotary,Olmos,0,Olmos|0,133.3,135.9,135.9,3,True
+6B-13mm | 7/8-lo,13,rotary,Olmos,10,Olmos|10,132.0,144.0,148.8,3,True
+6B-13mm | 7/8-lo,13,rotary,Olmos,20,Olmos|20,132.0,144.0,148.8,3,True
+6B-13mm | 7/8-lo,13,rotary,Olmos,30,Olmos|30,132.0,133.3,141.9,3,True
+6B-13mm | 7/8-lo,13,rotary,Olmos,40,Olmos|40,123.0,133.3,141.9,3,True
+6B-13mm | 7/8-lo,13,rotary,Olmos,50,Olmos|50,128.6,133.3,141.9,2,False
+6B-13mm | 7/8-lo,13,rotary,Olmos,60,Olmos|60,128.6,135.0,147.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Olmos,70,Olmos|70,138.5,144.2,165.0,4,True
+6B-13mm | 7/8-lo,13,rotary,Olmos,80,Olmos|80,138.5,144.2,206.6,2,False
+6B-13mm | 7/8-lo,13,rotary,Olmos,90,Olmos|90,124.1,143.8,206.6,4,True
+6B-13mm | 7/8-lo,13,rotary,Hazard,0,Hazard|0,120.0,120.0,206.6,3,True
+6B-13mm | 7/8-lo,13,rotary,Hazard,10,Hazard|10,120.0,120.0,285.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Hazard,20,Hazard|20,225.0,225.0,285.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Hazard,30,Hazard|30,225.0,225.0,272.9,3,True
+6B-13mm | 7/8-lo,13,rotary,Hazard,40,Hazard|40,257.1,257.1,272.9,3,True
+6B-13mm | 7/8-lo,13,rotary,Hazard,50,Hazard|50,211.8,276.9,295.4,3,True
+6B-13mm | 7/8-lo,13,rotary,Hazard,60,Hazard|60,211.6,300.0,300.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Hazard,70,Hazard|70,211.6,300.0,300.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Hazard,80,Hazard|80,211.6,300.0,327.3,3,True
+6B-13mm | 7/8-lo,13,rotary,Hazard,90,Hazard|90,207.0,276.9,327.3,4,True
+6B-13mm | 7/8-lo,13,rotary,San Miguel,0,San Miguel|0,203.1,276.9,300.0,3,True
+6B-13mm | 7/8-lo,13,rotary,San Miguel,10,San Miguel|10,180.0,276.9,276.9,3,True
+6B-13mm | 7/8-lo,13,rotary,San Miguel,20,San Miguel|20,178.9,240.0,240.0,3,True
+6B-13mm | 7/8-lo,13,rotary,San Miguel,30,San Miguel|30,178.9,225.0,231.0,3,True
+6B-13mm | 7/8-lo,13,rotary,San Miguel,40,San Miguel|40,211.8,225.0,231.0,2,False
+6B-13mm | 7/8-lo,13,rotary,San Miguel,50,San Miguel|50,276.9,276.9,276.9,2,False
+6B-13mm | 7/8-lo,13,rotary,San Miguel,60,San Miguel|60,276.9,276.9,276.9,2,False
+6B-13mm | 7/8-lo,13,rotary,San Miguel,70,San Miguel|70,211.8,211.8,211.8,2,False
+6B-13mm | 7/8-lo,13,rotary,San Miguel,80,San Miguel|80,200.0,200.0,200.0,2,False
+6B-13mm | 7/8-lo,13,rotary,San Miguel,90,San Miguel|90,180.0,180.0,180.0,2,False
+6B-13mm | 7/8-lo,13,rotary,Austin Chalk,50,Austin Chalk|50,180.0,180.0,180.0,1,False
+6B-13mm | 7/8-lo,13,rotary,Austin Chalk,60,Austin Chalk|60,180.0,180.0,180.0,1,False
+6B-13mm | 7/8-lo,13,rotary,Austin Chalk,70,Austin Chalk|70,180.0,180.0,180.0,1,False
+6B-13mm | 7/8-lo,13,rotary,Anacacho,0,Anacacho|0,171.4,171.4,171.4,1,False
+6B-13mm | 7/8-lo,13,rotary,Anacacho,10,Anacacho|10,171.4,171.4,171.4,1,False
+6B-13mm | 7/8-lo,13,rotary,Anacacho,20,Anacacho|20,180.0,180.0,180.0,1,False
+6B-13mm | 7/8-lo,13,rotary,Anacacho,30,Anacacho|30,200.0,200.0,200.0,1,False
+6B-13mm | 7/8-lo,13,rotary,Anacacho,40,Anacacho|40,200.0,200.0,200.0,1,False
+6B-13mm | 7/8-lo,13,rotary,Anacacho,50,Anacacho|50,189.5,200.0,200.0,1,False
+6B-13mm | 7/8-lo,13,rotary,Anacacho,60,Anacacho|60,146.6,189.5,189.5,3,True
+6B-13mm | 7/8-lo,13,rotary,Anacacho,70,Anacacho|70,146.6,200.0,300.0,2,False
+6B-13mm | 7/8-lo,13,rotary,Eagle Ford,90,Eagle Ford|90,172.3,175.7,179.1,1,False
+6B-13mm | 7/8-lo,13,rotary,Buda,0,Buda|0,300.0,300.0,300.0,2,False
+6B-13mm | 7/8-lo,13,rotary,Buda,10,Buda|10,182.8,257.1,360.0,2,False
+6B-13mm | 7/8-lo,13,rotary,Buda,20,Buda|20,300.0,360.0,360.0,5,True
+6B-13mm | 7/8-lo,13,rotary,Buda,30,Buda|30,270.0,360.0,380.0,6,True
+6B-13mm | 7/8-lo,13,rotary,Buda,40,Buda|40,270.0,360.0,380.0,6,True
+6B-13mm | 7/8-lo,13,rotary,Buda,50,Buda|50,210.8,257.1,307.1,5,True
+6B-13mm | 7/8-lo,13,rotary,Buda,60,Buda|60,210.8,257.1,307.1,5,True
+6B-13mm | 7/8-lo,13,rotary,Buda,70,Buda|70,283.8,330.0,360.0,4,True
+6B-13mm | 7/8-lo,13,rotary,Buda,80,Buda|80,283.8,330.0,360.0,3,True
+6B-13mm | 7/8-lo,13,rotary,Buda,90,Buda|90,275.4,318.4,343.4,5,True
+6B-13mm | 7/8-lo,13,slide,Wilcox,0,Wilcox|0,59.0,78.2,78.2,3,True
+6B-13mm | 7/8-lo,13,slide,Wilcox,10,Wilcox|10,58.3,73.5,73.5,3,True
+6B-13mm | 7/8-lo,13,slide,Wilcox,20,Wilcox|20,56.2,56.2,73.5,1,False
+6B-13mm | 7/8-lo,13,slide,Wilcox,30,Wilcox|30,40.7,50.8,56.2,2,False
+6B-13mm | 7/8-lo,13,slide,Wilcox,40,Wilcox|40,40.7,42.3,43.2,3,True
+6B-13mm | 7/8-lo,13,slide,Wilcox,50,Wilcox|50,41.4,42.3,43.2,2,False
+6B-13mm | 7/8-lo,13,slide,Wilcox,60,Wilcox|60,50.7,68.6,69.1,3,True
+6B-13mm | 7/8-lo,13,slide,Wilcox,70,Wilcox|70,50.7,68.6,69.1,2,False
+6B-13mm | 7/8-lo,13,slide,Wilcox,80,Wilcox|80,43.2,43.4,53.9,3,True
+6B-13mm | 7/8-lo,13,slide,Wilcox,90,Wilcox|90,43.2,43.4,53.9,3,True
+6B-13mm | 7/8-lo,13,slide,Midway,0,Midway|0,43.2,43.4,43.4,3,True
+6B-13mm | 7/8-lo,13,slide,Midway,10,Midway|10,34.0,34.0,34.0,1,False
+6B-13mm | 7/8-lo,13,slide,Midway,20,Midway|20,34.0,34.0,34.0,1,False
+6B-13mm | 7/8-lo,13,slide,Midway,30,Midway|30,34.0,34.0,36.4,1,False
+6B-13mm | 7/8-lo,13,slide,Midway,40,Midway|40,36.4,36.4,51.4,3,True
+6B-13mm | 7/8-lo,13,slide,Midway,50,Midway|50,39.1,51.4,55.0,3,True
+6B-13mm | 7/8-lo,13,slide,Midway,70,Midway|70,39.1,51.4,51.4,3,True
+6B-13mm | 7/8-lo,13,slide,Midway,80,Midway|80,31.1,31.1,31.1,1,False
+6B-13mm | 7/8-lo,13,slide,Midway,90,Midway|90,31.1,31.1,31.1,1,False
+6B-13mm | 7/8-lo,13,slide,Escondido,0,Escondido|0,32.4,32.4,36.8,2,False
+6B-13mm | 7/8-lo,13,slide,Escondido,10,Escondido|10,32.4,32.4,36.8,3,True
+6B-13mm | 7/8-lo,13,slide,Escondido,20,Escondido|20,26.1,26.1,26.1,3,True
+6B-13mm | 7/8-lo,13,slide,Escondido,30,Escondido|30,26.1,26.1,26.1,2,False
+6B-13mm | 7/8-lo,13,slide,Escondido,40,Escondido|40,26.1,31.7,31.7,2,False
+6B-13mm | 7/8-lo,13,slide,Escondido,50,Escondido|50,24.0,34.8,34.8,3,True
+6B-13mm | 7/8-lo,13,slide,Escondido,60,Escondido|60,24.0,37.5,37.5,3,True
+6B-13mm | 7/8-lo,13,slide,Escondido,70,Escondido|70,26.1,45.0,45.0,3,True
+6B-13mm | 7/8-lo,13,slide,Escondido,80,Escondido|80,28.2,45.0,45.0,3,True
+6B-13mm | 7/8-lo,13,slide,Escondido,90,Escondido|90,28.2,33.0,33.0,2,False
+6B-13mm | 7/8-lo,13,slide,Olmos,0,Olmos|0,24.7,24.7,24.7,2,False
+6B-13mm | 7/8-lo,13,slide,Olmos,50,Olmos|50,18.4,18.4,23.8,2,False
+6B-13mm | 7/8-lo,13,slide,Olmos,60,Olmos|60,15.5,15.5,23.8,3,True
+6B-13mm | 7/8-lo,13,slide,Olmos,70,Olmos|70,15.5,15.5,23.8,3,True
+6B-13mm | 7/8-lo,13,slide,Olmos,80,Olmos|80,15.5,27.4,40.4,3,True
+6B-13mm | 7/8-lo,13,slide,Olmos,90,Olmos|90,20.2,27.4,40.4,4,True
+6B-13mm | 7/8-lo,13,slide,Hazard,0,Hazard|0,20.2,22.6,22.6,3,True
+6B-13mm | 7/8-lo,13,slide,Hazard,10,Hazard|10,21.6,22.1,22.1,1,False
+6B-13mm | 7/8-lo,13,slide,Hazard,20,Hazard|20,21.6,21.6,21.6,1,False
+6B-13mm | 7/8-lo,13,slide,Hazard,30,Hazard|30,21.7,21.9,22.0,3,True
+6B-13mm | 7/8-lo,13,slide,Hazard,40,Hazard|40,21.7,21.9,22.0,2,False
+6B-13mm | 7/8-lo,13,slide,Hazard,50,Hazard|50,21.7,21.9,22.0,2,False
+6B-13mm | 7/8-lo,13,slide,Hazard,60,Hazard|60,17.2,17.6,17.6,3,True
+6B-13mm | 7/8-lo,13,slide,Hazard,70,Hazard|70,17.2,17.6,17.6,1,False
+6B-13mm | 7/8-lo,13,slide,Hazard,80,Hazard|80,21.4,21.4,21.4,1,False
+6B-13mm | 7/8-lo,13,slide,Hazard,90,Hazard|90,225.0,225.0,225.0,1,False
+6B-13mm | 7/8-lo,13,slide,San Miguel,0,San Miguel|0,234.5,234.5,234.5,1,False
+6B-13mm | 7/8-lo,13,slide,San Miguel,30,San Miguel|30,225.0,225.0,225.0,1,False
+6B-13mm | 7/8-lo,13,slide,San Miguel,50,San Miguel|50,32.1,32.1,32.1,2,False
+6B-13mm | 7/8-lo,13,slide,San Miguel,60,San Miguel|60,25.9,25.9,25.9,2,False
+6B-13mm | 7/8-lo,13,slide,San Miguel,70,San Miguel|70,32.1,32.1,32.1,2,False
+6B-13mm | 7/8-lo,13,slide,Austin Chalk,70,Austin Chalk|70,81.0,81.0,81.0,1,False
+6B-13mm | 7/8-lo,13,slide,Austin Chalk,80,Austin Chalk|80,90.0,90.0,90.0,1,False
+6B-13mm | 7/8-lo,13,slide,Austin Chalk,90,Austin Chalk|90,120.0,120.0,120.0,1,False
+6B-13mm | 7/8-lo,13,slide,Anacacho,0,Anacacho|0,90.0,90.0,90.0,1,False
+6B-13mm | 7/8-lo,13,slide,Anacacho,50,Anacacho|50,50.0,50.0,50.0,1,False
+6B-13mm | 7/8-lo,13,slide,Anacacho,60,Anacacho|60,33.2,42.9,50.0,1,False
+6B-13mm | 7/8-lo,13,slide,Anacacho,70,Anacacho|70,36.1,42.9,72.7,3,True
+6B-13mm | 7/8-lo,13,slide,Anacacho,80,Anacacho|80,33.2,36.4,72.7,3,True
+6B-13mm | 7/8-lo,13,slide,Anacacho,90,Anacacho|90,36.1,36.4,72.7,3,True
+6B-13mm | 7/8-lo,13,slide,Eagle Ford,90,Eagle Ford|90,50.7,70.6,117.9,1,False
+6B-13mm | 7/8-lo,13,slide,Buda,0,Buda|0,50.7,70.6,118.4,6,True
+6B-13mm | 7/8-lo,13,slide,Buda,10,Buda|10,47.6,70.6,118.4,7,True
+6B-13mm | 7/8-lo,13,slide,Buda,20,Buda|20,47.6,105.9,139.3,7,True
+6B-13mm | 7/8-lo,13,slide,Buda,30,Buda|30,56.6,105.9,139.3,6,True
+6B-13mm | 7/8-lo,13,slide,Buda,40,Buda|40,56.6,74.3,117.2,6,True
+6B-13mm | 7/8-lo,13,slide,Buda,50,Buda|50,33.6,43.9,73.8,5,True
+6B-13mm | 7/8-lo,13,slide,Buda,60,Buda|60,26.0,33.6,73.8,4,True
+6B-13mm | 7/8-lo,13,slide,Buda,70,Buda|70,26.0,33.6,91.4,4,True
+6B-13mm | 7/8-lo,13,slide,Buda,80,Buda|80,19.7,76.6,130.9,3,True
+6B-13mm | 7/8-lo,13,slide,Buda,90,Buda|90,31.5,98.3,132.9,6,True
+6B-13mm | 5/6-mid,14,rotary,Wilcox,0,Wilcox|0,175.1,205.8,236.6,2,False
+6B-13mm | 5/6-mid,14,rotary,Wilcox,10,Wilcox|10,143.4,202.8,262.1,2,False
+6B-13mm | 5/6-mid,14,rotary,Wilcox,20,Wilcox|20,143.4,236.2,273.2,2,False
+6B-13mm | 5/6-mid,14,rotary,Wilcox,30,Wilcox|30,143.4,236.2,335.2,2,False
+6B-13mm | 5/6-mid,14,rotary,Wilcox,40,Wilcox|40,263.7,308.6,349.7,2,False
+6B-13mm | 5/6-mid,14,rotary,Wilcox,50,Wilcox|50,267.4,318.4,351.7,2,False
+6B-13mm | 5/6-mid,14,rotary,Wilcox,60,Wilcox|60,267.4,310.0,351.7,2,False
+6B-13mm | 5/6-mid,14,rotary,Wilcox,70,Wilcox|70,254.0,310.0,351.7,2,False
+6B-13mm | 5/6-mid,14,rotary,Wilcox,80,Wilcox|80,238.5,292.5,366.0,2,False
+6B-13mm | 5/6-mid,14,rotary,Wilcox,90,Wilcox|90,199.6,285.7,368.0,2,False
+6B-13mm | 5/6-mid,14,rotary,Escondido,0,Escondido|0,199.6,285.7,377.1,3,True
+6B-13mm | 5/6-mid,14,rotary,Escondido,10,Escondido|10,272.0,400.0,400.0,3,True
+6B-13mm | 5/6-mid,14,rotary,Escondido,20,Escondido|20,272.0,400.0,400.0,3,True
+6B-13mm | 5/6-mid,14,rotary,Escondido,30,Escondido|30,265.7,360.0,400.0,3,True
+6B-13mm | 5/6-mid,14,rotary,Escondido,40,Escondido|40,264.0,360.0,392.0,3,True
+6B-13mm | 5/6-mid,14,rotary,Escondido,50,Escondido|50,264.0,360.0,392.0,3,True
+6B-13mm | 5/6-mid,14,rotary,Escondido,60,Escondido|60,264.0,360.0,392.0,3,True
+6B-13mm | 5/6-mid,14,rotary,Escondido,70,Escondido|70,216.0,360.0,392.0,3,True
+6B-13mm | 5/6-mid,14,rotary,Escondido,80,Escondido|80,170.0,360.0,392.0,3,True
+6B-13mm | 5/6-mid,14,rotary,Escondido,90,Escondido|90,145.8,360.0,360.0,3,True
+6B-13mm | 5/6-mid,14,rotary,Olmos,0,Olmos|0,145.8,180.9,215.4,2,False
+6B-13mm | 5/6-mid,14,rotary,Olmos,10,Olmos|10,156.2,180.9,215.4,2,False
+6B-13mm | 5/6-mid,14,rotary,Olmos,20,Olmos|20,400.0,400.0,400.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Olmos,30,Olmos|30,450.0,450.0,450.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Olmos,40,Olmos|40,450.0,450.0,450.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Olmos,50,Olmos|50,450.0,450.0,450.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Olmos,60,Olmos|60,450.0,450.0,450.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Olmos,70,Olmos|70,360.0,360.0,360.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Olmos,80,Olmos|80,360.0,360.0,360.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Olmos,90,Olmos|90,327.3,327.3,327.3,1,False
+6B-13mm | 5/6-mid,14,rotary,Hazard,0,Hazard|0,300.0,300.0,300.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Hazard,10,Hazard|10,300.0,300.0,300.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Hazard,20,Hazard|20,327.3,327.3,327.3,1,False
+6B-13mm | 5/6-mid,14,rotary,Hazard,30,Hazard|30,360.0,360.0,360.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Hazard,40,Hazard|40,360.0,360.0,360.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Hazard,50,Hazard|50,360.0,360.0,360.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Hazard,60,Hazard|60,300.0,300.0,300.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Hazard,70,Hazard|70,257.1,257.1,257.1,1,False
+6B-13mm | 5/6-mid,14,rotary,Hazard,80,Hazard|80,240.0,240.0,240.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Hazard,90,Hazard|90,189.5,189.5,189.5,1,False
+6B-13mm | 5/6-mid,14,rotary,San Miguel,10,San Miguel|10,80.9,80.9,80.9,1,False
+6B-13mm | 5/6-mid,14,rotary,San Miguel,20,San Miguel|20,80.9,80.9,80.9,1,False
+6B-13mm | 5/6-mid,14,rotary,San Miguel,30,San Miguel|30,110.8,110.8,110.8,1,False
+6B-13mm | 5/6-mid,14,rotary,San Miguel,40,San Miguel|40,120.0,120.0,120.0,1,False
+6B-13mm | 5/6-mid,14,rotary,San Miguel,50,San Miguel|50,144.0,144.0,144.0,1,False
+6B-13mm | 5/6-mid,14,rotary,San Miguel,60,San Miguel|60,163.6,163.6,163.6,1,False
+6B-13mm | 5/6-mid,14,rotary,San Miguel,70,San Miguel|70,144.0,163.6,163.6,1,False
+6B-13mm | 5/6-mid,14,rotary,San Miguel,80,San Miguel|80,163.6,221.7,370.0,4,True
+6B-13mm | 5/6-mid,14,rotary,San Miguel,90,San Miguel|90,200.0,250.0,370.0,4,True
+6B-13mm | 5/6-mid,14,rotary,Anacacho,0,Anacacho|0,200.0,250.0,357.1,4,True
+6B-13mm | 5/6-mid,14,rotary,Anacacho,10,Anacacho|10,211.8,211.8,218.2,2,False
+6B-13mm | 5/6-mid,14,rotary,Anacacho,20,Anacacho|20,211.8,211.8,218.2,1,False
+6B-13mm | 5/6-mid,14,rotary,Anacacho,30,Anacacho|30,211.8,211.8,211.8,1,False
+6B-13mm | 5/6-mid,14,rotary,Anacacho,40,Anacacho|40,225.0,225.0,225.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Anacacho,50,Anacacho|50,200.0,200.0,200.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Anacacho,60,Anacacho|60,200.0,200.0,200.0,1,False
+6B-13mm | 5/6-mid,14,rotary,Buda,0,Buda|0,99.7,138.5,147.7,3,True
+6B-13mm | 5/6-mid,14,rotary,Buda,10,Buda|10,92.6,102.9,145.8,3,True
+6B-13mm | 5/6-mid,14,rotary,Buda,20,Buda|20,78.3,124.1,147.7,4,True
+6B-13mm | 5/6-mid,14,rotary,Buda,30,Buda|30,78.3,124.1,204.5,6,True
+6B-13mm | 5/6-mid,14,rotary,Buda,40,Buda|40,97.0,131.2,204.6,8,True
+6B-13mm | 5/6-mid,14,rotary,Buda,50,Buda|50,108.6,142.6,204.6,8,True
+6B-13mm | 5/6-mid,14,rotary,Buda,60,Buda|60,112.7,225.0,256.1,5,True
+6B-13mm | 5/6-mid,14,rotary,Buda,70,Buda|70,112.7,225.0,300.0,6,True
+6B-13mm | 5/6-mid,14,rotary,Buda,80,Buda|80,118.1,250.9,327.3,8,True
+6B-13mm | 5/6-mid,14,rotary,Buda,90,Buda|90,128.1,207.4,330.0,6,True
+6B-13mm | 5/6-mid,14,slide,Wilcox,10,Wilcox|10,148.4,148.4,148.4,1,False
+6B-13mm | 5/6-mid,14,slide,Wilcox,20,Wilcox|20,133.3,133.3,133.3,1,False
+6B-13mm | 5/6-mid,14,slide,Wilcox,30,Wilcox|30,72.3,133.3,133.3,2,False
+6B-13mm | 5/6-mid,14,slide,Wilcox,40,Wilcox|40,72.3,146.9,204.0,2,False
+6B-13mm | 5/6-mid,14,slide,Wilcox,50,Wilcox|50,141.4,172.7,204.0,2,False
+6B-13mm | 5/6-mid,14,slide,Wilcox,60,Wilcox|60,189.5,189.5,204.0,1,False
+6B-13mm | 5/6-mid,14,slide,Wilcox,90,Wilcox|90,189.5,189.5,189.5,1,False
+6B-13mm | 5/6-mid,14,slide,Escondido,0,Escondido|0,129.4,174.9,220.4,2,False
+6B-13mm | 5/6-mid,14,slide,Escondido,10,Escondido|10,89.1,102.8,116.6,2,False
+6B-13mm | 5/6-mid,14,slide,Escondido,20,Escondido|20,93.4,115.9,138.4,2,False
+6B-13mm | 5/6-mid,14,slide,Escondido,30,Escondido|30,93.4,114.3,114.3,2,False
+6B-13mm | 5/6-mid,14,slide,Escondido,40,Escondido|40,93.4,114.3,114.3,1,False
+6B-13mm | 5/6-mid,14,slide,Escondido,50,Escondido|50,110.1,114.3,114.3,3,True
+6B-13mm | 5/6-mid,14,slide,Escondido,60,Escondido|60,110.1,133.3,133.3,2,False
+6B-13mm | 5/6-mid,14,slide,Escondido,70,Escondido|70,114.5,136.3,158.2,1,False
+6B-13mm | 5/6-mid,14,slide,Escondido,80,Escondido|80,133.3,136.3,158.2,2,False
+6B-13mm | 5/6-mid,14,slide,Escondido,90,Escondido|90,114.5,136.3,158.2,1,False
+6B-13mm | 5/6-mid,14,slide,Olmos,0,Olmos|0,167.5,167.5,167.5,1,False
+6B-13mm | 5/6-mid,14,slide,Olmos,30,Olmos|30,114.2,114.2,114.2,1,False
+6B-13mm | 5/6-mid,14,slide,Olmos,70,Olmos|70,167.5,167.5,167.5,1,False
+6B-13mm | 5/6-mid,14,slide,Olmos,80,Olmos|80,92.3,92.3,92.3,1,False
+6B-13mm | 5/6-mid,14,slide,Olmos,90,Olmos|90,66.7,66.7,66.7,1,False
+6B-13mm | 5/6-mid,14,slide,Hazard,0,Hazard|0,64.9,64.9,64.9,1,False
+6B-13mm | 5/6-mid,14,slide,Hazard,10,Hazard|10,64.9,64.9,64.9,1,False
+6B-13mm | 5/6-mid,14,slide,Hazard,20,Hazard|20,86.8,86.8,86.8,1,False
+6B-13mm | 5/6-mid,14,slide,Hazard,30,Hazard|30,86.8,86.8,86.8,1,False
+6B-13mm | 5/6-mid,14,slide,Hazard,70,Hazard|70,65.5,65.5,65.5,1,False
+6B-13mm | 5/6-mid,14,slide,Hazard,90,Hazard|90,64.3,64.3,64.3,1,False
+6B-13mm | 5/6-mid,14,slide,San Miguel,0,San Miguel|0,46.2,46.2,46.2,1,False
+6B-13mm | 5/6-mid,14,slide,San Miguel,10,San Miguel|10,46.2,46.2,46.2,1,False
+6B-13mm | 5/6-mid,14,slide,San Miguel,20,San Miguel|20,77.4,77.4,77.4,1,False
+6B-13mm | 5/6-mid,14,slide,San Miguel,30,San Miguel|30,97.3,97.3,97.3,1,False
+6B-13mm | 5/6-mid,14,slide,San Miguel,40,San Miguel|40,97.3,97.3,97.3,1,False
+6B-13mm | 5/6-mid,14,slide,San Miguel,50,San Miguel|50,94.8,94.8,94.8,1,False
+6B-13mm | 5/6-mid,14,slide,San Miguel,60,San Miguel|60,90.0,90.0,90.0,1,False
+6B-13mm | 5/6-mid,14,slide,San Miguel,70,San Miguel|70,66.7,66.7,94.8,1,False
+6B-13mm | 5/6-mid,14,slide,San Miguel,80,San Miguel|80,41.9,45.0,73.0,4,True
+6B-13mm | 5/6-mid,14,slide,San Miguel,90,San Miguel|90,37.0,43.9,73.0,4,True
+6B-13mm | 5/6-mid,14,slide,Anacacho,0,Anacacho|0,37.0,43.9,58.5,3,True
+6B-13mm | 5/6-mid,14,slide,Anacacho,10,Anacacho|10,37.0,43.9,58.5,2,False
+6B-13mm | 5/6-mid,14,slide,Anacacho,20,Anacacho|20,65.5,65.5,65.5,1,False
+6B-13mm | 5/6-mid,14,slide,Anacacho,40,Anacacho|40,90.0,90.0,90.0,1,False
+6B-13mm | 5/6-mid,14,slide,Anacacho,50,Anacacho|50,90.0,90.0,90.0,1,False
+6B-13mm | 5/6-mid,14,slide,Anacacho,60,Anacacho|60,90.0,90.0,90.0,1,False
+6B-13mm | 5/6-mid,14,slide,Anacacho,70,Anacacho|70,66.7,66.7,66.7,1,False
+6B-13mm | 5/6-mid,14,slide,Anacacho,80,Anacacho|80,66.7,66.7,66.7,1,False
+6B-13mm | 5/6-mid,14,slide,Anacacho,90,Anacacho|90,60.5,64.3,64.3,1,False
+6B-13mm | 5/6-mid,14,slide,Buda,0,Buda|0,59.5,64.3,64.3,3,True
+6B-13mm | 5/6-mid,14,slide,Buda,10,Buda|10,59.5,73.5,89.2,4,True
+6B-13mm | 5/6-mid,14,slide,Buda,20,Buda|20,59.5,80.0,92.3,5,True
+6B-13mm | 5/6-mid,14,slide,Buda,30,Buda|30,68.4,80.0,97.3,5,True
+6B-13mm | 5/6-mid,14,slide,Buda,40,Buda|40,68.4,80.0,100.7,4,True
+6B-13mm | 5/6-mid,14,slide,Buda,50,Buda|50,63.2,77.8,97.3,8,True
+6B-13mm | 5/6-mid,14,slide,Buda,60,Buda|60,53.8,76.6,99.0,8,True
+6B-13mm | 5/6-mid,14,slide,Buda,70,Buda|70,51.1,69.9,99.0,8,True
+6B-13mm | 5/6-mid,14,slide,Buda,80,Buda|80,40.5,69.1,99.0,9,True
+6B-13mm | 5/6-mid,14,slide,Buda,90,Buda|90,40.4,57.0,106.2,6,True
+6B-16mm | 6/7-lo,17,rotary,Wilcox,0,Wilcox|0,186.5,313.6,395.0,15,True
+6B-16mm | 6/7-lo,17,rotary,Wilcox,10,Wilcox|10,171.8,327.3,400.0,15,True
+6B-16mm | 6/7-lo,17,rotary,Wilcox,20,Wilcox|20,201.2,327.3,430.0,15,True
+6B-16mm | 6/7-lo,17,rotary,Wilcox,30,Wilcox|30,162.2,360.0,400.0,15,True
+6B-16mm | 6/7-lo,17,rotary,Wilcox,40,Wilcox|40,219.4,360.0,420.0,15,True
+6B-16mm | 6/7-lo,17,rotary,Wilcox,50,Wilcox|50,207.3,360.0,400.0,17,True
+6B-16mm | 6/7-lo,17,rotary,Wilcox,60,Wilcox|60,288.4,390.0,420.0,17,True
+6B-16mm | 6/7-lo,17,rotary,Wilcox,70,Wilcox|70,288.4,390.0,400.0,16,True
+6B-16mm | 6/7-lo,17,rotary,Wilcox,80,Wilcox|80,288.4,360.0,425.0,16,True
+6B-16mm | 6/7-lo,17,rotary,Wilcox,90,Wilcox|90,276.1,360.0,415.0,16,True
+6B-16mm | 6/7-lo,17,rotary,Midway,0,Midway|0,270.0,360.0,425.0,8,True
+6B-16mm | 6/7-lo,17,rotary,Midway,10,Midway|10,270.0,360.0,432.5,8,True
+6B-16mm | 6/7-lo,17,rotary,Midway,20,Midway|20,266.9,360.0,432.5,8,True
+6B-16mm | 6/7-lo,17,rotary,Midway,30,Midway|30,219.1,344.2,432.5,8,True
+6B-16mm | 6/7-lo,17,rotary,Midway,40,Midway|40,211.4,344.2,432.5,8,True
+6B-16mm | 6/7-lo,17,rotary,Midway,50,Midway|50,196.8,344.2,450.0,8,True
+6B-16mm | 6/7-lo,17,rotary,Midway,60,Midway|60,191.6,330.0,450.0,7,True
+6B-16mm | 6/7-lo,17,rotary,Midway,70,Midway|70,191.6,360.0,425.0,6,True
+6B-16mm | 6/7-lo,17,rotary,Midway,80,Midway|80,193.3,350.0,425.0,6,True
+6B-16mm | 6/7-lo,17,rotary,Midway,90,Midway|90,193.3,350.0,425.0,6,True
+6B-16mm | 6/7-lo,17,rotary,Escondido,0,Escondido|0,193.3,350.0,400.0,10,True
+6B-16mm | 6/7-lo,17,rotary,Escondido,10,Escondido|10,241.6,338.4,396.0,7,True
+6B-16mm | 6/7-lo,17,rotary,Escondido,20,Escondido|20,261.4,338.4,387.7,2,False
+6B-16mm | 6/7-lo,17,rotary,Escondido,30,Escondido|30,261.4,278.6,295.7,2,False
+6B-16mm | 6/7-lo,17,rotary,Escondido,40,Escondido|40,261.4,278.6,295.7,2,False
+6B-16mm | 6/7-lo,17,rotary,Escondido,50,Escondido|50,302.7,313.6,324.6,2,False
+6B-16mm | 6/7-lo,17,rotary,Escondido,60,Escondido|60,315.0,320.5,325.9,2,False
+6B-16mm | 6/7-lo,17,rotary,Escondido,70,Escondido|70,315.0,320.5,325.9,2,False
+6B-16mm | 6/7-lo,17,rotary,Escondido,80,Escondido|80,315.0,320.5,337.2,2,False
+6B-16mm | 6/7-lo,17,rotary,Escondido,90,Escondido|90,126.4,266.4,337.2,2,False
+6B-16mm | 6/7-lo,17,rotary,Olmos,0,Olmos|0,126.4,266.4,392.7,2,False
+6B-16mm | 6/7-lo,17,rotary,Olmos,10,Olmos|10,334.6,363.6,396.0,2,False
+6B-16mm | 6/7-lo,17,rotary,Olmos,20,Olmos|20,364.0,380.0,396.0,2,False
+6B-16mm | 6/7-lo,17,rotary,Olmos,30,Olmos|30,364.5,382.5,400.5,2,False
+6B-16mm | 6/7-lo,17,rotary,Olmos,40,Olmos|40,405.0,425.0,445.0,2,False
+6B-16mm | 6/7-lo,17,rotary,Olmos,50,Olmos|50,405.0,425.0,445.0,2,False
+6B-16mm | 6/7-lo,17,rotary,Olmos,60,Olmos|60,400.0,400.0,400.0,2,False
+6B-16mm | 6/7-lo,17,rotary,Olmos,70,Olmos|70,400.0,400.0,400.0,2,False
+6B-16mm | 6/7-lo,17,rotary,Olmos,80,Olmos|80,400.0,400.0,400.0,2,False
+6B-16mm | 6/7-lo,17,rotary,Olmos,90,Olmos|90,400.0,400.0,400.0,2,False
+6B-16mm | 6/7-lo,17,rotary,San Miguel,0,San Miguel|0,198.2,300.0,384.0,2,False
+6B-16mm | 6/7-lo,17,rotary,Buda,90,Buda|90,189.8,266.6,326.1,15,True
+6B-16mm | 6/7-lo,17,slide,Wilcox,0,Wilcox|0,172.8,313.6,386.0,14,True
+6B-16mm | 6/7-lo,17,slide,Wilcox,10,Wilcox|10,178.1,300.0,382.9,13,True
+6B-16mm | 6/7-lo,17,slide,Wilcox,20,Wilcox|20,167.6,218.4,382.9,12,True
+6B-16mm | 6/7-lo,17,slide,Wilcox,30,Wilcox|30,108.0,200.0,356.7,13,True
+6B-16mm | 6/7-lo,17,slide,Wilcox,40,Wilcox|40,104.7,144.0,234.5,12,True
+6B-16mm | 6/7-lo,17,slide,Wilcox,50,Wilcox|50,92.2,138.5,234.5,13,True
+6B-16mm | 6/7-lo,17,slide,Wilcox,60,Wilcox|60,80.1,122.0,274.3,15,True
+6B-16mm | 6/7-lo,17,slide,Wilcox,70,Wilcox|70,70.3,95.6,300.0,16,True
+6B-16mm | 6/7-lo,17,slide,Wilcox,80,Wilcox|80,70.3,95.6,274.3,11,True
+6B-16mm | 6/7-lo,17,slide,Wilcox,90,Wilcox|90,57.6,83.7,273.2,12,True
+6B-16mm | 6/7-lo,17,slide,Midway,0,Midway|0,49.6,95.3,179.1,4,True
+6B-16mm | 6/7-lo,17,slide,Midway,10,Midway|10,49.6,95.3,179.1,4,True
+6B-16mm | 6/7-lo,17,slide,Midway,20,Midway|20,72.8,135.0,195.8,4,True
+6B-16mm | 6/7-lo,17,slide,Midway,30,Midway|30,76.1,135.0,195.8,5,True
+6B-16mm | 6/7-lo,17,slide,Midway,40,Midway|40,76.1,128.2,187.0,4,True
+6B-16mm | 6/7-lo,17,slide,Midway,50,Midway|50,66.3,89.0,148.0,5,True
+6B-16mm | 6/7-lo,17,slide,Midway,60,Midway|60,66.3,89.0,148.0,5,True
+6B-16mm | 6/7-lo,17,slide,Midway,70,Midway|70,90.0,130.0,170.0,2,False
+6B-16mm | 6/7-lo,17,slide,Midway,80,Midway|80,90.0,130.0,175.2,2,False
+6B-16mm | 6/7-lo,17,slide,Midway,90,Midway|90,67.3,130.0,192.7,4,True
+6B-16mm | 6/7-lo,17,slide,Escondido,0,Escondido|0,67.3,150.0,224.2,5,True
+6B-16mm | 6/7-lo,17,slide,Escondido,10,Escondido|10,70.6,150.0,224.2,3,True
+6B-16mm | 6/7-lo,17,slide,Escondido,20,Escondido|20,74.3,194.0,313.7,1,False
+6B-16mm | 6/7-lo,17,slide,Escondido,40,Escondido|40,74.3,193.3,301.6,2,False
+6B-16mm | 6/7-lo,17,slide,Escondido,50,Escondido|50,74.3,193.3,301.6,2,False
+6B-16mm | 6/7-lo,17,slide,Escondido,60,Escondido|60,72.0,72.0,72.0,1,False
+6B-16mm | 6/7-lo,17,slide,Escondido,70,Escondido|70,65.2,72.0,72.0,1,False
+6B-16mm | 6/7-lo,17,slide,Escondido,80,Escondido|80,65.2,73.0,80.8,2,False
+6B-16mm | 6/7-lo,17,slide,Escondido,90,Escondido|90,65.2,73.0,80.8,2,False
+6B-16mm | 6/7-lo,17,slide,Olmos,0,Olmos|0,78.3,78.3,78.3,1,False
+6B-16mm | 6/7-lo,17,slide,Olmos,10,Olmos|10,77.4,77.4,77.4,1,False
+6B-16mm | 6/7-lo,17,slide,Olmos,20,Olmos|20,77.4,77.4,77.4,1,False
+6B-16mm | 6/7-lo,17,slide,Olmos,60,Olmos|60,65.9,77.4,77.4,2,False
+6B-16mm | 6/7-lo,17,slide,Olmos,80,Olmos|80,65.9,81.0,96.2,2,False
+6B-16mm | 6/7-lo,17,slide,Olmos,90,Olmos|90,175.9,276.9,276.9,1,False
+6B-16mm | 6/7-lo,17,slide,Buda,90,Buda|90,226.4,288.4,315.2,13,True
+6B-16mm | 5/6-mid,18,rotary,Escondido,10,Escondido|10,334.6,358.6,382.6,2,False
+6B-16mm | 5/6-mid,18,rotary,Escondido,20,Escondido|20,405.0,425.0,445.0,2,False
+6B-16mm | 5/6-mid,18,rotary,Escondido,30,Escondido|30,405.0,425.0,445.0,2,False
+6B-16mm | 5/6-mid,18,rotary,Escondido,40,Escondido|40,405.0,425.0,445.0,2,False
+6B-16mm | 5/6-mid,18,rotary,Escondido,50,Escondido|50,405.0,425.0,445.0,2,False
+6B-16mm | 5/6-mid,18,rotary,Escondido,60,Escondido|60,405.0,425.0,445.0,2,False
+6B-16mm | 5/6-mid,18,rotary,Escondido,70,Escondido|70,289.2,338.4,387.7,2,False
+6B-16mm | 5/6-mid,18,rotary,Escondido,80,Escondido|80,289.2,338.4,387.7,2,False
+6B-16mm | 5/6-mid,18,rotary,Escondido,90,Escondido|90,310.0,350.0,388.6,2,False
+6B-16mm | 5/6-mid,18,rotary,Hazard,0,Hazard|0,388.6,388.6,390.0,1,False
+6B-16mm | 5/6-mid,18,rotary,Hazard,10,Hazard|10,388.6,388.6,406.9,2,False
+6B-16mm | 5/6-mid,18,rotary,Hazard,20,Hazard|20,327.6,328.6,406.9,2,False
+6B-16mm | 5/6-mid,18,rotary,Hazard,30,Hazard|30,327.6,328.6,396.0,2,False
+6B-16mm | 5/6-mid,18,rotary,Hazard,40,Hazard|40,327.6,338.4,387.7,2,False
+6B-16mm | 5/6-mid,18,rotary,Hazard,50,Hazard|50,289.2,338.4,387.7,2,False
+6B-16mm | 5/6-mid,18,rotary,Hazard,60,Hazard|60,289.2,338.4,387.7,2,False
+6B-16mm | 5/6-mid,18,rotary,Hazard,70,Hazard|70,285.6,353.6,425.0,1,False
+6B-16mm | 5/6-mid,18,rotary,Hazard,80,Hazard|80,343.4,363.5,425.0,2,False
+6B-16mm | 5/6-mid,18,rotary,Hazard,90,Hazard|90,289.2,353.6,387.7,2,False
+6B-16mm | 5/6-mid,18,rotary,San Miguel,0,San Miguel|0,343.4,363.5,387.7,2,False
+6B-16mm | 5/6-mid,18,rotary,San Miguel,10,San Miguel|10,405.0,425.0,445.0,2,False
+6B-16mm | 5/6-mid,18,rotary,San Miguel,20,San Miguel|20,405.0,425.0,445.0,2,False
+6B-16mm | 5/6-mid,18,rotary,San Miguel,30,San Miguel|30,369.0,405.0,441.0,2,False
+6B-16mm | 5/6-mid,18,rotary,San Miguel,40,San Miguel|40,369.0,405.0,441.0,2,False
+6B-16mm | 5/6-mid,18,rotary,San Miguel,50,San Miguel|50,405.0,425.0,445.0,2,False
+6B-16mm | 5/6-mid,18,rotary,San Miguel,60,San Miguel|60,405.0,425.0,445.0,2,False
+6B-16mm | 5/6-mid,18,rotary,San Miguel,70,San Miguel|70,400.0,400.0,400.0,2,False
+6B-16mm | 5/6-mid,18,rotary,San Miguel,80,San Miguel|80,330.6,343.6,356.7,2,False
+6B-16mm | 5/6-mid,18,rotary,San Miguel,90,San Miguel|90,207.7,238.4,269.2,2,False
+6B-16mm | 5/6-mid,18,rotary,Austin Chalk,50,Austin Chalk|50,90.0,112.0,130.5,1,False
+6B-16mm | 5/6-mid,18,rotary,Austin Chalk,60,Austin Chalk|60,82.5,106.2,115.0,4,True
+6B-16mm | 5/6-mid,18,rotary,Austin Chalk,70,Austin Chalk|70,90.0,106.2,122.3,4,True
+6B-16mm | 5/6-mid,18,rotary,Austin Chalk,80,Austin Chalk|80,90.6,104.9,122.3,3,True
+6B-16mm | 5/6-mid,18,rotary,Austin Chalk,90,Austin Chalk|90,91.5,104.9,123.8,4,True
+6B-16mm | 5/6-mid,18,rotary,Eagle Ford,50,Eagle Ford|50,90.6,104.9,123.8,4,True
+6B-16mm | 5/6-mid,18,rotary,Eagle Ford,60,Eagle Ford|60,74.5,86.3,131.7,4,True
+6B-16mm | 5/6-mid,18,rotary,Eagle Ford,70,Eagle Ford|70,74.5,86.3,131.7,4,True
+6B-16mm | 5/6-mid,18,rotary,Eagle Ford,80,Eagle Ford|80,100.8,111.0,147.4,3,True
+6B-16mm | 5/6-mid,18,rotary,Eagle Ford,90,Eagle Ford|90,101.5,130.9,197.5,4,True
+6B-16mm | 5/6-mid,18,rotary,Buda,0,Buda|0,101.5,225.0,305.5,9,True
+6B-16mm | 5/6-mid,18,rotary,Buda,10,Buda|10,135.2,240.6,356.7,10,True
+6B-16mm | 5/6-mid,18,rotary,Buda,20,Buda|20,135.2,240.6,360.0,12,True
+6B-16mm | 5/6-mid,18,rotary,Buda,30,Buda|30,171.4,225.0,356.7,11,True
+6B-16mm | 5/6-mid,18,rotary,Buda,40,Buda|40,100.1,205.9,343.5,4,True
+6B-16mm | 5/6-mid,18,rotary,Buda,50,Buda|50,100.1,120.0,176.6,5,True
+6B-16mm | 5/6-mid,18,rotary,Buda,60,Buda|60,100.1,120.0,154.4,5,True
+6B-16mm | 5/6-mid,18,rotary,Buda,70,Buda|70,112.5,120.5,154.4,4,True
+6B-16mm | 5/6-mid,18,rotary,Buda,80,Buda|80,132.1,156.5,228.7,5,True
+6B-16mm | 5/6-mid,18,rotary,Buda,90,Buda|90,219.6,241.9,302.4,7,True
+6B-16mm | 5/6-mid,18,slide,Escondido,10,Escondido|10,146.1,159.3,172.4,2,False
+6B-16mm | 5/6-mid,18,slide,Escondido,20,Escondido|20,137.1,152.4,167.6,2,False
+6B-16mm | 5/6-mid,18,slide,Escondido,30,Escondido|30,105.9,105.9,118.8,1,False
+6B-16mm | 5/6-mid,18,slide,Escondido,40,Escondido|40,85.9,102.3,105.9,2,False
+6B-16mm | 5/6-mid,18,slide,Escondido,50,Escondido|50,83.3,102.3,118.8,1,False
+6B-16mm | 5/6-mid,18,slide,Escondido,60,Escondido|60,79.0,110.3,137.3,2,False
+6B-16mm | 5/6-mid,18,slide,Escondido,70,Escondido|70,83.3,128.1,177.2,2,False
+6B-16mm | 5/6-mid,18,slide,Escondido,80,Escondido|80,79.0,128.1,177.2,1,False
+6B-16mm | 5/6-mid,18,slide,Escondido,90,Escondido|90,72.8,81.7,91.1,1,False
+6B-16mm | 5/6-mid,18,slide,Hazard,80,Hazard|80,72.8,81.7,91.1,2,False
+6B-16mm | 5/6-mid,18,slide,Hazard,90,Hazard|90,72.3,81.7,91.1,2,False
+6B-16mm | 5/6-mid,18,slide,San Miguel,0,San Miguel|0,55.1,57.8,60.4,1,False
+6B-16mm | 5/6-mid,18,slide,San Miguel,10,San Miguel|10,55.1,57.8,60.4,2,False
+6B-16mm | 5/6-mid,18,slide,San Miguel,20,San Miguel|20,61.0,61.0,61.0,1,False
+6B-16mm | 5/6-mid,18,slide,San Miguel,30,San Miguel|30,61.0,61.0,61.0,1,False
+6B-16mm | 5/6-mid,18,slide,San Miguel,40,San Miguel|40,49.4,52.7,55.9,2,False
+6B-16mm | 5/6-mid,18,slide,San Miguel,50,San Miguel|50,49.4,52.7,55.9,2,False
+6B-16mm | 5/6-mid,18,slide,San Miguel,60,San Miguel|60,53.5,62.1,64.3,1,False
+6B-16mm | 5/6-mid,18,slide,San Miguel,70,San Miguel|70,59.2,62.1,64.8,2,False
+6B-16mm | 5/6-mid,18,slide,San Miguel,80,San Miguel|80,53.5,62.0,64.8,2,False
+6B-16mm | 5/6-mid,18,slide,San Miguel,90,San Miguel|90,58.5,62.0,64.8,1,False
+6B-16mm | 5/6-mid,18,slide,Austin Chalk,60,Austin Chalk|60,53.9,65.8,73.2,2,False
+6B-16mm | 5/6-mid,18,slide,Austin Chalk,70,Austin Chalk|70,58.5,85.7,112.3,5,True
+6B-16mm | 5/6-mid,18,slide,Austin Chalk,80,Austin Chalk|80,74.5,90.0,112.3,5,True
+6B-16mm | 5/6-mid,18,slide,Austin Chalk,90,Austin Chalk|90,74.5,90.0,97.7,4,True
+6B-16mm | 5/6-mid,18,slide,Eagle Ford,50,Eagle Ford|50,66.1,68.3,82.6,2,False
+6B-16mm | 5/6-mid,18,slide,Eagle Ford,60,Eagle Ford|60,49.5,59.6,82.6,4,True
+6B-16mm | 5/6-mid,18,slide,Eagle Ford,70,Eagle Ford|70,55.7,68.3,110.8,4,True
+6B-16mm | 5/6-mid,18,slide,Eagle Ford,80,Eagle Ford|80,55.7,83.3,125.8,4,True
+6B-16mm | 5/6-mid,18,slide,Eagle Ford,90,Eagle Ford|90,70.1,91.5,173.8,4,True
+6B-16mm | 5/6-mid,18,slide,Buda,0,Buda|0,70.1,91.5,173.8,8,True
+6B-16mm | 5/6-mid,18,slide,Buda,10,Buda|10,49.5,80.3,140.8,8,True
+6B-16mm | 5/6-mid,18,slide,Buda,20,Buda|20,37.3,60.0,120.8,9,True
+6B-16mm | 5/6-mid,18,slide,Buda,30,Buda|30,37.3,53.7,75.9,10,True
+6B-16mm | 5/6-mid,18,slide,Buda,40,Buda|40,36.6,53.7,75.9,7,True
+6B-16mm | 5/6-mid,18,slide,Buda,50,Buda|50,40.5,71.7,106.2,6,True
+6B-16mm | 5/6-mid,18,slide,Buda,60,Buda|60,40.5,93.8,118.6,4,True
+6B-16mm | 5/6-mid,18,slide,Buda,70,Buda|70,50.2,97.3,118.7,3,True
+6B-16mm | 5/6-mid,18,slide,Buda,80,Buda|80,50.2,97.3,137.6,4,True
+6B-16mm | 5/6-mid,18,slide,Buda,90,Buda|90,39.5,102.2,140.8,7,True
+6B-13mm | 5/6-lo,1,rotary,Buda,90,Buda|90,327.3,327.3,327.3,1,False
+6B-13mm | 5/6-lo,1,slide,Buda,90,Buda|90,66.7,66.7,66.7,1,False
+6B-16mm | 7/8-mid,3,rotary,Wilcox,90,Wilcox|90,305.1,317.4,329.7,2,False
+6B-16mm | 7/8-mid,3,rotary,Escondido,0,Escondido|0,320.0,358.0,382.5,2,False
+6B-16mm | 7/8-mid,3,rotary,Escondido,10,Escondido|10,333.4,400.0,400.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Escondido,20,Escondido|20,400.0,400.0,440.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Escondido,30,Escondido|30,400.0,400.0,440.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Escondido,40,Escondido|40,400.0,400.0,440.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Escondido,50,Escondido|50,400.0,400.0,440.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Escondido,60,Escondido|60,400.0,400.0,440.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Escondido,70,Escondido|70,259.0,425.0,445.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Escondido,80,Escondido|80,259.0,380.0,436.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Escondido,90,Escondido|90,249.7,400.0,440.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Hazard,0,Hazard|0,238.6,380.0,436.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Hazard,10,Hazard|10,238.6,400.0,440.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Hazard,20,Hazard|20,450.0,450.0,450.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Hazard,30,Hazard|30,450.0,450.0,450.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Hazard,40,Hazard|40,430.0,450.0,450.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Hazard,50,Hazard|50,364.0,380.0,436.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Hazard,60,Hazard|60,137.3,400.0,440.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Hazard,70,Hazard|70,137.3,400.0,440.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Hazard,80,Hazard|80,222.4,425.0,445.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Hazard,90,Hazard|90,275.8,425.0,445.0,3,True
+6B-16mm | 7/8-mid,3,rotary,Austin Chalk,0,Austin Chalk|0,360.0,400.0,400.0,1,False
+6B-16mm | 7/8-mid,3,rotary,Austin Chalk,10,Austin Chalk|10,360.0,360.0,360.0,1,False
+6B-16mm | 7/8-mid,3,rotary,Austin Chalk,20,Austin Chalk|20,300.0,300.0,300.0,1,False
+6B-16mm | 7/8-mid,3,rotary,Austin Chalk,30,Austin Chalk|30,276.9,276.9,276.9,1,False
+6B-16mm | 7/8-mid,3,rotary,Austin Chalk,40,Austin Chalk|40,276.9,276.9,276.9,1,False
+6B-16mm | 7/8-mid,3,rotary,Austin Chalk,50,Austin Chalk|50,276.9,276.9,276.9,1,False
+6B-16mm | 7/8-mid,3,rotary,Austin Chalk,60,Austin Chalk|60,225.0,225.0,288.4,1,False
+6B-16mm | 7/8-mid,3,rotary,Anacacho,0,Anacacho|0,62.8,225.0,325.8,2,False
+6B-16mm | 7/8-mid,3,rotary,Anacacho,10,Anacacho|10,62.8,234.9,407.0,2,False
+6B-16mm | 7/8-mid,3,rotary,Anacacho,20,Anacacho|20,233.8,329.9,426.0,2,False
+6B-16mm | 7/8-mid,3,rotary,Anacacho,30,Anacacho|30,405.0,425.0,445.0,2,False
+6B-16mm | 7/8-mid,3,rotary,Anacacho,40,Anacacho|40,450.0,450.0,450.0,2,False
+6B-16mm | 7/8-mid,3,rotary,Anacacho,50,Anacacho|50,450.0,450.0,450.0,2,False
+6B-16mm | 7/8-mid,3,rotary,Anacacho,60,Anacacho|60,450.0,450.0,450.0,2,False
+6B-16mm | 7/8-mid,3,rotary,Anacacho,70,Anacacho|70,450.0,450.0,450.0,2,False
+6B-16mm | 7/8-mid,3,rotary,Anacacho,80,Anacacho|80,450.0,450.0,450.0,2,False
+6B-16mm | 7/8-mid,3,rotary,Anacacho,90,Anacacho|90,450.0,450.0,450.0,2,False
+6B-16mm | 7/8-mid,3,rotary,Eagle Ford,0,Eagle Ford|0,405.0,425.0,445.0,1,False
+6B-16mm | 7/8-mid,3,rotary,Eagle Ford,10,Eagle Ford|10,400.0,400.0,400.0,1,False
+6B-16mm | 7/8-mid,3,rotary,Eagle Ford,20,Eagle Ford|20,400.0,400.0,400.0,1,False
+6B-16mm | 7/8-mid,3,rotary,Eagle Ford,30,Eagle Ford|30,360.0,360.0,360.0,1,False
+6B-16mm | 7/8-mid,3,rotary,Eagle Ford,40,Eagle Ford|40,257.1,257.1,257.1,1,False
+6B-16mm | 7/8-mid,3,rotary,Eagle Ford,50,Eagle Ford|50,257.1,257.1,257.1,1,False
+6B-16mm | 7/8-mid,3,rotary,Buda,0,Buda|0,450.0,450.0,450.0,1,False
+6B-16mm | 7/8-mid,3,rotary,Buda,10,Buda|10,450.0,450.0,450.0,1,False
+6B-16mm | 7/8-mid,3,rotary,Buda,20,Buda|20,360.0,360.0,360.0,1,False
+6B-16mm | 7/8-mid,3,rotary,Buda,30,Buda|30,360.0,360.0,360.0,1,False
+6B-16mm | 7/8-mid,3,rotary,Buda,40,Buda|40,327.3,327.3,327.3,1,False
+6B-16mm | 7/8-mid,3,rotary,Buda,50,Buda|50,327.3,327.3,327.3,1,False
+6B-16mm | 7/8-mid,3,rotary,Buda,60,Buda|60,300.0,300.0,300.0,1,False
+6B-16mm | 7/8-mid,3,rotary,Buda,70,Buda|70,300.0,300.0,300.0,1,False
+6B-16mm | 7/8-mid,3,slide,Wilcox,90,Wilcox|90,176.1,179.7,183.2,2,False
+6B-16mm | 7/8-mid,3,slide,Escondido,0,Escondido|0,155.6,177.9,200.3,1,False
+6B-16mm | 7/8-mid,3,slide,Escondido,10,Escondido|10,155.6,177.9,200.3,2,False
+6B-16mm | 7/8-mid,3,slide,Escondido,30,Escondido|30,155.6,171.4,175.8,2,False
+6B-16mm | 7/8-mid,3,slide,Escondido,40,Escondido|40,103.7,139.8,171.4,1,False
+6B-16mm | 7/8-mid,3,slide,Escondido,50,Escondido|50,171.4,171.4,171.4,2,False
+6B-16mm | 7/8-mid,3,slide,Escondido,60,Escondido|60,123.7,138.4,153.1,1,False
+6B-16mm | 7/8-mid,3,slide,Escondido,70,Escondido|70,189.5,189.5,189.5,2,False
+6B-16mm | 7/8-mid,3,slide,Escondido,80,Escondido|80,123.7,150.0,189.5,2,False
+6B-16mm | 7/8-mid,3,slide,Escondido,90,Escondido|90,141.2,150.0,189.5,3,True
+6B-16mm | 7/8-mid,3,slide,Hazard,0,Hazard|0,93.5,141.2,155.8,1,False
+6B-16mm | 7/8-mid,3,slide,Hazard,10,Hazard|10,138.5,138.5,141.2,2,False
+6B-16mm | 7/8-mid,3,slide,Hazard,20,Hazard|20,138.5,138.5,155.8,1,False
+6B-16mm | 7/8-mid,3,slide,Hazard,30,Hazard|30,138.5,138.5,138.5,1,False
+6B-16mm | 7/8-mid,3,slide,Hazard,80,Hazard|80,76.6,76.6,76.6,1,False
+6B-16mm | 7/8-mid,3,slide,Austin Chalk,10,Austin Chalk|10,76.6,76.6,76.6,1,False
+6B-16mm | 7/8-mid,3,slide,Anacacho,0,Anacacho|0,156.5,156.5,156.5,1,False
+6B-16mm | 7/8-mid,3,slide,Anacacho,10,Anacacho|10,156.5,156.5,156.5,1,False
+6B-16mm | 7/8-mid,3,slide,Eagle Ford,30,Eagle Ford|30,36.5,36.5,36.5,1,False
+6B-16mm | 7/8-mid,3,slide,Eagle Ford,40,Eagle Ford|40,36.5,36.5,36.5,1,False
+6B-16mm | 7/8-mid,3,slide,Buda,0,Buda|0,138.5,138.5,138.5,1,False
+6B-16mm | 7/8-mid,3,slide,Buda,30,Buda|30,149.3,149.3,149.3,1,False

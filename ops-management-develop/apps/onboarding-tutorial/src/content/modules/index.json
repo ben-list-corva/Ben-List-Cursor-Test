@@ -1,0 +1,37 @@
+{
+  "modules": [
+    {
+      "moduleSlug": "introduction-to-operations",
+      "title": "Introduction to Operations",
+      "sourceSheetId": "194jcVTY5pDAtN6b0jfdAn9jFhPkQNmYE2p2PS0bBZFM",
+      "sourceTabName": "",
+      "lastGeneratedAt": "2025-12-24T21:05:39.511Z",
+      "versionHash": "c30ffd2198e51368"
+    },
+    {
+      "moduleSlug": "introduction-to-operations-day2",
+      "title": "Introduction to Operations - Day 2",
+      "sourceSheetId": "194jcVTY5pDAtN6b0jfdAn9jFhPkQNmYE2p2PS0bBZFM",
+      "sourceTabName": "",
+      "lastGeneratedAt": "2025-12-24T21:05:39.511Z",
+      "versionHash": "c30ffd2198e51368"
+    },
+    {
+      "moduleSlug": "drilling-data-analyst",
+      "title": "How to be a Drilling Data Analyst",
+      "sourceSheetId": "1uqwWg1IUqPjbePmSUBjl0ZLfWNqwfj9ndRy4aTMlR_0",
+      "sourceTabName": "",
+      "lastGeneratedAt": "2025-12-24T21:05:40.303Z",
+      "versionHash": "e8d39e0636170338"
+    },
+    {
+      "moduleSlug": "becoming-better-dda",
+      "title": "Becoming a Better DDA",
+      "sourceSheetId": "1Wz1sn7UqXk-tXsiJqXkgptJsi4GScSBdD_pGpW0gOrI",
+      "sourceTabName": "",
+      "lastGeneratedAt": "2025-12-24T21:05:40.871Z",
+      "versionHash": "73e8008497fc2efa"
+    }
+  ],
+  "generatedAt": "2025-12-24T21:05:40.872Z"
+}

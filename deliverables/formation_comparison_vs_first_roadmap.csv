@@ -1,0 +1,23 @@
+formation_name_new,matched_first_formation,source_asset_id,md_start,md_end,new_rop_limit,first_rop_max,delta_rop,new_diff_limit,first_diff_press,delta_diff_press,new_wob_p95,first_wob_max,delta_wob_vs_first_max,new_rotary_rpm_median,first_rotary_rpm_min,first_rotary_rpm_max,rpm_vs_first_range,match_status
+Midway Shale,Midway Shale,18398736,2851,3497,580,400,180,1070,700,370,39,45,-6,60,40,60,within_range,matched
+Arkadelphia,Arkadelphia,18398736,3498,3816,580,400,180,1450,700,750,46,45,1,50,40,60,within_range,matched
+Pecan Gap Chalk,Pecan Gap Chalk,18398736,3817,4086,470,400,70,1020,700,320,46,45,1,50,40,60,within_range,matched
+Base Ozan,Base Ozan,18398736,4087,4539,310,400,-90,810,700,110,20,45,-25,50,40,60,within_range,matched
+Austin Chalk,Austin Chalk,18398736,4540,5028,460,400,60,1030,700,330,45,45,0,50,40,60,within_range,matched
+Fredricksburg Limestone,Fredricksburg Limestone,18398736,5029,5399,390,400,-10,1320,700,620,55,45,10,60,40,60,within_range,matched
+Paluxy,Paluxy,18398736,5400,5685,390,400,-10,1330,700,630,55,55,0,60,40,50,above_range,matched
+Glen Rose,Glen Rose,18398736,5686,6402,280,400,-120,1070,700,370,60,55,5,60,40,50,above_range,matched
+Lower Glen Rose,Lower Glen Rose,18398736,6403,7018,280,400,-120,1350,700,650,60,55,5,50,40,50,within_range,matched
+Ferry Lake Anhydrite,Ferry Lake Anhydrite,18398736,7019,7188,250,400,-150,1300,700,600,60,55,5,50,40,50,within_range,matched
+Rodessa,Rodessa,18398736,7189,7676,360,400,-40,1490,700,790,60,55,5,50,40,50,within_range,matched
+Bexar Shale,Bexar Shale,18398736,7677,7837,430,400,30,1580,700,880,60,55,5,50,40,50,within_range,matched
+James Lime,James Lime,18398736,7838,8071,250,400,-150,1390,700,690,65,55,10,50,40,50,within_range,matched
+Pine Island,Pine Island,18398736,8072,8403,350,400,-50,1480,700,780,65,55,10,50,40,50,within_range,matched
+Pettet,Pettet,18398736,8404,8955,330,400,-70,1520,700,820,65,55,10,50,40,50,within_range,matched
+Upper Hosston,Upper Hosston,18398736,8956,9880,290,400,-110,1480,700,780,72,55,17,30,40,40,below_range,matched
+Middle Hosston,Middle Hosston,18398736,9881,9969,80,400,-320,1410,700,710,74,55,19,30,40,40,below_range,matched
+Travis Peak Lower,,64628631,10620,11600,110,,,770,,,60,,,35,,,,not_in_first_roadmap
+Cotton Valley,Cotton Valley Shale,64628631,11601,11685,100,400,-300,600,700,-100,60,60,0,30,40,40,below_range,matched
+Knowles Lime SB1,Knowles Lime (SB1),64628631,11686,11786,110,400,-290,700,700,0,50,60,-10,30,40,40,below_range,matched
+Knowles Lime SB2,Knowles Lime (SB2),64628631,11787,12656,140,400,-260,970,700,270,53,60,-7,35,40,40,below_range,matched
+Bossier,,64628631,12657,12733,140,,,960,,,51,,,35,,,,not_in_first_roadmap

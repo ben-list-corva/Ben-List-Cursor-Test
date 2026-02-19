@@ -1,0 +1,14 @@
+{
+  "generators": {
+    "import": {
+      "factory": "./generators/import/import",
+      "schema": "./generators/import/schema.json",
+      "description": "import generator"
+    },
+    "create": {
+      "factory": "./generators/create/create",
+      "schema": "./generators/create/schema.json",
+      "description": "create generator"
+    }
+  }
+}

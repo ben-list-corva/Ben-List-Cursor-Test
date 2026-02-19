@@ -1,0 +1,24 @@
+.paragraph {
+  color: rgba(255, 255, 255, 0.87);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.paragraph strong {
+  color: #e0e0e0;
+  font-weight: 600;
+}
+
+.paragraph em {
+  font-style: italic;
+}
+
+.paragraph a {
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+.paragraph a:hover {
+  color: #00acc1;
+}

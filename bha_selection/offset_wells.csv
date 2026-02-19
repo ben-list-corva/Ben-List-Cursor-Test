@@ -1,0 +1,45 @@
+asset_id,well_name,company,basin,target_formation,rig,distance_miles,hole_depth_ft,section,hole_diameter,mud_type,mud_density,bit_size,bit_type,state,spud_date,lat,lon,string_design,well_state
+37171721,Galvan Ranch A 339H,SM Energy,Eagle Ford,Upper Eagle Ford,Ensign T103,2.4,20527.79,Production Lateral,8.75,Oil-base,12.2,N/A,pdc,In Slips,2024-11-20,28.067647,-99.628293,2,drilled_not_completed
+88700700,Galvan Ranch A 341H,SM Energy,Eagle Ford,Upper Eagle Ford,Ensign T103,2.4,20450.08,Production Lateral,8.75,Oil-base,13.2,N/A,pdc,In Slips,N/A,28.067557,-99.628449,2,drilled_not_completed
+52013455,Galvan Ranch A #329H,SM Energy,Eagle Ford,Lower Eagle Ford,Ensign T103,2.4,21051.13,Production Lateral,8.75,Oil-base,13.8,8.75,pdc,In Slips,2026-02-07,28.081304,-99.614616,3,drilling
+82512872,Galvan Ranch A119H (Rerun),SM Energy,Eagle Ford,Lower Eagle Ford,Nabors X19,2.4,20884,Production Lateral,8.75,Oil-base,13.8,8.75,pdc,In Slips,2026-01-19,28.074521,-99.623089,3,drilling
+41387083,Galvan Ranch A119H,SM Energy,Eagle Ford,Lower Eagle Ford,Nabors X19,2.4,20884,Production Lateral,8.75,Oil-base,13.8,N/A,pdc,In Slips,2026-01-19,28.074521,-99.623089,3,drilled_not_completed
+10830449,Galvan Ranch A #333H,SM Energy,Eagle Ford,Lower Eagle Ford,Ensign T103,2.4,22516.03,Production Lateral,8.75,Oil-base,12.9,N/A,pdc,In Slips,2026-01-06,28.081087,-99.614483,3,drilled_not_completed
+14203471,Galvan Ranch A925H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,2.5,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.084878,-99.609467,,completions
+15446100,Galvan Ranch A927H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,2.5,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.084878,-99.609467,,completions
+41311703,Galvan Ranch A912H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,3.4,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.100537,-99.591369,,completions
+19505115,Galvan Ranch A910H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,3.4,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.100537,-99.591369,,completions
+31862148,Galvan Ranch A 908H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,3.8,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.10655,-99.58795,,completions
+80779022,Galvan Ranch A 904H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,3.8,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.10655,-99.58795,,completions
+68832634,GALVAN RANCH A968H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,5.3,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.045239,-99.679389,,completions
+21449455,GALVAN RANCH B902H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,5.3,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.045239,-99.679389,,completions
+85030046,GALVAN RANCH A970H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,5.3,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.045239,-99.679389,,completions
+89190156,Galvan Ranch B 906H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,6.2,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.037523,-99.693112,,completions
+21939660,Galvan Ranch B 908H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,6.2,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.037523,-99.693112,,completions
+61207713,Galvan Ranch B618H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,7.5,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.029327,-99.712523,,completions
+55614669,Galvan Ranch B118H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,7.5,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.029327,-99.712523,,completions
+26811662,Galvan Ranch B617H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,7.5,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.029663,-99.712815,,completions
+12923572,Galvan Ranch B 918H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,7.7,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.027815,-99.715461,,completions
+67914137,Galvan Ranch B 920H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,7.7,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.027744,-99.715415,,completions
+12095535,Galvan Ranch B922H,SM Energy,Eagle Ford,Upper Eagle Ford,Ensign T106,9.6,16941.04,Production Lateral,8.75,Oil-base,12.8,N/A,pdc,In Slips,N/A,28.042282,-99.749925,2,drilled_not_completed
+11924169,Galvan Ranch B924H,SM Energy,Eagle Ford,Upper Eagle Ford,Ensign T106,9.6,17227.35,Production Lateral,8.75,Oil-base,12.3,N/A,pdc,In Slips,N/A,28.042214,-99.749874,2,drilled_not_completed
+89225057,Galvan Ranch C970H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,15.2,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,27.992531,-99.832301,,completions
+11062587,Galvan Ranch C370H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,15.2,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,27.992531,-99.832301,,completions
+60730261,Galvan Ranch C 436H,SM Energy,Eagle Ford,Lower Eagle Ford,Ensign T103,15.3,17962.13,Production Lateral,8.75,Oil-base,12.3,N/A,pdc,In Slips,N/A,27.989848,-99.834561,2,completed
+40763831,Galvan Ranch C 438H,SM Energy,Eagle Ford,Lower Eagle Ford,Ensign T103,15.4,17778.2,Production Lateral,8.75,Oil-base,12.6,N/A,pdc,In Slips,N/A,27.989898,-99.834739,2,drilled_not_completed
+74293814,Galvan Ranch C 452H,SM Energy,Eagle Ford,Lower Eagle Ford,Ensign T103,16.6,23618.13,Production Lateral,8.75,Oil-base,12.8,N/A,pdc,In Slips,2025-10-05,27.997385,-99.857709,2,drilled_not_completed
+61673690,Briscoe Catarina 0029H ,SM Energy,Eagle Ford,Eagle Ford,Ensign T103,18.1,17865,Production Lateral,8.75,Oil-base,12.5,N/A,pdc,In Slips,2025-12-02,28.22537,-99.8155688,3,drilled_not_completed
+78819425,Briscoe R (SA26) State 1568H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,21.1,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.042411,-99.938335,,completions
+80923670,Briscoe R (SA27) State 1579H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,21.1,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.042411,-99.938335,,completions
+62439747, San Ambrosia F 1238H,SM Energy,Eagle Ford,Lower Eagle Ford,Ensign T103,21.1,18016,Production Lateral,8.75,Oil-base,12.4,N/A,pdc,In Slips,N/A,28.134568,-99.925694,2,drilled_not_completed
+88889236,San Ambrosia F 1219H,SM Energy,Eagle Ford,Lower Eagle Ford,Ensign T103,21.1,17263.12,Production Lateral,8.75,Oil-base,12.7,N/A,pdc,In Slips,N/A,28.134512,-99.925762,2,drilled_not_completed
+52026438,BRISCOE C (SA22) STATE 683H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,21.6,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.11962,-99.939396,,completions
+72281056,SAN AMBROSIA F (SA35) 2159H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,21.9,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.148768,-99.935532,,completions
+69094121,SAN AMBROSIA F (SA31) 2128H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,21.9,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.148768,-99.935532,,completions
+26934629,SAN AMBROSIA F (SA32) 2139H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,21.9,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.148768,-99.935532,,completions
+52701251,SAN AMBROSIA F (SA34) 2148H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,21.9,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.148768,-99.935532,,completions
+38338664,SAN AMBROSIA F (SA33) 942H,SM Energy,Eagle Ford,Eagle Ford,SM Energy Completions,21.9,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,28.148768,-99.935532,,completions
+60228605, San Ambrosia F (SA40) State 893H,SM Energy,Eagle Ford,Upper Eagle Ford,Ensign T106,23.7,21034.09,Production Lateral,8.75,Oil-base,12.9,N/A,pdc,In Slips,N/A,28.185024,-99.951397,2,drilled_not_completed
+35223034,San Ambrosia F (SA39) State 853H,SM Energy,Eagle Ford,Lower Eagle Ford,Ensign T106,23.7,22459.07,Production Lateral,8.75,Oil-base,12.1,N/A,pdc,In Slips,N/A,28.185024,-99.951117,2,drilled_not_completed
+58107142,Britanco 79M ,SM Energy,Eagle Ford,Lower Eagle Ford,Ensign T103,28.8,6801,Production Vertical,8.75,Oil-base,12.5,N/A,pdc,In Slips,2025-10-28,28.128277,-100.056637,1,drilled_not_completed
+82391045,Briscoe C 69M,SM Energy,Eagle Ford,Upper Eagle Ford,Ensign T103,30.5,6189.18,Production,8.75,Oil-base,12.5,N/A,pdc,In Slips,N/A,28.157739,-100.078945,1,drilled_not_completed

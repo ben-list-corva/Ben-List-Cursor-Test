@@ -1,0 +1,69 @@
+name: Cleanup PR deployments
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  prepare:
+    name: Prepare packages
+    if: startsWith(github.event.pull_request.title, 'chore(${{ github.event.repository.default_branch }})\:\ release') == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Environment
+        uses: ./.github/actions/setup-environment
+
+      - name: Parse labels
+        id: parse-labels
+        run: |
+          projects=$(echo '${{ toJson(github.event.pull_request.labels) }}' \
+            | jq -r '
+                map(.name)
+                | map(select(startswith("project:")))
+                | map(split(":")[1])
+                | join(",")
+              ')
+          echo "projects=$projects" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy metadata
+        uses: corva-ai/gh-actions/common/run-script@develop
+        id: metadata
+        if: ${{ steps.parse-labels.outputs.projects != '' }}
+        env:
+          ENVIRONMENT: qa
+          REF_NAME: pull/${{ github.event.pull_request.number }}/head
+          PROJECTS: ${{ steps.parse-labels.outputs.projects }}
+        with:
+          script-name: 'deploy-metadata.mjs'
+    outputs:
+      has-affected-apps: ${{ steps.metadata.outcome == 'success'
+        && fromJSON(steps.metadata.outputs.result).hasAffectedApps
+        || false }}
+
+      affected-apps: ${{ steps.metadata.outcome == 'success'
+        && fromJSON(steps.metadata.outputs.result).affectedApps
+        || '[]' }}
+
+  branch-deletion-flow:
+    name: ${{ matrix.name }} (branch deletion)
+    runs-on: ubuntu-latest
+    if: ${{ needs.prepare.outputs.has-affected-apps == 'true' }}
+    needs: prepare
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.prepare.outputs.affected-apps) }}
+    steps:
+      - name: get app key
+        run: cat ${{ matrix.root}}/manifest.json | jq -r '.application.key'
+        id: app-key
+
+      - name: branch deletion flow
+        uses: corva-ai/gh-actions/shared-dc-workflows/feat-fix-delete@develop
+        with:
+          qa-api-key: ${{ secrets.API_KEY_QA }}
+          qa-app-key: ${{ steps.app-key.outputs.app-key }}
+          prod-api-key: ${{ secrets.API_KEY }}
+          prod-app-key: ${{ steps.app-key.outputs.app-key }}
+          package-cwd: ${{ matrix.root }}

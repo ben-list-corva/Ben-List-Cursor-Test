@@ -1,0 +1,1 @@
+{"version":3,"file":"get-version.d.ts","sourceRoot":"","sources":["../../src/lib/get-version.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,MAAM,CAAC;AAEjC,MAAM,WAAW,cAAc;IAC7B,IAAI,EAAE,SAAS,CAAC,MAAM,CAAC,CAAC;IACxB,OAAO,EAAE,MAAM,CAAC;IAChB,OAAO,CAAC,EAAE,MAAM,CAAC;CAClB;AAED,eAAO,MAAM,UAAU,GAAI,6BAIxB,cAAc,KAAG,MAgBnB,CAAC"}

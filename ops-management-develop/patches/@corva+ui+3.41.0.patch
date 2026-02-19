@@ -1,0 +1,13 @@
+diff --git a/node_modules/@corva/ui/package.json b/node_modules/@corva/ui/package.json
+index c644cc8..7bd0c8d 100644
+--- a/node_modules/@corva/ui/package.json
++++ b/node_modules/@corva/ui/package.json
+@@ -7,7 +7,7 @@
+     "corva-ui"
+   ],
+   "update": "update",
+-  "main": "./dist",
++  "main": "./index.js",
+   "module": "./index.js",
+   "scripts": {
+     "helper-cli": "npx @corva/fe-dev-helper-cli@latest",

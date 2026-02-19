@@ -1,0 +1,173 @@
+name: 'Code Analysis'
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+  push:
+    branches:
+      - develop
+
+permissions:
+  id-token: write
+  contents: write
+  actions: read
+  checks: write
+  statuses: write
+  pull-requests: write
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Load secrets from 1Password
+        uses: 1password/load-secrets-action@v2.0.0
+        id: secrets
+        with:
+          export-env: false
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN_RO }}
+          #
+          APP_ID: 'op://GitHub.Actions/GitHub/corva-monobot/APP_ID'
+          PRIVATE_KEY: 'op://GitHub.Actions/GitHub/corva-monobot/PRIVATE_KEY'
+      - name: Generate GitHub token
+        uses: actions/create-github-app-token@v1.11.7
+        id: token
+        with:
+          app-id: ${{ steps.secrets.outputs.APP_ID }}
+          private-key: ${{ steps.secrets.outputs.PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+
+      - name: Checkout sources
+        uses: actions/checkout@v4.2.2
+        with:
+          token: ${{ steps.token.outputs.token }}
+          fetch-depth: 0
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.sha }}
+      - name: Setup Environment
+        uses: ./.github/actions/setup-environment
+      - name: Derive appropriate SHAs for base and head for `nx affected` commands
+        uses: nrwl/nx-set-shas@v4.3.0
+        with:
+          main-branch-name: ${{ github.event.repository.default_branch }}
+      - name: Lint affected projects
+        if: ${{ github.event_name == 'pull_request' }}
+        run: npx nx affected -t lint --parallel=5
+      - name: Lint all projects
+        if: ${{ github.event_name == 'push' }}
+        run: npx nx run-many -t lint
+      - name: Add PR status check
+        uses: ouzi-dev/commit-status-updater@v2.0.2
+        if: ${{ success() || failure() }}
+        with:
+          token: ${{ steps.token.outputs.token }}
+          name: 'Lint'
+          status: ${{ job.status }}
+          url: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          description: ${{ job.status == 'success' && 'Linted successfully' || 'Linted with errors. Check PR annotations' }}
+
+  format:
+    name: Format
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Load secrets from 1Password
+        uses: 1password/load-secrets-action@v2.0.0
+        id: secrets
+        with:
+          export-env: false
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN_RO }}
+          #
+          APP_ID: 'op://GitHub.Actions/GitHub/corva-monobot/APP_ID'
+          PRIVATE_KEY: 'op://GitHub.Actions/GitHub/corva-monobot/PRIVATE_KEY'
+      - name: Generate GitHub token
+        uses: actions/create-github-app-token@v1.11.7
+        id: token
+        with:
+          app-id: ${{ steps.secrets.outputs.APP_ID }}
+          private-key: ${{ steps.secrets.outputs.PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+      - name: Checkout sources
+        uses: actions/checkout@v4.2.2
+        with:
+          token: ${{ steps.token.outputs.token }}
+          fetch-depth: 0
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.sha }}
+      - name: Setup Environment
+        uses: ./.github/actions/setup-environment
+      - name: Derive appropriate SHAs for base and head for `nx affected` commands
+        uses: nrwl/nx-set-shas@v4.3.0
+        with:
+          main-branch-name: ${{ github.event.repository.default_branch }}
+      - name: Format affected projects
+        if: ${{ github.event_name == 'pull_request' }}
+        run: npx nx affected -t format --parallel=5
+      - name: Format all projects
+        if: ${{ github.event_name == 'push' }}
+        run: npx nx run-many -t format
+      - name: Add PR status check
+        uses: ouzi-dev/commit-status-updater@v2.0.2
+        if: ${{ success() || failure() }}
+        with:
+          token: ${{ steps.token.outputs.token }}
+          name: 'Format'
+          status: ${{ job.status }}
+          url: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          description: ${{ job.status == 'success' && 'Formatting checked successfully' || 'Formatting checked with errors. Check PR annotations' }}
+
+  tests:
+    name: Tests
+    runs-on:
+      - runs-on
+      - env=infra-dev
+      - spot=co
+      - runner=8cpu-linux-x64
+      - run-id=${{ github.run_id }}
+    steps:
+      - name: Load secrets from 1Password
+        uses: 1password/load-secrets-action@v2.0.0
+        id: secrets
+        with:
+          export-env: false
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN_RO }}
+          #
+          APP_ID: 'op://GitHub.Actions/GitHub/corva-monobot/APP_ID'
+          PRIVATE_KEY: 'op://GitHub.Actions/GitHub/corva-monobot/PRIVATE_KEY'
+
+      - name: Generate GitHub token
+        uses: actions/create-github-app-token@v1.11.7
+        id: token
+        with:
+          app-id: ${{ steps.secrets.outputs.APP_ID }}
+          private-key: ${{ steps.secrets.outputs.PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+      - name: Checkout sources
+        uses: actions/checkout@v4.2.2
+        with:
+          token: ${{ steps.token.outputs.token }}
+          fetch-depth: 0
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.sha }}
+      - name: Setup Environment
+        uses: ./.github/actions/setup-environment
+      - name: Derive appropriate SHAs for base and head for `nx affected` commands
+        uses: nrwl/nx-set-shas@v4.3.0
+        with:
+          main-branch-name: ${{ github.event.repository.default_branch }}
+      - name: Test affected projects
+        if: ${{ github.event_name == 'pull_request' }}
+        run: npx nx affected -t test --parallel=5
+      - name: Test all projects
+        if: ${{ github.event_name == 'push' }}
+        run: npx nx run-many -t test
+      - name: Add PR status check
+        uses: ouzi-dev/commit-status-updater@v2.0.2
+        if: ${{ success() || failure() }}
+        with:
+          token: ${{ steps.token.outputs.token }}
+          name: 'Test'
+          status: ${{ job.status }}
+          url: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          description: ${{ job.status == 'success' && 'Tests ran successfully' || 'Tests ran with errors. Check PR annotations' }}

@@ -1,0 +1,140 @@
+name: Deployment workflow
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+  push:
+    branches:
+      - develop
+    tags:
+      - '*@v[0-9]+.[0-9]+.[0-9]+'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  prepare:
+    name: Prepare packages
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+          ref: ${{ github.sha }}
+      - name: Setup Environment
+        uses: ./.github/actions/setup-environment
+      - name: Derive appropriate SHAs for base and head for `nx affected` commands
+        uses: nrwl/nx-set-shas@v4.3.0
+        with:
+          main-branch-name: ${{ github.event.repository.default_branch }}
+      - name: Deploy metadata
+        uses: corva-ai/gh-actions/common/run-script@develop
+        id: metadata
+        env:
+          ENVIRONMENT: qa
+          REF_NAME: ${{ github.ref_name }}
+        with:
+          script-name: 'deploy-metadata.mjs'
+      - name: Build packages
+        if: ${{ fromJSON(steps.metadata.outputs.result).hasAffectedApps }}
+        run: npx nx affected -t build
+        # create github artifact from dist folder
+      - name: Create GitHub artifact from dist folder
+        id: artifact-upload
+        if: ${{ fromJSON(steps.metadata.outputs.result).hasAffectedApps }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+          retention-days: 1
+    outputs:
+      has-affected-apps: ${{ fromJSON(steps.metadata.outputs.result).hasAffectedApps }}
+      affected-apps: ${{ fromJSON(steps.metadata.outputs.result).affectedApps }}
+      artifact-id: ${{ steps.artifact-upload.outputs.artifact-id }}
+
+  develop-flow:
+    name: ${{ matrix.name }} (main branch)
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'push' && needs.prepare.outputs.has-affected-apps == 'true' && (github.ref_name == 'develop' || github.ref_type == 'tag') }}
+    needs: prepare
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.prepare.outputs.affected-apps) }}
+    steps:
+      - name: develop branch flow
+        uses: corva-ai/gh-actions/shared-dc-workflows/develop@develop
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          qa-api-key: ${{ secrets.API_KEY_QA }}
+          prod-api-key: ${{ secrets.API_KEY }}
+          npm-token: ${{ secrets.CORVA_NPM_TOKEN }}
+          package-cwd: 'dist/apps/${{ matrix.name }}'
+          artifact-id: ${{ needs.prepare.outputs.artifact-id }}
+          files-to-zip: 'manifest.json,package.json,build/**'
+
+  release-flow:
+    name: ${{ matrix.name }} (release tag)
+    runs-on: ubuntu-latest
+    if: github.ref_type == 'tag'
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.prepare.outputs.affected-apps) }}
+    needs: prepare
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          artifact-ids: ${{ needs.prepare.outputs.artifact-id }}
+
+      - name: Create artifact
+        run: |
+          zip -j ${{ github.ref_name }}.zip dist/apps/${{ matrix.name }}/build/** dist/apps/${{ matrix.name }}/package.json
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ github.ref_name }}.zip
+
+  feat-fix-flow:
+    name: ${{ matrix.name }} (feature)
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'pull_request' && needs.prepare.outputs.has-affected-apps == 'true' && (startsWith(github.event.pull_request.head.ref, 'feat/') || startsWith(github.event.pull_request.head.ref, 'fix/')) }}
+    needs: prepare
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.prepare.outputs.affected-apps) }}
+    steps:
+      - name: feat/fix flow
+        uses: corva-ai/gh-actions/shared-dc-workflows/feat-fix@develop
+        with:
+          qa-api-key: ${{ secrets.API_KEY_QA }}
+          prod-api-key: ${{ secrets.API_KEY }}
+          npm-token: ${{ secrets.CORVA_NPM_TOKEN }}
+          jira-user-email: ${{ secrets.JIRA_AUTOTEST_USERNAME }}
+          jira-api-token: ${{ secrets.JIRA_AUTOTEST_API_TOKEN }}
+          package-cwd: 'dist/apps/${{ matrix.name }}'
+          artifact-id: ${{ needs.prepare.outputs.artifact-id }}
+          files-to-zip: 'manifest.json,package.json,build/**'
+
+  release-fix-flow:
+    name: ${{ matrix.name }} (release fix)
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'push' && needs.prepare.outputs.has-affected-apps == 'true' && startsWith(github.ref_name, 'release-fix/') }}
+    needs: prepare
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.prepare.outputs.affected-apps) }}
+    steps:
+      - name: release-fix/X.X.X flow
+        uses: corva-ai/gh-actions/shared-dc-workflows/release-fix-X.X.X@develop
+        with:
+          qa-api-key: ${{ secrets.API_KEY_QA }}
+          prod-api-key: ${{ secrets.API_KEY }}
+          npm-token: ${{ secrets.CORVA_NPM_TOKEN }}
+          package-cwd: 'dist/apps/${{ matrix.name }}'
+          artifact-id: ${{ needs.prepare.outputs.artifact-id }}
+          files-to-zip: 'manifest.json,package.json,build/**'

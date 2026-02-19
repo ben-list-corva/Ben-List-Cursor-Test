@@ -1,0 +1,10 @@
+{
+  "name": "onboarding-tutorial",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/onboarding-tutorial/src",
+  "projectType": "application",
+  "tags": [],
+  "metadata": {
+    "type": "app"
+  }
+}

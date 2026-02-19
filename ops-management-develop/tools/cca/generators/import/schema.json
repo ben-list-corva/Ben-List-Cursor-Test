@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "ImportDcApp",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "repository": {
+      "type": "string",
+      "description": "Git repository URL to clone",
+      "x-prompt": "Enter the Git repository URL to clone",
+      "required": true
+    }
+  },
+  "required": ["repository"]
+}

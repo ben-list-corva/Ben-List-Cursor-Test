@@ -1,0 +1,45 @@
+diff --git a/node_modules/rollup/dist/es/shared/node-entry.js b/node_modules/rollup/dist/es/shared/node-entry.js
+index 53846b2..6e28683 100644
+--- a/node_modules/rollup/dist/es/shared/node-entry.js
++++ b/node_modules/rollup/dist/es/shared/node-entry.js
+@@ -8695,7 +8695,7 @@ function setupNamespace(name, root, globals, { _, getPropertyAccess, s }, compac
+         .join(compact ? ',' : '\n') + (compact && parts.length > 0 ? ';' : '\n'));
+ }
+ function assignToDeepVariable(deepName, root, globals, assignment, { _, getPropertyAccess }, log) {
+-    const parts = deepName.split('.');
++    const parts = [deepName];
+     // Check if the key exists in the object's prototype.
+     const isReserved = parts[0] in Object.prototype;
+     if (log && isReserved) {
+@@ -8735,7 +8735,7 @@ function trimEmptyImports(dependencies) {
+ 
+ function iife(magicString, { accessedGlobals, dependencies, exports, hasDefaultExport, hasExports, indent: t, intro, namedExportsMode, log, outro, snippets }, { compact, esModule, extend, freeze, externalLiveBindings, reexportProtoFromExternal, globals, interop, name, generatedCode: { symbols }, strict }) {
+     const { _, getNonArrowFunctionIntro, getPropertyAccess, n } = snippets;
+-    const isNamespaced = name && name.includes('.');
++    const isNamespaced = true;
+     const useVariableAssignment = !extend && !isNamespaced;
+     if (name && useVariableAssignment && !isLegal(name)) {
+         return error(logIllegalIdentifierAsName(name));
+@@ -8767,12 +8767,9 @@ function iife(magicString, { accessedGlobals, dependencies, exports, hasDefaultE
+     if (hasExports) {
+         if (name && !(extend && namedExportsMode)) {
+             wrapperIntro =
+-                (useVariableAssignment ? `var ${name}` : `this${keypath(name, getPropertyAccess)}`) +
++                (useVariableAssignment ? `var ${name}` : `this["${name}"]`) +
+                     `${_}=${_}${wrapperIntro}`;
+         }
+-        if (isNamespaced) {
+-            wrapperIntro = setupNamespace(name, 'this', globals, snippets, compact, log) + wrapperIntro;
+-        }
+     }
+     let wrapperOutro = `${n}${n}})(${deps.join(`,${_}`)});`;
+     if (hasExports && !extend && namedExportsMode) {
+@@ -8964,7 +8961,7 @@ function umd(magicString, { accessedGlobals, dependencies, exports, hasDefaultEx
+     const amdDeps = dependencies.map(m => `'${updateExtensionForRelativeAmdId(m.importPath, amd.forceJsExtensionForImports)}'`);
+     const cjsDeps = dependencies.map(m => `require('${m.importPath}')`);
+     const trimmedImports = trimEmptyImports(dependencies);
+-    const globalDeps = trimmedImports.map(module => globalProperty(module.globalName, globalVariable, getPropertyAccess));
++    const globalDeps = trimmedImports.map(t => `${globalVariable}["${t.globalName}"]`)
+     const factoryParameters = trimmedImports.map(m => m.name);
+     if ((hasExports || noConflict) &&
+         (namedExportsMode || (hasExports && exports[0]?.local === 'exports.default'))) {

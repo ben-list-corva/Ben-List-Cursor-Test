@@ -1,0 +1,12 @@
+# Monorepo setup owned by DevOps team
+* @corva-ai/devops-maintainers
+
+# Developers' team ownership/allowance
+apps/
+package.json
+package-lock.json
+.prettierrc
+eslint.config.mjs
+tsconfig.json
+.release-please-manifest.json
+release-please-config.json

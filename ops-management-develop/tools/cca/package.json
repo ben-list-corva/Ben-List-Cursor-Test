@@ -1,0 +1,65 @@
+{
+  "name": "@corva/cca",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "development": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "executor": "@nx/js:tsc",
+        "outputs": [
+          "{options.outputPath}"
+        ],
+        "options": {
+          "outputPath": "tools/cca/dist",
+          "main": "tools/cca/src/index.ts",
+          "tsConfig": "tools/cca/tsconfig.lib.json",
+          "rootDir": "tools/cca/src",
+          "generatePackageJson": false,
+          "assets": [
+            {
+              "input": "./tools/cca/src",
+              "glob": "**/!(*.ts)",
+              "output": "."
+            },
+            {
+              "input": "./tools/cca/src",
+              "glob": "**/*.d.ts",
+              "output": "."
+            }
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "@nx/devkit": "21.2.1",
+    "tslib": "^2.3.0",
+    "@corva/create-app": "^0.111.1",
+    "execa": "^9.6.0",
+    "@nx/react": "21.2.1",
+    "nx": "21.2.1",
+    "lodash": "4.17.21",
+    "@corva/dc-platform-shared": "^0.58.0",
+    "@testing-library/jest-dom": "^6.6.3"
+  },
+  "generators": "./generators.json",
+  "files": [
+    "dist",
+    "!**/*.tsbuildinfo",
+    "generators.json",
+    "executors.json"
+  ],
+  "executors": "./executors.json"
+}

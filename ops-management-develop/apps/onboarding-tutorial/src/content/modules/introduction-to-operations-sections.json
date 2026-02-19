@@ -1,0 +1,1212 @@
+{
+  "moduleSlug": "introduction-to-operations",
+  "title": "Introduction to Operations",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "Introduction",
+      "order": 0,
+      "content": [
+        {
+          "type": "text",
+          "body": "Corva is an advanced real-time monitoring and optimization platform for drilling and completions. Corva can be used to identify trends in rig performance and drive improvement by displaying the data in visually pleasing and intuitive applications within the Corva platform. Drilling optimization is also achieved by using Corva's database of offset wells and identifying optimal drilling parameters that maximize rate of penetration. With Corva, drilling engineers can reduce drilling and slide time, identify problem events using automated alerts, and mine historical data to discover the best practices for drilling each formation and area."
+        }
+      ],
+      "images": [],
+      "subsections": [
+        {
+          "id": "accessing-the-corva-platform",
+          "title": "Accessing the Corva Platform",
+          "order": 0,
+          "content": [
+            {
+              "type": "text",
+              "body": "To access the Corva Platform navigate to [www.corva.ai](http://www.corva.ai) in your Google Chrome web-browser and click the Sign In button.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/73f55930d893.png]"
+            },
+            {
+              "type": "text",
+              "body": "Email address serves as a login and the passwords are set up by following the instructions in the Welcome Email."
+            },
+            {
+              "type": "text",
+              "body": "The Main Toolbars are on the left hand side of the webpage and accessible all the time.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/476c00e259b1.png]"
+            }
+          ],
+          "images": [
+            {
+              "id": "i.6",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcr6EN-nbbWcZxeXrbKECrFZzL3ZkGmufgItzh_JHqeXe1xbyjoe3FpsFbRs6oUS0fhnDpszePdMZTalEMglPzgWvGXxGfxiGZ-R3z39xJ648KqIEhV8i--td4g0HSFqKcsTeIPgr0hDaQngMT6COyTHT5cNA?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/73f55930d893.png"
+            },
+            {
+              "id": "i.7",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXf3FBUHxp4s2_PFz3mjedPeUJyOk95jI9ESoKB1wIZIQNVn2qhizos-Bd1mVdvZxBz6BPTaAjbDQKkrf_K_r6A1Xg9s46xUSBODbkMP1lBiaf_OJG9lJz7wGMlMjl3WtTffmxANlrBgdVODSyRs0VVNTB4?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/476c00e259b1.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech-stack",
+      "title": "Tech Stack",
+      "order": 1,
+      "content": [
+        {
+          "type": "text",
+          "body": "The Operations team uses several key tools to manage communication, task tracking, and customer support. Understanding how to use these tools effectively is essential for success in your role."
+        }
+      ],
+      "images": [],
+      "subsections": [
+        {
+          "id": "slack",
+          "title": "Slack",
+          "order": 0,
+          "content": [
+            {
+              "type": "text",
+              "body": "What we use it for in Operations:"
+            },
+            {
+              "type": "text",
+              "body": "• Operator channels: There is a dedicated channel for each business unit of every operator. You are expected to monitor these channels and keep all operator-related communication in the appropriate channel.\n• Escalating customer issues that require engineering or product team input\n• Coordinating handoffs between team members during shift changes\n• Sharing context about complex cases or ongoing investigations\n• Requesting help from subject matter experts on technical questions\n• Notifying the team about system outages or data quality issues\n• Documenting decisions and action items in dedicated channels\n• Timely responses: You are expected to respond to communication in a timely manner"
+            },
+            {
+              "type": "text",
+              "body": "• Make sure to make a PDF copy of the handover and post in the Analyst_group channel in Slack before getting off tour\n\n[IMAGE:/training-assets/custom/slack-example.png]"
+            }
+          ],
+          "images": [
+            {
+              "id": "slack-example",
+              "url": "",
+              "localPath": "/training-assets/custom/slack-example.png",
+              "altText": "Slack example"
+            },
+            {
+              "id": "slack-logo",
+              "url": "",
+              "localPath": "/training-assets/logos/slack-logo.png",
+              "altText": "Slack logo"
+            }
+          ]
+        },
+        {
+          "id": "intercom",
+          "title": "Intercom",
+          "order": 1,
+          "content": [
+            {
+              "type": "text",
+              "body": "What we use it for in Operations:"
+            },
+            {
+              "type": "text",
+              "body": "• Primary customer support channel for user inquiries and issues\n• Ticket management and tracking customer conversations\n• Escalating technical issues to engineering teams\n• Documenting customer feedback and feature requests\n• Maintaining response time SLAs\n• Response expectations: Aim to respond to new tickets within the defined SLA timeframe"
+            },
+            {
+              "type": "text",
+              "body": "Intercom"
+            },
+            {
+              "type": "text",
+              "body": "Located in the bottom left of Corva on every dashboard you can locate the Intercom messenger.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/2e5c526f3ef4.png]"
+            },
+            {
+              "type": "text",
+              "body": "When clicking on the messenger app you will be placed on the Intercom home page that allows you to message with a Corva specialist for any questions, browse our popular help topics or see what’s new in Corva."
+            },
+            {
+              "type": "text",
+              "body": "Selecting the “Messages” icon will put you in touch with Corva’s Intercom Specialist who typically responds in under 30 seconds."
+            },
+            {
+              "type": "text",
+              "body": "Intercom is a key selling point of Corva. Our ability to offer clients an instant connection with a real person on the operations floor 24/7 is a standout feature. Intercom traffic should be expected at any time of day from anywhere in the world and any message received from a client should be responded to within one minute.\u000b\u000bThis applies to whether the client messaging in is covering on of your teams rigs or not. Somone must respond to an incoming intercom regardless."
+            }
+          ],
+          "images": [
+            {
+              "id": "intercom-logo",
+              "url": "",
+              "localPath": "/training-assets/logos/intercom-logo.png",
+              "altText": "Intercom logo"
+            },
+            {
+              "id": "i.49",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeeLGH5IPXhbihNOWvX8gYx-kmbyH9Fg2TCu9cZk3uC9ymgB-LzzxEbjpzMQ7OGNK3EHqiDf9IqmH24VaehuccJMbfrLq0AqGo-cFlKBbbhiX7-9UY1d7jew_BOB7v-ab2-_Ao-UPKPpHMutRwI6DYW1suAOg?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/2e5c526f3ef4.png"
+            }
+          ]
+        },
+        {
+          "id": "trello",
+          "title": "Trello",
+          "order": 2,
+          "content": [
+            {
+              "type": "text",
+              "body": "What we use it for in Operations:"
+            },
+            {
+              "type": "text",
+              "body": "• Task tracking and project management\n• Organizing work by priority and status\n• Collaborating on operational tasks\n• Tracking follow-up items and action items\n• Best practices: Create cards with clear descriptions, assign owners, update status regularly, and use labels for categorization\n\n[IMAGE:/training-assets/custom/trello-example.png]"
+            }
+          ],
+          "images": [
+            {
+              "id": "trello-example",
+              "url": "",
+              "localPath": "/training-assets/custom/trello-example.png",
+              "altText": "Trello example"
+            },
+            {
+              "id": "trello-logo",
+              "url": "",
+              "localPath": "/training-assets/logos/trello-logo.png",
+              "altText": "Trello logo"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "id": "tech-stack-q1",
+          "question": "A customer reports a data quality issue through Intercom. The issue requires input from the engineering team. What should you do?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Respond in Intercom explaining you'll escalate, then post in the appropriate Slack channel for engineering",
+              "isCorrect": true,
+              "explanation": "Customer-facing issues should be acknowledged in Intercom, but technical escalations go through Slack channels for faster engineering response."
+            },
+            {
+              "id": "b",
+              "text": "Only respond in Intercom and wait for engineering to see it",
+              "isCorrect": false,
+              "explanation": "Engineering teams monitor Slack channels, not Intercom. You need to actively escalate in Slack for timely resolution."
+            },
+            {
+              "id": "c",
+              "text": "Create a Trello card and mention the customer in the description",
+              "isCorrect": false,
+              "explanation": "Trello is for task tracking, not customer communication. Customer issues should be handled in Intercom and escalated via Slack."
+            },
+            {
+              "id": "d",
+              "text": "Ignore it since it requires engineering input",
+              "isCorrect": false,
+              "explanation": "All customer issues require acknowledgment and proper escalation, even if they need engineering input."
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Proper escalation involves acknowledging the customer in Intercom while actively engaging engineering through Slack channels for faster resolution."
+        },
+        {
+          "id": "tech-stack-q2",
+          "question": "You receive a message in a Slack channel for Operator X's Business Unit A. The message is about Operator Y's operations. What should you do?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Respond in the current channel since you're already there",
+              "isCorrect": false,
+              "explanation": "Operator-specific channels must be kept organized. Mixing operators creates confusion and makes information hard to find."
+            },
+            {
+              "id": "b",
+              "text": "Move the conversation to the correct operator channel and remind the sender about channel organization",
+              "isCorrect": true,
+              "explanation": "Maintaining channel organization is critical. Each operator has dedicated channels to keep communication organized and searchable."
+            },
+            {
+              "id": "c",
+              "text": "Create a Trello card to track this conversation",
+              "isCorrect": false,
+              "explanation": "This is a communication organization issue, not a task tracking issue. The conversation should be moved to the correct channel."
+            },
+            {
+              "id": "d",
+              "text": "Respond in Intercom instead",
+              "isCorrect": false,
+              "explanation": "Intercom is for customer-facing communication, not internal operator discussions. Use the correct Slack channel."
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Channel organization is essential for operational efficiency. All operator-related communication must stay in the appropriate dedicated channel."
+        },
+        {
+          "id": "tech-stack-q3",
+          "question": "You need to track a follow-up task related to a data quality issue you discovered. Which tool should you use?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Post in the appropriate Slack channel for the engineering team to investigate",
+              "isCorrect": true,
+              "explanation": "Data quality issues should be posted in the appropriate Slack channel where the engineering team can see and investigate them."
+            },
+            {
+              "id": "b",
+              "text": "Intercom - create a ticket",
+              "isCorrect": false,
+              "explanation": "Intercom is for customer-facing tickets, not internal task tracking or engineering escalations."
+            },
+            {
+              "id": "c",
+              "text": "Trello - create a card with clear description and assign it",
+              "isCorrect": false,
+              "explanation": "While Trello can track tasks, data quality issues requiring engineering input should be posted in Slack for immediate visibility."
+            },
+            {
+              "id": "d",
+              "text": "Email - send it to yourself",
+              "isCorrect": false,
+              "explanation": "Email is not the standard tool for escalating data quality issues. Use the appropriate Slack channel for team visibility."
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Data quality issues should be posted in the appropriate Slack channel where the engineering team monitors and can investigate promptly."
+        },
+        {
+          "id": "tech-stack-q4",
+          "question": "During a shift handoff, you need to communicate ongoing investigations and context about complex cases. What's the best approach?",
+          "type": "multi",
+          "options": [
+            {
+              "id": "a",
+              "text": "Post a summary in the appropriate Slack channel with key details",
+              "isCorrect": true,
+              "explanation": "Slack channels are the primary method for sharing context and coordinating handoffs between team members."
+            },
+            {
+              "id": "b",
+              "text": "Add appropriate notes to the Mission Control Handover app",
+              "isCorrect": true,
+              "explanation": "The Mission Control Handover app is designed specifically for documenting shift handoffs and ongoing investigations."
+            },
+            {
+              "id": "c",
+              "text": "Send individual Intercom messages to each team member",
+              "isCorrect": false,
+              "explanation": "Intercom is for customer communication, not internal team coordination. Use Slack and the Handover app for team communication."
+            },
+            {
+              "id": "d",
+              "text": "Document decisions and action items in dedicated Slack channels",
+              "isCorrect": true,
+              "explanation": "Dedicated channels help maintain context and make information searchable for future reference."
+            }
+          ],
+          "correctAnswer": [
+            "a",
+            "b",
+            "d"
+          ],
+          "explanation": "Effective shift handoffs use a combination of Slack for communication and the Mission Control Handover app for structured documentation of ongoing cases."
+        },
+        {
+          "id": "tech-stack-q5",
+          "question": "A customer asks a question in Intercom that you can answer immediately. You respond within 2 minutes. Later, you realize your answer was incomplete. What should you do?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Leave it as-is since you already responded quickly",
+              "isCorrect": false,
+              "explanation": "Incomplete information can lead to customer confusion or incorrect actions. Always provide complete, accurate information."
+            },
+            {
+              "id": "b",
+              "text": "Follow up in Intercom with the complete information and acknowledge the earlier incomplete response",
+              "isCorrect": true,
+              "explanation": "Maintaining accuracy is more important than speed. Follow up with complete information to ensure the customer has what they need."
+            },
+            {
+              "id": "c",
+              "text": "Create a Trello card to track this as a mistake",
+              "isCorrect": false,
+              "explanation": "While tracking mistakes can be useful, the priority is fixing the customer communication issue immediately in Intercom."
+            },
+            {
+              "id": "d",
+              "text": "Post in Slack asking someone else to respond",
+              "isCorrect": false,
+              "explanation": "You should take ownership and provide the complete answer yourself in Intercom."
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Customer communication accuracy is critical. Always follow up with complete information if an initial response was incomplete, even if it means acknowledging the earlier response."
+        },
+        {
+          "id": "tech-stack-q6",
+          "question": "You notice a system outage affecting multiple customers. What should you do? (Select all that apply)",
+          "type": "multi",
+          "options": [
+            {
+              "id": "a",
+              "text": "Notify the team immediately in the appropriate Slack channel",
+              "isCorrect": true,
+              "explanation": "System outages require immediate team awareness through Slack for coordinated response."
+            },
+            {
+              "id": "b",
+              "text": "Create a Trello card to track the outage resolution",
+              "isCorrect": false,
+              "explanation": "Trello is not the primary tool for outage tracking. Focus on immediate Slack communication and documentation."
+            },
+            {
+              "id": "c",
+              "text": "Wait to see if customers report it in Intercom",
+              "isCorrect": false,
+              "explanation": "Proactive communication is essential. Don't wait for customers to report issues - notify the team immediately."
+            },
+            {
+              "id": "d",
+              "text": "Document the outage details and impact in Slack",
+              "isCorrect": true,
+              "explanation": "Documenting outage details in Slack helps the team understand scope and coordinate response effectively."
+            }
+          ],
+          "correctAnswer": [
+            "a",
+            "d"
+          ],
+          "explanation": "System outages require immediate Slack notification for team awareness and documentation for context and coordinated response."
+        },
+        {
+          "id": "tech-stack-q7",
+          "question": "You need help from a subject matter expert on a technical question about well data. Where should you ask?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Intercom - create a ticket",
+              "isCorrect": false,
+              "explanation": "Intercom is for customer-facing communication, not internal technical questions."
+            },
+            {
+              "id": "b",
+              "text": "Slack - post in the appropriate technical channel or tag the expert",
+              "isCorrect": true,
+              "explanation": "Slack channels are designed for internal collaboration and getting help from subject matter experts quickly."
+            },
+            {
+              "id": "c",
+              "text": "Trello - create a card asking for help",
+              "isCorrect": false,
+              "explanation": "Trello is for task tracking, not real-time questions. Use Slack for immediate help requests."
+            },
+            {
+              "id": "d",
+              "text": "Email the expert directly",
+              "isCorrect": false,
+              "explanation": "Slack is the standard tool for internal communication. Using Slack channels makes help requests visible to the team."
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Slack channels provide the fastest way to get help from subject matter experts while keeping the conversation visible to the team for learning."
+        },
+        {
+          "id": "tech-stack-q8",
+          "question": "A Trello card you created has been in \"In Progress\" for 3 days with no updates. What should you do?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Leave it as-is - it will get done eventually",
+              "isCorrect": false,
+              "explanation": "Stale cards create confusion and reduce Trello's effectiveness. Cards should be actively managed."
+            },
+            {
+              "id": "b",
+              "text": "Update the card status, add a comment with current status, or move it to the appropriate list",
+              "isCorrect": true,
+              "explanation": "Active card management ensures Trello remains useful. Update status regularly to reflect current state."
+            },
+            {
+              "id": "c",
+              "text": "Delete the card since it's taking too long",
+              "isCorrect": false,
+              "explanation": "Don't delete cards without understanding why they're stalled. Update status or reassign instead."
+            },
+            {
+              "id": "d",
+              "text": "Create a new card for the same task",
+              "isCorrect": false,
+              "explanation": "Creating duplicate cards creates confusion. Update the existing card instead."
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Trello cards should be actively managed. Regular status updates, comments, and list movements keep the board accurate and useful for the team."
+        }
+      ]
+    },
+    {
+      "id": "corva-account-setup",
+      "title": "Corva Account Setup",
+      "order": 2,
+      "content": [],
+      "images": [],
+      "quiz": [
+        {
+          "id": "corva-account-q1",
+          "question": "What is the first step you should take when setting up a new Corva account for a customer?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Verify the customer's email address and company information",
+              "isCorrect": true,
+              "explanation": "Verifying customer information ensures the account is set up correctly and prevents issues later."
+            },
+            {
+              "id": "b",
+              "text": "Immediately grant full admin access",
+              "isCorrect": false,
+              "explanation": "Admin access should be granted based on the customer's role and needs, not automatically."
+            },
+            {
+              "id": "c",
+              "text": "Skip verification and create the account quickly",
+              "isCorrect": false,
+              "explanation": "Rushing account creation without verification can lead to errors and security issues."
+            },
+            {
+              "id": "d",
+              "text": "Ask the customer to set it up themselves",
+              "isCorrect": false,
+              "explanation": "Operations support should assist with account setup to ensure it's done correctly."
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Proper account setup starts with verification to ensure accuracy and prevent future issues."
+        },
+        {
+          "id": "corva-account-q2",
+          "question": "A customer reports they cannot log into their Corva account. What should you do first?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Immediately reset their password without asking questions",
+              "isCorrect": false,
+              "explanation": "You should first verify the user's identity and understand the specific issue before taking action."
+            },
+            {
+              "id": "b",
+              "text": "Verify the user's identity and ask about the specific error message they're seeing",
+              "isCorrect": true,
+              "explanation": "Understanding the specific issue helps determine whether it's a password problem, account lockout, or another issue."
+            },
+            {
+              "id": "c",
+              "text": "Tell them to contact IT support",
+              "isCorrect": false,
+              "explanation": "Operations support should attempt to resolve login issues before escalating."
+            },
+            {
+              "id": "d",
+              "text": "Create a new account for them",
+              "isCorrect": false,
+              "explanation": "Creating a new account should be a last resort after troubleshooting the existing account."
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Proper troubleshooting starts with understanding the specific issue the customer is experiencing."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "corva-account-setup-and-password-reset",
+          "title": "Corva Account Setup and Password Reset",
+          "order": 0,
+          "content": [
+            {
+              "type": "text",
+              "body": "[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/a1d5f410c185.png]\n\nTo set up a customer's account navigate to the Control Center via your profile icon at the bottom left of the screen."
+            },
+            {
+              "type": "text",
+              "body": "Once there you will notice the selections on the left hand side of the application."
+            },
+            {
+              "type": "text",
+              "body": "The Users List menu options will display a list of all the accounts created in Corva. This is searchable by company name and you can also search by typing in the name or email or the user."
+            },
+            {
+              "type": "text",
+              "body": "To create a new account click on the Create button at the top right of the application.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5ac3ac6d73bb.png]"
+            },
+            {
+              "type": "text",
+              "body": "• First Name\n• Last Name\n• Email Address\n• Company\n• Groups"
+            },
+            {
+              "type": "text",
+              "body": "It is critical that the correct Company Name is selected. This allows the account to have access to the company's data that is in Corva. We do not want different companies to see each other's data in the Corva application."
+            },
+            {
+              "type": "text",
+              "body": "There are three different selections available for Role in Corva"
+            },
+            {
+              "type": "text",
+              "body": "User"
+            },
+            {
+              "type": "text",
+              "body": "• has access to all rigs/wells in the assigned Company profile"
+            },
+            {
+              "type": "text",
+              "body": "Restricted"
+            },
+            {
+              "type": "text",
+              "body": "• has restricted access to some rigs in the assigned Company profile."
+            },
+            {
+              "type": "text",
+              "body": "Admin"
+            },
+            {
+              "type": "text",
+              "body": "• has unrestricted access to visible and hidden wells, ability to enter/change entered data and overall access to the assigned Company profile."
+            },
+            {
+              "type": "text",
+              "body": "Corva users with Admin level have access to all wells, visible or not."
+            },
+            {
+              "type": "text",
+              "body": "The majority of customer accounts fall under the User level. However, some companies require restricted access for contractors. When a request is received to create an account, confirm with the customer if access should be restricted before creating the account."
+            },
+            {
+              "type": "text",
+              "body": "Mobile phone number (optional), Segment. Notifications, Alert levels, Sounds, and Widgets can be left by default and changed later."
+            },
+            {
+              "type": "text",
+              "body": "After the Corva account is created, a Welcome Email will be sent to the User, and he/she must follow the directions in the email to set up the password and accept terms of conditions."
+            },
+            {
+              "type": "text",
+              "body": "The email associated with the Corva account serves as a login."
+            },
+            {
+              "type": "text",
+              "body": "To reset the password click on Need help? option on the Sign In page.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/0aeb9f3095e7.png]\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/79bcdbb472e3.png]"
+            },
+            {
+              "type": "text",
+              "body": "Click \" Forgot Password?\"\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/aa22144e5b5e.png]"
+            },
+            {
+              "type": "text",
+              "body": "Then enter the user's email address and click send. A link will be sent to the email address entered that will allow the user to reset their password.\u000b\u000bEven Corva Admin users do not have access to view any profile passwords. If a user has forgotten a password, it must be reset via this email."
+            }
+          ],
+          "images": [
+            {
+              "id": "i.13",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcFH2Ohcqj22rm5hpeb0szKG21bgFy1I7R1H4d6lIQnnjaYl4e_0r_u3G_8HzRSO2DIdmxKYJQR_RfSh1jvF1gWajaLlq96XidOTTXE72-H5jSlESg7o1KrLNCwWpe9wIgRAY4glTfMFJLoJk7-S58HOvueuQ?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/a1d5f410c185.png"
+            },
+            {
+              "id": "i.14",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfhY-5pBMyoaj_quzilGuXQ4iQeTZMg-BtCddC_oV6PNVrEE9JVJbjh5Nc6Nnnn4SrPbut-JGLXC_tb6YteHVX5EGywg--687BkDhKzpzRUYJ6lUBDhr8IHDO1GUmuL1nEM7hhx3fHy7EP9WuWgCcrppYNTJg?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5ac3ac6d73bb.png"
+            },
+            {
+              "id": "i.16",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXejUMwS6WUc-takEJHAQ1ocdTXPCI2DLUcbBaQvH3QazCQIQTTZB0kuZL6NA-44Tg_5KeT-1JMnMR80vkmAS6MdOCoOd9g1buMpZ7RupQSUfDqHqNMhbWogveKuL6kl-3o8qIDqj_y_8isABMA8HEk74mvbEQ?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/0aeb9f3095e7.png"
+            },
+            {
+              "id": "i.17",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeD9d8v8FobRgwMUegRL262ewYNeltUXLIDfQB4E0dPLy-WiDxbvCHn4uVT2LyEDKLb-DS4-SdtNE_WzTe0g_VeUzwh0qeYxHHji9azwEylPOqwciipQKoAnHQ8QNjbXR4axAOGnkPEhg0ROB_sziqTN6oR-g?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/79bcdbb472e3.png"
+            },
+            {
+              "id": "i.18",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeFBK3lz8zAZm00E-Emo9hgjGucZskTxn0S9FPgNjmilbysNk9aWp1u10RP6-WX_za4PvPx242Lzd68E7yYFG4ip5lRwp4u5LG37262ezVg2Y2sQbbvGwyWYA8gX6rEbZ99P_ov4VHFR22uV6Y5dKP4wR2RBg?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/aa22144e5b5e.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dashboards",
+      "title": "Dashboards",
+      "order": 3,
+      "content": [
+        {
+          "type": "text",
+          "body": "Dashboard displays a list of the dashboards available on the account. The dashboards are a group of applications that display various information about the wells in Corva. Dashboards can be custom made or prebuilt with the most used applications in Corva.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/0a5e49bc0bbf.png]"
+        }
+      ],
+      "images": [
+        {
+          "id": "i.8",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeeDIfYVunJX4MOWMveTuhslWIDQefF6x2Mq2gYExfbOSsb4XdcPEP5294QMcqZRlKlmxT_i4RsESJhGtbJVK-YhCMPoLl5XOmx_jEmkqQBBJ1mFJbQvS7-VRCNKoxhmoumgmtXsTZ7ZHHQg_Hikw7aPCMFkA?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/0a5e49bc0bbf.png"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "dashboards-q1",
+          "question": "What is the primary purpose of dashboards in Corva?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "To store customer contact information",
+              "isCorrect": false,
+              "explanation": "Dashboards are for data visualization, not contact management."
+            },
+            {
+              "id": "b",
+              "text": "To display grouped applications showing various information about wells",
+              "isCorrect": true,
+              "explanation": "Dashboards group applications together to display well information in an organized, visual format."
+            },
+            {
+              "id": "c",
+              "text": "To send emails to customers",
+              "isCorrect": false,
+              "explanation": "Dashboards are for data visualization, not communication."
+            },
+            {
+              "id": "d",
+              "text": "To manage user passwords",
+              "isCorrect": false,
+              "explanation": "Password management is handled through account settings, not dashboards."
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Dashboards in Corva are collections of applications that visualize well data for monitoring and analysis."
+        },
+        {
+          "id": "dashboards-q2",
+          "question": "A customer asks you to help them create a custom dashboard. What should you consider?",
+          "type": "multi",
+          "options": [
+            {
+              "id": "a",
+              "text": "What specific well information they need to monitor",
+              "isCorrect": true,
+              "explanation": "Understanding their monitoring needs helps select the right applications for the dashboard."
+            },
+            {
+              "id": "b",
+              "text": "Their role and what data they should have access to",
+              "isCorrect": true,
+              "explanation": "User roles determine what data and applications should be included in their dashboard."
+            },
+            {
+              "id": "c",
+              "text": "Give them access to all dashboards by default",
+              "isCorrect": false,
+              "explanation": "Dashboard access should be tailored to the user's needs and permissions."
+            },
+            {
+              "id": "d",
+              "text": "Which applications are most relevant to their workflow",
+              "isCorrect": true,
+              "explanation": "Selecting relevant applications ensures the dashboard is useful for their daily work."
+            }
+          ],
+          "correctAnswer": [
+            "a",
+            "b",
+            "d"
+          ],
+          "explanation": "Creating effective custom dashboards requires understanding the user's monitoring needs, role, and workflow."
+        }
+      ]
+    },
+    {
+      "id": "drilling-data-analyst",
+      "title": "Drilling Data Analyst",
+      "order": 4,
+      "content": [],
+      "images": [],
+      "quiz": [
+        {
+          "id": "dda-q1",
+          "question": "What is a key priority for a Drilling Data Analyst in Operations?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Responding to all emails within 24 hours",
+              "isCorrect": false,
+              "explanation": "While communication is important, real-time monitoring and data quality are higher priorities."
+            },
+            {
+              "id": "b",
+              "text": "Monitoring real-time data quality and ensuring accurate information flow",
+              "isCorrect": true,
+              "explanation": "DDAs focus on ensuring data quality and accurate real-time information for operational decisions."
+            },
+            {
+              "id": "c",
+              "text": "Creating marketing materials",
+              "isCorrect": false,
+              "explanation": "Marketing is not part of the DDA role in Operations."
+            },
+            {
+              "id": "d",
+              "text": "Managing customer billing",
+              "isCorrect": false,
+              "explanation": "Billing is handled by other teams, not DDAs."
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Drilling Data Analysts prioritize data quality and real-time monitoring to support operational decisions."
+        },
+        {
+          "id": "dda-q2",
+          "question": "What should you include in a Mission Control handover? (Select all that apply)",
+          "type": "multi",
+          "options": [
+            {
+              "id": "a",
+              "text": "Status of ongoing investigations and issues",
+              "isCorrect": true,
+              "explanation": "Handovers must include the current status of any ongoing work."
+            },
+            {
+              "id": "b",
+              "text": "Personal opinions about customers",
+              "isCorrect": false,
+              "explanation": "Handovers should be professional and fact-based, not include personal opinions."
+            },
+            {
+              "id": "c",
+              "text": "Action items that need follow-up on the next shift",
+              "isCorrect": true,
+              "explanation": "Clear action items ensure continuity between shifts."
+            },
+            {
+              "id": "d",
+              "text": "Any critical alerts or issues requiring immediate attention",
+              "isCorrect": true,
+              "explanation": "Critical issues must be clearly communicated to ensure they're addressed promptly."
+            }
+          ],
+          "correctAnswer": [
+            "a",
+            "c",
+            "d"
+          ],
+          "explanation": "Effective handovers include ongoing status, action items, and critical alerts to ensure smooth shift transitions."
+        },
+        {
+          "id": "dda-q3",
+          "question": "When monitoring Corva's Real Time Operations, what should you focus on?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Only checking data once per day",
+              "isCorrect": false,
+              "explanation": "Real-time operations require continuous monitoring, not daily checks."
+            },
+            {
+              "id": "b",
+              "text": "Identifying data anomalies and ensuring data streams are functioning correctly",
+              "isCorrect": true,
+              "explanation": "Continuous monitoring for anomalies and data stream health is essential for real-time operations."
+            },
+            {
+              "id": "c",
+              "text": "Ignoring minor data discrepancies",
+              "isCorrect": false,
+              "explanation": "Minor discrepancies can indicate larger issues and should be investigated."
+            },
+            {
+              "id": "d",
+              "text": "Waiting for customers to report issues",
+              "isCorrect": false,
+              "explanation": "Proactive monitoring catches issues before customers are affected."
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Real-time monitoring focuses on identifying anomalies and ensuring healthy data streams for accurate operations."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "drilling-data-analyst-priorities",
+          "title": "Drilling Data Analyst Priorities - Tips for Success in Operations",
+          "order": 0,
+          "content": [
+            {
+              "type": "text",
+              "body": "It can be both challenging and overwhelming when it comes to covering over 80 rigs drilling operations during your first hitch as a Drilling Data Analyst at Corva. The work flow is fast paced and the data must be correct when entered into the system. Corva's rig count has grown tremendously over the last few years and it is expected to grow continuously as the platform is expanded to cover more operations and offer additional optimization tools for drilling and completions."
+            }
+          ],
+          "images": []
+        },
+        {
+          "id": "corvas-real-time-operations",
+          "title": "Corva's Real Time Operations - Focus Areas",
+          "order": 1,
+          "content": [
+            {
+              "type": "text",
+              "body": "When starting your first hitch in operations keep in mind that with this volume of work there may be items that you are not able to get to. For these items be sure to make good notes on the handover sheets and discuss with your relief during tour change."
+            },
+            {
+              "type": "text",
+              "body": "Also be mindful that you are not alone with your rigs. There will be other drilling data analysts and a host of operations support personnel that can help answer questions that may arise during your tour. Use the resources available to you to help you get through your first tours if necessary."
+            },
+            {
+              "type": "text",
+              "body": "Items to focus on during your tour:"
+            },
+            {
+              "type": "text",
+              "body": "• Connecting Asset to WITSML Streams on Time\n• BHA and Casing Activations\n• Handover Sheet\n• Data Inbox Management"
+            },
+            {
+              "type": "text",
+              "body": "The tasks listed above if completed will result in a successful first tour as a drilling data analyst at Corva. Those areas listed are high on the list for causing assets to be reprocessed in Corva and frustrating users of Corva when they are expecting to see data populating when going to the next well. The focus on the handover sheet will ensure open channels of communications and transparency amongst the operation analyst teams and operations management."
+            },
+            {
+              "type": "text",
+              "body": "Connecting Assets to WITSML Streams on Time"
+            },
+            {
+              "type": "text",
+              "body": "This area of focus refers to when a new asset is built in Corva and the rig is preparing to drill that well. When the data stream is available connect it to the asset in Corva before the rig starts drilling. Key point to remember when checking for WITSML stream availability."
+            },
+            {
+              "type": "text",
+              "body": "• Utilize the Launchpad app and keep it updated with wells to ensure 'skid backs' do not take you by surprise.\n• Open the EDR Providers viewer for the well that is coming up\n• Watch for activity on the viewer to indicate when the data stream is available\n• Use the Handover sheet to make notes for a reminder that an asset needs to be connected\n• In addition to a reminder for you the note can also be passed along for your relief to pick up when you left off\n• Reference PDS Viewer to confirm that the well stream is active\n• PDS can also be used to confirm channel mapping and units for each channel that will populate the asset\n• This is especially important for clients that do not have visual EDRs"
+            },
+            {
+              "type": "text",
+              "body": "BHA and Casing Activations"
+            },
+            {
+              "type": "text",
+              "body": "Proper BHA and Casing activations will minimize the need to rerun assets in Corva. Paying attention and following current rig activities will be key when tracking current rig activity. Corva has logic that will automatically activate BHA and Casing strings based on Casing ID in relation to Bit size however this does not work 100% of the time."
+            },
+            {
+              "type": "text",
+              "body": "Key Points to reference to ensure proper BHA and Casing Activations:"
+            },
+            {
+              "type": "text",
+              "body": "• Reference the Daily Drilling Report for a previous and forecasted rig activity\n• Also reference the Drilling Fluid Reports (Mud Reports) for updates on current rig activity\n• Make sure there is an exact time entered for each BHA and Casing string that has gone in the hole\n• In the event of a rerun this will ensure that all BHA's and Casing strings will be in the correct place when the asset is reprocessed\n• Use Immediately Force for Casing Strings and BHAs when the rig is on surface\n• Force activating a BHA or Casing string on surface ensures the drill string/casing string is activated\n• Keep that in mind and reference well sections when building placeholder BHAs\n• Ensure that the placeholder entered is correct in bit size relative to the hole section and rig activity - an improper placeholder BHA can cause confusion and potentially require the asset to be reprocessed if not in line with the rigs activity.\n• Make notes on the handover sheet for BHA's and Casing string upcoming activations\n• This note will be good to have especially when handing over to you relief. They can pick up where you left off when good notes are kept"
+            }
+          ],
+          "images": []
+        },
+        {
+          "id": "handover-mission-control",
+          "title": "Handover/ Mission Control",
+          "order": 2,
+          "content": [
+            {
+              "type": "text",
+              "body": "A well noted and updated handover app is paramount when keeping the lines of communications open with your relief and tracking the current rig activities for the active wells covered. The handover should be updated continuously during your tour with current rig activity and the things to do column should be noted with items to be done on the asset that are upcoming."
+            },
+            {
+              "type": "text",
+              "body": "Key Points for Success with Handover:"
+            },
+            {
+              "type": "text",
+              "body": "• Update the handover sheet continuously as you check each rigs activity\n• This will ensure that the app is current when time to make relief\n• This will also help you stay up date with current rig activity without having to dig into each asset being monitored\n• Keep Good/Relevant Notes on the To Do List column\n• Relevant and detailed notes for things to do are key for keeping track of upcoming rig activity. Calibrating BHA, Activating Casing rerunning assets are some examples\n• Remove old notes that are no longer relevant to minimize confusion when handing over to relief\n• Start your final review of your handover sheet before its time for your relief to show up\n• Handover should be complete before its time to go. This will ensure that you are able to leave on time and that no one's time is wasted. Handover should be no more than 30 minutes\n• It will take approximately  an hour or more to review and update current activities for all the wells being monitored. Start your final review of handover in plenty of time\n• Make sure to make a PDF copy of the handover and post in the Analyst_group channel in Slack before getting off tour\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/f09183b73c0c.png]"
+            }
+          ],
+          "images": [
+            {
+              "id": "mission-control-52",
+              "url": "",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/f09183b73c0c.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceDocId": "1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI",
+  "sourceUpdatedAt": "2026-01-06T14:28:02.065Z",
+  "lastGeneratedAt": "2026-01-06T14:28:09.681Z",
+  "versionHash": "3d6d777675f3fa56",
+  "allImages": [
+    {
+      "id": "i.4",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeNUvrHjb1yj711eZ7aTo7fCQchhD4Us1tl2OlJ3tTuL3VszwB0bStODn2XgBtRnRpC2i01c22bZXDBbkFIfVYTIj_syZbj4E7b_oDl7LRHjP6mNXBlfXi1WnY78JSnVVadT46t5GVzSL0ec1Xg6ct6S4EubA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/ca503999837c.png"
+    },
+    {
+      "id": "i.6",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcr6EN-nbbWcZxeXrbKECrFZzL3ZkGmufgItzh_JHqeXe1xbyjoe3FpsFbRs6oUS0fhnDpszePdMZTalEMglPzgWvGXxGfxiGZ-R3z39xJ648KqIEhV8i--td4g0HSFqKcsTeIPgr0hDaQngMT6COyTHT5cNA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/73f55930d893.png"
+    },
+    {
+      "id": "i.7",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXf3FBUHxp4s2_PFz3mjedPeUJyOk95jI9ESoKB1wIZIQNVn2qhizos-Bd1mVdvZxBz6BPTaAjbDQKkrf_K_r6A1Xg9s46xUSBODbkMP1lBiaf_OJG9lJz7wGMlMjl3WtTffmxANlrBgdVODSyRs0VVNTB4?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/476c00e259b1.png"
+    },
+    {
+      "id": "i.8",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeeDIfYVunJX4MOWMveTuhslWIDQefF6x2Mq2gYExfbOSsb4XdcPEP5294QMcqZRlKlmxT_i4RsESJhGtbJVK-YhCMPoLl5XOmx_jEmkqQBBJ1mFJbQvS7-VRCNKoxhmoumgmtXsTZ7ZHHQg_Hikw7aPCMFkA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/0a5e49bc0bbf.png"
+    },
+    {
+      "id": "slack-logo",
+      "url": "",
+      "localPath": "/training-assets/logos/slack-logo.png",
+      "altText": "Slack logo"
+    },
+    {
+      "id": "intercom-logo",
+      "url": "",
+      "localPath": "/training-assets/logos/intercom-logo.png",
+      "altText": "Intercom logo"
+    },
+    {
+      "id": "i.49",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeeLGH5IPXhbihNOWvX8gYx-kmbyH9Fg2TCu9cZk3uC9ymgB-LzzxEbjpzMQ7OGNK3EHqiDf9IqmH24VaehuccJMbfrLq0AqGo-cFlKBbbhiX7-9UY1d7jew_BOB7v-ab2-_Ao-UPKPpHMutRwI6DYW1suAOg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/2e5c526f3ef4.png"
+    },
+    {
+      "id": "trello-logo",
+      "url": "",
+      "localPath": "/training-assets/logos/trello-logo.png",
+      "altText": "Trello logo"
+    },
+    {
+      "id": "i.9",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXejbTUBc0cg3NtqqYC4LBIH3zaqo6FB101na9skqXSGuybkUJUW6ahjF0TD-4zYEvqh37SA_ZIjb_a79O65Ts3MozeETIbXklXrlPP_rYiL6RSgsqFAsOAhnDadoDFqBvVfHFrV2M_5jQkytTFkU9Grcxo?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/b9ffb0b25bab.png"
+    },
+    {
+      "id": "i.10",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfgeZF0lF45TCkHFxHJ1Q1U_iPIArxAp5dCDFqLl40JZgI9yCqjWZpNfZXioaXimeDqmBqYikOEXZJGJLbT96Aeq3evd7HqoauwsVfpWIVcCGdCaV6e0diuR04wsETOs237WcNuAkJJpZL9Zpn2n44Cf3QM_A?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/ee6fbc0a0927.png"
+    },
+    {
+      "id": "i.11",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdXUXCOfAe5LhuTjtg2As-fkInLjquhSs8DiwkZKcZpRJ9yMsBfwl-DxjCGxJk_EcaVQ9oARFMR1hGMQfuk0r-JORclwhrlj9KoPaOjraJ35wSbVmkSVdeowJFoERm1-incNCVb3HmZoNRboHiiXytSqOXppA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/50911272fb83.png"
+    },
+    {
+      "id": "i.12",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfhDPg96S_VVb-MMEPTqn3H8wL9DVtmIm_d-x8B8axj8tLTwUHElik48BXKMmn7RpbgGM62UNQoOZE257mEgVV6g5lDfqrENuYdlV5fECYx03N8q4ShxYtAZ135-KA6GvA7-suDxkiwxp0WZf7v0q1sK_NTnw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/48b6821dd475.png"
+    },
+    {
+      "id": "i.13",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcFH2Ohcqj22rm5hpeb0szKG21bgFy1I7R1H4d6lIQnnjaYl4e_0r_u3G_8HzRSO2DIdmxKYJQR_RfSh1jvF1gWajaLlq96XidOTTXE72-H5jSlESg7o1KrLNCwWpe9wIgRAY4glTfMFJLoJk7-S58HOvueuQ?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/a1d5f410c185.png"
+    },
+    {
+      "id": "i.14",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfhY-5pBMyoaj_quzilGuXQ4iQeTZMg-BtCddC_oV6PNVrEE9JVJbjh5Nc6Nnnn4SrPbut-JGLXC_tb6YteHVX5EGywg--687BkDhKzpzRUYJ6lUBDhr8IHDO1GUmuL1nEM7hhx3fHy7EP9WuWgCcrppYNTJg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5ac3ac6d73bb.png"
+    },
+    {
+      "id": "i.15",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcmMYB02Xmql9rjbjO9HbBUUxRgUPu3rzH2Tm1ax1yT4wYu7VqZqqNH4HgRg2mD_F0muMVjWNF_Eht1vldQuJDGmoD47JIzBL_N0R4kwIuNeOEFcX0dtIWJzHvXsh-KbWpp-yIuizAhSswMJB82Osr18U8?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/9c1cc01771ff.png"
+    },
+    {
+      "id": "i.16",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXejUMwS6WUc-takEJHAQ1ocdTXPCI2DLUcbBaQvH3QazCQIQTTZB0kuZL6NA-44Tg_5KeT-1JMnMR80vkmAS6MdOCoOd9g1buMpZ7RupQSUfDqHqNMhbWogveKuL6kl-3o8qIDqj_y_8isABMA8HEk74mvbEQ?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/0aeb9f3095e7.png"
+    },
+    {
+      "id": "i.17",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeD9d8v8FobRgwMUegRL262ewYNeltUXLIDfQB4E0dPLy-WiDxbvCHn4uVT2LyEDKLb-DS4-SdtNE_WzTe0g_VeUzwh0qeYxHHji9azwEylPOqwciipQKoAnHQ8QNjbXR4axAOGnkPEhg0ROB_sziqTN6oR-g?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/79bcdbb472e3.png"
+    },
+    {
+      "id": "i.18",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeFBK3lz8zAZm00E-Emo9hgjGucZskTxn0S9FPgNjmilbysNk9aWp1u10RP6-WX_za4PvPx242Lzd68E7yYFG4ip5lRwp4u5LG37262ezVg2Y2sQbbvGwyWYA8gX6rEbZ99P_ov4VHFR22uV6Y5dKP4wR2RBg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/aa22144e5b5e.png"
+    },
+    {
+      "id": "i.20",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXctM95P7uOpazzE63dlUIVTmr239mrygJRgzGcC9XxrIZse1DeBLHn74OndbldUZmzczK2sqRg7_i_XSENeY5YhcQuomHIleHYPZ2CsJypYk9t2IObK2oYcOd-XrJlogTp-hipbjwhHCtPUXoKaOHPwVkt-nA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/73a8e589d116.png"
+    },
+    {
+      "id": "i.19",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXd_62Ztz-xX-hjUmfglxquwIMthkMljchWumfC7A1yarcGoBrgJ3Gw1YIphAqdeQjindzB83s26mjhwcpopUV3Ie9A2TYYDNybr3AWTWx7wg1DAgjCJM2iGy8SYaLpuqAq0T2YhE1lUPLq2IB5mIey2UQK4VA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6e337292bfd3.png"
+    },
+    {
+      "id": "i.22",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXd7Jkc9atmKFixSKUYu7REik0WcSu87bRaUieoGIzc5wwQtCxtMGWN4151RuNhU490G4v7a8N2fFiQCCuohb538PRIA6Kui4V_o3Qqj98VL8Mv8lUQKHj6TOZiJFrDvUQxpKcI_vZCAx2tgsgnMpH_cwPI?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/e53d5799794d.png"
+    },
+    {
+      "id": "i.23",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdWYLmYh5YJSTbSuE6OvNEvxP6zht9ltenFp0LsnCIHCRDBY1DpcE3A7BmDoHln2elovMyKsZiMCVHXkrdfMprBl9_pkLDMTKY-tRMUg9Rmtmh736VSirRx_fMuS3x1iWHv91MMWf53s_5MlamZlSexZ7yAZg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d9fac4dc5511.png"
+    },
+    {
+      "id": "i.24",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdxMahac8CmI4sNx02U8QkC7d9QTw7bM2jxlZ5etitx3OX94gBVEYhIGZrNdtter1lN5_F8QSLnnWBHDamGcGzUH0dIDUH1uxPgGZiciFB8aHQggtu5RL0VgWImM-Wxzc5PgKP71bL4JHuOBzdSid7zJRKKQA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/c846ad80a459.png"
+    },
+    {
+      "id": "i.25",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfoJltFqPUqh8OLmnd30jQb3nFcFVjoegt9fZz_nzTaniebjmXutFysNUDK-Wjf7ZKFnHIaTLJZO2VYqtgDQZgz61-bwYxay5x3hwGNFg-u3jWkf2MrSZoi2habKl8rnwD09JTJhkZKOE6xvf1XZVvYwn8Xlg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/a1586dee081e.png"
+    },
+    {
+      "id": "i.26",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfSuY9tQTNHFxG_k_2dELxJNixwrI2RbS7fAg-jABBxynlzDqaNHI39OjnsgxUKUpglLhuzplgUZeWh3e3tGTl-il1hNI-bvuq35jF0wh0jc5VwK-eUiPl9c6FvO8InEeR5Z0sutCAPclICggpKlS301UU?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/93de3bc3003c.png"
+    },
+    {
+      "id": "i.27",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcfogjQnvfgoDSk2d_HVLqWLZ0jk5NzD3VgG6YhLO9qhWe3NSn58YAt9pFc01Y4GJJ7yD9qoJTk4y-WgQLsTvJhwYOzYKXjkmN1i2cc3yOSRGEib9UM720Rux5RD_Uat_Sw9gNlJuv3TFmusm69jiYpt-Y?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6460915b5e7a.png"
+    },
+    {
+      "id": "i.28",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXd7Jkc9atmKFixSKUYu7REik0WcSu87bRaUieoGIzc5wwQtCxtMGWN4151RuNhU490G4v7a8N2fFiQCCuohb538PRIA6Kui4V_o3Qqj98VL8Mv8lUQKHj6TOZiJFrDvUQxpKcI_vZCAx2tgsgnMpH_cwPI?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/e53d5799794d.png"
+    },
+    {
+      "id": "i.29",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeLHIRNNSXgGu_bGBTu1_1rNPmtXQaySzSuHASFUrcdiPuwnheHt4ZKJya7bwoH4_eiH2fNEdrYjQaWaix14SBpTC9_y9b37_psekudkG8u7ZDAIB_tXV7auRp-HszlwIWV-jSFI80yPFkCBvI-hiaAR9v6gA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5ad2708bd849.png"
+    },
+    {
+      "id": "i.30",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfIKc0L2CEMOFJ6p_zXPGNZxT8xaS3duCiO1d9aniWWqmHQsm6856diiayor7Z1BlbyWdrej0AoKJmm3bkTZpKZLPLHPENfXdnQBnUoinsRDWK2-DCRjubh5nPF4spebsrFZBTv8Qw4UCz3gcRRlEh4FP81Mw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d1b54dd63fb8.png"
+    },
+    {
+      "id": "i.31",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfOeJP2QAi6-Ilh0Z4zLP8Eu2J-58EYGRfLnGdx0xgVf3GSyn3O7IZnZUfq7KnPC13pFGoUTWQZ_3m8KqcpWBRC6iR_UgFFQ-gB7dlRb9zYDysqPG1V7npcfaBGy_Uf3GsGixPMbUnPJvAqwP0IroZns56VqA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/ced1cca91b8a.png"
+    },
+    {
+      "id": "i.32",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfib5H1IQ25dbpcAuyLBI6FZc_xQUMukBpgMarUHNjxsRxtXp8Quse3EgG-wYP1NZRA3_m7nMPjn4cu6PEVCHYzrZBUcW4yRkJfGtSFUJYVOQxy_Ei0iLOHQOgCaN5mnPCOx2LwrMc34ysH27grLXPPV2gS-g?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/4aad4eff5e7d.png"
+    },
+    {
+      "id": "i.48",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXe_9WyHy1CHTuSe0NzAURBT5EiIt-6IQTo1A0TZ9SriIuxzCB3WrLX137e73T2J0Qsbw1NlPcGBy7SiW6eKdJg8dtDmIGnMNDgUJftpOVS7woPU-9qtLP-1GQItqe4wKktXe-qCv5iVtoliuDtdYzq23Il0Gg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/8f8efcc0ff15.png"
+    },
+    {
+      "id": "i.50",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdvTWXR0gUAnM-USzhK_vkiI_azo_3seRtAF7BP-mUZaeOCadJOmLyqvYXP67xVLxJGRp2eBBM8X-7yys0oRxugQYv9pea7Sxk933I8gJ3NyUwewj7ydbtqC_JbyOc4bYf2pva9qpV7p9iQgN59j8ntp2E?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/e56c6d3d4fbf.png"
+    },
+    {
+      "id": "i.51",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdXoCuGqw4tfNfss0n7jX9Ud2Tq-sN6eZxDCcWKNndtpl8EznKY3z5-Lh8Zb_t1J0Xx6ia49mka-ty6Cbk1lQYiQ1_SnI5Bjea8eLvHBBNZ_ToPFHn9YfrqauJVsG-7r5DVShhgsHuFGqIWlus_BDH5?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d5cd175d4bed.png"
+    },
+    {
+      "id": "i.33",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcOvpIiTASrTpDJD5pg6grWP00Y8je6rjzmeJqt6EAmgkvsn81Wgp2LAEjC0vJ3BCNzFrae6xIRtsLqiMRi1rGYHAqJj2-TG16U_Fg84ugruNIwXeRlB8rzvVb6kpOxV586oO6xuzKUnk2U4dKqF-qcYe2GwQ?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5bd511e2660d.png"
+    },
+    {
+      "id": "i.34",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdxAqm6hmJM7_9keOoDbJO-XcLalRqKzgbYl_TcMa2J5ouLtPV0epELswbPPPjZ99cp54_PJi8SaO-BDbBa3XwsDhgEji9mFxYccrLryib_wggp4fCHiMbfAiQvzFfEPdB2Ox9Q-hLycO7RBNQwevnEfEEAxA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d7bbe98844e7.png"
+    },
+    {
+      "id": "i.35",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfBgeFD9hzQNQJ5SP6Id9H4pv0W2n6eVdByhdYNpJEnB30fhp3n0uOAD3hfKtuGql8wmcyR-mrDPt-Bodbw0f-uMuAqHGBtOTrHzVl-jLbWfL_aMDTh7Wvvxl8GrZIIqbq1spUNBXDFjShAP-yNlyGaUxM?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/65b8d36c2582.png"
+    },
+    {
+      "id": "i.36",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXf7voQHeF_jELCt24PBBRIUF459uBcC9ZhME2UtrVkFNm7mJm1vg2eFi6Q-pYLeEVcRTYSUhen8d3WeqJqBrhcVRoSqFiC0ORnawYHa74hYtY8bdtP6C8QzzDNxURxAPHNKmqypfTC9hfiSJz3taGp2RC7AcA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6f462b76e16a.png"
+    },
+    {
+      "id": "i.37",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeNcBxyk7RMIwatrgWGB-qp4b_o5VX-fjyHAC8U4u2OcVCJ7j1eKEUljfOLA2S6TmN5755G2AObwic3gRV6KNs0PzjumZQca0HO-T9upp5ynGEcoVhDG9DwIfoq5n6lfi-lqoOhXkfWPseCOnFrtDLtp7c-rw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5cd5d7819012.png"
+    },
+    {
+      "id": "i.38",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdHYYUbIEicyp6JsJXAjSsmnd9EJGkBBGbHmosN3Slc_bv1IWzc3jCEzfyad_rcjblk8SSmpwIzuB4zb6mfAan4_01lkzWnCDVEhGe1M81WGuttNdoyOfXW15yRme7Uq2OprKsTomWyKaL1oMZKrAbaC7QhEw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/4b613a3f9167.png"
+    },
+    {
+      "id": "i.39",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXck_Xej0dQmctNUJAQSuck4GwBV7nXCRoStAP9KoBt6kkxESA1ZMMqRJ-1htHW8KLOAtDF8fVbyYBRiC_dnX92T1--CC1MTlGfMT0hUcDd-yvMZzyzwv2Ll7GJai4D16wn7qxT2iLCxQ_9qNb3PeqSv3LXaOQ?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/258b63a10c77.png"
+    },
+    {
+      "id": "i.40",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcixU5OCOzGUiQzLZFtKo9lJLzC0ubAs4aASjSaoWNfHq4FiRe2gamUkKFAvmOK1kPg0LB9cAH_Ejm-nAv7tygD3fSQ-l7RB5vU2IXtLjDfYOZORUekflETtjyFFg9kKES2jH7R6FhR92rakxIUOCF5q5c?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/a6931ddc468a.png"
+    },
+    {
+      "id": "i.41",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdz08RLJAlE2wCX1bZKPTh6zoi_Kw5LsLLAs_6dgj5vDENUfkbzSlerGqAl3KI3xmsJUhx9UEb9FTsXx1-2u6jWgrJLuR_dhSiAR1671RfNdjUGMSBmrURfpriFxVba0LEhAQgNMEVBIaEav8FyP_8Y5PZzQw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6bf5925fe9a0.png"
+    },
+    {
+      "id": "i.42",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdD5G_t9RV6pps2cFW5yRz3h8GFGYrfZYtWKluyPHvUZB0qvY6yiMzw5WhTmfwSavfLaTBsww5o52WKPgot1GDXRYvBzQeMbt0K4o7nyh4bAQytEzu-5rjhQ_kE4M2f0ZDQz85RF4opKFsb00oD6WChjVgJmA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/116656f5f674.png"
+    },
+    {
+      "id": "i.43",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQwgFFAKou63poKCDnrTddhMWXr-rJQmgUbQlv8wN3JeYUwb-zffjNj1cgNiQkXlWCp366pRAFgQaBO1oFJD2OG_7q35Efa9Xs103IU9-k1Y4r7K9myxP7RxQZL09xzHY8_bLVjhKEKdJxhPsO4QxTFf0?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/260e96f22547.png"
+    },
+    {
+      "id": "i.44",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7xVkCMdsqDDZ6qLx8we93GiK7VMPJgK9V7Qll1UHmXD9BTijJelqgCJAoeV91cCzh0LglfmgTny5Bgw_QV1aSaIoZYDhH4uCTL8mpNCCf5GzYzOgBrBtSZ1i-TjPbNXfwZNBUDDz4LqKDNz_6U6EEM5re2w?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/150cbd197ccd.png"
+    },
+    {
+      "id": "i.45",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXf9R2jfjvFeQj2GM6JvTERgG1gg_3oemX6o_MNftLz2ufBiTtS-vzFUan6lsrE2wjUKH83ELf31oPajtiyMUYbuYHmJCW0vI2xR0_jzIj-OzGD-r-oYfmqbKekHgduM8-owjkI-tUI22gKMqdK9_4slFyrwLg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/969dda606cb8.png"
+    },
+    {
+      "id": "i.46",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeHVIb1EZWUYHllOytLEwzyjpvvxRFfIOp8y88Hw8T1bVvMK1NbQFtJVzDY78CgJWqTg9KUOsE05zNnRqfTrjgd3xrtSG0WPmSm5FV44AuXJBcAT4tvBc_HosATcgfYvvEaK4aqpIyyHwmrMBEI8FUvhCDWTg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/08848916c1fd.png"
+    },
+    {
+      "id": "i.47",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcaBZf46y9YP0kihwbxenKNinuIsstHNbPmu0ArSHfE3HuSceej3pdGeoyU-er-3UWs9m_UytN0WWziohzbChzoG_voSOZjjDilbcqMX9csIiu7QM51b1ecYTG77FBctI0ELy1IkOT0xdYTnUN7_YIlSZAKBA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/daf88481ab46.png"
+    },
+    {
+      "id": "mission-control-52",
+      "url": "",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/f09183b73c0c.png"
+    },
+    {
+      "id": "slack-example",
+      "url": "",
+      "localPath": "/training-assets/custom/slack-example.png",
+      "altText": "Slack example"
+    },
+    {
+      "id": "trello-example",
+      "url": "",
+      "localPath": "/training-assets/custom/trello-example.png",
+      "altText": "Trello example"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+diff --git a/node_modules/@corva/create-app/lib/helpers/resolve-app-runtime.js b/node_modules/@corva/create-app/lib/helpers/resolve-app-runtime.js
+index 929eb7a..bd0f13f 100644
+--- a/node_modules/@corva/create-app/lib/helpers/resolve-app-runtime.js
++++ b/node_modules/@corva/create-app/lib/helpers/resolve-app-runtime.js
+@@ -37,7 +37,10 @@ const checkCliVersion = async (command, version) =>
+ 
+       debug(`%s version output: %s`, command, data.toString());
+ 
+-      resolve(semver.satisfies(semver.coerce(data.toString('utf-8')), version));
++      const currentVersion = semver.coerce(data.toString('utf-8'));
++      const requiredVersion = semver.coerce(semverVersionsMapping.node[version] || version);
++
++      resolve(semver.gte(currentVersion, requiredVersion));
+     });
+   });
+ 
+@@ -82,7 +85,7 @@ const semverVersionsMapping = {
+  */
+ export const resolveAppRuntime = (opts) => {
+   if (opts.appType === APP_TYPES.UI) {
+-    const version = '20';
++    const version = '22';
+ 
+     return {
+       language: opts.useTypescript ? 'typescript' : 'javascript',

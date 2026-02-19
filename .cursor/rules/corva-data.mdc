@@ -1,0 +1,69 @@
+---
+description: Corva platform data reference - consult when working with Corva APIs, datasets, or drilling data
+alwaysApply: true
+---
+
+# Corva Data Reference
+
+When writing code that interacts with the Corva platform, consult `corva_data_dictionary.md` for field-level details.
+
+## Key Files
+
+- `corva_data_dictionary.md` — Full data dictionary (102 datasets, 3500+ fields, organized by category)
+- `corva_data_dictionary.csv` — Same data in CSV format (source of truth for human edits)
+- `corva_datasets_catalog.csv` — All 647 datasets (summary-level, no field details)
+
+## Corva API Pattern
+
+```
+GET /api/v1/data/{provider}/{dataset}/
+```
+
+Query parameters: `query` (MongoDB JSON), `sort`, `limit`, `skip`, `fields`
+
+Dataset names use `provider#collection` format (e.g., `corva#wits`).
+In API paths, the `#` becomes `/`: `/api/v1/data/corva/wits/`
+
+## Data Types
+
+- `time` — queried by `timestamp` + `asset_id`
+- `depth` — queried by `measured_depth` + `asset_id`
+- `reference` — configuration data, not time-series
+
+## Key Datasets
+
+| Use Case | Dataset | Notes |
+|---|---|---|
+| Real-time drilling data | `corva#wits` | 1-second WITS telemetry |
+| 1-ft depth summary | `corva#wits.summary-1ft` | Aggregated per foot |
+| 1-min time summary | `corva#wits.summary-1m` | Aggregated per minute |
+| BHA / Drillstring | `corva#data.drillstring` | Component-level BHA detail |
+| Surveys | `corva#data.actual_survey` | MD, inclination, azimuth, TVD |
+| Mud data | `corva#data.mud` | 53 data fields |
+| Casing | `corva#data.casing` | Casing program data |
+| Formations | `corva#data.formations` | Lithology by depth |
+| Rig activities | `corva#activity-groups` | Activity type, start/end times |
+| Directional surveys | `corva#directional.surveys` | Planned + actual surveys |
+| Torque & Drag | `corva#torque-and-drag.hookload-trend` | 50 data fields |
+| Hydraulics | `corva#hydraulics.pressure-loss` | 46 data fields |
+| Completions WITS | `corva#completion.wits` | Frac real-time data |
+| Frac predictions | `corva#completion.predictions` | 190 data fields |
+| Operations | `corva#operations` | Operational records |
+
+## Python SDK Example
+
+```python
+response = api.get(
+    '/api/v1/data/corva/wits/',
+    params={
+        'query': json.dumps({'asset_id': event.asset_id}),
+        'limit': 500,
+        'sort': json.dumps({'timestamp': -1}),
+        'fields': 'timestamp,data.hole_depth,data.bit_depth,data.weight_on_bit'
+    }
+)
+```
+
+## When You Need Field Details
+
+Read `corva_data_dictionary.md` and search for the dataset name. Each dataset section lists every field with its type, example value, and human-provided context (Unit, Description, Notes columns).

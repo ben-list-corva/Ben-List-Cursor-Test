@@ -1,0 +1,7 @@
+{
+  "eslint.validate": ["json"],
+  "files.associations": {
+    "*.template": "typescript"
+  },
+  "nxConsole.generateAiAgentRules": true
+}

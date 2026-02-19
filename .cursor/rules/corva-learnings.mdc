@@ -1,0 +1,245 @@
+# Corva Platform Learnings
+
+Accumulated knowledge from working with the Corva API and data platform. Reference this for future Corva projects.
+
+## API Fundamentals
+
+### Authentication
+- API keys are company-scoped. One key = one company's data.
+- Header format: `Authorization: API {key}` (note the space after "API")
+- JWT/Bearer tokens inherit the user's multi-company permissions.
+- Dataset keys have data read access; App keys are for app-to-app communication.
+
+### Data API (`data.corva.ai`)
+- Base: `GET https://data.corva.ai/api/v1/data/{provider}/{dataset}/`
+- **Required params**: `query` (JSON), `sort` (JSON). Both are mandatory.
+- **query must include `asset_id` or `company_id`** -- queries without either will return 400.
+- Optional: `limit`, `skip`, `fields` (comma-separated field paths)
+- Aggregate pipeline: `POST .../aggregate/pipeline/` with `{"stages": [...]}`
+- Max limit per request appears to be 500-1000 records.
+
+### Platform API (`api.corva.ai`)
+- Assets: `GET https://api.corva.ai/v2/assets`
+- Supports `company_id`, `types[]` (e.g., "well"), `limit`, `page`, `search` params.
+- Returns paginated results (100 per page by default).
+- Single asset: `GET https://api.corva.ai/v2/assets/{asset_id}`
+
+## Dataset Index Limitations (Critical!)
+- `corva#well_cache` is only indexed on `asset_id`. Queries by `company_id` alone return 412 ("No matching index found").
+- Geospatial queries (`$geoWithin`, `$centerSphere`) on `well_cache` also fail -- no geo index.
+- **Workaround**: Use the v2 Assets API to get asset IDs (supports company_id filter), then batch-query `well_cache` by `asset_id: {$in: [...]}` in groups of 50.
+- Always check for 412 errors -- they indicate missing indexes, not auth problems.
+
+## Key Datasets and What They Contain
+
+### `corva#well_cache` (the richest single-record-per-well summary)
+- One record per asset with embedded snapshots from multiple datasets
+- Contains: `location` (GeoJSON Point), `corva#wits` snapshot, `corva#data-well-sections`, `corva#data-drillstring`, `corva#data-mud`, `corva#data-casing`, `corva#directional-accuracy`, `corva#data-npt-events`, `corva#data-operation-summaries`
+- **Also contains**: `asset` (name, target_formation, state, string_design, stats), `rig` (id, name, classification), `program` (id, name -- this is the basin), `company` (id, name), `pad`, `frac_fleet`
+- Location format: `location.coordinates = [longitude, latitude]` (GeoJSON order: lon first!)
+- Query by: `asset_id` (indexed), or `asset_id: {$in: [...]}`
+- **Key well metadata fields**:
+  - `asset.name` = well name
+  - `asset.target_formation` = target formation (e.g., "Lower Eagle Ford")
+  - `program.name` = basin/program (e.g., "Eagle Ford")
+  - `rig.name` = rig name (e.g., "Nabors X19")
+  - `company.name` = operator name
+  - `asset.stats` = drilling/completion stats
+
+### `corva#wits` (real-time WITS telemetry)
+- 1-second resolution drilling data
+- Key fields: `data.hole_depth`, `data.bit_depth`, `data.rop`, `data.weight_on_bit`, `data.state`, `data.standpipe_pressure`
+- Query by: `asset_id` + `timestamp` range
+
+### `corva#wits.summary-1ft` (per-foot depth summary)
+- Key fields: `data.hole_depth`, `data.state_max`, `data.true_vertical_depth_mean`, `data.timestamp_max`, `data.timestamp_min`
+- No explicit ROP field -- derive as: `rop_ft_hr = 3600 / (timestamp_max - timestamp_min)`
+- `data.state_max` values include: "Rotary Drilling", "Slide Drilling", "Static On Bottom", "In Slips", etc.
+- `metadata.drillstring` links each foot to a specific BHA (drillstring document _id)
+
+### `corva#data.drillstring` (BHA runs)
+- `data.start_depth`, `data.end_depth` define the run interval
+- `data.components[]` array with `family` field: "bit", "pdm", "mwd", "dp", "dc", "hwdp", "sub", etc.
+- Bit details: `size`, `bit_type` ("pdc"), `length`
+- **Bit fields** (rich!): `size`, `bit_type` ("pdc"), `make` (manufacturer), `model`, `serial_number`, `nozzle_sizes` (array), `tfa`, `name` (display), `shank_od`
+- **Motor (pdm) fields** (rich!): `make`, `model`, `name`, `rpg`, `stages`, `number_rotor_lobes`, `number_stator_lobes`, `max_operating_differential_pressure`, `bend_range` (bend angle), `outer_diameter`, `bit_to_bend`, `max_weight_on_bit`, `max_standard_flowrate`, `min_standard_flowrate`, `off_bottom_pressure_loss`, `has_stabilizer`, `stabilizer` (nested obj)
+- Motor `max_differential_pressure` field name may vary: check `max_operating_differential_pressure` or `max_diff`
+- BHA numbering: `data.id` is the BHA number; fractional IDs like 4.1 indicate sidetrack or re-run BHAs
+
+### `corva#data.formations` (formation tops)
+- `data.formation_name`, `data.md` (measured depth), `data.td` (TVD), `data.lithology`
+- One record per formation top per well
+- Query by `asset_id`, sort by `data.md` ascending
+- Used by `pull_formation_tops.py` for vertical/intermediate section ROP curves
+- Formation thickness computed as distance to next formation top
+
+### `corva#data.actual_survey` (directional surveys)
+- `data.stations[]` array with `measured_depth`, `tvd`, `inclination`, `azimuth`
+
+## Windows/PowerShell Gotchas
+- `&&` is not valid in older PowerShell versions. Use `;` or write scripts to files.
+- Inline Python with complex quoting fails in PowerShell. Always write to .py files instead.
+- `curl` on Windows has different quoting rules than Linux/Mac. Use Python `requests` instead.
+
+## Offset Well Selection Patterns
+- The Offset Well Selection app exists on the platform but can be replicated via API.
+- **Two-step approach**: (1) Get asset IDs via `v2/assets?company_id=X`, (2) batch-query `well_cache` by `asset_id: {$in: [...]}`.
+- `well_cache` contains `program.name` which is the **basin** (e.g., "Eagle Ford").
+- `well_cache` contains `asset.target_formation` (e.g., "Lower Eagle Ford", "Upper Eagle Ford").
+- Formation matching should strip prefixes ("Lower", "Upper", "Middle", "Base", "Top") to match within a formation group.
+- Spud date can be estimated from `asset.stats.drilling.start_time` or `corva#data-well-sections.data.start_time`.
+- Many wells have `N/A` for drilling data -- these are likely completions-only wells (rig = "SM Energy Completions").
+- Distance calculation uses haversine formula. GeoJSON coordinates are `[longitude, latitude]` order.
+
+## BHA / Bit / Motor Parsing
+
+### Bit Model Encoding
+- PDC bit models encode **blade count** and **cutter size** in 2 or 3 digits within the model string.
+- Two conventions exist:
+  - **Fractional Inch** (Baker Hughes, Halliburton): cutter digit = X/8 inch. Baker uses cutter-first order with a zero separator (e.g., `506` = 5/8" cutter, 6 blades). Halliburton uses blades-first order (e.g., `HD65` = 6 blades, 5/8" cutter).
+  - **Metric** (NOV, Schlumberger, Ulterra, Taurex, Varel): blades-first order. In 2-digit models (NOV TK-series), the second digit is the last digit of mm size (3→13mm, 6→16mm). In 3-digit models, the last two digits are literal mm (e.g., `Z613` = 6 blades, 13mm).
+- Fraction cutter map: `3→8mm, 4→13mm, 5→16mm` (5/8" = 15.875mm, grouped as 16mm)
+- Metric last-digit map: `1→11mm, 3→13mm, 5→16mm, 6→16mm` (15mm grouped with 16mm)
+- Valid blade counts: 3-8. Valid cutter sizes (mm): 8, 9, 11, 13, 14, 16, 19, 22.
+- **15mm → 16mm reclassification**: Baker 5/8" (15.875mm) and metric 15mm are functionally equivalent to 16mm. All 15mm values are remapped to 16mm in the `_result()` function of `parse_bit_motors.py`.
+- The `bit_manufacturer` field in Corva data is often incorrect/inconsistent. Parse from the **model string shape** instead.
+- See `bha_selection/bit_characterization_logic.md` for full documentation.
+
+### Motor Model Encoding
+- Lobe configuration (e.g., "5/6") is usually directly in the motor model or name string.
+- `rpg` (revolutions per gallon) is a numeric field on the motor component.
+- Motor manufacturers vary widely for the same power section. Lobe config + RPG is more meaningful for grouping than manufacturer name.
+
+### Full-Corva Scan (Feb 2026)
+- 57,776 wells enumerated via v2 Assets API
+- 13,088 wells had BHA data in the past 18 months
+- 64,865 BHA runs extracted, 5,040 unique bit models found
+- 80.7% of BHAs with model strings parse at high confidence
+- Top patterns by volume: Baker X0Y (10,251), NOV-TK (9,955), Halliburton H-prefix (3,796)
+- New patterns found but not yet added: SLB BY/BF/HF/HT series, Drilformance DF, Diamant SPD, NOV DSC/RH
+- Baker cutter code "6" (6/8" = 19mm?) seen in 132+ runs (DD604M, D605S) -- needs user verification
+
+### Key Scripts
+- `bha_selection/parse_bit_motors.py` — Parses bit models & motor data, adds columns to BHA CSVs.
+- `bha_selection/full_corva_bit_scan.py` — Full-Corva scan: enumerate wells, fetch BHAs, parse, catalog.
+- `bha_selection/build_bit_catalog.py` — Builds deduplicated catalog of all unique bit models seen.
+- `bha_selection/pull_lateral_bhas.py` — Extracts BHAs by section type (`--section-type lateral/intermediate/vertical`) or all runs (`--all-runs`).
+- `bha_selection/pull_formation_tops.py` — Fetches formation tops per well from `corva#data.formations` (for vertical workflow).
+- `bha_selection/normalize_formations.py` — Normalizes formation names using target-well-reference or TVD-only clustering. Outputs `formation_tops_canonical.csv` + `canonical_map.json`.
+- `bha_selection/pull_1ft_for_runs.py` — Fetches wits.summary-1ft per BHA run, derives ROP. Supports `--mode lateral` and `--mode vertical`, `--output-dir`.
+- `bha_selection/build_rop_curves.py` — Builds per-run/per-group ROP curves + TTD ranking. Supports `--mode lateral` and `--mode vertical`, `--output-dir`.
+- `bha_selection/plot_type_curves.py` — Generates matplotlib charts. Supports `--mode lateral` and `--mode vertical`, `--section-label`, `--data-dir`, `--output-dir`.
+- `bha_selection/group_equivalent_bhas.py` — Groups BHA runs into equivalent categories (with RSS support).
+- `bha_selection/analyze_target_well.py` — Analyzes target well's planned sections, maps to formations, outputs `target_sections.json`.
+- `bha_selection/filter_bhas_by_section.py` — Filters master BHA CSV by hole size + depth overlap + formation coverage per section.
+- `bha_selection/run_all_sections.py` — Orchestrator: runs the full pipeline for every section of a target well in one command.
+- `bha_selection/bit_characterization_logic.md` — Full documentation of parsing logic and edge cases.
+- `bha_selection/classification_process.md` — Full classification workflow documentation (lateral + vertical + section-driven).
+
+### Full Scan Performance
+- Phase 1 (enumerate wells): ~6 min for 57,776 wells (578 pages at 100/page)
+- Phase 2 (fetch drillstrings): ~30 min with 10 parallel workers
+- Drillstring query with timestamp filter `{"timestamp": {"$gte": epoch}}` works correctly for date-range filtering
+- No rate limiting observed with 10 parallel workers
+- Resume capability via `scan_progress.json` -- can stop and restart at any time
+
+## ROP Type Curves (wits.summary-1ft)
+
+### Data Source
+- `corva#wits.summary-1ft` has 1 record per foot drilled
+- Key fields: `data.hole_depth`, `data.state_max`, `data.timestamp_max`, `data.timestamp_min`, `data.true_vertical_depth_mean`, `metadata.drillstring`
+- Does NOT have ROP, WOB, RPM, or differential pressure directly -- derive ROP as `3600 / (ts_max - ts_min)`
+- `data.state_max` values: "Rotary Drilling", "Slide Drilling", "Static On Bottom", "In Slips", etc.
+- `metadata.drillstring` links each foot to its exact BHA document
+- Query by `asset_id` + `data.hole_depth` range, sort by `data.hole_depth`
+
+### Dual X-Axis Approach (Lateral Wells)
+- **Rotary ROP** degrades with **distance from BHA start** (bit wear effect)
+- **Slide ROP** degrades with **distance from lateral start** (friction/drag increases deeper in the lateral regardless of bit condition)
+- These are different physical mechanisms requiring different normalization axes
+- Rotary and slide performance curves use 100-ft bins
+
+### Performance (Eagle Ford Test Case)
+- 57 valid runs (>= 1,000 ft, parsed bit + motor) from 44 wells
+- 441,975 1ft drilling records fetched in ~56 seconds with 8 parallel workers
+- 87.5% rotary, 12.5% slide (by foot count)
+- API query pattern: `{"asset_id": X, "data.hole_depth": {"$gte": start, "$lte": end}}`
+- Pagination: limit=500, skip, sort by `data.hole_depth`
+
+### RSS and Agitator Detection
+- RSS BHAs: look for `family="rss"` in drillstring components, or name/model containing "rotary steerable"
+- RSS BHAs get their own group key (`6B-16mm | RSS`) since they have no slide drilling
+- Agitators: look for `family="agitator"` in components, or name/model containing "agitator"
+- Agitators improve slide performance but don't affect rotary -- tracked as overlay, not group splitter
+
+### Vertical / Formation-Based Curves
+- For vertical/intermediate sections, x-axis is **% formation** (not distance)
+- Uses `corva#data.formations` for formation tops: `data.formation_name`, `data.md`, `data.td`
+- `data.td` in formations dataset appears to be TVD (true vertical depth), not total depth
+- Formation mapping: use `data.true_vertical_depth_mean` from wits.summary-1ft to match each foot to a formation
+- Discretize each formation into 10% segments
+- Both rotary and slide use the same x-axis (% formation) — no dual x-axis like lateral
+- Smoothing: rolling median, window=3 segments (fewer segments than lateral bins)
+- Formation roadmap concept: target well defines the sequence of formations, offsets are mapped onto it
+- Section type identification: `data.well-sections.data.name` contains "intermediate", "int ", "vertical", "vert ", etc.
+
+### Formation Name Normalization (Critical for Vertical Workflow)
+- Raw formation names from Corva are **highly inconsistent** across operators and even within the same operator
+- Example: "Eagle Ford", "Eagle Ford Lower", "Lower Eagle Ford", "Upper Eagle Ford_6a" are all sub-zones of Eagle Ford
+- Example: "Austin Chalk B Bench" on one well vs "B Bench" on another (same operator!)
+- Without normalization, 44+ raw names create 440+ sparse bins; groups fill only 5-40% of bins
+- **Solution**: `normalize_formations.py` with two modes:
+  - **Target-well-reference** (default, `--target-asset <id>`): Use target well's formations as canonical; auto-consolidate sub-formations by stripping prefixes/suffixes, then map offsets by TVD range
+  - **TVD-only** (`--mode tvd-only`): Cluster all tops by TVD proximity (gap-based), name by most common name
+- Root extraction: strip "Upper"/"Lower"/"Base"/"Middle" prefixes; strip ordinals ("2a","6a"), bench letters ("B Bench"), lithology ("Shale","Sand","Carbonate")
+- Orphan detection: names like "B Bench" with no parent prefix are auto-merged into nearest preceding canonical group by TVD
+- Outputs `formation_tops_canonical.csv` (same schema, drop-in replacement) and `canonical_map.json` (for FE)
+- Galvan Ranch result: 53 raw names → 10 canonical formations, bin population 5-40% → 27-90%, TTD missing segments: many → 0
+- User overrides supported via `--overrides overrides.json` for custom grouping rules
+- Designed for FE: `canonical_map.json` contains full hierarchy tree, per-well mappings, excluded wells for UI display
+
+## Section-Driven Workflow (All Sections at Once)
+
+### Concept
+Rather than running the pipeline manually for each section type, the orchestrator `run_all_sections.py --asset <ID>` automates everything:
+1. Analyze target well → identify all sections (hole size, vertical/lateral mode, formation mapping)
+2. Pull ALL BHA runs from offsets (`--all-runs` mode) → single master CSV
+3. Filter per section by hole size + depth overlap + min formation coverage (default 50%)
+4. For each section: group → pull 1ft → build curves → plot charts
+
+### Key Design Decisions
+- **Hole size matching**: BHA `bit_size` must match within 0.1" of the section `diameter`. This prevents mixing 8.75" production runs with 12.25" intermediate data.
+- **Formation coverage filter**: Offset runs must cover >= 50% of the target section's canonical formations to be included. Prevents partial-coverage runs from skewing TTD.
+- **Auto mode detection**: If "lateral" appears in section name → lateral mode (distance-based curves). Otherwise → vertical mode (formation-based curves).
+- **Per-section output**: Each section's curves and charts go to `sections/<name>/` subdirectory.
+- **Chart labels**: All charts include section name + hole size in the title (e.g., "Intermediate (12.25in)").
+
+### Galvan Ranch Test Case (Feb 2026)
+- 5 sections: Surface 17.5", Intermediate 12.25", Prod Vertical 8.75", Prod Curve 8.75", Prod Lateral 8.75"
+- 173 total BHA runs from 45 offset wells
+- After filtering: 3/12/36/11/60 runs per section
+- 33 charts generated in ~2.3 minutes
+
+## Equivalent BHA Grouping
+
+### Group Key Definition
+An "Equivalent BHA" is defined by four parameters: `{blades}B-{cutter_mm}mm | {lobe_config}-{rpg_band}`
+- **Bit blade count**: Parsed from bit model string (3-8)
+- **Bit cutter size (mm)**: Parsed from bit model string (all 15mm values are remapped to 16mm)
+- **Motor lobe config**: Extracted as `X/Y` from motor model string (e.g., "5/6")
+- **Motor RPG band**: From numeric RPG field, binned as: lo (<=0.30), mid (0.31-0.45), hi (0.46-0.55), vhi (>0.55)
+
+### What's excluded from grouping (intentionally)
+- Bit manufacturer (Baker, NOV, SLB, etc. -- different vendors make equivalent bits)
+- Motor manufacturer (power sections are commodity items)
+- Bit model suffix (design variants within same blade/cutter family)
+- Motor stages (lobe config + RPG captures key drilling behavior)
+
+### Key Scripts
+- `bha_selection/group_equivalent_bhas.py` — Groups BHA runs into equivalent categories and generates summary CSV
+- `bha_selection/classification_process.md` — Full documentation of the classification workflow
+
+## Performance Tips
+- The v2 Assets API returns all companies' assets unless filtered by `company_id`.
+- Batch `well_cache` queries with `$in` operator (batches of 50) to avoid N+1 API calls.
+- `well_cache` is the fastest way to get a multi-dataset snapshot per well in one query.

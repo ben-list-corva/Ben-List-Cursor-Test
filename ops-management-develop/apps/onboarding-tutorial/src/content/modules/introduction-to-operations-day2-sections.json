@@ -1,0 +1,2305 @@
+{
+  "moduleSlug": "introduction-to-operations-day2",
+  "title": "Introduction to Operations - Day 2",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "Introduction",
+      "order": 0,
+      "content": [
+        {
+          "type": "text",
+          "body": "Corva is an advanced real-time monitoring and optimization platform for drilling and completions. Corva can be used to identify trends in rig performance and drive improvement by displaying the data in visually pleasing and intuitive applications within the Corva platform. Drilling optimization is also achieved by using Corva’s database of offset wells and identifying optimal drilling parameters that maximize rate of penetration. With Corva, drilling engineers can reduce drilling and slide time, identify problem events using automated alerts, and mine historical data to discover the best practices for drilling each formation and area."
+        },
+        {
+          "type": "text",
+          "body": "Accessing the Corva Platform"
+        },
+        {
+          "type": "text",
+          "body": "To access the Corva Platform navigate to [www.corva.ai](http://www.corva.ai) in your Google Chrome web-browser and click the Sign In button.\u000b\u000b\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/73f55930d893.png:Figure 48]"
+        },
+        {
+          "type": "text",
+          "body": "Email address serves as a login and the passwords are set up by following the instructions in the Welcome Email."
+        },
+        {
+          "type": "text",
+          "body": "The Main Toolbars are on the left hand side of the webpage and accessible all the time.\u000b\u000b\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/476c00e259b1.png:Figure 49]"
+        },
+        {
+          "type": "text",
+          "body": "Dashboard displays a list of the dashboards available on the account. The dashboards are a group of applications that display various information about the wells in Corva. Dashboards can be custom made or prebuilt with the most used applications in Corva.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/0a5e49bc0bbf.png:Figure 50]"
+        }
+      ],
+      "images": [
+        {
+          "id": "i.6",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXf1SHkNrKGtGFOWfTsYuUYAb19UBekXlhf42OvJAHMB_BXVBCwhd8yl6rZVvdgdj_ckWesLpFS3WjjHLdO4OwJz-LTIgJbsZqsYTOv7ryAU3GhWCEz-AVOZ28kPU0RyXxYzxgEYyIcQ6DeUtdxWHy5DFYGxqw?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/73f55930d893.png",
+          "altText": "Figure 48",
+          "figureNumber": "Figure 48"
+        },
+        {
+          "id": "i.7",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXergAHISFL7BSoDKvJa6qpEcl34o3IfAcpYYaX7sHqKfB4FoDqcYWc1VSG7WjDytTvLNcsHANXqV5pyxc9llJEnGWI4_XnmxjHmF_5nNvSmFnxVPz4pjt8Phd1NoEPUNeCaMi2tSOmSGHGBmxddYHtOSyk?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/476c00e259b1.png",
+          "altText": "Figure 49",
+          "figureNumber": "Figure 49"
+        },
+        {
+          "id": "i.8",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXd-AHx95522EN5ay-SNOr_sO6_jHteP1xvMjd-kJsCluTkR0vAIom4nkWIJe2a5YX-hlGDxD48aIXf_ihMr0tD_eRr0HtmT1dSaQQXj5Wy9ZkxQOGkcgFuwnjQfJxLg2CIZA2YD1UAupKenBfFNNfNqaJ9xdA?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/0a5e49bc0bbf.png",
+          "altText": "Figure 50",
+          "figureNumber": "Figure 50"
+        }
+      ],
+      "quiz": []
+    },
+    {
+      "id": "asset-map",
+      "title": "Asset Map",
+      "order": 1,
+      "content": [
+        {
+          "type": "text",
+          "body": "All wells and rigs can be found, created and edited through the Asset Map.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/b9ffb0b25bab.png:Figure 51]"
+        },
+        {
+          "type": "text",
+          "body": "Assets can be searched by Wells, Rigs, Programs, and Map. When searching by wells, the search can be filtered by the Company, Date Range, and Status of the well itself. These selections are found via the blue funnel icon to the right of the search bar.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/ee6fbc0a0927.png:Figure 2]"
+        },
+        {
+          "type": "text",
+          "body": "When searching using the Map, an actual map is shown with the surface hole locations displayed for each well for a chosen company. Selecting one of the wells on the map will navigate to that asset in Corva. \n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/50911272fb83.png:Figure 3]"
+        },
+        {
+          "type": "text",
+          "body": "Corva Account Setup and Password Reset"
+        },
+        {
+          "type": "text",
+          "body": "[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/48b6821dd475.png:Figure 4]\n\n"
+        },
+        {
+          "type": "text",
+          "body": "To set up a customer’s account navigate to the Control Center via your profile icon at the bottom left of the screen."
+        },
+        {
+          "type": "text",
+          "body": "Once there you will notice the selections on the left hand side of the application."
+        },
+        {
+          "type": "text",
+          "body": "[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/a1d5f410c185.png:Figure 5]\n\n"
+        },
+        {
+          "type": "text",
+          "body": "The Users List menu options will display a list of all the accounts created in Corva. This is searchable by company name and you can also search by typing in the name or email or the user."
+        },
+        {
+          "type": "text",
+          "body": "To create a new account click on the Create button at the top right of the application.  \n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5ac3ac6d73bb.png:Figure 6]"
+        }
+      ],
+      "images": [
+        {
+          "id": "i.9",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfhg05pkMmhSIqUJAp6DFG86oVb1pP7guJPciA9FiuWDV9LkoklhUAhoXd_asudThccVJzU4B6CivnmHN0_lTFq-hfgl-5_wc76hWP1Ao7xASjimWtivC4XxYzseJdUu0XEC28fuJuEILcw99LwYIys8fI?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/b9ffb0b25bab.png",
+          "altText": "Figure 51",
+          "figureNumber": "Figure 51"
+        },
+        {
+          "id": "i.10",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdAJr8vgZmsPy5evFn5R0eWiQ6OIltAQQ2Lj2yZFagw2OF1edLq4QjimW4pJ5rSspQGkiUdoh7Yz156mgbnTPFoevpCoWrtJ6LexHx6KvX7QRbgTqgc-IRalqpL0-HzBbclFQ94xscz5U7Ub1_lwmy6QFnBfA?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/ee6fbc0a0927.png",
+          "altText": "Figure 2",
+          "figureNumber": "Figure 2"
+        },
+        {
+          "id": "i.11",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdc7Sd4ur2KeANexFudEEkNeY_00W7RMmgBRZZQ6rtSuQ3BHp3ZF6z5h_PuwGTnuoKjf5t4fsmvttaYhGXJ2aH6WO0TfygDkxfWrKn-whiNog4LVggJvgDo0ABkKWOqKYU5jIbXV15ZCGYhRMlRo3GxZRXEZw?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/50911272fb83.png",
+          "altText": "Figure 3",
+          "figureNumber": "Figure 3"
+        },
+        {
+          "id": "i.12",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeixBM78cBHf4e5zFpHEgrdoeOzbtsKBpXZYo1ZNa1t6LMYS01qJGNq5TDskKofEjjhANffazef6TzUUscK-vGqWkcCUtcFOflV1gwzMRahJOOK43lJMWyuNgW-elQ9vHI-J8zU6jKNqjwlU0mW2S2nx2ZWnw?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/48b6821dd475.png",
+          "altText": "Figure 4",
+          "figureNumber": "Figure 4"
+        },
+        {
+          "id": "i.13",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcDsBrEyEqOPL1HmHYC4BYRPJqOePPqEwt8822b3kbufQVGo9qqsl18vkqOSkeI-z8rAT7h2VS3n_HgpbV_XpRoRxd6EIww6OeAY2LnIzCH91FZzjM2KrTM5-nghDlRWE5TFbPXCsJXqeVzeAJm1_h_4U8Jkg?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/a1d5f410c185.png",
+          "altText": "Figure 5",
+          "figureNumber": "Figure 5"
+        },
+        {
+          "id": "i.14",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdvrLVs6A74mBawA3gKuvMV2apdoCqFBtVSA5oruSmTY2GPVv6SlXPISVdOuhfOc3GPJb4HXyd9g3I-WanBE_nqrRAofxs9_p2HYzmKxKBz10mfnjLOUdsMrdcEdUwG53Iwv6GBi4VXvgpLTBJY47rjBxj19w?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5ac3ac6d73bb.png",
+          "altText": "Figure 6",
+          "figureNumber": "Figure 6"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "introduction-to-operations-day2-asset-map-q1",
+          "question": "What is the most important practice when working with Asset Map data?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Verify all Asset Map information against official source documents",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Use values that look reasonable",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Copy from similar wells",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Trust existing entries",
+              "isCorrect": false
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Data verification in Asset Map ensures accuracy and reliable app outputs.",
+          "sourceRef": {
+            "headingPath": [
+              "Asset Map"
+            ],
+            "anchorId": "asset-map",
+            "locationHint": "See: Asset Map",
+            "evidenceSnippet": "Data verification in Asset Map ensures accuracy and reliable app outputs."
+          }
+        },
+        {
+          "id": "introduction-to-operations-day2-asset-map-q2",
+          "question": "You find a discrepancy in Asset Map data. What should you do?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Investigate using source documents and document findings before making changes",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Make corrections based on experience",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Ignore minor discrepancies",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Use the most recent value",
+              "isCorrect": false
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Proper investigation of discrepancies in Asset Map maintains data integrity.",
+          "sourceRef": {
+            "headingPath": [
+              "Asset Map"
+            ],
+            "anchorId": "asset-map",
+            "locationHint": "See: Asset Map",
+            "evidenceSnippet": "Proper investigation of discrepancies in Asset Map maintains data integrity."
+          }
+        },
+        {
+          "id": "introduction-to-operations-day2-asset-map-q3",
+          "question": "In Asset Map, what ensures accurate Rig Name data?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Verifying Rig Name against the official drilling program or wellbore diagram",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Using industry standard values",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Copying from offset wells",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Estimating based on other data",
+              "isCorrect": false
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Rig Name accuracy in Asset Map is critical for calculations and app reliability.",
+          "sourceRef": {
+            "headingPath": [
+              "Asset Map"
+            ],
+            "anchorId": "asset-map",
+            "locationHint": "See: Asset Map",
+            "evidenceSnippet": "Rig Name accuracy in Asset Map is critical for calculations and app reliability."
+          }
+        }
+      ]
+    },
+    {
+      "id": "data-entry",
+      "title": "Data Entry",
+      "order": 2,
+      "content": [
+        {
+          "type": "text",
+          "body": "The Create User window will be displayed and this is where you will enter the information to create the account. Required information for account creation is listed below:"
+        },
+        {
+          "type": "text",
+          "body": "• First Name"
+        },
+        {
+          "type": "text",
+          "body": "• Last Name"
+        },
+        {
+          "type": "text",
+          "body": "• Email Address"
+        },
+        {
+          "type": "text",
+          "body": "• Company"
+        },
+        {
+          "type": "text",
+          "body": "• Groups"
+        },
+        {
+          "type": "text",
+          "body": "It is critical that the correct Company Name is selected. This allows the account to have access to the company's data that is in Corva. We do not want different companies to see each other’s data in the Corva application."
+        },
+        {
+          "type": "text",
+          "body": "There are three different selections available for Role in Corva"
+        },
+        {
+          "type": "text",
+          "body": "User "
+        },
+        {
+          "type": "text",
+          "body": "• has access to all rigs/wells in the assigned Company profile"
+        },
+        {
+          "type": "text",
+          "body": "Restricted "
+        },
+        {
+          "type": "text",
+          "body": "• has restricted access to some rigs in the assigned Company profile."
+        },
+        {
+          "type": "text",
+          "body": "Admin "
+        },
+        {
+          "type": "text",
+          "body": "• has unrestricted access to visible and hidden wells, ability to enter/change entered data and overall access to the assigned Company profile."
+        },
+        {
+          "type": "text",
+          "body": "**Corva users with Admin level have access to all wells, visible or not.**"
+        },
+        {
+          "type": "text",
+          "body": "The majority of customer accounts fall under the User level. However, some companies require restricted access for contractors. When a request is received to create an account, confirm with the customer if access should be restricted before creating the account."
+        },
+        {
+          "type": "text",
+          "body": "Mobile phone number (optional), Segment. Notifications, Alert levels, Sounds, and Widgets can be left by default and changed later."
+        },
+        {
+          "type": "text",
+          "body": "After the Corva account is created, a Welcome Email will be sent to the User, and he/she must follow the directions in the email to set up the password and accept terms of conditions."
+        },
+        {
+          "type": "text",
+          "body": "The email associated with the Corva account serves as a login."
+        },
+        {
+          "type": "text",
+          "body": "To reset the password click on Need help? option on the Sign In page. \u000b\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/0aeb9f3095e7.png:Figure 8]"
+        },
+        {
+          "type": "text",
+          "body": "[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/79bcdbb472e3.png:Figure 9]\n\n"
+        },
+        {
+          "type": "text",
+          "body": "Click ” Forgot Password?”\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/aa22144e5b5e.png:Figure 10]"
+        },
+        {
+          "type": "text",
+          "body": "Then enter the user’s email address and click send. A link will be sent to the email address entered that will allow the user to reset their password.\u000b\u000bEven Corva Admin users do not have access to view any profile passwords. If a user has forgotten a password, it must be reset via this email."
+        },
+        {
+          "type": "text",
+          "body": "[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/73a8e589d116.png:Figure 13]"
+        },
+        {
+          "type": "text",
+          "body": "Where: Well Plan or File Name."
+        },
+        {
+          "type": "text",
+          "body": "Required for Apps: All Directional Applications & Driller’s Roadmap."
+        },
+        {
+          "type": "text",
+          "body": "Examples: Plan #1, Plan 1, or Plan Rev.0."
+        },
+        {
+          "type": "text",
+          "body": "Where: Well Plan."
+        },
+        {
+          "type": "text",
+          "body": "Required for Apps: All Directional Applications & Driller’s Roadmap."
+        },
+        {
+          "type": "text",
+          "body": "Examples: 360 degrees, 180 degrees, or 90 degrees."
+        }
+      ],
+      "images": [
+        {
+          "id": "i.15",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfsTwmjDkwb-59wuH3F8xjR4s9CjRNiDKehhA513HT-ZHXVlcDR-2rII9TT_UFM5mvnqTtvEdlyvxyx740FqrPohJUoVxnE4dxoERyZ-09rlaiYNxTANFblE_6XzKExZBv8g_Yf94DdpBQKh-53nt7I6D0?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/9c1cc01771ff.png",
+          "altText": "Figure 7",
+          "figureNumber": "Figure 7"
+        },
+        {
+          "id": "i.16",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeXGhO_aj_yJdCsaDtmsWwoZTLMEkrGO0Oho2yc4zk7b2JqD2y4PauQ-5HUAjScKoe-lX0R5pxv7VAhfKFdUlDPWHEP-w84AfPcSt50noVvvGv7pn8YwJtqdIspGGIj82GGdhdLzj3KfPOOvYoLWUjsIs7AUw?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/0aeb9f3095e7.png",
+          "altText": "Figure 8",
+          "figureNumber": "Figure 8"
+        },
+        {
+          "id": "i.17",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeftDuYjYbElgJW0WdhkTqXTE2FAtqiGfplV_S0VtzqCcWfbgpnaiqG2h_0hfrhrIpUgyxOl5scdFoIrfw11JS6fa0GkyI4ycyWe1Qw8whQk7NhkWC_YYHVwB9MhyLhyMNzLT2IY7W4lz_103ZxpSCoP8bvhg?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/79bcdbb472e3.png",
+          "altText": "Figure 9",
+          "figureNumber": "Figure 9"
+        },
+        {
+          "id": "i.18",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXffOjz_WVDI7-aj08n3rsZb0GBQ98pWDyD0zcNbqy0UBCR2yBOmKp70ntcRIIU-qEj2I0Nlg4t-fq_uXegYCIUfFoPZL6B7k31ZXarsqquSoIcqalYHjTQ_AxeFVLYvrnKJnwLv-2VKckPOKFl8_wmztsgy2g?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/aa22144e5b5e.png",
+          "altText": "Figure 10",
+          "figureNumber": "Figure 10"
+        },
+        {
+          "id": "i.20",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXezy2qXMVmQivkNCr8EYrTRuQTfOvmGdaPj8ANoZWbxQeZWvnVVzbwsZ7ztdoAfmBnIIEw93zvBmijDIVtXvtedjyy4UBLI9bPVQEjpp8dhb1e74MpxNps4fm4KySA5iVG9pvPOjnrKQPXL4pzHZ08990AwUQ?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/73a8e589d116.png",
+          "altText": "Figure 13",
+          "figureNumber": "Figure 13"
+        }
+      ],
+      "subsections": [
+        {
+          "id": "overview",
+          "title": "Overview",
+          "order": 0,
+          "content": [
+            {
+              "type": "text",
+              "body": "[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6e337292bfd3.png:Figure 11]"
+            }
+          ],
+          "images": [
+            {
+              "id": "i.19",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdtCxFJxkAovmCfWSYNKM0O79cvF7JhCBb6blKcc1mrnUEZrzP99h9vv0jzWOPHRT4ColX-yqEP9jggqbHpnod9pESo7uYzzkYYKqNn9mT6LwQz_Q4Wi_P2omyEx3QdwZroeOqi01gNpaorERoKlOSFHKPKCQ?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6e337292bfd3.png",
+              "altText": "Figure 11",
+              "figureNumber": "Figure 11"
+            }
+          ],
+          "textContent": ""
+        },
+        {
+          "id": "well-name",
+          "title": "Well Name",
+          "order": 1,
+          "content": [
+            {
+              "type": "text",
+              "body": "Where: Drilling Program, Well Plan, Daily Drilling Report, Mud Report, or EDR provider naming convention."
+            },
+            {
+              "type": "text",
+              "body": "Required for: Asset creation."
+            },
+            {
+              "type": "text",
+              "body": "Examples: Silver Dollar 2H, Nash Unit 302H, or Poutine Unit 57 10H."
+            }
+          ],
+          "images": [],
+          "textContent": "Where: Drilling Program, Well Plan, Daily Drilling Report, Mud Report, or EDR provider naming convention. Required for: Asset creation. Examples: Silver Dollar 2H, Nash Unit 302H, or Poutine Unit 57 10H."
+        },
+        {
+          "id": "rig",
+          "title": "Rig",
+          "order": 2,
+          "content": [
+            {
+              "type": "text",
+              "body": "Where: Drilling Program, Well Plan, Daily Drilling Report, Mud Report, or EDR provider naming convention."
+            },
+            {
+              "type": "text",
+              "body": "Required for: Well creation."
+            },
+            {
+              "type": "text",
+              "body": "Examples: Nabors X53, Patterson 252, or H&P 390."
+            }
+          ],
+          "images": [],
+          "textContent": "Where: Drilling Program, Well Plan, Daily Drilling Report, Mud Report, or EDR provider naming convention. Required for: Well creation. Examples: Nabors X53, Patterson 252, or H&P 390."
+        },
+        {
+          "id": "program",
+          "title": "Program",
+          "order": 3,
+          "content": [
+            {
+              "type": "text",
+              "body": "For some Operators, the Program is assigned to the Basin or Region that the rig is located. Please ensure that the Program matches the correct Basin or Region."
+            },
+            {
+              "type": "text",
+              "body": "*By default, the Program for most operators is the Operator name."
+            },
+            {
+              "type": "text",
+              "body": "Required for: Rig creation."
+            },
+            {
+              "type": "text",
+              "body": "Examples: Murphy, Canada, or Eagle Ford."
+            }
+          ],
+          "images": [],
+          "textContent": "For some Operators, the Program is assigned to the Basin or Region that the rig is located. Please ensure that the Program matches the correct Basin or Region. *By default, the Program for most operators is the Operator name. Required for: Rig creation. Examples: Murphy, Canada, or Eagle Ford."
+        },
+        {
+          "id": "string-design",
+          "title": "String Design",
+          "order": 4,
+          "content": [
+            {
+              "type": "text",
+              "body": "Where: Drilling Program or Wellbore Schematic."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: Metrics & BHA Optimization."
+            },
+            {
+              "type": "text",
+              "body": "Examples: 2, 3, 3_Mod, or 4."
+            }
+          ],
+          "images": [],
+          "textContent": "Where: Drilling Program or Wellbore Schematic. Required for Apps: Metrics & BHA Optimization. Examples: 2, 3, 3_Mod, or 4."
+        },
+        {
+          "id": "area",
+          "title": "Area",
+          "order": 5,
+          "content": [
+            {
+              "type": "text",
+              "body": "Where: Drilling Program or Daily Drilling Report."
+            },
+            {
+              "type": "text",
+              "body": "*Note that not all Operators use Area designation."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: Metrics & BHA Optimization."
+            },
+            {
+              "type": "text",
+              "body": "Examples: 1, 2, or 3."
+            }
+          ],
+          "images": [],
+          "textContent": "Where: Drilling Program or Daily Drilling Report. *Note that not all Operators use Area designation. Required for Apps: Metrics & BHA Optimization. Examples: 1, 2, or 3."
+        },
+        {
+          "id": "county",
+          "title": "County",
+          "order": 6,
+          "content": [
+            {
+              "type": "text",
+              "body": "Where: Drilling Program, Well Plan, Daily Drilling Report, or Mud Report."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: Metrics & BHA Optimization."
+            },
+            {
+              "type": "text",
+              "body": "Examples: Harris, Reeves, Midland, or Karnes."
+            }
+          ],
+          "images": [],
+          "textContent": "Where: Drilling Program, Well Plan, Daily Drilling Report, or Mud Report. Required for Apps: Metrics & BHA Optimization. Examples: Harris, Reeves, Midland, or Karnes."
+        },
+        {
+          "id": "basin",
+          "title": "Basin",
+          "order": 7,
+          "content": [
+            {
+              "type": "text",
+              "body": "Where: Drilling Program, Geology Program, Daily Drilling Report, or Mud Report."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: Metrics & BHA Optimization."
+            },
+            {
+              "type": "text",
+              "body": "Examples: Midland, Delaware, or Eagle Ford."
+            }
+          ],
+          "images": [],
+          "textContent": "Where: Drilling Program, Geology Program, Daily Drilling Report, or Mud Report. Required for Apps: Metrics & BHA Optimization. Examples: Midland, Delaware, or Eagle Ford."
+        },
+        {
+          "id": "api-number",
+          "title": "API Number",
+          "order": 8,
+          "content": [
+            {
+              "type": "text",
+              "body": "Where: Drilling Program, Geology Program, Daily Drilling Report, or Mud Report."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: BHA Optimization & Fusion."
+            },
+            {
+              "type": "text",
+              "body": "Examples: 42-109-33257 or 42-173-37976"
+            }
+          ],
+          "images": [],
+          "textContent": "Where: Drilling Program, Geology Program, Daily Drilling Report, or Mud Report. Required for Apps: BHA Optimization & Fusion. Examples: 42-109-33257 or 42-173-37976"
+        },
+        {
+          "id": "target-formation",
+          "title": "Target Formation",
+          "order": 9,
+          "content": [
+            {
+              "type": "text",
+              "body": "Where: Drilling Program or Geology Program."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: Metrics & BHA Optimization."
+            },
+            {
+              "type": "text",
+              "body": "Examples: Wolfcamp B, Eagle Ford, or Lower Turner Sand."
+            }
+          ],
+          "images": [],
+          "textContent": "Where: Drilling Program or Geology Program. Required for Apps: Metrics & BHA Optimization. Examples: Wolfcamp B, Eagle Ford, or Lower Turner Sand."
+        },
+        {
+          "id": "rig-up-rig-release",
+          "title": "Rig Up / Rig Release",
+          "order": 10,
+          "content": [
+            {
+              "type": "text",
+              "body": "Where: Daily Drilling Reports."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: DvD."
+            },
+            {
+              "type": "text",
+              "body": "Examples: RU - 01/01/2019 06:00, Spud – 01/01/2019 12:00, and RR 1/30/2019 06:00."
+            }
+          ],
+          "images": [],
+          "textContent": "Where: Daily Drilling Reports. Required for Apps: DvD. Examples: RU - 01/01/2019 06:00, Spud – 01/01/2019 12:00, and RR 1/30/2019 06:00."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "introduction-to-operations-day2-data-entry-q1",
+          "question": "You are entering data in the Data Entry section. What should you do before saving?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Verify all entries against official source documents",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Save immediately to avoid losing work",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Use placeholder values for unknowns",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Copy from a similar well",
+              "isCorrect": false
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Data verification in Data Entry ensures accuracy and prevents downstream errors.",
+          "sourceRef": {
+            "headingPath": [
+              "Data Entry"
+            ],
+            "anchorId": "data-entry",
+            "locationHint": "See: Data Entry",
+            "evidenceSnippet": "Data verification in Data Entry ensures accuracy and prevents downstream errors."
+          }
+        },
+        {
+          "id": "introduction-to-operations-day2-data-entry-q2",
+          "question": "In Data Entry, how should you obtain the correct Rig Name?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Reference the official drilling program or wellbore diagram for the Rig Name",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Estimate based on similar wells",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Use industry standard values",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Ask a colleague from memory",
+              "isCorrect": false
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Accurate Rig Name is critical for well identification and app functionality.",
+          "sourceRef": {
+            "headingPath": [
+              "Data Entry"
+            ],
+            "anchorId": "data-entry",
+            "locationHint": "See: Data Entry",
+            "evidenceSnippet": "Accurate Rig Name is critical for well identification and app functionality."
+          }
+        },
+        {
+          "id": "introduction-to-operations-day2-data-entry-q3",
+          "question": "In Data Entry, what ensures accurate Rig Name data?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Verifying Rig Name against the official drilling program or wellbore diagram",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Using industry standard values",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Copying from offset wells",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Estimating based on other data",
+              "isCorrect": false
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Rig Name accuracy in Data Entry is critical for calculations and app reliability.",
+          "sourceRef": {
+            "headingPath": [
+              "Data Entry"
+            ],
+            "anchorId": "data-entry",
+            "locationHint": "See: Data Entry",
+            "evidenceSnippet": "Rig Name accuracy in Data Entry is critical for calculations and app reliability."
+          }
+        }
+      ]
+    },
+    {
+      "id": "directional",
+      "title": "Directional",
+      "order": 3,
+      "content": [],
+      "images": [],
+      "subsections": [
+        {
+          "id": "directional-well-plan",
+          "title": "Directional Well Plan",
+          "order": 0,
+          "content": [
+            {
+              "type": "text",
+              "body": "\n"
+            },
+            {
+              "type": "text",
+              "body": "Navigate to the Asset which you intend to edit\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/e53d5799794d.png:Figure 15]"
+            },
+            {
+              "type": "text",
+              "body": "Navigate to Well Plan via the dashboard icon on the left and the Wellhub submenu.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d9fac4dc5511.png:Figure 16]"
+            },
+            {
+              "type": "text",
+              "body": "Once in the Well Plan section, click the (+) Button and select “UPLOAD A DOCUMENT”\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/c846ad80a459.png:Figure 17]\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/a1586dee081e.png:Figure 18]"
+            },
+            {
+              "type": "text",
+              "body": "Click the Upload Document button to select the directional Well Plan that you wish to upload.  This well plan will be provided by the Drilling Engineer or DD.  You can also manually input each station (MD, INC, AZI) by clicking on the (+) button.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/93de3bc3003c.png:Figure 19]"
+            },
+            {
+              "type": "text",
+              "body": "Once you click the Upload button, a window will pop up and you may download the import template via the button at the bottom left. The template can be used to import data in either metric or imperial depth data (it will give you the option during import)."
+            },
+            {
+              "type": "text",
+              "body": "Once you have uploaded the file, check that all the correct stations were imported, then click save.  Be sure to double check that the correct Well Plan was uploaded after you have saved. Make sure to name the plan accordingly and add any applicable tie-ins and a vertical section azimuth (typically found in the well plan file)."
+            },
+            {
+              "type": "text",
+              "body": "Well Sections\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6460915b5e7a.png:Figure 20]"
+            },
+            {
+              "type": "text",
+              "body": "Where: Drilling Program, Wellbore Schematic, or Well Plan."
+            },
+            {
+              "type": "text",
+              "body": "Data Entry Requirements: Top Depth & Bottom Depth updated to actual at the end of each section."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: Metrics, BHA Optimization, RTA, Driller’s Roadmap."
+            },
+            {
+              "type": "text",
+              "body": "Where: Drilling Program, Wellbore Schematic, or Well Plan."
+            },
+            {
+              "type": "text",
+              "body": "Data Entry Requirements: Utilized if WITSML starts after a section has been previously drilled."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: Metrics & BHA Optimization"
+            },
+            {
+              "type": "text",
+              "body": "Where: Drilling Program, Wellbore Schematic, or Well Plan."
+            },
+            {
+              "type": "text",
+              "body": "Data Entry Requirements: Utilized if section is using a BHA with an underreamer/hole opener."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: Metrics & BHA Optimization\u000b\u000bExamples: 12.25’’ x 14.5’’ BHA (12.25’’ bit with a 14.5’’ reamer)"
+            },
+            {
+              "type": "text",
+              "body": "Where: Drilling Program, Wellbore Schematic, or Well Plan."
+            },
+            {
+              "type": "text",
+              "body": "Data Entry Requirements: Utilized if well is operating offshore with a seafloor BOP with initial drilling sections done without a riser declared in Corva."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: Metrics & BHA Optimization"
+            },
+            {
+              "type": "text",
+              "body": "Navigate to the Asset which you intend to edit"
+            },
+            {
+              "type": "text",
+              "body": "Click the Data Settings icon on the engineering displays bar\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/e53d5799794d.png:Figure 21]"
+            },
+            {
+              "type": "text",
+              "body": "Navigate to Well Sections via the dashboard icon on the left and the Wellhub submenu.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5ad2708bd849.png:Figure 22]"
+            },
+            {
+              "type": "text",
+              "body": "Click on the (+ Add New) on the top right to add well sections"
+            },
+            {
+              "type": "text",
+              "body": "Once the well sections have been opened, you can start to add the entries."
+            },
+            {
+              "type": "text",
+              "body": "Well Sections info can be found on the Drilling Program (See Example below)\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d1b54dd63fb8.png:Figure 24]\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/ced1cca91b8a.png:Figure 25]"
+            },
+            {
+              "type": "text",
+              "body": "Casing\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/4aad4eff5e7d.png:Figure 26]"
+            },
+            {
+              "type": "text",
+              "body": "Where: Drilling Program, Wellbore Schematic, Casing Talley, or Daily Drilling Reports."
+            },
+            {
+              "type": "text",
+              "body": "Data Entry Requirements: Use exact provided Linear Weights, not Corva calculated weights."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: Hookload Broomstick Plot & DvD."
+            }
+          ],
+          "images": [
+            {
+              "id": "i.22",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcbYVMwWIxB_pC1kxdyMPxe0gwpYU6oJDqJTuEZILHWVVK_YV0Q2NpfD_dqKLDrC_1QuV60j07XkBKxkJ2CaFAdZCCyv6Ok0TOCwaSESbapx9Dt2e3FLnFZoBKO4gptIaBo2xUYz1wBhaABxFQaJ2Ot9os?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/e53d5799794d.png",
+              "altText": "Figure 15",
+              "figureNumber": "Figure 15"
+            },
+            {
+              "id": "i.23",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcz7wQTuFXyurXY0HpIeeQy9vaIW7SIWalHBgDM2mXv79TcksesUTICBuLNkoCNdTmY5ThdvK6rx9Xw2W61oDmM43tfQK7xMXodtrjaDcON8p7e5rf--AABG98K14WJ23HlZaSj5vsVUrF1heFHX7l-8XmNeg?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d9fac4dc5511.png",
+              "altText": "Figure 16",
+              "figureNumber": "Figure 16"
+            },
+            {
+              "id": "i.24",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXddKDUUCS7YWftbkHiYokBh_JytLHThLGq2JOyjszsEhvHI0ze692XfP001WZFui9iRB2362xOOHVddXSLCSCjcKl1wjC5rq2qs9q7R1BoG2sZNCO9IDE0IaSSKwAJ5ybgTQX-nlpTnN3P3IkvSfGWJ61B9LQ?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/c846ad80a459.png",
+              "altText": "Figure 17",
+              "figureNumber": "Figure 17"
+            },
+            {
+              "id": "i.25",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXc_iceJgV3SrRrmXJVrE0r-BB3z3z5kxC-xPaNbDEze2pcWPrmxo1jouEiIOkSF9XH7g_aZSTFJpDkizqBnEYlO55U_7WNoJpWKkc1m-zaQPn7cgrSScANV7bnvD76r-Xh4HRvoZ-WcBj7flHEGnlR3rM5Ihw?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/a1586dee081e.png",
+              "altText": "Figure 18",
+              "figureNumber": "Figure 18"
+            },
+            {
+              "id": "i.26",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeaiJrPvPwlp-B1OfWVfWquosDLOTmKN1_oRnzSRda7Ot5K9sVWk-hw6DwVplTFTFe7IZ0uwMnK07oo-V1q8gV3fYp33pzEn0CKkjnatO1ZLPZxi8elmgpuVUen5rNsteOYOZns2bIXTS6o1Dgh7weFlx4?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/93de3bc3003c.png",
+              "altText": "Figure 19",
+              "figureNumber": "Figure 19"
+            },
+            {
+              "id": "i.27",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeDi2SXPlDzUdefx-uqeh370sSXOXXxTt7zae-ay3Oiowh1_aM_raHXN7QH3g-U0OZ-sLQySebzyA91OPh6ZrWAKLcpCOkBi-ZlCotwlyVvxGTMGkve0G630GPXntmXve_99tFYPPh6g4id5lm6O3SHp3k?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6460915b5e7a.png",
+              "altText": "Figure 20",
+              "figureNumber": "Figure 20"
+            },
+            {
+              "id": "i.29",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfbIFUdlV5Oce5zqojTvTEtX5fSx5OlltB4f6pEiQzvLH2qANeTpT2ss4GlpRb0ZKoN4oo-fR6bmVDFj-6SZYX0YWFFJ47jdl3VsUO8JG7M1MFReeGEEpNbIY8I0mu-rD8CjTOs6rl74-IC4KQG1ugPh5r9ng?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5ad2708bd849.png",
+              "altText": "Figure 22",
+              "figureNumber": "Figure 22"
+            },
+            {
+              "id": "i.30",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdaTnPtVhSPmvxnPJtV3MctL097V20IIOHIAuiK3HJNLENMuJbAy_jCWqwLMdgAXvh-wCQB-ddhHOhCoyoPjdvSquFZR1CL2wu1e-lrFTQ6ZX7npALHrURIP4ulMe7xXmgQs_WVsXoCdxs0EPMbKrt8InfWWQ?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d1b54dd63fb8.png",
+              "altText": "Figure 24",
+              "figureNumber": "Figure 24"
+            },
+            {
+              "id": "i.31",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfje6A9nov8g_9w6MXYmkZbGJWY5SOvKeksPYuu57PsOOYGRN89O7RiJVuIRvs1RNXCmKK-pvJgntzJBDen4c9Uv-iwr2T8FohspevMtTXDFi54xLYNYOARSvyZkNnKjO0bO50LSWFv4nE4IvPLx2EYVgfQhQ?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/ced1cca91b8a.png",
+              "altText": "Figure 25",
+              "figureNumber": "Figure 25"
+            },
+            {
+              "id": "i.32",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXd7QXERZTu7w6BnyhhWtbYD965rw_Kuob6J7J-wOrHDLR-hoil3WhAOOnQa5F56wvUq09_Ut1IlJiP_Rgr2HqGzg5EIlgC43MbzXBpBKeIdGac34zj4JKZmEPZSnjCB53y1aOHZQbHajtlJRttW7rbW_NUOFg?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/4aad4eff5e7d.png",
+              "altText": "Figure 26",
+              "figureNumber": "Figure 26"
+            }
+          ]
+        },
+        {
+          "id": "surveys",
+          "title": "Surveys",
+          "order": 1,
+          "content": [
+            {
+              "type": "text",
+              "body": "Where: EDR provider ‘Approved Surveys’ and Emailed survey report."
+            },
+            {
+              "type": "text",
+              "body": "Data Entry Requirements:"
+            },
+            {
+              "type": "text",
+              "body": "Surveys in Corva must match surveys emailed by MWD."
+            },
+            {
+              "type": "text",
+              "body": "See Survey Checks for directions."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: All directional Apps & Hookload Broomstick App."
+            },
+            {
+              "type": "text",
+              "body": "Fusion and Corva"
+            },
+            {
+              "type": "text",
+              "body": "As the volume of work grows for operations at Corva this generates a massive amount of data entry for the analysts monitoring the live wells. Each day the daily drilling report is received from each active rig and from this the operations summary, 24hr forecast, costs and NPT were manually entered into each asset. Additionally, daily mud reports for every active well are received predominantly by email as well as dozens of other deliverable types."
+            },
+            {
+              "type": "text",
+              "body": "From the need to more efficiently handle this volume of data entry Fusion was developed. Fusion is an application that automates some of the data entry required by scanning the Corva email inbox, identifying daily drilling reports and extracts that information to populate the assets in Corva with required information pertaining to the well."
+            },
+            {
+              "type": "text",
+              "body": "Fusion can be accessed by clicking the following link: [https://fusion.corva.ai/](https://fusion.corva.ai/)\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/8f8efcc0ff15.png:Figure 43]"
+            },
+            {
+              "type": "text",
+              "body": "Fusion continuously scans the Corva data email for incoming DDRs (Daily Drilling Reports), Mud reports, surveys, Consumable Reports and many other types of emails. It searches incoming Reports for the following well identifiers and populates the assets in Corva that have the matching identifiers"
+            },
+            {
+              "type": "text",
+              "body": "• Well Name"
+            },
+            {
+              "type": "text",
+              "body": "• API number"
+            },
+            {
+              "type": "text",
+              "body": "• AFE number"
+            },
+            {
+              "type": "text",
+              "body": "Fusion Best Practices"
+            },
+            {
+              "type": "text",
+              "body": "• Check Operation Summaries for multiple entries"
+            },
+            {
+              "type": "text",
+              "body": "• There should be a single operations summary entry per day for each asset. Duplicate entries should be removed"
+            },
+            {
+              "type": "text",
+              "body": "• Check Fluid Report data is up to date."
+            },
+            {
+              "type": "text",
+              "body": "• Check Cost for multiple entries on the same date"
+            },
+            {
+              "type": "text",
+              "body": "• If there are multiple cost entries with the same date the analyst should keep the entry with the highest cost on that date"
+            },
+            {
+              "type": "text",
+              "body": "• Confirm the reports in Fusion are DDR and not Completion Reports"
+            },
+            {
+              "type": "text",
+              "body": "Drilling Data Analyst Priorities - Tips for Success in Operations"
+            },
+            {
+              "type": "text",
+              "body": "It can be both challenging and overwhelming when it comes to covering over 80 rigs drilling operations during your first hitch as a Drilling Data Analyst at Corva. The work flow is fast paced and the data must be correct when entered into the system. Corva’s rig count has grown tremendously over the last few years and it is expected to grow continuously as the platform is expanded to cover more operations and offer additional optimization tools for drilling and completions."
+            },
+            {
+              "type": "text",
+              "body": "Corva’s Real Time Operations - Focus Areas"
+            },
+            {
+              "type": "text",
+              "body": "When starting your first hitch in operations keep in mind that with this volume of work there may be items that you are not able to get to. For these items be sure to make good notes on the handover sheets and discuss with your relief during tour change."
+            },
+            {
+              "type": "text",
+              "body": "Also be mindful that you are not alone with your rigs. There will be other drilling data analysts and a host of operations support personnel that can help answer questions that may arise during your tour. Use the resources available to you to help you get through your first tours if necessary."
+            },
+            {
+              "type": "text",
+              "body": "Items to focus on during your tour:"
+            },
+            {
+              "type": "text",
+              "body": "• Connecting Asset to WITSML Streams on Time"
+            },
+            {
+              "type": "text",
+              "body": "• BHA and Casing Activations"
+            },
+            {
+              "type": "text",
+              "body": "• Handover Sheet"
+            },
+            {
+              "type": "text",
+              "body": "• Data Inbox Management"
+            },
+            {
+              "type": "text",
+              "body": "The tasks listed above if completed will result in a successful first tour as a drilling data analyst at Corva. Those areas listed are high on the list for causing assets to be reprocessed in Corva and frustrating users of Corva when they are expecting to see data populating when going to the next well. The focus on the handover sheet will ensure open channels of communications and transparency amongst the operation analyst teams and operations management."
+            },
+            {
+              "type": "text",
+              "body": "Connecting Assets to WITSML Streams on Time"
+            },
+            {
+              "type": "text",
+              "body": "This area of focus refers to when a new asset is built in Corva and the rig is preparing to drill that well. When the data stream is available connect it to the asset in Corva before the rig starts drilling. Key point to remember when checking for WITSML stream availability."
+            },
+            {
+              "type": "text",
+              "body": "• Utilize the Launchpad app and keep it updated with wells to ensure ‘skid backs’ do not take you by surprise."
+            },
+            {
+              "type": "text",
+              "body": "• Open the EDR Providers viewer for the well that is coming up"
+            },
+            {
+              "type": "text",
+              "body": "• Watch for activity on the viewer to indicate when the data stream is available"
+            },
+            {
+              "type": "text",
+              "body": "• Use the Handover sheet to make notes for a reminder that an asset needs to be connected"
+            },
+            {
+              "type": "text",
+              "body": "• In addition to a reminder for you the note can also be passed along for your relief to pick up when you left off"
+            },
+            {
+              "type": "text",
+              "body": "• Reference PDS Viewer to confirm that the well stream is active"
+            },
+            {
+              "type": "text",
+              "body": "• PDS can also be used to confirm channel mapping and units for each channel that will populate the asset"
+            },
+            {
+              "type": "text",
+              "body": "• This is especially important for clients that do not have visual EDRs"
+            },
+            {
+              "type": "text",
+              "body": "BHA and Casing Activations"
+            },
+            {
+              "type": "text",
+              "body": "\n"
+            },
+            {
+              "type": "text",
+              "body": "Proper BHA and Casing activations will minimize the need to rerun assets in Corva. Paying attention and following current rig activities will be key when tracking current rig activity. Corva has logic that will automatically activate BHA and Casing strings based on Casing ID in relation to Bit size however this does not work 100% of the time."
+            },
+            {
+              "type": "text",
+              "body": "Key Points to reference to ensure proper BHA and Casing Activations:"
+            },
+            {
+              "type": "text",
+              "body": "• Reference the Daily Drilling Report for a previous and forecasted rig activity"
+            },
+            {
+              "type": "text",
+              "body": "• Also reference the Drilling Fluid Reports (Mud Reports) for updates on current rig activity"
+            },
+            {
+              "type": "text",
+              "body": "• Make sure there is an exact time entered for each BHA and Casing string that has gone in the hole"
+            },
+            {
+              "type": "text",
+              "body": "• In the event of a rerun this will ensure that all BHA’s and Casing strings will be in the correct place when the asset is reprocessed"
+            },
+            {
+              "type": "text",
+              "body": "• Use Immediately Force for Casing Strings and BHAs when the rig is on surface"
+            },
+            {
+              "type": "text",
+              "body": "• Force activating a BHA or Casing string on surface ensures the drill string/casing string is activated"
+            },
+            {
+              "type": "text",
+              "body": "• Keep that in mind and reference well sections when building placeholder BHAs"
+            },
+            {
+              "type": "text",
+              "body": "• Ensure that the placeholder entered is correct in bit size relative to the hole section and rig activity - an improper placeholder BHA can cause confusion and potentially require the asset to be reprocessed if not in line with the rigs activity."
+            },
+            {
+              "type": "text",
+              "body": "• Make notes on the handover sheet for BHA’s and Casing string upcoming activations"
+            },
+            {
+              "type": "text",
+              "body": "• This note will be good to have especially when handing over to you relief. They can pick up where you left off when good notes are kept"
+            },
+            {
+              "type": "text",
+              "body": "\n"
+            },
+            {
+              "type": "text",
+              "body": "Handover/ Mission Control "
+            },
+            {
+              "type": "text",
+              "body": "\n"
+            },
+            {
+              "type": "text",
+              "body": "A well noted and updated handover app is paramount when keeping the lines of communications open with your relief and tracking the current rig activities for the active wells covered. The handover should be updated continuously during your tour with current rig activity and the things to do column should be noted with items to be done on the asset that are upcoming."
+            },
+            {
+              "type": "text",
+              "body": "Key Points for Success with Handover:"
+            },
+            {
+              "type": "text",
+              "body": "• Update the handover sheet continuously as you check each rigs activity"
+            },
+            {
+              "type": "text",
+              "body": "• This will ensure that the app is current when time to make relief"
+            },
+            {
+              "type": "text",
+              "body": "• This will also help you stay up date with current rig activity without having to dig into each asset being monitored"
+            },
+            {
+              "type": "text",
+              "body": "• Keep Good/Relevant Notes on the To Do List column"
+            },
+            {
+              "type": "text",
+              "body": "• Relevant and detailed notes for things to do are key for keeping track of upcoming rig activity. Calibrating BHA, Activating Casing rerunning assets are some examples"
+            },
+            {
+              "type": "text",
+              "body": "• Remove old notes that are no longer relevant to minimize confusion when handing over to relief"
+            },
+            {
+              "type": "text",
+              "body": "• Start your final review of your handover sheet before its time for your relief to show up"
+            },
+            {
+              "type": "text",
+              "body": "• Handover should be complete before its time to go. This will ensure that you are able to leave on time and that no one’s time is wasted. Handover should be no more than 30 minutes"
+            },
+            {
+              "type": "text",
+              "body": "• It will take approximately  an hour or more to review and update current activities for all the wells being monitored. Start your final review of handover in plenty of time"
+            },
+            {
+              "type": "text",
+              "body": "• Make sure to make a PDF copy of the handover and post in the Analyst_group channel in Slack before getting off tour"
+            },
+            {
+              "type": "text",
+              "body": "Intercom"
+            },
+            {
+              "type": "text",
+              "body": "Intercom, Inc. is a software company that specializes in business messaging, providing businesses with a way to chat with their customers."
+            },
+            {
+              "type": "text",
+              "body": "Located in the bottom left of Corva on every dashboard you can locate the Intercom messenger."
+            },
+            {
+              "type": "text",
+              "body": "[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/2e5c526f3ef4.png:Figure 44]\n\u000b\u000bWhen clicking on the messenger app you will be placed on the Intercom home page that allows you to message with a Corva specialist for any questions, browse our popular help topics or see what’s new in Corva.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/e56c6d3d4fbf.png:Figure 46]\n \n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d5cd175d4bed.png:Figure 47]"
+            },
+            {
+              "type": "text",
+              "body": "Selecting the “Messages” icon will put you in touch with Corva’s Intercom Specialist who typically responds in under 30 seconds."
+            },
+            {
+              "type": "text",
+              "body": "Importance to Operations "
+            },
+            {
+              "type": "text",
+              "body": "\n"
+            },
+            {
+              "type": "text",
+              "body": "Trello is a key selling point of Corva. Our ability to offer clients an instant connection with a real person on the operations floor 24/7 is a standout feature. Intercom traffic should be expected at any time of day from anywhere in the world and any message received from a client should be responded to **within one minute**.\u000b\u000bThis applies to whether the client messaging in is covering on of your teams rigs or not. Somone **must** respond to an incoming intercom regardless."
+            },
+            {
+              "type": "text",
+              "body": ""
+            },
+            {
+              "type": "text",
+              "body": "1334 Brittmoore Rd, Suite 150,"
+            },
+            {
+              "type": "text",
+              "body": "Houston, TX 77043"
+            },
+            {
+              "type": "text",
+              "body": "Copyright © 2025 Corva AI, LLC. All Rights Reserved."
+            }
+          ],
+          "images": [
+            {
+              "id": "i.48",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcoo9S5Z0J3sdCxAjvhoeEettk0cI26uG3h0sKInFNAr0fVJ9wEy_OC6KX7c9f7wcGcJBJFc6uhgUM9byJQ8D9Zk46Id_aem2kbUGti_fysa4N8eWLvK1LNap-JOkcN6oQ0_bfB8_cDibQD56mdAtCAyJaUtA?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/8f8efcc0ff15.png",
+              "altText": "Figure 43",
+              "figureNumber": "Figure 43"
+            },
+            {
+              "id": "i.49",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcHEMud8NZCnSNJogz-aZTvS19AIR7-OfBBuR2R0baQzZEfmUdPJ85vIya0wrLZNioHp6mje6voMJ5vis07hmdL8-Gg0SqRU3GZh6Q-RhMioEVWP1-bn5vzfoqGZGM7mqKqfUT6-1JXLG_2UF7mtVJaOPbnkA?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/2e5c526f3ef4.png",
+              "altText": "Figure 44",
+              "figureNumber": "Figure 44"
+            },
+            {
+              "id": "i.50",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeW1xC3DEf62HD9MDS7EitXu8lodzrIzG9TSkzBOqgVI30KFU_a9veMNWJ3gamKr_dByyntXns1G3OOrsijZaSYh5CTf-EJKIIbqEVL-pSTURbKQlcZykDoGRub-u3xNVeUc9-5ym9XOcbHHGAizFYrtGw?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/e56c6d3d4fbf.png",
+              "altText": "Figure 46",
+              "figureNumber": "Figure 46"
+            },
+            {
+              "id": "i.51",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeEOq4ZZue4GXdmjrME3HsMhm6H9hVStQpnNKa_7LdHOTNZlf1MYFm-oyZfHMVUUhl3SFLaEt5PnRZrjUAwXjkL8STpL98crx7pO4BvJhqhBXnvp_bcVDIS7shLj5ipAgl0_vjETE5-oZXVlezTWJyc?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d5cd175d4bed.png",
+              "altText": "Figure 47",
+              "figureNumber": "Figure 47"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "id": "introduction-to-operations-day2-directional-q1",
+          "question": "A survey point in Directional appears incorrect. What is the proper response?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Verify against the original survey report and flag discrepancies for review",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Correct it based on interpolation",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Delete the suspicious point",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Average with nearby points",
+              "isCorrect": false
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Survey accuracy is critical for trajectory calculations and directional drilling decisions.",
+          "sourceRef": {
+            "headingPath": [
+              "Directional"
+            ],
+            "anchorId": "directional",
+            "locationHint": "See: Directional",
+            "evidenceSnippet": "Survey accuracy is critical for trajectory calculations and directional drilling decisions."
+          }
+        },
+        {
+          "id": "introduction-to-operations-day2-directional-q2",
+          "question": "What document should you reference for authoritative Directional data?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "The official survey reports and directional drilling program",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Offset well surveys",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Field estimates",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Previous well data",
+              "isCorrect": false
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Official survey documentation ensures trajectory accuracy.",
+          "sourceRef": {
+            "headingPath": [
+              "Directional"
+            ],
+            "anchorId": "directional",
+            "locationHint": "See: Directional",
+            "evidenceSnippet": "Official survey documentation ensures trajectory accuracy."
+          }
+        },
+        {
+          "id": "introduction-to-operations-day2-directional-q3",
+          "question": "In Directional, what ensures accurate API Number data?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Verifying API Number against the official drilling program or wellbore diagram",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Using industry standard values",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Copying from offset wells",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Estimating based on other data",
+              "isCorrect": false
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "API Number accuracy in Directional is critical for calculations and app reliability.",
+          "sourceRef": {
+            "headingPath": [
+              "Directional"
+            ],
+            "anchorId": "directional",
+            "locationHint": "See: Directional",
+            "evidenceSnippet": "API Number accuracy in Directional is critical for calculations and app reliability."
+          }
+        }
+      ]
+    },
+    {
+      "id": "casing",
+      "title": "Casing",
+      "order": 4,
+      "content": [],
+      "images": [],
+      "subsections": [
+        {
+          "id": "liner",
+          "title": "Liner",
+          "order": 0,
+          "content": [
+            {
+              "type": "text",
+              "body": "Where: Drilling Program, Wellbore Schematic, Casing Talley, or Daily Drilling Reports."
+            },
+            {
+              "type": "text",
+              "body": "Data Entry Requirements:"
+            },
+            {
+              "type": "text",
+              "body": "Use exact provided Linear Weights, not Corva calculated weights."
+            },
+            {
+              "type": "text",
+              "body": "Top depth will be Top of Liner (TOL)."
+            },
+            {
+              "type": "text",
+              "body": "Top component will always need to be Drill Pipe rather than casing.\u000b\u000bEnsure the Liner checkbox is checked."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: Hookload Broomstick Plot & DvD.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5bd511e2660d.png:Figure 27]"
+            }
+          ],
+          "images": [
+            {
+              "id": "i.33",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcp_pduKmAKFR5h-le2crjxORSbWDXazePkUNlrA8haM7RiO8t_neRbPjsWu30hEE12y9OC37jj3gyvupaP-MTwehyAfibPj81UEsOuA38Og_BhFybmSyEwfEb_iUEpYNg4F7HGFY1fepq96vaAXDCBS-qrIw?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5bd511e2660d.png",
+              "altText": "Figure 27",
+              "figureNumber": "Figure 27"
+            }
+          ]
+        },
+        {
+          "id": "riser",
+          "title": "Riser",
+          "order": 1,
+          "content": [
+            {
+              "type": "text",
+              "body": "Where: Drilling Program, Wellbore Schematic, Casing Talley, or Daily Drilling Reports."
+            },
+            {
+              "type": "text",
+              "body": "Data Entry Requirements: Utilized if well is operating offshore with a seafloor BOP"
+            },
+            {
+              "type": "text",
+              "body": "Use exact provided Linear Weights, not Corva calculated weights."
+            },
+            {
+              "type": "text",
+              "body": "Top depth will be Rotary (0’)."
+            },
+            {
+              "type": "text",
+              "body": "Added component will always need to be Riser category rather than casing/DP.\u000bOnce added and activated all other casings/Liners will need their top depth set to seafloor/bottom of riser.\u000b\u000bEnsure the Riser checkbox is checked."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: Hookload Broomstick Plot & DvD."
+            },
+            {
+              "type": "text",
+              "body": "Examples: See below.\u000b\u000b\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d7bbe98844e7.png:Figure 28]"
+            }
+          ],
+          "images": [
+            {
+              "id": "i.34",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdYyFjGNUVItSgYDpjGyCl-EHdlQpv4Z0bn5mFzdwT8sOcqNSAPfECI1guCYupe0oiQYf2zbQc6CQIxJFQboNvPaMkJmQwa5n3YLKxfh7uv1RlaMRlQ-oOogPhN3UmmoaSql6JskvlNudQuBf4FX_BoRL5VNA?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d7bbe98844e7.png",
+              "altText": "Figure 28",
+              "figureNumber": "Figure 28"
+            }
+          ]
+        },
+        {
+          "id": "casing-subsection",
+          "title": "Casing",
+          "order": 2,
+          "content": [
+            {
+              "type": "text",
+              "body": "\n"
+            },
+            {
+              "type": "text",
+              "body": "Navigate to the Asset which you intend to edit"
+            },
+            {
+              "type": "text",
+              "body": "Navigate to Casing & Riser via the dashboard icon on the left and the Wellhub submenu.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/65b8d36c2582.png:Figure 29]"
+            },
+            {
+              "type": "text",
+              "body": "Locate the Casing section on the Drilling Program (See Examples below)\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6f462b76e16a.png:Figure 30]\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5cd5d7819012.png:Figure 31]\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/4b613a3f9167.png:Figure 32]\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/258b63a10c77.png:Figure 33]"
+            },
+            {
+              "type": "text",
+              "body": "Casing Specs can be found within the drilling program"
+            },
+            {
+              "type": "text",
+              "body": "Click on the (+) button to add a casing string\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/a6931ddc468a.png:Figure 35]"
+            },
+            {
+              "type": "text",
+              "body": "Select “Add New” to create a new string or “Copy from other asset” to copy casing from an asset with the same casing.  If copying, be sure to edit for the correct casing depths, size and weights.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6bf5925fe9a0.png:Figure 36]"
+            },
+            {
+              "type": "text",
+              "body": "Input the Inner Diameter, Outer Diameter, Top Depth, Bottom Depth, Linear Weight, and Casing Grade. Typically the casing is run to surface, if this is the case the top depth should always be “0”. Hit the “Save” button to save the casing string.  \u000b\u000bIn this window you can also add specific casing components such as the Float Shoes and Casing joints much like adding BHA components.  In the future this functionality will allow us to model casing strings without adding extra BHA’s.  For now this feature has been disabled.\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/116656f5f674.png:Figure 37]"
+            },
+            {
+              "type": "text",
+              "body": "Repeat the previous steps to add more strings of casing."
+            },
+            {
+              "type": "text",
+              "body": "Where: Drilling Program, Wellbore Schematic, Casing Talley, or Daily Drilling Reports."
+            },
+            {
+              "type": "text",
+              "body": "Data Entry Requirements:"
+            },
+            {
+              "type": "text",
+              "body": "Use exact provided Linear Weights, not Corva calculated weights."
+            },
+            {
+              "type": "text",
+              "body": "Inside Mud Density BELOW Airlock Sub = 0 ppg (Air)."
+            },
+            {
+              "type": "text",
+              "body": "Inside Mud Density ABOVE Airlock Sub = Blank (System uses mud density from latest mud report)."
+            },
+            {
+              "type": "text",
+              "body": "If the AirLock Sub location is not provided, place it at the KOP."
+            },
+            {
+              "type": "text",
+              "body": "Top component will always be 1 Joint (40 ft) of Casing Joints."
+            },
+            {
+              "type": "text",
+              "body": "Required for Apps: Hookload Broomstick Plot & DvD."
+            }
+          ],
+          "images": [
+            {
+              "id": "i.35",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXf8-ZsbkEu728tym9Kd6pmyvGxdcwLdKU0daw-QHy_Pba7MzIbwDvCPbcby2UV_Moe5ouJhV2w2skpkdzaKopaqNx3EstH1BRdFpPEGpNHV938J-wm_WNY8t4XBJlb2WK491X-yD7UVMHEnomPJTe3MbzE?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/65b8d36c2582.png",
+              "altText": "Figure 29",
+              "figureNumber": "Figure 29"
+            },
+            {
+              "id": "i.36",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcNzyGtHaCfjS6db9K6rEaBD79oqq_HdNgxzqn_fZGCFyPRZI37O35e64Bv8uiRrfh7rf6XhscuLjM7mHGdCSkMPxG4yFGbNQP6dX-NbnM61X04PFwCJzIKodm9CueZAvuikccdcJMop-KuQBIH8Kyoqmk6Bw?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6f462b76e16a.png",
+              "altText": "Figure 30",
+              "figureNumber": "Figure 30"
+            },
+            {
+              "id": "i.37",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcY-6FNAeqWtvMVSpyqgBPHlQ6HedDfU5Qc-Vsslw8iZMoO2Q7hi6GH4oIFKU7bK9pcoJQmScK5deqLLbosRrk1HI9FgFnFybEdZrvax1iPv2dm3D8RZXk-gT5DXlhRQNv90WmojcxJrrO6W74w67TOEqWXmg?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5cd5d7819012.png",
+              "altText": "Figure 31",
+              "figureNumber": "Figure 31"
+            },
+            {
+              "id": "i.38",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXe3i9EQ9n4rUtAg5nXZDlr55IWy-tYO23nbYqHb5p7_TRhi8hfS4uG6VOXmDXNvsN_BHfkKmbbNRqcn0Sg_s2g1fD8gVrORXTwT2Fz2ZCmToKTbizmCbenC-pCTlHhC2lRuuz410mbTI6Z2lesgIYApRRYuZw?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/4b613a3f9167.png",
+              "altText": "Figure 32",
+              "figureNumber": "Figure 32"
+            },
+            {
+              "id": "i.39",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcqTdWbcbng7SU_eDkprNrif28zIygs5RS03NB34Ge9lEtCixRDDDMuqjp6_1y2Edw8MWmEtbcBhtgSjOVEHdpmdJI4HayzYeQmWh-llR-WfQT-YpOtt28GkorRlJYWPFDw23jpvnG-EzCgirh5YdRnEL40GQ?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/258b63a10c77.png",
+              "altText": "Figure 33",
+              "figureNumber": "Figure 33"
+            },
+            {
+              "id": "i.40",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXftQ0i1dRVSoUsA3z78I0x-0cF6wUCEKbCpMIG-fd0Co-FnWOIAj9GDlNcAnd9Lt21hq6kxkJedd020my7mbyD70eF-Lmg1R0NK2u8J6HxIGRic1YQ-6AaHbqNbOdGXCL69_NEDya1uqeUk-tAzHrg7u7w?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/a6931ddc468a.png",
+              "altText": "Figure 35",
+              "figureNumber": "Figure 35"
+            },
+            {
+              "id": "i.41",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXd3kIyyZUnf_F_gf053C-EfzKfzcBI2puq1BxZIEa8M3L7rPO5trmm8Gwnr7MVee2M2I2pS_Ss0C1k6uuumJKvKDPuK-9muLVTz3bokVMsEZajTzsVH3Mz0VPksmVfldrDHNNcO4uSkJ1Avno_AuMM8BmX1Jw?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6bf5925fe9a0.png",
+              "altText": "Figure 36",
+              "figureNumber": "Figure 36"
+            },
+            {
+              "id": "i.42",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXc5WauofJ4mFeVAwyATAZVrFmzJ5iBiaJBB70mbYOra2rS1uAMOYMjtfAFHTLaX6L2E1MSoh3sUhcRWpUl_O1stH1bUIVDXAp0SsH3ahCoGpBJepU4wcRM6NCpGfU5jXcVHbB0XEDOtD6nL9bPT85sRZcyKxw?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/116656f5f674.png",
+              "altText": "Figure 37",
+              "figureNumber": "Figure 37"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "id": "introduction-to-operations-day2-casing-q1",
+          "question": "You need to verify casing information in Casing. What sources should you use?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Cross-reference the wellbore diagram, casing tally, and daily reports",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Accept entered values",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Use hole size to estimate",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Reference offset wells",
+              "isCorrect": false
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Accurate casing data is essential for wellbore integrity and hydraulics calculations.",
+          "sourceRef": {
+            "headingPath": [
+              "Casing"
+            ],
+            "anchorId": "casing",
+            "locationHint": "See: Casing",
+            "evidenceSnippet": "Accurate casing data is essential for wellbore integrity and hydraulics calculations."
+          }
+        },
+        {
+          "id": "introduction-to-operations-day2-casing-q2",
+          "question": "A casing depth in Casing differs from the drilling report. What should you do?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Investigate the discrepancy using multiple source documents before making changes",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Use the drilling report value automatically",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Average the two values",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Keep the existing value",
+              "isCorrect": false
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Casing depth accuracy affects cement calculations and wellbore models.",
+          "sourceRef": {
+            "headingPath": [
+              "Casing"
+            ],
+            "anchorId": "casing",
+            "locationHint": "See: Casing",
+            "evidenceSnippet": "Casing depth accuracy affects cement calculations and wellbore models."
+          }
+        },
+        {
+          "id": "introduction-to-operations-day2-casing-q3",
+          "question": "In Casing, what ensures accurate Program data?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Verifying Program against the official drilling program or wellbore diagram",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Using industry standard values",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Copying from offset wells",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Estimating based on other data",
+              "isCorrect": false
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Program accuracy in Casing is critical for calculations and app reliability.",
+          "sourceRef": {
+            "headingPath": [
+              "Casing"
+            ],
+            "anchorId": "casing",
+            "locationHint": "See: Casing",
+            "evidenceSnippet": "Program accuracy in Casing is critical for calculations and app reliability."
+          }
+        }
+      ]
+    },
+    {
+      "id": "drilling",
+      "title": "Drilling",
+      "order": 5,
+      "content": [],
+      "images": [
+        {
+          "id": "i.44",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXffYUx5ZPsN2MiVjNJofGxXv8aMoOiz2UgCfwpWfKxP89Pb3R6-otpAQLZ1241nGGQ4kKmcjoJKfVcyGHUGtCOqlQJqLoyVMgE7-R9RnjK_YQyYonu9wABMBzYMMh-oImvWjyHkP1kzCxdN9UApXSEs9yqsag?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/150cbd197ccd.png",
+          "altText": "Figure 39",
+          "figureNumber": "Figure 39"
+        },
+        {
+          "id": "i.45",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7hXE11mqO2GVuA-O7dYYXTu8BPQsCAqM6hX4EvqKdiSbap4sJ20xEbqw4-ihy770LDQpOV6EKu0mvp82bEDlbZ0m1mpgcI1ifGdqhL6cKaArBsUPtuQ3hlIk_DwL4EdJCzXxAT5OEnVJpmmZQg0W-eyFvYQ?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/969dda606cb8.png",
+          "altText": "Figure 40",
+          "figureNumber": "Figure 40"
+        },
+        {
+          "id": "i.46",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXevUzM-p4ujg0wgicM-rROWOh6rZOecrWUiMW0cSlwhJWu-yl9w1MJJvnorB7omSI_nTu8LBXUOFSZrIMzxaeM-il_kIF0CRTGN7cd2El2mAzVf2Bo5dT1d5DHzZYf97UbFt4SgOHa4Np2sNPLUvVajYki4oA?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/08848916c1fd.png",
+          "altText": "Figure 41",
+          "figureNumber": "Figure 41"
+        },
+        {
+          "id": "i.47",
+          "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7dlQjdb7SFtbRLnG5smwSx_zGaylMDI-adhRoqvelyts3yA3czKYns2ZUzxD1Ea8kUoRTzi1zYFBPC8VMtfT2tGYvMcV0vfxg-h5pe_x3pbSwszevssqAoQzQZ-viRqh0_JXlRPz-nBUJdk3l6XKAB5Ataw?key=sGP-rBpbXkO_14yzFh5NIw",
+          "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/daf88481ab46.png",
+          "altText": "Figure 42",
+          "figureNumber": "Figure 42"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "introduction-to-operations-day2-drilling-q1",
+          "question": "A drilling parameter in Drilling is outside normal ranges. What should you do first?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "Compare against BHA reports and daily drilling reports to verify the value",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Adjust it to expected ranges",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Assume sensor error",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Delete the outlier",
+              "isCorrect": false
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Drilling parameter accuracy is essential for optimization and monitoring apps.",
+          "sourceRef": {
+            "headingPath": [
+              "Drilling"
+            ],
+            "anchorId": "drilling",
+            "locationHint": "See: Drilling",
+            "evidenceSnippet": "Drilling parameter accuracy is essential for optimization and monitoring apps."
+          }
+        },
+        {
+          "id": "introduction-to-operations-day2-drilling-q2",
+          "question": "Where should you find the authoritative BHA configuration for Drilling?",
+          "type": "single",
+          "options": [
+            {
+              "id": "a",
+              "text": "The official BHA run reports provided by the customer",
+              "isCorrect": true
+            },
+            {
+              "id": "b",
+              "text": "Similar BHAs from offset wells",
+              "isCorrect": false
+            },
+            {
+              "id": "c",
+              "text": "Standard configurations",
+              "isCorrect": false
+            },
+            {
+              "id": "d",
+              "text": "Memory from previous wells",
+              "isCorrect": false
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "BHA configuration accuracy directly impacts torque, drag, and hydraulics calculations.",
+          "sourceRef": {
+            "headingPath": [
+              "Drilling"
+            ],
+            "anchorId": "drilling",
+            "locationHint": "See: Drilling",
+            "evidenceSnippet": "BHA configuration accuracy directly impacts torque, drag, and hydraulics calculations."
+          }
+        }
+      ],
+      "subsections": [
+        {
+          "id": "bottom-hole-assembly-bha",
+          "title": "Bottom Hole Assembly (BHA)",
+          "order": 0,
+          "content": [
+            {
+              "type": "text",
+              "body": "**Drillstrings/BHAs**\n\n[IMAGE:/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/260e96f22547.png:Figure 38]"
+            }
+          ],
+          "images": [
+            {
+              "id": "i.43",
+              "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXc9N442o3h_eohT9eRxgYiayA_ytSwZcgdLmm91z_EZZJxYQlzav_XA9E3S3Pt3Gd-vu8gjgVSd4uNNM9-F_A63U7oWycg1FHroLEgJ2u7bpcFxpaUCEh3eXciEAm4Sz8hyqK13SDl1LpS0XHrLZXPX75E?key=sGP-rBpbXkO_14yzFh5NIw",
+              "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/260e96f22547.png",
+              "altText": "Figure 38",
+              "figureNumber": "Figure 38"
+            }
+          ]
+        },
+        {
+          "id": "fluid-checks",
+          "title": "Fluid Checks",
+          "order": 1,
+          "content": [],
+          "images": []
+        },
+        {
+          "id": "surveys",
+          "title": "Surveys",
+          "order": 2,
+          "content": [],
+          "images": []
+        }
+      ]
+    }
+  ],
+  "sourceDocId": "1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI",
+  "sourceUpdatedAt": "2026-01-16T15:18:54.710Z",
+  "lastGeneratedAt": "2026-01-16T15:18:58.108Z",
+  "versionHash": "3d6d777675f3fa56",
+  "allImages": [
+    {
+      "id": "i.1",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcpAuWMdtVWbVFq1i5cI4w2lunYMsmGycFiVMF_LMPN_Dy_Lq0j9q4yApodggaOSASlHUgibIy_Mg12TSotSKfNocUmxRhSDBEZjnm7xWReatzQ_BKpzbW2C1fBbk7Trb2OGfhidQzdC6b9K0tABqZb5fEuBA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/fad6125a6e24.png",
+      "altText": "Figure 1",
+      "figureNumber": "Figure 1"
+    },
+    {
+      "id": "i.2",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXefj4j8JKvFhQm-M4tkJxwthhw6VKxTVoNdpud8lJF2OZ64l0pIcV_0q0tw_ilk9e-5oM0WFKbNmqGU_I5r9Mqv2N-Cc4MleMPUPXaWuIYWcZWxu-uiaPs81LT1PLFasqSNgH0PhQYiBhpx4yhCGdWf48Kd8g?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/714f8ca61ce1.png",
+      "altText": "Figure 12",
+      "figureNumber": "Figure 12"
+    },
+    {
+      "id": "i.3",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfJXy0rFopPr-YO05lugWuh9A7RGvLHZ0mH4kC-CYPVz0_MqMV2UQVp1XWkfdf37WEJhn7KmoRZRfsUcGTSf2-LIDNl-b-AEh6gJwFDi_4YBQeaXi8XXmCK3T_HxSm4mWiCUcnF1Am-aq-ArYYdqmXM4lyMlw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/256f557e7731.png",
+      "altText": "Figure 23",
+      "figureNumber": "Figure 23"
+    },
+    {
+      "id": "i.4",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeLa636eAVuWFf_gDrFXVPSj0TcQd5NO88SAwbVGo9pk2q5U9Wig1_OkJEUYjzSIHjFlQxn1nU0J0u8Y7fpncuOxQYI3VCQ4DsX1YtqOMFnF5HFaYNPtlNlvCQDep7fVjf19_-OAzbvzJSpyLWhUs9KNTDPwg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/ca503999837c.png",
+      "altText": "Figure 34",
+      "figureNumber": "Figure 34"
+    },
+    {
+      "id": "i.5",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfWEgtWixHn9ou3ezmW4aaaORqHHtd1dWZ44R1PqKwCH1XqMd9iDXozvEPU63N6YT_OJWgYQYYaui_yadobrefzF_Faw8J7f1JjBHz7sTipq3XEHmpbJW993KW_IL6s5pfALgdzeMMORnx9ktZDxGuEBZf4Vg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/0b19ffdf6d9b.png",
+      "altText": "Figure 45",
+      "figureNumber": "Figure 45"
+    },
+    {
+      "id": "i.6",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXf1SHkNrKGtGFOWfTsYuUYAb19UBekXlhf42OvJAHMB_BXVBCwhd8yl6rZVvdgdj_ckWesLpFS3WjjHLdO4OwJz-LTIgJbsZqsYTOv7ryAU3GhWCEz-AVOZ28kPU0RyXxYzxgEYyIcQ6DeUtdxWHy5DFYGxqw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/73f55930d893.png",
+      "altText": "Figure 48",
+      "figureNumber": "Figure 48"
+    },
+    {
+      "id": "i.7",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXergAHISFL7BSoDKvJa6qpEcl34o3IfAcpYYaX7sHqKfB4FoDqcYWc1VSG7WjDytTvLNcsHANXqV5pyxc9llJEnGWI4_XnmxjHmF_5nNvSmFnxVPz4pjt8Phd1NoEPUNeCaMi2tSOmSGHGBmxddYHtOSyk?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/476c00e259b1.png",
+      "altText": "Figure 49",
+      "figureNumber": "Figure 49"
+    },
+    {
+      "id": "i.8",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXd-AHx95522EN5ay-SNOr_sO6_jHteP1xvMjd-kJsCluTkR0vAIom4nkWIJe2a5YX-hlGDxD48aIXf_ihMr0tD_eRr0HtmT1dSaQQXj5Wy9ZkxQOGkcgFuwnjQfJxLg2CIZA2YD1UAupKenBfFNNfNqaJ9xdA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/0a5e49bc0bbf.png",
+      "altText": "Figure 50",
+      "figureNumber": "Figure 50"
+    },
+    {
+      "id": "i.9",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfhg05pkMmhSIqUJAp6DFG86oVb1pP7guJPciA9FiuWDV9LkoklhUAhoXd_asudThccVJzU4B6CivnmHN0_lTFq-hfgl-5_wc76hWP1Ao7xASjimWtivC4XxYzseJdUu0XEC28fuJuEILcw99LwYIys8fI?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/b9ffb0b25bab.png",
+      "altText": "Figure 51",
+      "figureNumber": "Figure 51"
+    },
+    {
+      "id": "i.10",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdAJr8vgZmsPy5evFn5R0eWiQ6OIltAQQ2Lj2yZFagw2OF1edLq4QjimW4pJ5rSspQGkiUdoh7Yz156mgbnTPFoevpCoWrtJ6LexHx6KvX7QRbgTqgc-IRalqpL0-HzBbclFQ94xscz5U7Ub1_lwmy6QFnBfA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/ee6fbc0a0927.png",
+      "altText": "Figure 2",
+      "figureNumber": "Figure 2"
+    },
+    {
+      "id": "i.11",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdc7Sd4ur2KeANexFudEEkNeY_00W7RMmgBRZZQ6rtSuQ3BHp3ZF6z5h_PuwGTnuoKjf5t4fsmvttaYhGXJ2aH6WO0TfygDkxfWrKn-whiNog4LVggJvgDo0ABkKWOqKYU5jIbXV15ZCGYhRMlRo3GxZRXEZw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/50911272fb83.png",
+      "altText": "Figure 3",
+      "figureNumber": "Figure 3"
+    },
+    {
+      "id": "i.12",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeixBM78cBHf4e5zFpHEgrdoeOzbtsKBpXZYo1ZNa1t6LMYS01qJGNq5TDskKofEjjhANffazef6TzUUscK-vGqWkcCUtcFOflV1gwzMRahJOOK43lJMWyuNgW-elQ9vHI-J8zU6jKNqjwlU0mW2S2nx2ZWnw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/48b6821dd475.png",
+      "altText": "Figure 4",
+      "figureNumber": "Figure 4"
+    },
+    {
+      "id": "i.13",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcDsBrEyEqOPL1HmHYC4BYRPJqOePPqEwt8822b3kbufQVGo9qqsl18vkqOSkeI-z8rAT7h2VS3n_HgpbV_XpRoRxd6EIww6OeAY2LnIzCH91FZzjM2KrTM5-nghDlRWE5TFbPXCsJXqeVzeAJm1_h_4U8Jkg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/a1d5f410c185.png",
+      "altText": "Figure 5",
+      "figureNumber": "Figure 5"
+    },
+    {
+      "id": "i.14",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdvrLVs6A74mBawA3gKuvMV2apdoCqFBtVSA5oruSmTY2GPVv6SlXPISVdOuhfOc3GPJb4HXyd9g3I-WanBE_nqrRAofxs9_p2HYzmKxKBz10mfnjLOUdsMrdcEdUwG53Iwv6GBi4VXvgpLTBJY47rjBxj19w?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5ac3ac6d73bb.png",
+      "altText": "Figure 6",
+      "figureNumber": "Figure 6"
+    },
+    {
+      "id": "i.15",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfsTwmjDkwb-59wuH3F8xjR4s9CjRNiDKehhA513HT-ZHXVlcDR-2rII9TT_UFM5mvnqTtvEdlyvxyx740FqrPohJUoVxnE4dxoERyZ-09rlaiYNxTANFblE_6XzKExZBv8g_Yf94DdpBQKh-53nt7I6D0?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/9c1cc01771ff.png",
+      "altText": "Figure 7",
+      "figureNumber": "Figure 7"
+    },
+    {
+      "id": "i.16",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeXGhO_aj_yJdCsaDtmsWwoZTLMEkrGO0Oho2yc4zk7b2JqD2y4PauQ-5HUAjScKoe-lX0R5pxv7VAhfKFdUlDPWHEP-w84AfPcSt50noVvvGv7pn8YwJtqdIspGGIj82GGdhdLzj3KfPOOvYoLWUjsIs7AUw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/0aeb9f3095e7.png",
+      "altText": "Figure 8",
+      "figureNumber": "Figure 8"
+    },
+    {
+      "id": "i.17",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeftDuYjYbElgJW0WdhkTqXTE2FAtqiGfplV_S0VtzqCcWfbgpnaiqG2h_0hfrhrIpUgyxOl5scdFoIrfw11JS6fa0GkyI4ycyWe1Qw8whQk7NhkWC_YYHVwB9MhyLhyMNzLT2IY7W4lz_103ZxpSCoP8bvhg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/79bcdbb472e3.png",
+      "altText": "Figure 9",
+      "figureNumber": "Figure 9"
+    },
+    {
+      "id": "i.18",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXffOjz_WVDI7-aj08n3rsZb0GBQ98pWDyD0zcNbqy0UBCR2yBOmKp70ntcRIIU-qEj2I0Nlg4t-fq_uXegYCIUfFoPZL6B7k31ZXarsqquSoIcqalYHjTQ_AxeFVLYvrnKJnwLv-2VKckPOKFl8_wmztsgy2g?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/aa22144e5b5e.png",
+      "altText": "Figure 10",
+      "figureNumber": "Figure 10"
+    },
+    {
+      "id": "i.20",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXezy2qXMVmQivkNCr8EYrTRuQTfOvmGdaPj8ANoZWbxQeZWvnVVzbwsZ7ztdoAfmBnIIEw93zvBmijDIVtXvtedjyy4UBLI9bPVQEjpp8dhb1e74MpxNps4fm4KySA5iVG9pvPOjnrKQPXL4pzHZ08990AwUQ?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/73a8e589d116.png",
+      "altText": "Figure 13",
+      "figureNumber": "Figure 13"
+    },
+    {
+      "id": "i.19",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdtCxFJxkAovmCfWSYNKM0O79cvF7JhCBb6blKcc1mrnUEZrzP99h9vv0jzWOPHRT4ColX-yqEP9jggqbHpnod9pESo7uYzzkYYKqNn9mT6LwQz_Q4Wi_P2omyEx3QdwZroeOqi01gNpaorERoKlOSFHKPKCQ?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6e337292bfd3.png",
+      "altText": "Figure 11",
+      "figureNumber": "Figure 11"
+    },
+    {
+      "id": "i.22",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcbYVMwWIxB_pC1kxdyMPxe0gwpYU6oJDqJTuEZILHWVVK_YV0Q2NpfD_dqKLDrC_1QuV60j07XkBKxkJ2CaFAdZCCyv6Ok0TOCwaSESbapx9Dt2e3FLnFZoBKO4gptIaBo2xUYz1wBhaABxFQaJ2Ot9os?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/e53d5799794d.png",
+      "altText": "Figure 15",
+      "figureNumber": "Figure 15"
+    },
+    {
+      "id": "i.23",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcz7wQTuFXyurXY0HpIeeQy9vaIW7SIWalHBgDM2mXv79TcksesUTICBuLNkoCNdTmY5ThdvK6rx9Xw2W61oDmM43tfQK7xMXodtrjaDcON8p7e5rf--AABG98K14WJ23HlZaSj5vsVUrF1heFHX7l-8XmNeg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d9fac4dc5511.png",
+      "altText": "Figure 16",
+      "figureNumber": "Figure 16"
+    },
+    {
+      "id": "i.24",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXddKDUUCS7YWftbkHiYokBh_JytLHThLGq2JOyjszsEhvHI0ze692XfP001WZFui9iRB2362xOOHVddXSLCSCjcKl1wjC5rq2qs9q7R1BoG2sZNCO9IDE0IaSSKwAJ5ybgTQX-nlpTnN3P3IkvSfGWJ61B9LQ?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/c846ad80a459.png",
+      "altText": "Figure 17",
+      "figureNumber": "Figure 17"
+    },
+    {
+      "id": "i.25",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXc_iceJgV3SrRrmXJVrE0r-BB3z3z5kxC-xPaNbDEze2pcWPrmxo1jouEiIOkSF9XH7g_aZSTFJpDkizqBnEYlO55U_7WNoJpWKkc1m-zaQPn7cgrSScANV7bnvD76r-Xh4HRvoZ-WcBj7flHEGnlR3rM5Ihw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/a1586dee081e.png",
+      "altText": "Figure 18",
+      "figureNumber": "Figure 18"
+    },
+    {
+      "id": "i.26",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeaiJrPvPwlp-B1OfWVfWquosDLOTmKN1_oRnzSRda7Ot5K9sVWk-hw6DwVplTFTFe7IZ0uwMnK07oo-V1q8gV3fYp33pzEn0CKkjnatO1ZLPZxi8elmgpuVUen5rNsteOYOZns2bIXTS6o1Dgh7weFlx4?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/93de3bc3003c.png",
+      "altText": "Figure 19",
+      "figureNumber": "Figure 19"
+    },
+    {
+      "id": "i.27",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeDi2SXPlDzUdefx-uqeh370sSXOXXxTt7zae-ay3Oiowh1_aM_raHXN7QH3g-U0OZ-sLQySebzyA91OPh6ZrWAKLcpCOkBi-ZlCotwlyVvxGTMGkve0G630GPXntmXve_99tFYPPh6g4id5lm6O3SHp3k?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6460915b5e7a.png",
+      "altText": "Figure 20",
+      "figureNumber": "Figure 20"
+    },
+    {
+      "id": "i.29",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfbIFUdlV5Oce5zqojTvTEtX5fSx5OlltB4f6pEiQzvLH2qANeTpT2ss4GlpRb0ZKoN4oo-fR6bmVDFj-6SZYX0YWFFJ47jdl3VsUO8JG7M1MFReeGEEpNbIY8I0mu-rD8CjTOs6rl74-IC4KQG1ugPh5r9ng?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5ad2708bd849.png",
+      "altText": "Figure 22",
+      "figureNumber": "Figure 22"
+    },
+    {
+      "id": "i.30",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdaTnPtVhSPmvxnPJtV3MctL097V20IIOHIAuiK3HJNLENMuJbAy_jCWqwLMdgAXvh-wCQB-ddhHOhCoyoPjdvSquFZR1CL2wu1e-lrFTQ6ZX7npALHrURIP4ulMe7xXmgQs_WVsXoCdxs0EPMbKrt8InfWWQ?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d1b54dd63fb8.png",
+      "altText": "Figure 24",
+      "figureNumber": "Figure 24"
+    },
+    {
+      "id": "i.31",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfje6A9nov8g_9w6MXYmkZbGJWY5SOvKeksPYuu57PsOOYGRN89O7RiJVuIRvs1RNXCmKK-pvJgntzJBDen4c9Uv-iwr2T8FohspevMtTXDFi54xLYNYOARSvyZkNnKjO0bO50LSWFv4nE4IvPLx2EYVgfQhQ?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/ced1cca91b8a.png",
+      "altText": "Figure 25",
+      "figureNumber": "Figure 25"
+    },
+    {
+      "id": "i.32",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXd7QXERZTu7w6BnyhhWtbYD965rw_Kuob6J7J-wOrHDLR-hoil3WhAOOnQa5F56wvUq09_Ut1IlJiP_Rgr2HqGzg5EIlgC43MbzXBpBKeIdGac34zj4JKZmEPZSnjCB53y1aOHZQbHajtlJRttW7rbW_NUOFg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/4aad4eff5e7d.png",
+      "altText": "Figure 26",
+      "figureNumber": "Figure 26"
+    },
+    {
+      "id": "i.33",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcp_pduKmAKFR5h-le2crjxORSbWDXazePkUNlrA8haM7RiO8t_neRbPjsWu30hEE12y9OC37jj3gyvupaP-MTwehyAfibPj81UEsOuA38Og_BhFybmSyEwfEb_iUEpYNg4F7HGFY1fepq96vaAXDCBS-qrIw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5bd511e2660d.png",
+      "altText": "Figure 27",
+      "figureNumber": "Figure 27"
+    },
+    {
+      "id": "i.34",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdYyFjGNUVItSgYDpjGyCl-EHdlQpv4Z0bn5mFzdwT8sOcqNSAPfECI1guCYupe0oiQYf2zbQc6CQIxJFQboNvPaMkJmQwa5n3YLKxfh7uv1RlaMRlQ-oOogPhN3UmmoaSql6JskvlNudQuBf4FX_BoRL5VNA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d7bbe98844e7.png",
+      "altText": "Figure 28",
+      "figureNumber": "Figure 28"
+    },
+    {
+      "id": "i.35",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXf8-ZsbkEu728tym9Kd6pmyvGxdcwLdKU0daw-QHy_Pba7MzIbwDvCPbcby2UV_Moe5ouJhV2w2skpkdzaKopaqNx3EstH1BRdFpPEGpNHV938J-wm_WNY8t4XBJlb2WK491X-yD7UVMHEnomPJTe3MbzE?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/65b8d36c2582.png",
+      "altText": "Figure 29",
+      "figureNumber": "Figure 29"
+    },
+    {
+      "id": "i.36",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcNzyGtHaCfjS6db9K6rEaBD79oqq_HdNgxzqn_fZGCFyPRZI37O35e64Bv8uiRrfh7rf6XhscuLjM7mHGdCSkMPxG4yFGbNQP6dX-NbnM61X04PFwCJzIKodm9CueZAvuikccdcJMop-KuQBIH8Kyoqmk6Bw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6f462b76e16a.png",
+      "altText": "Figure 30",
+      "figureNumber": "Figure 30"
+    },
+    {
+      "id": "i.37",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcY-6FNAeqWtvMVSpyqgBPHlQ6HedDfU5Qc-Vsslw8iZMoO2Q7hi6GH4oIFKU7bK9pcoJQmScK5deqLLbosRrk1HI9FgFnFybEdZrvax1iPv2dm3D8RZXk-gT5DXlhRQNv90WmojcxJrrO6W74w67TOEqWXmg?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/5cd5d7819012.png",
+      "altText": "Figure 31",
+      "figureNumber": "Figure 31"
+    },
+    {
+      "id": "i.38",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXe3i9EQ9n4rUtAg5nXZDlr55IWy-tYO23nbYqHb5p7_TRhi8hfS4uG6VOXmDXNvsN_BHfkKmbbNRqcn0Sg_s2g1fD8gVrORXTwT2Fz2ZCmToKTbizmCbenC-pCTlHhC2lRuuz410mbTI6Z2lesgIYApRRYuZw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/4b613a3f9167.png",
+      "altText": "Figure 32",
+      "figureNumber": "Figure 32"
+    },
+    {
+      "id": "i.39",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcqTdWbcbng7SU_eDkprNrif28zIygs5RS03NB34Ge9lEtCixRDDDMuqjp6_1y2Edw8MWmEtbcBhtgSjOVEHdpmdJI4HayzYeQmWh-llR-WfQT-YpOtt28GkorRlJYWPFDw23jpvnG-EzCgirh5YdRnEL40GQ?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/258b63a10c77.png",
+      "altText": "Figure 33",
+      "figureNumber": "Figure 33"
+    },
+    {
+      "id": "i.40",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXftQ0i1dRVSoUsA3z78I0x-0cF6wUCEKbCpMIG-fd0Co-FnWOIAj9GDlNcAnd9Lt21hq6kxkJedd020my7mbyD70eF-Lmg1R0NK2u8J6HxIGRic1YQ-6AaHbqNbOdGXCL69_NEDya1uqeUk-tAzHrg7u7w?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/a6931ddc468a.png",
+      "altText": "Figure 35",
+      "figureNumber": "Figure 35"
+    },
+    {
+      "id": "i.41",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXd3kIyyZUnf_F_gf053C-EfzKfzcBI2puq1BxZIEa8M3L7rPO5trmm8Gwnr7MVee2M2I2pS_Ss0C1k6uuumJKvKDPuK-9muLVTz3bokVMsEZajTzsVH3Mz0VPksmVfldrDHNNcO4uSkJ1Avno_AuMM8BmX1Jw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/6bf5925fe9a0.png",
+      "altText": "Figure 36",
+      "figureNumber": "Figure 36"
+    },
+    {
+      "id": "i.42",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXc5WauofJ4mFeVAwyATAZVrFmzJ5iBiaJBB70mbYOra2rS1uAMOYMjtfAFHTLaX6L2E1MSoh3sUhcRWpUl_O1stH1bUIVDXAp0SsH3ahCoGpBJepU4wcRM6NCpGfU5jXcVHbB0XEDOtD6nL9bPT85sRZcyKxw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/116656f5f674.png",
+      "altText": "Figure 37",
+      "figureNumber": "Figure 37"
+    },
+    {
+      "id": "i.43",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXc9N442o3h_eohT9eRxgYiayA_ytSwZcgdLmm91z_EZZJxYQlzav_XA9E3S3Pt3Gd-vu8gjgVSd4uNNM9-F_A63U7oWycg1FHroLEgJ2u7bpcFxpaUCEh3eXciEAm4Sz8hyqK13SDl1LpS0XHrLZXPX75E?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/260e96f22547.png",
+      "altText": "Figure 38",
+      "figureNumber": "Figure 38"
+    },
+    {
+      "id": "i.44",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXffYUx5ZPsN2MiVjNJofGxXv8aMoOiz2UgCfwpWfKxP89Pb3R6-otpAQLZ1241nGGQ4kKmcjoJKfVcyGHUGtCOqlQJqLoyVMgE7-R9RnjK_YQyYonu9wABMBzYMMh-oImvWjyHkP1kzCxdN9UApXSEs9yqsag?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/150cbd197ccd.png",
+      "altText": "Figure 39",
+      "figureNumber": "Figure 39"
+    },
+    {
+      "id": "i.45",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7hXE11mqO2GVuA-O7dYYXTu8BPQsCAqM6hX4EvqKdiSbap4sJ20xEbqw4-ihy770LDQpOV6EKu0mvp82bEDlbZ0m1mpgcI1ifGdqhL6cKaArBsUPtuQ3hlIk_DwL4EdJCzXxAT5OEnVJpmmZQg0W-eyFvYQ?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/969dda606cb8.png",
+      "altText": "Figure 40",
+      "figureNumber": "Figure 40"
+    },
+    {
+      "id": "i.46",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXevUzM-p4ujg0wgicM-rROWOh6rZOecrWUiMW0cSlwhJWu-yl9w1MJJvnorB7omSI_nTu8LBXUOFSZrIMzxaeM-il_kIF0CRTGN7cd2El2mAzVf2Bo5dT1d5DHzZYf97UbFt4SgOHa4Np2sNPLUvVajYki4oA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/08848916c1fd.png",
+      "altText": "Figure 41",
+      "figureNumber": "Figure 41"
+    },
+    {
+      "id": "i.47",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7dlQjdb7SFtbRLnG5smwSx_zGaylMDI-adhRoqvelyts3yA3czKYns2ZUzxD1Ea8kUoRTzi1zYFBPC8VMtfT2tGYvMcV0vfxg-h5pe_x3pbSwszevssqAoQzQZ-viRqh0_JXlRPz-nBUJdk3l6XKAB5Ataw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/daf88481ab46.png",
+      "altText": "Figure 42",
+      "figureNumber": "Figure 42"
+    },
+    {
+      "id": "i.48",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcoo9S5Z0J3sdCxAjvhoeEettk0cI26uG3h0sKInFNAr0fVJ9wEy_OC6KX7c9f7wcGcJBJFc6uhgUM9byJQ8D9Zk46Id_aem2kbUGti_fysa4N8eWLvK1LNap-JOkcN6oQ0_bfB8_cDibQD56mdAtCAyJaUtA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/8f8efcc0ff15.png",
+      "altText": "Figure 43",
+      "figureNumber": "Figure 43"
+    },
+    {
+      "id": "i.49",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcHEMud8NZCnSNJogz-aZTvS19AIR7-OfBBuR2R0baQzZEfmUdPJ85vIya0wrLZNioHp6mje6voMJ5vis07hmdL8-Gg0SqRU3GZh6Q-RhMioEVWP1-bn5vzfoqGZGM7mqKqfUT6-1JXLG_2UF7mtVJaOPbnkA?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/2e5c526f3ef4.png",
+      "altText": "Figure 44",
+      "figureNumber": "Figure 44"
+    },
+    {
+      "id": "i.50",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeW1xC3DEf62HD9MDS7EitXu8lodzrIzG9TSkzBOqgVI30KFU_a9veMNWJ3gamKr_dByyntXns1G3OOrsijZaSYh5CTf-EJKIIbqEVL-pSTURbKQlcZykDoGRub-u3xNVeUc9-5ym9XOcbHHGAizFYrtGw?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/e56c6d3d4fbf.png",
+      "altText": "Figure 46",
+      "figureNumber": "Figure 46"
+    },
+    {
+      "id": "i.51",
+      "url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeEOq4ZZue4GXdmjrME3HsMhm6H9hVStQpnNKa_7LdHOTNZlf1MYFm-oyZfHMVUUhl3SFLaEt5PnRZrjUAwXjkL8STpL98crx7pO4BvJhqhBXnvp_bcVDIS7shLj5ipAgl0_vjETE5-oZXVlezTWJyc?key=sGP-rBpbXkO_14yzFh5NIw",
+      "localPath": "/training-assets/1jVvTIFJcurxsWwpkhv6gbc-YutuzA3pIohgT3pPgUbI/d5cd175d4bed.png",
+      "altText": "Figure 47",
+      "figureNumber": "Figure 47"
+    }
+  ]
+}

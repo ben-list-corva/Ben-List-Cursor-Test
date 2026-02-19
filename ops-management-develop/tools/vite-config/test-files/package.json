@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "dependencies": {
+    "@corva/dc-platform-shared": "^0.58.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "chalk": "4.1.2",
+    "dotenv": "16.4.7",
+    "dotenv-expand": "11.0.7",
+    "lodash.castarray": "^4.4.0",
+    "postcss-preset-env": "6.7.0",
+    "rollup-plugin-license": "^3.6.0",
+    "rollup-plugin-visualizer": "^6.0.3",
+    "tslib": "^2.3.0",
+    "vite": "^6.0.0",
+    "vite-multiple-assets": "^2.2.5",
+    "vite-plugin-static-copy": "^3.1.0",
+    "vitest": "^3.0.0"
+  }
+}

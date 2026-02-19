@@ -1,0 +1,1281 @@
+# Corva Dataset Schema - Optimized Format
+# All 87 datasets consolidated for efficient context usage
+# Format: field_name: type (f=float, i=int, l=long, s=string, o=object, a=array, b=boolean)
+
+templates:
+  base:
+    keys: [timestamp, asset_id]
+    fields:
+      timestamp: l
+      asset_id: i
+      company_id: i
+
+  summary:
+    inherits: base
+    fields:
+      data.min: o
+      data.max: o
+      data.mean: o
+      data.median: o
+      data.start_timestamp: l
+      data.end_timestamp: l
+
+  stage_based:
+    keys: [timestamp, asset_id, stage_number]
+    fields:
+      timestamp: l
+      asset_id: i
+      company_id: i
+      stage_number: i
+
+  activity_summary:
+    inherits: stage_based
+    fields:
+      data.activities: a  # [{activity: s, start: l, end: l, duration: i}]
+
+# =============================================================================
+# DRILLING DATASETS (61)
+# =============================================================================
+
+drilling:
+
+  # ---------------------------------------------------------------------------
+  # Real-Time WITS Data
+  # ---------------------------------------------------------------------------
+
+  wits:
+    collection: wits
+    desc: Real-time drilling sensor data from rig floor, per-second
+    freq: per_second
+    inherits: base
+    fields:
+      data.bit_depth: f
+      data.hole_depth: f
+      data.block_height: f
+      data.rop: f           # Rate of penetration
+      data.wob: f           # Weight on bit
+      data.hookload: f
+      data.rotary_rpm: f
+      data.rotary_torque: f
+      data.spp: f           # Standpipe pressure
+      data.flow_in: f
+      data.flow_out: f
+      data.mud_weight_in: f
+      data.mud_weight_out: f
+      data.pit_volume: f
+      data.total_pit_volume: f
+      data.pump_spm_1: f
+      data.pump_spm_2: f
+      data.pump_spm_3: f
+      data.pump_spm_total: f
+      data.gamma_ray: f
+      data.tvd: f
+      data.inclination: f
+      data.azimuth: f
+      data.state: s         # rig state
+      data.state_reason: s
+
+  wits_summary_1m:
+    collection: wits.summary-1m
+    desc: 1-minute aggregated WITS statistics
+    freq: per_minute
+    inherits: summary
+
+  wits_summary_30m:
+    collection: wits.summary-30m
+    desc: 30-minute aggregated WITS statistics
+    freq: per_30_minutes
+    inherits: summary
+
+  wits_summary_1ft:
+    collection: wits.summary-1ft
+    desc: 1-foot depth-based WITS statistics
+    freq: per_foot
+    inherits: summary
+    keys: [measured_depth, asset_id]
+    fields:
+      measured_depth: f
+
+  # ---------------------------------------------------------------------------
+  # Activities & Operations
+  # ---------------------------------------------------------------------------
+
+  activities:
+    collection: activities
+    desc: Detected drilling activities from sensor pattern analysis
+    freq: per_activity
+    inherits: base
+    fields:
+      data.activity: s      # Detected activity name
+      data.start_time: l
+      data.end_time: l
+      data.duration: i      # seconds
+      data.start_depth: f
+      data.end_depth: f
+      data.footage: f
+      data.probability: f
+      data.metadata: o
+
+  operations:
+    collection: operations
+    desc: High-level drilling operations with detailed breakdowns
+    freq: per_operation
+    inherits: base
+    fields:
+      data.operation: s
+      data.start_time: l
+      data.end_time: l
+      data.duration: i
+      data.start_depth: f
+      data.end_depth: f
+      data.footage: f
+      data.stand_number: i
+      data.run_number: i
+      data.connection_time: i
+      data.survey_time: i
+      data.drilling_time: i
+      data.tripping_time: i
+
+  metrics:
+    collection: drilling-metrics
+    desc: Calculated KPIs and performance metrics
+    freq: per_interval
+    inherits: base
+    fields:
+      data.rop_avg: f
+      data.rop_max: f
+      data.connection_time_avg: i
+      data.drilling_efficiency: f
+      data.on_bottom_percentage: f
+      data.rotating_hours: f
+      data.sliding_hours: f
+      data.tripping_speed: f
+      data.feet_per_day: f
+
+  # ---------------------------------------------------------------------------
+  # Directional Drilling (9 datasets)
+  # ---------------------------------------------------------------------------
+
+  directional_surveys:
+    collection: directional-surveys
+    desc: Survey station measurements (MWD/gyro)
+    freq: per_survey
+    inherits: base
+    fields:
+      data.measured_depth: f
+      data.inclination: f
+      data.azimuth: f
+      data.tvd: f
+      data.northing: f
+      data.easting: f
+      data.vs: f            # vertical section
+      data.dls: f           # dogleg severity
+      data.survey_type: s
+      data.tool_type: s
+      data.north_reference: s
+      data.magnetic_declination: f
+
+  data_actual_survey:
+    collection: data.actual-survey
+    desc: Actual drilled survey data (normalized)
+    freq: per_survey
+    inherits: base
+    fields:
+      data.measured_depth: f
+      data.inclination: f
+      data.azimuth: f
+      data.tvd: f
+      data.northing: f
+      data.easting: f
+      data.dls: f
+
+  data_plan_survey:
+    collection: data.plan-survey
+    desc: Planned well trajectory
+    freq: per_plan_point
+    inherits: base
+    fields:
+      data.measured_depth: f
+      data.inclination: f
+      data.azimuth: f
+      data.tvd: f
+      data.northing: f
+      data.easting: f
+      data.dls: f
+      data.plan_name: s
+
+  directional_accuracy:
+    collection: directional-accuracy
+    desc: Plan vs actual deviation analysis
+    freq: per_survey
+    inherits: base
+    fields:
+      data.measured_depth: f
+      data.plan_inclination: f
+      data.plan_azimuth: f
+      data.actual_inclination: f
+      data.actual_azimuth: f
+      data.inclination_error: f
+      data.azimuth_error: f
+      data.tvd_error: f
+      data.northing_error: f
+      data.easting_error: f
+      data.distance_to_plan: f
+
+  directional_projection:
+    collection: directional-projection
+    desc: Projected trajectory ahead of bit
+    freq: per_calculation
+    inherits: base
+    fields:
+      data.projection_type: s
+      data.projection_points: a  # [{md, inc, azi, tvd, ns, ew}]
+      data.target_window: o
+      data.landing_point: o
+
+  directional_slide_sheet:
+    collection: directional-slide-sheet
+    desc: Slide and rotate intervals during drilling
+    freq: per_interval
+    inherits: base
+    fields:
+      data.start_depth: f
+      data.end_depth: f
+      data.interval_type: s   # slide or rotate
+      data.toolface: f
+      data.motor_yield: f
+      data.slide_footage: f
+      data.rotate_footage: f
+      data.rop: f
+      data.wob: f
+      data.dls_actual: f
+
+  directional_trend:
+    collection: directional-trend
+    desc: Directional parameter trends over time/depth
+    freq: per_interval
+    inherits: base
+    fields:
+      data.points: a  # [{md, inc, azi, tvd, dls, build_rate, turn_rate}]
+
+  directional_tortuosity:
+    collection: directional-tortuosity
+    desc: Wellbore tortuosity metrics
+    freq: per_calculation
+    inherits: base
+    fields:
+      data.tortuosity_index: f
+      data.cumulative_dls: f
+      data.max_dls: f
+      data.points: a
+
+  directional_guidance:
+    collection: directional-guidance
+    desc: Directional drilling recommendations
+    freq: per_calculation
+    inherits: base
+    fields:
+      data.recommended_toolface: f
+      data.recommended_slide_length: f
+      data.recommended_dls: f
+      data.target_inclination: f
+      data.target_azimuth: f
+      data.distance_to_target: f
+      data.status: s
+
+  # ---------------------------------------------------------------------------
+  # Well Configuration Data (15 datasets)
+  # ---------------------------------------------------------------------------
+
+  data_drillstring:
+    collection: data.drillstring
+    desc: BHA and drillstring component configuration
+    freq: per_change
+    inherits: base
+    fields:
+      data.components: a  # [{type, od, id, length, weight, description}]
+      data.total_length: f
+      data.total_weight: f
+      data.bit_to_sensor: f
+      data.bit_type: s
+      data.motor_type: s
+      data.motor_bend: f
+      data.stabilizer_positions: a
+      data.drillstring_number: i
+
+  data_casing:
+    collection: data.casing
+    desc: Casing/liner string configuration
+    freq: per_change
+    inherits: base
+    fields:
+      data.sections: a  # [{od, id, weight, grade, top_md, bottom_md, shoe_md}]
+      data.casing_type: s
+      data.shoe_depth: f
+      data.cement_top: f
+
+  data_formations:
+    collection: data.formations
+    desc: Formation tops and geology
+    freq: per_formation
+    inherits: base
+    fields:
+      data.formation_name: s
+      data.top_md: f
+      data.top_tvd: f
+      data.bottom_md: f
+      data.bottom_tvd: f
+      data.lithology: s
+      data.is_target: b
+
+  data_mud:
+    collection: data.mud
+    desc: Mud/drilling fluid properties
+    freq: per_report
+    inherits: base
+    fields:
+      data.mud_weight: f
+      data.mud_type: s
+      data.plastic_viscosity: f
+      data.yield_point: f
+      data.gel_strength_10s: f
+      data.gel_strength_10m: f
+      data.fluid_loss: f
+      data.ph: f
+      data.chlorides: f
+      data.solids: f
+
+  data_well_sections:
+    collection: data.well-sections
+    desc: Well section definitions (surface, intermediate, lateral)
+    freq: per_section
+    inherits: base
+    fields:
+      data.section_name: s
+      data.section_type: s
+      data.top_md: f
+      data.bottom_md: f
+      data.hole_size: f
+      data.casing_size: f
+
+  data_npt_events:
+    collection: data.npt-events
+    desc: Non-productive time events
+    freq: per_event
+    inherits: base
+    fields:
+      data.start_time: l
+      data.end_time: l
+      data.duration: i
+      data.npt_code: s
+      data.npt_category: s
+      data.description: s
+      data.depth: f
+      data.cost: f
+
+  data_afe:
+    collection: data.afe
+    desc: Authorization for Expenditure estimates
+    freq: per_well
+    inherits: base
+    fields:
+      data.afe_number: s
+      data.total_budget: f
+      data.drilling_days: i
+      data.phase_budgets: o
+      data.cost_categories: a
+
+  data_costs:
+    collection: data.costs
+    desc: Daily cost tracking
+    freq: per_day
+    inherits: base
+    fields:
+      data.date: s
+      data.daily_cost: f
+      data.cumulative_cost: f
+      data.cost_category: s
+      data.description: s
+      data.depth: f
+
+  data_crews:
+    collection: data.crews
+    desc: Crew and personnel information
+    freq: per_change
+    inherits: base
+    fields:
+      data.crew_name: s
+      data.tour: s
+      data.company: s
+      data.role: s
+      data.start_date: s
+      data.end_date: s
+
+  data_files:
+    collection: data.files
+    desc: Attached documents and reports
+    freq: per_file
+    inherits: base
+    fields:
+      data.file_name: s
+      data.display_name: s
+      data.file_type: s
+      data.category: s
+      data.url: s
+      data.uploaded_by: s
+
+  data_lessons_learned:
+    collection: data.lessons-learned
+    desc: Documented lessons and best practices
+    freq: per_entry
+    inherits: base
+    fields:
+      data.title: s
+      data.category: s
+      data.description: s
+      data.impact: s
+      data.recommendation: s
+      data.depth: f
+
+  data_offset_wells:
+    collection: data.offset-wells
+    desc: Nearby reference wells for comparison
+    freq: per_well
+    inherits: base
+    fields:
+      data.offset_well_id: i
+      data.offset_well_name: s
+      data.distance: f
+      data.direction: s
+      data.total_depth: f
+      data.days_to_td: f
+
+  data_surface_equipment:
+    collection: data.surface-equipment
+    desc: Rig and surface equipment specifications
+    freq: per_change
+    inherits: base
+    fields:
+      data.rig_name: s
+      data.rig_type: s
+      data.top_drive_rating: f
+      data.pump_count: i
+      data.pump_rating: f
+      data.derrick_height: f
+      data.hookload_rating: f
+
+  data_operation_summaries:
+    collection: data.operation-summaries
+    desc: Daily drilling reports/summaries
+    freq: per_day
+    inherits: base
+    fields:
+      data.report_date: s
+      data.start_depth: f
+      data.end_depth: f
+      data.footage: f
+      data.operations_summary: s
+      data.next_24_hours: s
+      data.safety_observations: s
+      data.mud_properties: o
+
+  data_pressure_gradient:
+    collection: data.pressure-gradient
+    desc: Pore pressure and fracture gradient data
+    freq: per_depth
+    inherits: base
+    fields:
+      data.measured_depth: f
+      data.tvd: f
+      data.pore_pressure: f
+      data.fracture_gradient: f
+      data.overburden: f
+      data.mud_weight_window: o
+
+  # ---------------------------------------------------------------------------
+  # Depth-Based Drilling Data
+  # ---------------------------------------------------------------------------
+
+  drilling_wits_depth:
+    collection: drilling.wits-depth
+    desc: WITS data indexed by depth instead of time
+    freq: per_foot
+    keys: [measured_depth, asset_id]
+    fields:
+      measured_depth: f
+      asset_id: i
+      company_id: i
+      data.rop: f
+      data.wob: f
+      data.rotary_rpm: f
+      data.rotary_torque: f
+      data.spp: f
+      data.flow_in: f
+      data.gamma_ray: f
+      data.timestamp: l
+
+  drilling_wits_depth_summary_1ft:
+    collection: drilling.wits-depth.summary-1ft
+    desc: Per-foot statistics of drilling parameters
+    freq: per_foot
+    keys: [measured_depth, asset_id]
+    inherits: summary
+    fields:
+      measured_depth: f
+
+  # ---------------------------------------------------------------------------
+  # Drilling Efficiency
+  # ---------------------------------------------------------------------------
+
+  drilling_efficiency_mse:
+    collection: drilling-efficiency.mse
+    desc: Mechanical Specific Energy calculations
+    freq: per_interval
+    inherits: base
+    fields:
+      data.mse: f
+      data.mse_corrected: f
+      data.bit_depth: f
+      data.rop: f
+      data.wob: f
+      data.rpm: f
+      data.torque: f
+      data.bit_diameter: f
+      data.efficiency: f
+
+  drilling_efficiency_optimization:
+    collection: drilling-efficiency.optimization
+    desc: Drilling parameter optimization recommendations
+    freq: per_interval
+    inherits: base
+    fields:
+      data.optimal_wob: f
+      data.optimal_rpm: f
+      data.optimal_flow: f
+      data.current_efficiency: f
+      data.potential_efficiency: f
+      data.recommendations: a
+
+  drilling_efficiency_mse_heatmap:
+    collection: drilling-efficiency.mse-heatmap
+    desc: MSE heatmap data (WOB vs RPM matrix)
+    freq: per_calculation
+    inherits: base
+    fields:
+      data.wob_bins: a
+      data.rpm_bins: a
+      data.mse_matrix: a
+      data.rop_matrix: a
+      data.sample_count_matrix: a
+
+  drilling_efficiency_rop_heatmap:
+    collection: drilling-efficiency.rop-heatmap
+    desc: ROP heatmap data (WOB vs RPM matrix)
+    freq: per_calculation
+    inherits: base
+    fields:
+      data.wob_bins: a
+      data.rpm_bins: a
+      data.rop_matrix: a
+      data.sample_count_matrix: a
+
+  # ---------------------------------------------------------------------------
+  # Time Logging
+  # ---------------------------------------------------------------------------
+
+  timelog_data:
+    collection: data.timelog
+    desc: Manual time log entries
+    freq: per_entry
+    inherits: base
+    fields:
+      data.activity: s
+      data.start_time: l
+      data.end_time: l
+      data.duration: i
+      data.depth_from: f
+      data.depth_to: f
+      data.comments: s
+      data.phase: s
+      data.activity_code: s
+
+  drilling_timelog_data:
+    collection: drilling.timelog-data
+    desc: Auto-detected time log entries
+    freq: per_entry
+    inherits: base
+    fields:
+      data.activity: s
+      data.start_time: l
+      data.end_time: l
+      data.duration: i
+      data.start_depth: f
+      data.end_depth: f
+      data.detection_method: s
+
+  # ---------------------------------------------------------------------------
+  # Hydraulics (7 datasets)
+  # ---------------------------------------------------------------------------
+
+  hydraulics_overview:
+    collection: hydraulics.overview
+    desc: Hydraulics summary dashboard data
+    freq: per_interval
+    inherits: base
+    fields:
+      data.ecd: f           # Equivalent circulating density
+      data.esd: f           # Equivalent static density
+      data.pressure_loss: o
+      data.annular_velocity: f
+      data.jet_velocity: f
+      data.hydraulic_hp: f
+      data.impact_force: f
+      data.status: s
+
+  hydraulics_pressure_loss:
+    collection: hydraulics.pressure-loss
+    desc: Pressure loss breakdown by component
+    freq: per_calculation
+    inherits: base
+    fields:
+      data.total_pressure_loss: f
+      data.surface_equipment: f
+      data.drillstring: f
+      data.bit: f
+      data.annulus: f
+      data.components: a  # [{name, pressure_loss, depth}]
+      data.flow_rate: f
+      data.mud_weight: f
+
+  hydraulics_surge_and_swab:
+    collection: hydraulics.surge-and-swab
+    desc: Surge/swab pressure calculations
+    freq: per_calculation
+    inherits: base
+    fields:
+      data.trip_speed: f
+      data.surge_pressure: f
+      data.swab_pressure: f
+      data.surge_ecd: f
+      data.swab_ecd: f
+      data.max_safe_trip_speed: f
+      data.kick_tolerance: f
+      data.points: a
+
+  hydraulics_cuttings_transport:
+    collection: hydraulics.cuttings-transport
+    desc: Cuttings transport efficiency
+    freq: per_calculation
+    inherits: base
+    fields:
+      data.transport_ratio: f
+      data.cuttings_concentration: f
+      data.bed_height: f
+      data.minimum_flow_rate: f
+      data.annular_velocity: f
+      data.critical_velocity: f
+      data.hole_cleaning_index: f
+
+  hydraulics_pressure_trend:
+    collection: hydraulics.pressure-trend
+    desc: Pressure trends over time/depth
+    freq: per_interval
+    inherits: base
+    fields:
+      data.points: a  # [{timestamp, spp, ecd, flow_rate}]
+
+  circulation_volumetric:
+    collection: circulation.volumetric
+    desc: Circulation volume tracking
+    freq: per_interval
+    inherits: base
+    fields:
+      data.strokes_to_bottoms_up: i
+      data.volume_to_bottoms_up: f
+      data.time_to_bottoms_up: i
+      data.total_system_volume: f
+      data.annular_volume: f
+      data.drillstring_volume: f
+      data.current_lag_strokes: i
+      data.flow_rate: f
+
+  circulation_lag_depth:
+    collection: circulation.lag-depth
+    desc: Formation returns tracking (lag depth)
+    freq: per_interval
+    inherits: base
+    fields:
+      data.lag_depth: f
+      data.bit_depth: f
+      data.lag_strokes: i
+      data.lag_time: i
+      data.lag_volume: f
+      data.flow_rate: f
+      data.cumulative_strokes: l
+
+  # ---------------------------------------------------------------------------
+  # Torque and Drag (8 datasets)
+  # ---------------------------------------------------------------------------
+
+  torque_and_drag_overview:
+    collection: torque-and-drag.overview
+    desc: T&D summary metrics and status
+    freq: per_interval
+    inherits: base
+    fields:
+      data.weight_transfer: s     # low/medium/high
+      data.activity: s
+      data.weight_on_bit.difference: f
+      data.weight_on_bit.model: f
+      data.weight_on_bit.latch: f
+      data.drag.severity: s
+      data.drag.value: f
+      data.drag.points: a
+
+  torque_and_drag_hookload_trend:
+    collection: torque-and-drag.hookload-trend
+    desc: Hookload broomstick curves
+    freq: per_update
+    inherits: base
+    fields:
+      data.config: o
+      data.hole_depth: f
+      data.is_extended: b
+      data.curves.slack_off: a    # [{casing_ff, openhole_ff, points}]
+      data.curves.pick_up: a
+
+  torque_and_drag_friction_factor:
+    collection: torque-and-drag.friction-factor
+    desc: Friction factor calibration data
+    freq: per_calibration
+    inherits: base
+    fields:
+      data.casing_depth: f
+      data.hole_depth: f
+      data.predicted.casing: f
+      data.predicted.open_hole_slackoff: f
+      data.predicted.open_hole_pickup: f
+      data.predicted.open_hole_rotating: f
+      data.current_usage.casing: f
+      data.current_usage.open_hole_slackoff: f
+      data.current_usage.open_hole_pickup: f
+      data.current_usage.open_hole_rotating: f
+      data.usage_type: s
+
+  torque_and_drag_axial_load:
+    collection: torque-and-drag.axial-load
+    desc: Axial load and buckling analysis
+    freq: per_calculation
+    inherits: base
+    fields:
+      data.activity: s
+      data.points: a  # [{md, axial_load, sinusoidal_buckling_force, helical_buckling_force}]
+
+  torque_and_drag_torque:
+    collection: torque-and-drag.torque
+    desc: Torque distribution along drillstring
+    freq: per_calculation
+    inherits: base
+    fields:
+      data.activity: s
+      data.points: a  # [{md, torque, torsional_yield}]
+
+  torque_and_drag_torque_trend:
+    collection: torque-and-drag.torque-trend
+    desc: Torque broomstick curves
+    freq: per_update
+    inherits: base
+    fields:
+      data.config: o
+      data.hole_depth: f
+      data.is_extended: b
+      data.curves.rotary_off_bottom: a
+
+  torque_and_drag_stress:
+    collection: torque-and-drag.stress
+    desc: Von Mises stress analysis
+    freq: per_calculation
+    inherits: base
+    fields:
+      data.activity: s
+      data.points: a  # [{md, yield_stress, yield_stress_80_percent, axial_stress, twist_stress, bending_stress, von_mises_stress}]
+
+  torque_and_drag_predictions:
+    collection: torque-and-drag.predictions
+    desc: Real-time T&D predictions
+    freq: per_second
+    inherits: base
+    fields:
+      data.activity: s
+      data.predicted_hookload: f
+      data.predicted_surface_torque: f
+      data.bit_depth: f
+      data.hole_depth: f
+      data.bit_depth_tvd: f
+      data.hole_depth_tvd: f
+      data.differential_pressure: f
+      data.downhole_weight_on_bit: f
+      data.downhole_torque: f
+      data.bit_rpm: f
+
+  # ---------------------------------------------------------------------------
+  # PDM Monitoring (3 datasets)
+  # ---------------------------------------------------------------------------
+
+  pdm_overview:
+    collection: pdm.overview
+    desc: Mud motor performance summary
+    freq: per_interval
+    inherits: base
+    fields:
+      data.differential_pressure.value: f
+      data.differential_pressure.percentage: f
+      data.differential_pressure.severity: s
+      data.differential_pressure.points: a
+      data.status: i
+      data.warning.stale: b
+      data.warning.message: s
+      data.warning.code: s
+
+  pdm_operating_condition:
+    collection: pdm.operating-condition
+    desc: Motor operating parameters
+    freq: per_interval
+    inherits: base
+    fields:
+      data.bit_depth: f
+      data.hole_depth: f
+      data.flow_rate: f
+      data.differential_pressure: f
+      data.torque: f
+      data.rpm: f
+      data.total_bit_rpm: f
+      data.total_bit_torque: f
+      data.pdm_power: f
+      data.limits.min_rpm: f
+      data.limits.max_rpm: f
+      data.limits.min_standard_flowrate: f
+      data.limits.max_standard_flowrate: f
+      data.limits.max_differential_pressure: f
+      data.torque_line: a
+
+  pdm_stall_detection:
+    collection: pdm.stall-detection
+    desc: Motor stall event detection
+    freq: per_event
+    inherits: base
+    fields:
+      data.total_bit_torque: f
+      data.differential_pressure: f
+      data.flow_rate: f
+      data.bit_depth: f
+      data.hole_depth: f
+      data.duration: i
+      data.severity: s
+
+  # ---------------------------------------------------------------------------
+  # Safety & Monitoring (4 datasets)
+  # ---------------------------------------------------------------------------
+
+  dysfunctions:
+    collection: dysfunctions
+    desc: Drilling dysfunction detection (stick-slip, whirl, etc.)
+    freq: per_event
+    inherits: base
+    fields:
+      data.dysfunction_type: s  # stick-slip, whirl, bit_bounce
+      data.severity: s
+      data.duration: i
+      data.depth: f
+      data.parameters: o
+      data.recommendations: s
+
+  kick_detection:
+    collection: kick-detection
+    desc: Well control monitoring
+    freq: per_second
+    inherits: base
+    fields:
+      data.active_string_type: s
+      data.active_string_id: s
+      data.drillstring_number: i
+      data.warning.message: s
+      data.kick_indicators: o
+      data.pit_volume_change: f
+      data.flow_check_status: s
+
+  anti_collision_clearance:
+    collection: anti-collision.clearance
+    desc: Wellbore separation calculations
+    freq: per_update
+    inherits: base
+    fields:
+      data.offset_well_id: s
+      data.offset_wellbore_id: s
+      data.offset_design_id: s
+      data.max_center_distance: f
+      data.max_separation_factor: f
+      data.north_reference: s
+      data.offset_well_properties.well_name: s
+      data.offset_well_properties.wellbore_name: s
+      data.offset_well_properties.phase_name: s
+      data.offset_well_properties.datum: f
+      data.offset_well_properties.casing_size: f
+
+  anti_collision_alert:
+    collection: anti-collision.alert
+    desc: Collision proximity warnings
+    freq: per_alert
+    inherits: base
+    fields:
+      data.offset_well_id: s
+      data.offset_wellbore_id: s
+      data.max_center_distance: f
+      data.max_separation_factor: f
+      data.offset_well_properties.well_name: s
+      data.offset_well_properties.phase_name: s
+
+
+# =============================================================================
+# COMPLETIONS DATASETS (26)
+# =============================================================================
+
+completions:
+
+  # ---------------------------------------------------------------------------
+  # Frac WITS Data
+  # ---------------------------------------------------------------------------
+
+  completion_wits:
+    collection: completion.wits
+    desc: Real-time frac treatment data
+    freq: per_second
+    inherits: stage_based
+    fields:
+      data.wellhead_pressure: f
+      data.backside_pressure: f
+      data.clean_flow_rate_in: f
+      data.slurry_flow_rate_in: f
+      data.total_clean_volume_in: f
+      data.total_slurry_volume_in: f
+      data.total_proppant_concentration: f
+      data.total_proppant_mass: f
+      data.proppant_1_concentration: f
+      data.proppant_1_mass: f
+      data.hydraulic_horse_power: f
+      data.friction_reducer: f
+      data.powder_friction_reducer: f
+      data.elapsed_time: i
+      data.pressure_slope_1min_rolling: f
+      data.pressure_to_rate_ratio: f
+      data.cumulative_chemicals: o
+      data.is_valid: b
+
+  completion_wits_raw:
+    collection: completion.wits.raw
+    desc: Unprocessed frac data from source
+    freq: per_second
+    inherits: stage_based
+    fields:
+      app: s
+      source_app: s
+      data: o  # Dynamic fields vary by provider
+
+  completion_wits_summary_10s:
+    collection: completion.wits.summary-10s
+    desc: 10-second frac statistics
+    freq: per_10_seconds
+    inherits: stage_based
+    fields:
+      data.min: o
+      data.max: o
+      data.mean: o
+      data.median: o
+      data.start_timestamp: l
+      data.end_timestamp: l
+
+  completion_wits_summary_1m:
+    collection: completion.wits.summary-1m
+    desc: 1-minute frac statistics
+    freq: per_minute
+    inherits: stage_based
+    fields:
+      data.min: o
+      data.max: o
+      data.mean: o
+      data.start_timestamp: l
+      data.end_timestamp: l
+
+  # ---------------------------------------------------------------------------
+  # Stage Data
+  # ---------------------------------------------------------------------------
+
+  completion_data_stages:
+    collection: completion.data.stages
+    desc: Stage design/configuration
+    freq: per_stage
+    inherits: stage_based
+    fields:
+      data.top_perf_md: f
+      data.bottom_perf_md: f
+      data.cluster_count: i
+      data.design_proppant: f
+      data.design_clean_volume: f
+      data.design_rate: f
+      data.design_pressure: f
+      data.status: s
+
+  completion_data_actual_stages:
+    collection: completion.data.actual-stages
+    desc: Executed stage results
+    freq: per_stage
+    inherits: stage_based
+    fields:
+      data.actual_proppant: f
+      data.actual_clean_volume: f
+      data.actual_slurry_volume: f
+      data.max_pressure: f
+      data.avg_rate: f
+      data.stage_duration: i
+      data.isip: f
+      data.breakdown_pressure: f
+
+  completion_predictions:
+    collection: completion.predictions
+    desc: Frac predictions and analysis
+    freq: per_stage
+    inherits: stage_based
+    fields:
+      data.target_ramp_rate: a
+      data.breakdown: a
+      data.isip: f
+      data.closure_pressure: f
+
+  completion_stage_times:
+    collection: completion.stage-times
+    desc: Stage timing data
+    freq: per_stage
+    inherits: stage_based
+    fields:
+      app_key: s
+      data.stage_start: l
+      data.stage_end: l
+      data.stage_duration: i
+
+  completion_activity_summary_stage:
+    collection: completion.activity.summary-stage
+    desc: Stage activity breakdown
+    freq: per_stage
+    inherits: activity_summary
+
+  # ---------------------------------------------------------------------------
+  # Tracking & Monitoring
+  # ---------------------------------------------------------------------------
+
+  completion_tracking:
+    collection: completion.tracking
+    desc: Completion operation progress
+    freq: per_update
+    inherits: base
+    fields:
+      data.current_stage: i
+      data.total_stages: i
+      data.status: s
+      data.completion_type: s
+      data.progress_percentage: f
+
+  completion_pumps:
+    collection: completion.pumps
+    desc: Frac pump configuration
+    freq: per_configuration
+    inherits: base
+    fields:
+      data.pump_count: i
+      data.total_hhp: f
+      data.pump_type: s
+      data.pumps: a
+
+  completion_metrics:
+    collection: completion.metrics
+    desc: Completion KPIs
+    freq: per_well
+    inherits: base
+    fields:
+      data.metric_key: s
+      data.metric_value: f
+      data.metric_type: s
+      data.stage_number: i
+      data.aggregation_level: s
+
+  completion_valve:
+    collection: completion.valve
+    desc: Valve status (zipper frac)
+    freq: per_change
+    inherits: base
+    fields:
+      data.valve_id: s
+      data.valve_position: s
+      data.valve_status: s
+      data.last_change: l
+      data.operation_mode: s
+
+  completion_offset:
+    collection: completion.offset
+    desc: Offset well pressure monitoring
+    freq: per_second
+    inherits: base
+    fields:
+      data.offset_well_id: i
+      data.offset_pressure: f
+      data.offset_well_name: s
+      data.pressure_change: f
+      data.frac_hit_indicator: b
+
+  # ---------------------------------------------------------------------------
+  # Data/Records
+  # ---------------------------------------------------------------------------
+
+  completion_data_time_log:
+    collection: completion.data.time-log
+    desc: Completion activity time log
+    freq: per_entry
+    inherits: base
+    fields:
+      data.activity: s
+      data.start_time: l
+      data.end_time: l
+      data.duration: i
+      data.stage_number: i
+      data.comments: s
+
+  completion_data_files:
+    collection: completion.data.files
+    desc: Completion documents
+    freq: per_file
+    inherits: base
+    fields:
+      data.file_name: s
+      data.display_name: s
+      data.file_type: s
+      data.category: s
+      data.user: s
+
+  completion_data_npt_events:
+    collection: completion.data.npt-events
+    desc: Completion NPT events
+    freq: per_event
+    inherits: base
+    fields:
+      data.start_time: l
+      data.end_time: l
+      data.duration: i
+      data.type: s
+      data.description: s
+      data.stage_number: i
+
+  completion_data_costs:
+    collection: completion.data.costs
+    desc: Completion cost tracking
+    freq: per_entry
+    inherits: base
+    fields:
+      data.cost: f
+      data.category: s
+      data.description: s
+      data.date: s
+      data.stage_number: i
+
+  # ---------------------------------------------------------------------------
+  # Pumpdown Operations
+  # ---------------------------------------------------------------------------
+
+  pumpdown_wits:
+    collection: pumpdown.wits
+    desc: Real-time pumpdown data
+    freq: per_second
+    inherits: stage_based
+    fields:
+      data.wellhead_pressure: f
+      data.pump_rate: f
+      data.total_volume: f
+      data.ball_depth: f
+      data.strokes: i
+      data.plug_status: s
+      data.elapsed_time: i
+
+  pumpdown_wits_summary_1m:
+    collection: pumpdown.wits.summary-1m
+    desc: 1-minute pumpdown statistics
+    freq: per_minute
+    inherits: stage_based
+    fields:
+      data.min: o
+      data.max: o
+      data.mean: o
+      data.start_timestamp: l
+      data.end_timestamp: l
+
+  pumpdown_predictions:
+    collection: pumpdown.predictions
+    desc: Plug tracking predictions
+    freq: per_calculation
+    inherits: stage_based
+    fields:
+      data.predicted_set_time: l
+      data.predicted_ball_depth: f
+      data.time_to_set: i
+      data.volume_to_set: f
+      data.confidence: f
+
+  pumpdown_activity_summary_stage:
+    collection: pumpdown.activity.summary-stage
+    desc: Pumpdown activity breakdown
+    freq: per_stage
+    inherits: activity_summary
+
+  # ---------------------------------------------------------------------------
+  # Wireline Operations
+  # ---------------------------------------------------------------------------
+
+  wireline_wits:
+    collection: wireline.wits
+    desc: Real-time wireline data
+    freq: per_second
+    inherits: stage_based
+    fields:
+      data.wireline_depth: f
+      data.cable_tension: f
+      data.line_speed: f
+      data.ccl: f
+      data.gamma_ray: f
+      data.direction: s
+      data.elapsed_time: i
+
+  wireline_wits_summary_1m:
+    collection: wireline.wits.summary-1m
+    desc: 1-minute wireline statistics
+    freq: per_minute
+    inherits: stage_based
+    fields:
+      data.min: o
+      data.max: o
+      data.mean: o
+      data.start_timestamp: l
+      data.end_timestamp: l
+
+  wireline_stage_times:
+    collection: wireline.stage-times
+    desc: Wireline timing data
+    freq: per_stage
+    inherits: stage_based
+    fields:
+      data.stage_start: l
+      data.stage_end: l
+      data.stage_duration: i
+      data.run_type: s
+
+  wireline_activity_summary_stage:
+    collection: wireline.activity.summary-stage
+    desc: Wireline activity breakdown
+    freq: per_stage
+    inherits: activity_summary

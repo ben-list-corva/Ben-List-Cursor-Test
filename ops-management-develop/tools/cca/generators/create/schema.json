@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "Create",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use?"
+    },
+    "segment": {
+      "type": "string",
+      "default": "drilling",
+      "enum": ["drilling", "completion"],
+      "description": "The segment of the app"
+    },
+    "provider": {
+      "type": "string",
+      "default": "corva",
+      "description": "The provider of the app"
+    },
+    "key": {
+      "type": "string",
+      "description": "The app_key of the app"
+    },
+    "category": {
+      "type": "string",
+      "default": "analytics",
+      "description": "The category of the app"
+    }
+  },
+  "required": ["name", "segment"]
+}

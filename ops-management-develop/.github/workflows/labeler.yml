@@ -1,0 +1,53 @@
+name: 'Label PR'
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+# Cancel old edit events being processed (mostly due to jira edits of PR description)
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  label-pr:
+    name: Label PR with affected projects
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Load secrets from 1Password
+        uses: 1password/load-secrets-action@v2.0.0
+        id: secrets
+        with:
+          export-env: false
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN_RO }}
+          #
+          APP_ID: 'op://GitHub.Actions/GitHub/corva-monobot/APP_ID'
+          PRIVATE_KEY: 'op://GitHub.Actions/GitHub/corva-monobot/PRIVATE_KEY'
+      - name: Checkout sources
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+      - name: Setup Environment
+        uses: ./.github/actions/setup-environment
+        with:
+          setup-python: 'false'
+      - name: Derive appropriate SHAs for base and head for `nx affected` commands
+        uses: nrwl/nx-set-shas@v4.3.0
+        with:
+          main-branch-name: ${{ github.event.repository.default_branch }}
+      - name: Generate GitHub token
+        uses: actions/create-github-app-token@v1.11.7
+        id: token
+        with:
+          app-id: ${{ steps.secrets.outputs.APP_ID }}
+          private-key: ${{ steps.secrets.outputs.PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+      - name: Label PR
+        uses: corva-ai/gh-actions/common/run-script@develop
+        with:
+          github-token: ${{ steps.token.outputs.token }}
+          script-name: 'labeler.mjs'

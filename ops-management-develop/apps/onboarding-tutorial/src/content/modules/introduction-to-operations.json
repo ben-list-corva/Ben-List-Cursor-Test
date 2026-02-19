@@ -1,0 +1,595 @@
+{
+  "moduleSlug": "introduction-to-operations",
+  "title": "Introduction to Operations",
+  "blocks": [
+    {
+      "type": "text",
+      "heading": "\n",
+      "body": "\n"
+    },
+    {
+      "type": "text",
+      "heading": "\n",
+      "body": "Standard Data and Ops Support"
+    },
+    {
+      "type": "text",
+      "heading": "Roles and Responsibilities & Corva Organizational Chart",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Historical Wells Buildouts\n",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "New Trial Customer Rollout",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Trial to Commercial",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Introduction to Corva",
+      "body": "Corva is an advanced real-time monitoring and optimization platform for drilling and completions. Corva can be used to identify trends in rig performance and drive improvement by displaying the data in visually pleasing and intuitive applications within the Corva platform. Drilling optimization is also achieved by using Corva’s database of offset wells and identifying optimal drilling parameters that maximize rate of penetration. With Corva, drilling engineers can reduce drilling and slide time, identify problem events using automated alerts, and mine historical data to discover the best practices for drilling each formation and area."
+    },
+    {
+      "type": "text",
+      "heading": "Operator Rig Additions",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "To access the Corva Platform navigate to [www.corva.ai](http://www.corva.ai) in your Google Chrome web-browser and click the Sign In button.",
+      "body": "Email address serves as a login and password are set up by following the instructions in the Welcome Email."
+    },
+    {
+      "type": "text",
+      "heading": "Accessing the Corva Platform",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "body": "Dashboard displays a list of the dashboards available on the account. The dashboards are a group of applications that display various information about the wells in Corva. Dashboards can be custom made or prebuilt with the most used applications in Corva."
+    },
+    {
+      "type": "text",
+      "heading": "Dashboard",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "All wells and rigs can be found, created and edited through the Assets.",
+      "body": "Assets can be searched by Wells, Rigs, Programs, and Map. When searching by wells, the search can be filtered by the Company, Date Range, and Status of the well itself. These selections are found in the far-left portion of the browser window."
+    },
+    {
+      "type": "text",
+      "heading": "Assets",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Corva Account Setup and Password Reset",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "body": "To set up a customer’s account click on the Config button at the top right of the Corva application."
+    },
+    {
+      "type": "text",
+      "heading": "\n",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "body": "Once there you will notice the selections on the left hand side of the application."
+    },
+    {
+      "type": "text",
+      "heading": "\n",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "The Users List menu options will display a list of all the accounts created in Corva. This is searchable by company name and you can also search by typing in the name or the user.",
+      "body": "To create a new account click on the Create button at the top right of the application."
+    },
+    {
+      "type": "text",
+      "heading": "\n",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "The Create User window will be displayed and this is where you will enter the information to create the account. Required information for account creation is listed below:",
+      "body": "First Name"
+    },
+    {
+      "type": "text",
+      "heading": "Required information for Corva Account Creation",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "There are three different selections available for Role in Corva",
+      "body": "User "
+    },
+    {
+      "type": "text",
+      "heading": "Account Types in Corva",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Mobile phone number (optional), Segment. Notifications, Alert levels, Sounds, and Widgets can be left by default and changed later.",
+      "body": "After the Corva account is created, a Welcome Email will be sent to the User, and he/she must follow the directions in the email to set up the password and accept terms of conditions."
+    },
+    {
+      "type": "text",
+      "heading": "Optional Account Information",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "body": "To reset the password click on Need help? option on the Sign In page."
+    },
+    {
+      "type": "text",
+      "heading": "Resetting a Users Password",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Click ” Forgot Password?”",
+      "body": "Then enter the user’s email address and click send. A link will be sent to the email address entered that will allow the user to reset their password."
+    },
+    {
+      "type": "text",
+      "heading": "\n",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Data Entry",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Overview",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Drilling Program, Well Plan, Daily Drilling Report, Mud Report, or EDR provider naming convention.",
+      "body": "Required for: Asset creation."
+    },
+    {
+      "type": "text",
+      "heading": "Well Name",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Drilling Program, Well Plan, Daily Drilling Report, Mud Report, or EDR provider naming convention.",
+      "body": "Required for: Well creation."
+    },
+    {
+      "type": "text",
+      "heading": "Rig",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "For some Operators, the Program is assigned to the Basin or Region that the rig is located. Please ensure that the Program matches the correct Basin or Region.",
+      "body": "*By default, the Program for most operators is the Operator name."
+    },
+    {
+      "type": "text",
+      "heading": "Program",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Drilling Program or Wellbore Schematic.",
+      "body": "Required for Apps: Metrics & BHA Optimization."
+    },
+    {
+      "type": "text",
+      "heading": "String Design",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Drilling Program or Daily Drilling Report.",
+      "body": "*Note that not all Operators use Area designation."
+    },
+    {
+      "type": "text",
+      "heading": "Area",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Drilling Program, Well Plan, Daily Drilling Report, or Mud Report.",
+      "body": "Required for Apps: Metrics & BHA Optimization."
+    },
+    {
+      "type": "text",
+      "heading": "County",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Drilling Program, Geology Program, Daily Drilling Report, or Mud Report.",
+      "body": "Required for Apps: Metrics & BHA Optimization."
+    },
+    {
+      "type": "text",
+      "heading": "Basin",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Drilling Program, Geology Program, Daily Drilling Report, or Mud Report.",
+      "body": "Required for Apps: BHA Optimization & Fusion."
+    },
+    {
+      "type": "text",
+      "heading": "API Number",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Drilling Program or Geology Program.",
+      "body": "Required for Apps: Metrics & BHA Optimization."
+    },
+    {
+      "type": "text",
+      "heading": "Target Formation",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Daily Drilling Reports.",
+      "body": "Required for Apps: DvD."
+    },
+    {
+      "type": "text",
+      "heading": "Rig Up / Rig Release",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Surface",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Rig Spec Sheet.",
+      "body": "Default: Type 1, if not specified."
+    },
+    {
+      "type": "text",
+      "heading": "Circulation System Type",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Rig Spec Sheet, Previous well surface equipment, or hookload in slips off EDR provider live viewer.",
+      "body": "Default: 45 klbf, if not specified. Change once In-Slips is observed in traces."
+    },
+    {
+      "type": "text",
+      "heading": "Block Weight",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Rig Spec Sheet.",
+      "body": "Default: 750 klbf, if not specified."
+    },
+    {
+      "type": "text",
+      "heading": "Maximum Hosting Capacity",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Rig Spec Sheet.",
+      "body": "Default: 7,500 psi, if not specified."
+    },
+    {
+      "type": "text",
+      "heading": "Maximum Standpipe Pressure (SPP) Capacity",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Rig Spec Sheet.",
+      "body": "Default: 40 ft-klbf, if not specified."
+    },
+    {
+      "type": "text",
+      "heading": "Maximum Top Drive (TD) Torque Capacity",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Rig Spec Sheet.",
+      "body": "Default: 1 psi, if not specified."
+    },
+    {
+      "type": "text",
+      "heading": "Surface Back Pressure",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Rig Spec Sheet or BHA.",
+      "body": "Default: 5 degrees."
+    },
+    {
+      "type": "text",
+      "heading": "Toolface Threshold",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Well Plan",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Well Plan or File Name.",
+      "body": "Required for Apps: All Directional Applications & Driller’s Roadmap."
+    },
+    {
+      "type": "text",
+      "heading": "Plan Name",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Well Plan.",
+      "body": "Required for Apps: All Directional Applications & Driller’s Roadmap."
+    },
+    {
+      "type": "text",
+      "heading": "Vertical Section Azimuth",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "\n",
+      "body": "Navigate to the Asset which you intend to edit"
+    },
+    {
+      "type": "text",
+      "heading": "Importing Well Plans\n",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Well Sections",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Drilling Program, Wellbore Schematic, or Well Plan.",
+      "body": "Data Entry Requirements: Top Depth & Bottom Depth updated to actual at the end of each section."
+    },
+    {
+      "type": "text",
+      "heading": "Well Sections",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Drilling Program, Wellbore Schematic, or Well Plan.",
+      "body": "Data Entry Requirements: Utilized if WITSML starts after a section has been previously drilled."
+    },
+    {
+      "type": "text",
+      "heading": "Pre-Set",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "\n",
+      "body": "Navigate to the Asset which you intend to edit"
+    },
+    {
+      "type": "text",
+      "heading": "Set Up Well Sections",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Casing",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Drilling Program, Wellbore Schematic, Casing Talley, or Daily Drilling Reports.",
+      "body": "Data Entry Requirements: Use exact provided Linear Weights, not Corva calculated weights."
+    },
+    {
+      "type": "text",
+      "heading": "Casing",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Drilling Program, Wellbore Schematic, Casing Talley, or Daily Drilling Reports.",
+      "body": "Data Entry Requirements:"
+    },
+    {
+      "type": "text",
+      "heading": "Liner",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "\n",
+      "body": "Navigate to the Asset which you intend to edit"
+    },
+    {
+      "type": "text",
+      "heading": "Setting up Casing",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Drilling Program, Wellbore Schematic, Casing Talley, or Daily Drilling Reports.",
+      "body": "Data Entry Requirements:"
+    },
+    {
+      "type": "text",
+      "heading": "Floating Casing",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Drillstrings/BHAs",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: BHA, Drilling Program, Daily Drilling Report, and Drill Pipe Spec Sheet.",
+      "body": "*Reference the daily drilling reports for BHA’s … especially surface and dumb iron BHAs. Typically all the BHAs and details about each component will be present there.*"
+    },
+    {
+      "type": "text",
+      "heading": "Drillstrings",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: BHA, Drilling Program, Daily Drilling Report, and Mud Motor Spec Sheet.",
+      "body": "Data Entry Requirements:"
+    },
+    {
+      "type": "text",
+      "heading": "PDM",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: BHA, Drilling Program, Daily Drilling Report, and Mud Motor Spec Sheet.",
+      "body": "Data Entry Requirements:"
+    },
+    {
+      "type": "text",
+      "heading": "Bit",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: Daily Drilling Report or Daily Mud Report.",
+      "body": "*In the event that a daily fluid report is not received look for the information on the Daily Drilling Report … Often times the information about the mud is present there*"
+    },
+    {
+      "type": "text",
+      "heading": "Fluid Checks",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Surveys",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Where: EDR provider ‘Approved Surveys’ and Emailed survey report.",
+      "body": "Data Entry Requirements:"
+    },
+    {
+      "type": "text",
+      "heading": "Surveys",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "As the volume of work grew for the operations at Corva this generated a massive amount of data entry for the analyst monitoring the live wells. Each day the daily drilling report is received from each active rig and from this the operations summary, 24hr forecast, costs and NPT were manually entered into each asset. Fusion can also parse fluids from mud reports.",
+      "body": "From the need to more efficiently handle this volume of data entry Fusion was developed. Fusion is an application that automates some of the data entry required by scanning the Corva email inbox, identifying daily drilling reports and extracts that information to populate the assets in Corva with required information pertaining to the well."
+    },
+    {
+      "type": "text",
+      "heading": "Fusion and Corva",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Check Operation Summaries for multiple entries",
+      "body": "There should be a single operations summary entry per day for each asset. Duplicate entries should be removed"
+    },
+    {
+      "type": "text",
+      "heading": "Fusion Best Practices",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "body": "It can be both challenging and overwhelming when it comes to covering over 50 rigs drilling operations during your first hitch as a Drilling Data Analyst at Corva. The work flow is fast paced and the data must be correct when entered into the system. Corva’s rig count has grown tremendously since my very first hitch as an operations analyst and it is expected to grow continuously as the platform is expanded to cover more operations and offer additional optimization tools for drilling and completions."
+    },
+    {
+      "type": "text",
+      "heading": "Drilling Data Analyst Priorities - Tips for Success in Operations",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "When starting your first hitch in operations keep in mind that with this volume of work there may be items that you are not able to get to. For these items be sure to make good notes on the handover sheets and discuss with your relief during tour change.",
+      "body": "Also be mindful that you are not alone with your rigs. There will be other drilling data analysts and a host of operations support personnel that can help answer questions that may arise during your tour. Use the resources available to you to help you get thru your first tour if necessary."
+    },
+    {
+      "type": "text",
+      "heading": "Corva’s Real Time Operations - Focus Areas",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Intercom",
+      "body": ""
+    },
+    {
+      "type": "text",
+      "heading": "Intercom, Inc. is a software company that specializes in business messaging, providing businesses with a way to chat with their customers.",
+      "body": "Located in the bottom right of Corva on every dashboard you can locate the Intercom messenger."
+    }
+  ],
+  "sourceSheetId": "194jcVTY5pDAtN6b0jfdAn9jFhPkQNmYE2p2PS0bBZFM",
+  "sourceTabName": "",
+  "sourceUpdatedAt": "2025-12-24T21:05:39.500Z",
+  "lastGeneratedAt": "2025-12-24T21:05:39.511Z",
+  "versionHash": "c30ffd2198e51368"
+}
