@@ -42,6 +42,52 @@ COLORS = [
     "#9467bd", "#8c564b", "#e377c2", "#7f7f7f",
 ]
 
+# Corva-inspired chart styling constants
+RUN_LINE_COLOR = "#9AA5B1"
+RUN_LINE_ALPHA = 0.28
+RUN_LINE_WIDTH = 0.8
+ROTARY_COLOR = "#0B6E99"
+SLIDE_COLOR = "#E67E22"
+GRID_COLOR = "#D9E2EC"
+AXIS_EDGE_COLOR = "#BCCCDC"
+TEXT_COLOR = "#243B53"
+BAND_ALPHA = 0.18
+
+
+def _style_axis(ax):
+    """Apply consistent axis styling for all charts."""
+    ax.set_facecolor("#FFFFFF")
+    for side in ("top", "right"):
+        ax.spines[side].set_visible(False)
+    for side in ("left", "bottom"):
+        ax.spines[side].set_color(AXIS_EDGE_COLOR)
+        ax.spines[side].set_linewidth(1)
+    ax.tick_params(axis="both", colors=TEXT_COLOR, labelsize=10)
+    ax.grid(True, color=GRID_COLOR, alpha=0.85, linewidth=0.8)
+    ax.grid(which="minor", color=GRID_COLOR, alpha=0.45, linewidth=0.5)
+    ax.set_axisbelow(True)
+
+
+def _finalize_figure(fig, ax):
+    """Shared finishing touches before saving."""
+    _style_axis(ax)
+    fig.patch.set_facecolor("#FFFFFF")
+    fig.tight_layout()
+
+
+def _plot_group_runs(ax, per_run, group_key, curve_key, x_mapper):
+    """Plot individual run overlays for a single group."""
+    for _, run_data in per_run.items():
+        if run_data["meta"]["equiv_bha_key"] != group_key:
+            continue
+        curve = run_data[curve_key]
+        if not curve:
+            continue
+        bins = sorted(curve.keys())
+        x = [x_mapper(b) for b in bins]
+        y = [curve[b] for b in bins]
+        ax.plot(x, y, color=RUN_LINE_COLOR, linewidth=RUN_LINE_WIDTH, alpha=RUN_LINE_ALPHA)
+
 
 def load_group_curves(csv_path):
     """Load per-group P10/P50/P90 curve data."""
@@ -171,35 +217,24 @@ def plot_group_rotary(group_key, group_data, per_run, out_dir, section_label=Non
     p90 = [rotary[b]["p90"] for b in bins_sorted]
 
     fig, ax = plt.subplots(figsize=(12, 6))
-
-    # Individual runs as thin lines
-    for run_key, run_data in per_run.items():
-        if run_data["meta"]["equiv_bha_key"] != group_key:
-            continue
-        rc = run_data["rotary"]
-        if not rc:
-            continue
-        rb = sorted(rc.keys())
-        rx = [b / 1000 for b in rb]
-        ry = [rc[b] for b in rb]
-        ax.plot(rx, ry, color="#cccccc", linewidth=0.5, alpha=0.5)
-
-    # P10/P90 band
-    ax.fill_between(x, p10, p90, alpha=0.2, color="#1f77b4", label="P10-P90 band")
-    ax.plot(x, p50, color="#1f77b4", linewidth=2.5, label="P50 Rotary ROP")
+    _plot_group_runs(ax, per_run, group_key, "rotary", lambda b: b / 1000)
+    ax.fill_between(x, p10, p90, alpha=BAND_ALPHA, color=ROTARY_COLOR, label="P10-P90")
+    ax.plot(x, p50, color=ROTARY_COLOR, linewidth=2.8, label="P50")
 
     n_runs = group_data["meta"].get("num_runs", "?")
     label_line = f"\n{section_label}" if section_label else ""
-    ax.set_title(f"Rotary ROP Type Curve: {group_key}\n({n_runs} runs){label_line}", fontsize=13)
-    ax.set_xlabel("Distance from BHA Start (kft)", fontsize=11)
-    ax.set_ylabel("Rotary ROP (ft/hr)", fontsize=11)
-    ax.legend(loc="upper right")
-    ax.grid(True, alpha=0.3)
+    ax.set_title(f"Rotary ROP Type Curve: {group_key}\n({n_runs} runs){label_line}", fontsize=13, color=TEXT_COLOR)
+    ax.set_xlabel("Distance from Lateral Start (kft)", fontsize=11, color=TEXT_COLOR)
+    ax.set_ylabel("Rotary ROP (ft/hr)", fontsize=11, color=TEXT_COLOR)
+    ax.legend(loc="upper right", frameon=False, fontsize=10)
     ax.set_ylim(bottom=0)
+    ax.xaxis.set_major_formatter(mticker.StrMethodFormatter("{x:.1f}"))
+    ax.xaxis.set_minor_locator(mticker.AutoMinorLocator(2))
+    ax.yaxis.set_minor_locator(mticker.AutoMinorLocator(2))
 
     safe_name = group_key.replace(" ", "_").replace("/", "-").replace("|", "_")
-    fig.tight_layout()
-    fig.savefig(os.path.join(out_dir, f"rotary_{safe_name}.png"), dpi=150)
+    _finalize_figure(fig, ax)
+    fig.savefig(os.path.join(out_dir, f"rotary_{safe_name}.png"), dpi=170)
     plt.close(fig)
 
 
@@ -219,34 +254,24 @@ def plot_group_slide(group_key, group_data, per_run, out_dir, section_label=None
     p90 = [slide[b]["p90"] for b in bins_sorted]
 
     fig, ax = plt.subplots(figsize=(12, 6))
-
-    # Individual runs
-    for run_key, run_data in per_run.items():
-        if run_data["meta"]["equiv_bha_key"] != group_key:
-            continue
-        sc = run_data["slide"]
-        if not sc:
-            continue
-        sb = sorted(sc.keys())
-        sx = [b / 1000 for b in sb]
-        sy = [sc[b] for b in sb]
-        ax.plot(sx, sy, color="#cccccc", linewidth=0.5, alpha=0.5)
-
-    ax.fill_between(x, p10, p90, alpha=0.2, color="#ff7f0e", label="P10-P90 band")
-    ax.plot(x, p50, color="#ff7f0e", linewidth=2.5, label="P50 Slide ROP")
+    _plot_group_runs(ax, per_run, group_key, "slide", lambda b: b / 1000)
+    ax.fill_between(x, p10, p90, alpha=BAND_ALPHA, color=SLIDE_COLOR, label="P10-P90")
+    ax.plot(x, p50, color=SLIDE_COLOR, linewidth=2.8, label="P50")
 
     n_runs = group_data["meta"].get("num_runs", "?")
     label_line = f"\n{section_label}" if section_label else ""
-    ax.set_title(f"Slide ROP Type Curve: {group_key}\n({n_runs} runs){label_line}", fontsize=13)
-    ax.set_xlabel("Distance from Lateral Start (kft)", fontsize=11)
-    ax.set_ylabel("Slide ROP (ft/hr)", fontsize=11)
-    ax.legend(loc="upper right")
-    ax.grid(True, alpha=0.3)
+    ax.set_title(f"Slide ROP Type Curve: {group_key}\n({n_runs} runs){label_line}", fontsize=13, color=TEXT_COLOR)
+    ax.set_xlabel("Distance from Lateral Start (kft)", fontsize=11, color=TEXT_COLOR)
+    ax.set_ylabel("Slide ROP (ft/hr)", fontsize=11, color=TEXT_COLOR)
+    ax.legend(loc="upper right", frameon=False, fontsize=10)
     ax.set_ylim(bottom=0)
+    ax.xaxis.set_major_formatter(mticker.StrMethodFormatter("{x:.1f}"))
+    ax.xaxis.set_minor_locator(mticker.AutoMinorLocator(2))
+    ax.yaxis.set_minor_locator(mticker.AutoMinorLocator(2))
 
     safe_name = group_key.replace(" ", "_").replace("/", "-").replace("|", "_")
-    fig.tight_layout()
-    fig.savefig(os.path.join(out_dir, f"slide_{safe_name}.png"), dpi=150)
+    _finalize_figure(fig, ax)
+    fig.savefig(os.path.join(out_dir, f"slide_{safe_name}.png"), dpi=170)
     plt.close(fig)
 
 
@@ -257,8 +282,8 @@ def plot_rotary_comparison(groups, out_dir, section_label=None):
     eligible = {gk: gd for gk, gd in groups.items()
                 if gd["meta"].get("num_runs", 0) >= MIN_RUNS_FOR_COMPARISON}
 
-    for i, (gk, gd) in enumerate(sorted(eligible.items(),
-                                          key=lambda x: -x[1]["meta"].get("num_runs", 0))):
+    ranked = sorted(eligible.items(), key=lambda x: -x[1]["meta"].get("num_runs", 0))
+    for i, (gk, gd) in enumerate(ranked):
         rotary = gd["rotary"]
         bins_sorted = sorted(b for b, d in rotary.items() if d["confident"])
         if not bins_sorted:
@@ -266,20 +291,24 @@ def plot_rotary_comparison(groups, out_dir, section_label=None):
 
         x = [b / 1000 for b in bins_sorted]
         y = [rotary[b]["p50"] for b in bins_sorted]
-        color = COLORS[i % len(COLORS)]
+        color = COLORS[i % len(COLORS)] if i < 6 else RUN_LINE_COLOR
+        lw = 2.6 if i < 3 else 1.8
+        alpha = 0.95 if i < 3 else 0.75
         n = gd["meta"].get("num_runs", "?")
-        ax.plot(x, y, color=color, linewidth=2, label=f"{gk} ({n} runs)")
+        ax.plot(x, y, color=color, linewidth=lw, alpha=alpha, label=f"{gk} ({n} runs)")
 
     label_line = f"\n{section_label}" if section_label else ""
-    ax.set_title(f"Rotary ROP Comparison (P50) by Equivalent BHA{label_line}", fontsize=14)
-    ax.set_xlabel("Distance from BHA Start (kft)", fontsize=12)
-    ax.set_ylabel("Rotary ROP (ft/hr)", fontsize=12)
-    ax.legend(loc="upper right", fontsize=9)
-    ax.grid(True, alpha=0.3)
+    ax.set_title(f"Rotary ROP Comparison (P50) by Equivalent BHA{label_line}", fontsize=14, color=TEXT_COLOR)
+    ax.set_xlabel("Distance from Lateral Start (kft)", fontsize=12, color=TEXT_COLOR)
+    ax.set_ylabel("Rotary ROP (ft/hr)", fontsize=12, color=TEXT_COLOR)
+    ax.legend(loc="upper right", fontsize=9, frameon=False)
     ax.set_ylim(bottom=0)
+    ax.xaxis.set_major_formatter(mticker.StrMethodFormatter("{x:.1f}"))
+    ax.xaxis.set_minor_locator(mticker.AutoMinorLocator(2))
+    ax.yaxis.set_minor_locator(mticker.AutoMinorLocator(2))
 
-    fig.tight_layout()
-    fig.savefig(os.path.join(out_dir, "comparison_rotary.png"), dpi=150)
+    _finalize_figure(fig, ax)
+    fig.savefig(os.path.join(out_dir, "comparison_rotary.png"), dpi=170)
     plt.close(fig)
 
 
@@ -290,8 +319,8 @@ def plot_slide_comparison(groups, out_dir, section_label=None):
     eligible = {gk: gd for gk, gd in groups.items()
                 if gd["meta"].get("num_runs", 0) >= MIN_RUNS_FOR_COMPARISON}
 
-    for i, (gk, gd) in enumerate(sorted(eligible.items(),
-                                          key=lambda x: -x[1]["meta"].get("num_runs", 0))):
+    ranked = sorted(eligible.items(), key=lambda x: -x[1]["meta"].get("num_runs", 0))
+    for i, (gk, gd) in enumerate(ranked):
         slide = gd["slide"]
         bins_sorted = sorted(b for b, d in slide.items() if d["confident"])
         if not bins_sorted:
@@ -299,20 +328,24 @@ def plot_slide_comparison(groups, out_dir, section_label=None):
 
         x = [b / 1000 for b in bins_sorted]
         y = [slide[b]["p50"] for b in bins_sorted]
-        color = COLORS[i % len(COLORS)]
+        color = COLORS[i % len(COLORS)] if i < 6 else RUN_LINE_COLOR
+        lw = 2.6 if i < 3 else 1.8
+        alpha = 0.95 if i < 3 else 0.75
         n = gd["meta"].get("num_runs", "?")
-        ax.plot(x, y, color=color, linewidth=2, label=f"{gk} ({n} runs)")
+        ax.plot(x, y, color=color, linewidth=lw, alpha=alpha, label=f"{gk} ({n} runs)")
 
     label_line = f"\n{section_label}" if section_label else ""
-    ax.set_title(f"Slide ROP Comparison (P50) by Equivalent BHA{label_line}", fontsize=14)
-    ax.set_xlabel("Distance from Lateral Start (kft)", fontsize=12)
-    ax.set_ylabel("Slide ROP (ft/hr)", fontsize=12)
-    ax.legend(loc="upper right", fontsize=9)
-    ax.grid(True, alpha=0.3)
+    ax.set_title(f"Slide ROP Comparison (P50) by Equivalent BHA{label_line}", fontsize=14, color=TEXT_COLOR)
+    ax.set_xlabel("Distance from Lateral Start (kft)", fontsize=12, color=TEXT_COLOR)
+    ax.set_ylabel("Slide ROP (ft/hr)", fontsize=12, color=TEXT_COLOR)
+    ax.legend(loc="upper right", fontsize=9, frameon=False)
     ax.set_ylim(bottom=0)
+    ax.xaxis.set_major_formatter(mticker.StrMethodFormatter("{x:.1f}"))
+    ax.xaxis.set_minor_locator(mticker.AutoMinorLocator(2))
+    ax.yaxis.set_minor_locator(mticker.AutoMinorLocator(2))
 
-    fig.tight_layout()
-    fig.savefig(os.path.join(out_dir, "comparison_slide.png"), dpi=150)
+    _finalize_figure(fig, ax)
+    fig.savefig(os.path.join(out_dir, "comparison_slide.png"), dpi=170)
     plt.close(fig)
 
 
@@ -331,24 +364,25 @@ def plot_ttd_ranking(ttd_data, out_dir, section_label=None):
     colors_bar = [COLORS[i % len(COLORS)] for i in range(len(valid))]
 
     y_pos = range(len(valid))
-    bars = ax.barh(y_pos, hours, color=colors_bar, height=0.6, alpha=0.85)
+    bars = ax.barh(y_pos, hours, color=colors_bar, height=0.64, alpha=0.9)
 
     # Add hour labels on bars
     for bar, h in zip(bars, hours):
         ax.text(bar.get_width() + 0.5, bar.get_y() + bar.get_height() / 2,
                 f"{h:.1f} hrs ({h/24:.2f} days)",
-                va="center", fontsize=9)
+                va="center", fontsize=9, color=TEXT_COLOR)
 
     ax.set_yticks(y_pos)
     ax.set_yticklabels(labels, fontsize=10)
-    ax.set_xlabel("Time to TD (hours)", fontsize=12)
+    ax.set_xlabel("Time to TD (hours)", fontsize=12, color=TEXT_COLOR)
     label_line = f"\n{section_label}" if section_label else "\n(10,000 ft lateral, observed slide %)"
-    ax.set_title(f"Estimated Time to TD by Equivalent BHA{label_line}", fontsize=13)
-    ax.grid(True, axis="x", alpha=0.3)
+    ax.set_title(f"Estimated Time to TD by Equivalent BHA{label_line}", fontsize=13, color=TEXT_COLOR)
+    ax.grid(True, axis="x", color=GRID_COLOR, alpha=0.8)
     ax.invert_yaxis()
+    ax.xaxis.set_minor_locator(mticker.AutoMinorLocator(2))
 
-    fig.tight_layout()
-    fig.savefig(os.path.join(out_dir, "ttd_ranking.png"), dpi=150)
+    _finalize_figure(fig, ax)
+    fig.savefig(os.path.join(out_dir, "ttd_ranking.png"), dpi=170)
     plt.close(fig)
 
 
@@ -452,8 +486,7 @@ def plot_group_rotary_vertical(group_key, group_data, per_run, roadmap, out_dir,
 
     fig, ax = plt.subplots(figsize=(14, 6))
 
-    # Individual runs
-    for run_key, run_data in per_run.items():
+    for _, run_data in per_run.items():
         if run_data["meta"]["equiv_bha_key"] != group_key:
             continue
         rc = run_data["rotary"]
@@ -466,20 +499,20 @@ def plot_group_rotary_vertical(group_key, group_data, per_run, roadmap, out_dir,
                 rx.append(i)
                 ry.append(rc[key])
         if rx:
-            ax.plot(rx, ry, color="#cccccc", linewidth=0.5, alpha=0.5)
+            ax.plot(rx, ry, color=RUN_LINE_COLOR, linewidth=RUN_LINE_WIDTH, alpha=RUN_LINE_ALPHA)
 
-    ax.fill_between(x_pos, p10_vals, p90_vals, alpha=0.2, color="#1f77b4", label="P10-P90 band")
-    ax.plot(x_pos, p50_vals, color="#1f77b4", linewidth=2.5, label="P50 Rotary ROP")
+    ax.fill_between(x_pos, p10_vals, p90_vals, alpha=BAND_ALPHA, color=ROTARY_COLOR, label="P10-P90")
+    ax.plot(x_pos, p50_vals, color=ROTARY_COLOR, linewidth=2.8, label="P50")
 
     # Formation boundaries
     ticks, tick_labels, bound_pos, bound_labels = format_formation_labels(roadmap)
     for bp in bound_pos:
-        ax.axvline(x=bp, color="#888888", linewidth=0.8, linestyle="--", alpha=0.5)
+        ax.axvline(x=bp, color=AXIS_EDGE_COLOR, linewidth=0.8, linestyle="--", alpha=0.6)
 
     # Formation name labels at top
     for bp, bl in zip(bound_pos, bound_labels):
         ax.text(bp + 1, ax.get_ylim()[1] * 0.95, bl, fontsize=8, rotation=45,
-                va="top", ha="left", color="#555555")
+                va="top", ha="left", color=TEXT_COLOR)
 
     ax.set_xticks(ticks)
     ax.set_xticklabels(tick_labels, fontsize=7, rotation=45)
@@ -487,16 +520,16 @@ def plot_group_rotary_vertical(group_key, group_data, per_run, roadmap, out_dir,
     n_runs = group_data["meta"].get("num_runs", "?")
     label_line = f"\n{section_label}" if section_label else ""
     ax.set_title(f"Rotary ROP by Formation: {group_key}\n({n_runs} runs, {FORMATION_SEGMENT_PCT}% segments){label_line}",
-                 fontsize=13)
-    ax.set_xlabel("Formation Position", fontsize=11)
-    ax.set_ylabel("Rotary ROP (ft/hr)", fontsize=11)
-    ax.legend(loc="upper right")
-    ax.grid(True, alpha=0.3)
+                 fontsize=13, color=TEXT_COLOR)
+    ax.set_xlabel("Formation Position", fontsize=11, color=TEXT_COLOR)
+    ax.set_ylabel("Rotary ROP (ft/hr)", fontsize=11, color=TEXT_COLOR)
+    ax.legend(loc="upper right", frameon=False, fontsize=10)
     ax.set_ylim(bottom=0)
+    ax.yaxis.set_minor_locator(mticker.AutoMinorLocator(2))
 
     safe_name = group_key.replace(" ", "_").replace("/", "-").replace("|", "_")
-    fig.tight_layout()
-    fig.savefig(os.path.join(out_dir, f"vert_rotary_{safe_name}.png"), dpi=150)
+    _finalize_figure(fig, ax)
+    fig.savefig(os.path.join(out_dir, f"vert_rotary_{safe_name}.png"), dpi=170)
     plt.close(fig)
 
 
@@ -522,7 +555,7 @@ def plot_group_slide_vertical(group_key, group_data, per_run, roadmap, out_dir, 
 
     fig, ax = plt.subplots(figsize=(14, 6))
 
-    for run_key, run_data in per_run.items():
+    for _, run_data in per_run.items():
         if run_data["meta"]["equiv_bha_key"] != group_key:
             continue
         sc = run_data["slide"]
@@ -535,17 +568,17 @@ def plot_group_slide_vertical(group_key, group_data, per_run, roadmap, out_dir, 
                 sx.append(i)
                 sy.append(sc[key])
         if sx:
-            ax.plot(sx, sy, color="#cccccc", linewidth=0.5, alpha=0.5)
+            ax.plot(sx, sy, color=RUN_LINE_COLOR, linewidth=RUN_LINE_WIDTH, alpha=RUN_LINE_ALPHA)
 
-    ax.fill_between(x_pos, p10_vals, p90_vals, alpha=0.2, color="#ff7f0e", label="P10-P90 band")
-    ax.plot(x_pos, p50_vals, color="#ff7f0e", linewidth=2.5, label="P50 Slide ROP")
+    ax.fill_between(x_pos, p10_vals, p90_vals, alpha=BAND_ALPHA, color=SLIDE_COLOR, label="P10-P90")
+    ax.plot(x_pos, p50_vals, color=SLIDE_COLOR, linewidth=2.8, label="P50")
 
     ticks, tick_labels, bound_pos, bound_labels = format_formation_labels(roadmap)
     for bp in bound_pos:
-        ax.axvline(x=bp, color="#888888", linewidth=0.8, linestyle="--", alpha=0.5)
+        ax.axvline(x=bp, color=AXIS_EDGE_COLOR, linewidth=0.8, linestyle="--", alpha=0.6)
     for bp, bl in zip(bound_pos, bound_labels):
         ax.text(bp + 1, ax.get_ylim()[1] * 0.95, bl, fontsize=8, rotation=45,
-                va="top", ha="left", color="#555555")
+                va="top", ha="left", color=TEXT_COLOR)
 
     ax.set_xticks(ticks)
     ax.set_xticklabels(tick_labels, fontsize=7, rotation=45)
@@ -553,16 +586,16 @@ def plot_group_slide_vertical(group_key, group_data, per_run, roadmap, out_dir, 
     n_runs = group_data["meta"].get("num_runs", "?")
     label_line = f"\n{section_label}" if section_label else ""
     ax.set_title(f"Slide ROP by Formation: {group_key}\n({n_runs} runs, {FORMATION_SEGMENT_PCT}% segments){label_line}",
-                 fontsize=13)
-    ax.set_xlabel("Formation Position", fontsize=11)
-    ax.set_ylabel("Slide ROP (ft/hr)", fontsize=11)
-    ax.legend(loc="upper right")
-    ax.grid(True, alpha=0.3)
+                 fontsize=13, color=TEXT_COLOR)
+    ax.set_xlabel("Formation Position", fontsize=11, color=TEXT_COLOR)
+    ax.set_ylabel("Slide ROP (ft/hr)", fontsize=11, color=TEXT_COLOR)
+    ax.legend(loc="upper right", frameon=False, fontsize=10)
     ax.set_ylim(bottom=0)
+    ax.yaxis.set_minor_locator(mticker.AutoMinorLocator(2))
 
     safe_name = group_key.replace(" ", "_").replace("/", "-").replace("|", "_")
-    fig.tight_layout()
-    fig.savefig(os.path.join(out_dir, f"vert_slide_{safe_name}.png"), dpi=150)
+    _finalize_figure(fig, ax)
+    fig.savefig(os.path.join(out_dir, f"vert_slide_{safe_name}.png"), dpi=170)
     plt.close(fig)
 
 
@@ -573,8 +606,8 @@ def plot_rotary_comparison_vertical(groups, roadmap, out_dir, section_label=None
     eligible = {gk: gd for gk, gd in groups.items()
                 if gd["meta"].get("num_runs", 0) >= MIN_RUNS_FOR_COMPARISON}
 
-    for ci, (gk, gd) in enumerate(sorted(eligible.items(),
-                                          key=lambda x: -x[1]["meta"].get("num_runs", 0))):
+    ranked = sorted(eligible.items(), key=lambda x: -x[1]["meta"].get("num_runs", 0))
+    for ci, (gk, gd) in enumerate(ranked):
         rotary = gd["rotary"]
         x_pos = []
         y_vals = []
@@ -584,30 +617,32 @@ def plot_rotary_comparison_vertical(groups, roadmap, out_dir, section_label=None
                 y_vals.append(rotary[key]["p50"])
         if not x_pos:
             continue
-        color = COLORS[ci % len(COLORS)]
+        color = COLORS[ci % len(COLORS)] if ci < 6 else RUN_LINE_COLOR
+        lw = 2.6 if ci < 3 else 1.8
+        alpha = 0.95 if ci < 3 else 0.75
         n = gd["meta"].get("num_runs", "?")
-        ax.plot(x_pos, y_vals, color=color, linewidth=2, label=f"{gk} ({n} runs)")
+        ax.plot(x_pos, y_vals, color=color, linewidth=lw, alpha=alpha, label=f"{gk} ({n} runs)")
 
     ticks, tick_labels, bound_pos, bound_labels = format_formation_labels(roadmap)
     for bp in bound_pos:
-        ax.axvline(x=bp, color="#888888", linewidth=0.8, linestyle="--", alpha=0.4)
+        ax.axvline(x=bp, color=AXIS_EDGE_COLOR, linewidth=0.8, linestyle="--", alpha=0.6)
     for bp, bl in zip(bound_pos, bound_labels):
         ax.text(bp + 1, ax.get_ylim()[1] * 0.97, bl, fontsize=8, rotation=45,
-                va="top", ha="left", color="#555555")
+                va="top", ha="left", color=TEXT_COLOR)
 
     ax.set_xticks(ticks)
     ax.set_xticklabels(tick_labels, fontsize=7, rotation=45)
 
     label_line = f"\n{section_label}" if section_label else ""
-    ax.set_title(f"Rotary ROP Comparison (P50) by Formation{label_line}", fontsize=14)
-    ax.set_xlabel("Formation Position", fontsize=12)
-    ax.set_ylabel("Rotary ROP (ft/hr)", fontsize=12)
-    ax.legend(loc="upper right", fontsize=9)
-    ax.grid(True, alpha=0.3)
+    ax.set_title(f"Rotary ROP Comparison (P50) by Formation{label_line}", fontsize=14, color=TEXT_COLOR)
+    ax.set_xlabel("Formation Position", fontsize=12, color=TEXT_COLOR)
+    ax.set_ylabel("Rotary ROP (ft/hr)", fontsize=12, color=TEXT_COLOR)
+    ax.legend(loc="upper right", fontsize=9, frameon=False)
     ax.set_ylim(bottom=0)
+    ax.yaxis.set_minor_locator(mticker.AutoMinorLocator(2))
 
-    fig.tight_layout()
-    fig.savefig(os.path.join(out_dir, "vert_comparison_rotary.png"), dpi=150)
+    _finalize_figure(fig, ax)
+    fig.savefig(os.path.join(out_dir, "vert_comparison_rotary.png"), dpi=170)
     plt.close(fig)
 
 
@@ -618,8 +653,8 @@ def plot_slide_comparison_vertical(groups, roadmap, out_dir, section_label=None)
     eligible = {gk: gd for gk, gd in groups.items()
                 if gd["meta"].get("num_runs", 0) >= MIN_RUNS_FOR_COMPARISON}
 
-    for ci, (gk, gd) in enumerate(sorted(eligible.items(),
-                                          key=lambda x: -x[1]["meta"].get("num_runs", 0))):
+    ranked = sorted(eligible.items(), key=lambda x: -x[1]["meta"].get("num_runs", 0))
+    for ci, (gk, gd) in enumerate(ranked):
         slide = gd["slide"]
         x_pos = []
         y_vals = []
@@ -629,30 +664,32 @@ def plot_slide_comparison_vertical(groups, roadmap, out_dir, section_label=None)
                 y_vals.append(slide[key]["p50"])
         if not x_pos:
             continue
-        color = COLORS[ci % len(COLORS)]
+        color = COLORS[ci % len(COLORS)] if ci < 6 else RUN_LINE_COLOR
+        lw = 2.6 if ci < 3 else 1.8
+        alpha = 0.95 if ci < 3 else 0.75
         n = gd["meta"].get("num_runs", "?")
-        ax.plot(x_pos, y_vals, color=color, linewidth=2, label=f"{gk} ({n} runs)")
+        ax.plot(x_pos, y_vals, color=color, linewidth=lw, alpha=alpha, label=f"{gk} ({n} runs)")
 
     ticks, tick_labels, bound_pos, bound_labels = format_formation_labels(roadmap)
     for bp in bound_pos:
-        ax.axvline(x=bp, color="#888888", linewidth=0.8, linestyle="--", alpha=0.4)
+        ax.axvline(x=bp, color=AXIS_EDGE_COLOR, linewidth=0.8, linestyle="--", alpha=0.6)
     for bp, bl in zip(bound_pos, bound_labels):
         ax.text(bp + 1, ax.get_ylim()[1] * 0.97, bl, fontsize=8, rotation=45,
-                va="top", ha="left", color="#555555")
+                va="top", ha="left", color=TEXT_COLOR)
 
     ax.set_xticks(ticks)
     ax.set_xticklabels(tick_labels, fontsize=7, rotation=45)
 
     label_line = f"\n{section_label}" if section_label else ""
-    ax.set_title(f"Slide ROP Comparison (P50) by Formation{label_line}", fontsize=14)
-    ax.set_xlabel("Formation Position", fontsize=12)
-    ax.set_ylabel("Slide ROP (ft/hr)", fontsize=12)
-    ax.legend(loc="upper right", fontsize=9)
-    ax.grid(True, alpha=0.3)
+    ax.set_title(f"Slide ROP Comparison (P50) by Formation{label_line}", fontsize=14, color=TEXT_COLOR)
+    ax.set_xlabel("Formation Position", fontsize=12, color=TEXT_COLOR)
+    ax.set_ylabel("Slide ROP (ft/hr)", fontsize=12, color=TEXT_COLOR)
+    ax.legend(loc="upper right", fontsize=9, frameon=False)
     ax.set_ylim(bottom=0)
+    ax.yaxis.set_minor_locator(mticker.AutoMinorLocator(2))
 
-    fig.tight_layout()
-    fig.savefig(os.path.join(out_dir, "vert_comparison_slide.png"), dpi=150)
+    _finalize_figure(fig, ax)
+    fig.savefig(os.path.join(out_dir, "vert_comparison_slide.png"), dpi=170)
     plt.close(fig)
 
 
@@ -671,23 +708,24 @@ def plot_ttd_ranking_vertical(ttd_data, out_dir, section_label=None):
     colors_bar = [COLORS[i % len(COLORS)] for i in range(len(valid))]
 
     y_pos = range(len(valid))
-    bars = ax.barh(y_pos, hours, color=colors_bar, height=0.6, alpha=0.85)
+    bars = ax.barh(y_pos, hours, color=colors_bar, height=0.64, alpha=0.9)
 
     for bar, h in zip(bars, hours):
         ax.text(bar.get_width() + 0.5, bar.get_y() + bar.get_height() / 2,
                 f"{h:.1f} hrs ({h/24:.2f} days)",
-                va="center", fontsize=9)
+                va="center", fontsize=9, color=TEXT_COLOR)
 
     ax.set_yticks(y_pos)
     ax.set_yticklabels(labels, fontsize=10)
-    ax.set_xlabel("Time to TD (hours)", fontsize=12)
+    ax.set_xlabel("Time to TD (hours)", fontsize=12, color=TEXT_COLOR)
     label_line = f"\n{section_label}" if section_label else "\n(Vertical Section, observed slide %)"
-    ax.set_title(f"Estimated Time to TD by Equivalent BHA{label_line}", fontsize=13)
-    ax.grid(True, axis="x", alpha=0.3)
+    ax.set_title(f"Estimated Time to TD by Equivalent BHA{label_line}", fontsize=13, color=TEXT_COLOR)
+    ax.grid(True, axis="x", color=GRID_COLOR, alpha=0.8)
     ax.invert_yaxis()
+    ax.xaxis.set_minor_locator(mticker.AutoMinorLocator(2))
 
-    fig.tight_layout()
-    fig.savefig(os.path.join(out_dir, "vert_ttd_ranking.png"), dpi=150)
+    _finalize_figure(fig, ax)
+    fig.savefig(os.path.join(out_dir, "vert_ttd_ranking.png"), dpi=170)
     plt.close(fig)
 
 
@@ -761,10 +799,6 @@ def main_lateral(data_dir=None, output_dir=None, section_label=None,
     section_name = section_name or os.path.basename(data_dir)
     label_suffix = f" - {section_label}" if section_label else ""
 
-    group_csv = os.path.join(data_dir, "rop_curves_by_group.csv")
-    run_csv = os.path.join(data_dir, "rop_curves_per_run.csv")
-    ttd_csv = os.path.join(data_dir, "ttd_ranking.csv")
-
     print(f"\n{'=' * 70}")
     print(f"  GENERATING ROP TYPE CURVE CHARTS (LATERAL){label_suffix}")
     print(f"  Data:   {data_dir}")
@@ -773,25 +807,17 @@ def main_lateral(data_dir=None, output_dir=None, section_label=None,
 
     run_info = db.get_latest_run()
     rid = run_info["id"] if run_info else None
-    groups = _load_csv_or_parquet(group_csv, section_name, "group", "lateral",
-                                  load_group_curves, run_id=rid)
-    per_run = _load_csv_or_parquet(run_csv, section_name, "per_run", "lateral",
-                                   load_per_run_curves, run_id=rid)
-    if os.path.exists(ttd_csv):
-        ttd_data = load_ttd(ttd_csv)
-    else:
-        if run_info:
-            ttd_data = db.get_ttd_rankings(run_info["id"], section_name)
-        else:
-            ttd_data = []
-    if not ttd_data:
-        ttd_data = []
+    gdf = db.load_rop_curves_by_group(section_name, "lateral", run_id=rid)
+    rdf = db.load_rop_curves_per_run(section_name, "lateral", run_id=rid)
+    groups = _parquet_records_to_groups(gdf.to_dict("records"), "lateral") if gdf is not None and not gdf.empty else None
+    per_run = _parquet_records_to_per_run(rdf.to_dict("records"), "lateral") if rdf is not None and not rdf.empty else None
+    ttd_data = db.get_ttd_rankings(run_info["id"], section_name) if run_info else []
 
     if groups is None or not groups:
-        print(f"ERROR: Could not load group curves from {group_csv} or Parquet. Run build_rop_curves.py first.")
+        print("ERROR: Could not load group curves from DB/Parquet. Run build_rop_curves.py first.")
         sys.exit(1)
     if per_run is None or not per_run:
-        print(f"ERROR: Could not load per-run curves from {run_csv} or Parquet. Run build_rop_curves.py first.")
+        print("ERROR: Could not load per-run curves from DB/Parquet. Run build_rop_curves.py first.")
         sys.exit(1)
 
     print(f"  Loaded {len(groups)} groups, {len(per_run)} runs")
@@ -829,43 +855,29 @@ def main_vertical(data_dir=None, output_dir=None, section_label=None,
     section_name = section_name or os.path.basename(data_dir)
     label_suffix = f" - {section_label}" if section_label else ""
 
-    group_csv = os.path.join(data_dir, "rop_curves_by_group_vertical.csv")
-    run_csv = os.path.join(data_dir, "rop_curves_per_run_vertical.csv")
-    ttd_csv = os.path.join(data_dir, "ttd_ranking_vertical.csv")
-    roadmap_csv = os.path.join(data_dir, "formation_roadmap.csv")
-
-    if not os.path.exists(roadmap_csv):
-        print(f"ERROR: {roadmap_csv} not found. Run build_rop_curves.py --mode vertical first.")
-        sys.exit(1)
-
     print(f"\n{'=' * 70}")
     print(f"  GENERATING ROP TYPE CURVE CHARTS (VERTICAL / FORMATION){label_suffix}")
     print(f"  Data:   {data_dir}")
     print(f"  Output: {output_dir}")
     print(f"{'=' * 70}\n")
 
-    roadmap = load_roadmap(roadmap_csv)
     run_info = db.get_latest_run()
     rid = run_info["id"] if run_info else None
-    groups = _load_csv_or_parquet(group_csv, section_name, "group", "vertical",
-                                   load_group_curves_vertical, run_id=rid)
-    per_run = _load_csv_or_parquet(run_csv, section_name, "per_run", "vertical",
-                                    load_per_run_curves_vertical, run_id=rid)
-    if os.path.exists(ttd_csv):
-        ttd_data = load_ttd(ttd_csv)
-    else:
-        if run_info:
-            ttd_data = db.get_ttd_rankings(run_info["id"], section_name)
-        else:
-            ttd_data = []
-    if not ttd_data:
-        ttd_data = []
+    roadmap = db.load_formation_roadmap(section_name, mode="vertical", run_id=rid)
+    if not roadmap:
+        print("ERROR: Formation roadmap not found in DB/Parquet. Run build_rop_curves.py --mode vertical first.")
+        sys.exit(1)
+    gdf = db.load_rop_curves_by_group(section_name, "vertical", run_id=rid)
+    rdf = db.load_rop_curves_per_run(section_name, "vertical", run_id=rid)
+    groups = _parquet_records_to_groups(gdf.to_dict("records"), "vertical") if gdf is not None and not gdf.empty else None
+    per_run = _parquet_records_to_per_run(rdf.to_dict("records"), "vertical") if rdf is not None and not rdf.empty else None
+    ttd_data = db.get_ttd_rankings(run_info["id"], section_name) if run_info else []
 
     if groups is None or not groups:
-        print(f"ERROR: Could not load group curves from {group_csv} or Parquet. Run build_rop_curves.py --mode vertical first.")
+        print("ERROR: Could not load group curves from DB/Parquet. Run build_rop_curves.py --mode vertical first.")
         sys.exit(1)
     if per_run is None or not per_run:
-        print(f"ERROR: Could not load per-run curves from {run_csv} or Parquet. Run build_rop_curves.py --mode vertical first.")
+        print("ERROR: Could not load per-run curves from DB/Parquet. Run build_rop_curves.py --mode vertical first.")
         sys.exit(1)
 
     print(f"  Loaded {len(groups)} groups, {len(per_run)} runs, "
